@@ -3,11 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\DuongLapTop\\source\\repos\\Restaurant Management System\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|c:\\users\\duonglaptop\\source\\repos\\restaurant management system\\restaurantdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:restaurantdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|c:\\users\\duonglaptop\\source\\repos\\restaurant management system\\backend\\chef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:backend\\chef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|c:\\users\\duonglaptop\\source\\repos\\restaurant management system\\resources\\user.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:resources\\user.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|c:\\users\\duonglaptop\\source\\repos\\restaurant management system\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|c:\\users\\duonglaptop\\source\\repos\\restaurant management system\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|C:\\Users\\DuongLapTop\\source\\repos\\Restaurant Management System\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,7 +94,57 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RestaurantDiagram.cd",
+              "DocumentMoniker": "C:\\Users\\DuongLapTop\\source\\repos\\Restaurant Management System\\RestaurantDiagram.cd",
+              "RelativeDocumentMoniker": "RestaurantDiagram.cd",
+              "ToolTip": "C:\\Users\\DuongLapTop\\source\\repos\\Restaurant Management System\\RestaurantDiagram.cd",
+              "RelativeToolTip": "RestaurantDiagram.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2025-02-10T02:41:35.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Chef.cs",
+              "DocumentMoniker": "C:\\Users\\DuongLapTop\\source\\repos\\Restaurant Management System\\Backend\\Chef.cs",
+              "RelativeDocumentMoniker": "Backend\\Chef.cs",
+              "ToolTip": "C:\\Users\\DuongLapTop\\source\\repos\\Restaurant Management System\\Backend\\Chef.cs",
+              "RelativeToolTip": "Backend\\Chef.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T02:41:32.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "user.png - PNG [512x512, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\DuongLapTop\\source\\repos\\Restaurant Management System\\Resources\\user.png",
+              "RelativeDocumentMoniker": "Resources\\user.png",
+              "ToolTip": "C:\\Users\\DuongLapTop\\source\\repos\\Restaurant Management System\\Resources\\user.png - PNG [512x512, 32 bit, PNG]",
+              "RelativeToolTip": "Resources\\user.png - PNG [512x512, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-02-10T02:39:31.64Z",
+              "EditorCaption": " - PNG [512x512, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "C:\\Users\\DuongLapTop\\source\\repos\\Restaurant Management System\\frmLogin.cs",
+              "RelativeDocumentMoniker": "frmLogin.cs",
+              "ToolTip": "C:\\Users\\DuongLapTop\\source\\repos\\Restaurant Management System\\frmLogin.cs",
+              "RelativeToolTip": "frmLogin.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAmwB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T01:50:29.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "frmLogin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\DuongLapTop\\source\\repos\\Restaurant Management System\\frmLogin.cs",
               "RelativeDocumentMoniker": "frmLogin.cs",
@@ -91,19 +153,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-10T00:29:35.317Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmLogin.cs",
-              "DocumentMoniker": "C:\\Users\\DuongLapTop\\source\\repos\\Restaurant Management System\\frmLogin.cs",
-              "RelativeDocumentMoniker": "frmLogin.cs",
-              "ToolTip": "C:\\Users\\DuongLapTop\\source\\repos\\Restaurant Management System\\frmLogin.cs",
-              "RelativeToolTip": "frmLogin.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA8wBQAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T01:50:29.453Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",

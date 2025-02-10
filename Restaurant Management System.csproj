@@ -52,6 +52,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Backend\Chef.cs" />
+    <Compile Include="Backend\Customer.cs" />
+    <Compile Include="Backend\ICreateReport.cs" />
+    <Compile Include="Backend\IGenerateReport.cs" />
+    <Compile Include="Backend\ISalary.cs" />
+    <Compile Include="Backend\ISearchFood.cs" />
+    <Compile Include="Backend\ISearchReservation.cs" />
+    <Compile Include="Backend\Manager.cs" />
+    <Compile Include="Backend\Person.cs" />
+    <Compile Include="Backend\Program.cs" />
+    <Compile Include="Backend\Receptionist.cs" />
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +94,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="RestaurantDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
