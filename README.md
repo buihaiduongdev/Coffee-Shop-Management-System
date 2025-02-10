@@ -26,4 +26,6 @@ Phần mền quản lí nhà hàng do nhóm sinh viên trường Đại h
   - [Anthai2](https://github.com/Anthai2)  
   - [kẻ hủy diệt](https://github.com/Sangchaos)
   - [Thái Quang Huy](https://github.com/HuyQuangThai)
+  - [ChauKimLuong116](https://github.com/ChauKimLuong116)
+
 
