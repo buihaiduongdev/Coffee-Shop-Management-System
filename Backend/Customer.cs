@@ -51,5 +51,10 @@ namespace Restaurant
         {
             throw new System.NotImplementedException();
         }
+
+        public void SearchFood()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
