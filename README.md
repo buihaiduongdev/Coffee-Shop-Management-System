@@ -12,7 +12,7 @@ Phần mền quản lí nhà hàng do nhóm sinh viên trường Đại h
 - ✅ Gọi món
 - ✅ Đặt bàn
 
-## 🖼️ Minh hoạ
+## 🖼️ Ảnh minh hoạ
 ![Demo](https://github.com/buihaiduongdev/project-images/blob/main/frmLogin.png)
 
 ```md
