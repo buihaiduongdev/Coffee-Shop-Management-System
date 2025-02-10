@@ -1,0 +1,12 @@
+C:\Users\DuongLapTop\source\repos\Restaurant Management System\bin\Debug\Restaurant Management System.exe.config
+C:\Users\DuongLapTop\source\repos\Restaurant Management System\bin\Debug\Restaurant Management System.exe
+C:\Users\DuongLapTop\source\repos\Restaurant Management System\bin\Debug\Restaurant Management System.pdb
+C:\Users\DuongLapTop\source\repos\Restaurant Management System\bin\Debug\Guna.UI2.dll
+C:\Users\DuongLapTop\source\repos\Restaurant Management System\obj\Debug\Restaurant Management System.csproj.AssemblyReference.cache
+C:\Users\DuongLapTop\source\repos\Restaurant Management System\obj\Debug\Restaurant_Management_System.Properties.Resources.resources
+C:\Users\DuongLapTop\source\repos\Restaurant Management System\obj\Debug\Restaurant Management System.csproj.GenerateResource.cache
+C:\Users\DuongLapTop\source\repos\Restaurant Management System\obj\Debug\Restaurant Management System.csproj.CoreCompileInputs.cache
+C:\Users\DuongLapTop\source\repos\Restaurant Management System\obj\Debug\Restaura.FBAF3D39.Up2Date
+C:\Users\DuongLapTop\source\repos\Restaurant Management System\obj\Debug\Restaurant Management System.exe
+C:\Users\DuongLapTop\source\repos\Restaurant Management System\obj\Debug\Restaurant Management System.pdb
+C:\Users\DuongLapTop\source\repos\Restaurant Management System\obj\Debug\Restaurant_Management_System.frmLogin.resources
