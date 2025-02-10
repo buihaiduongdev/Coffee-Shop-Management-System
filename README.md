@@ -4,7 +4,7 @@ Phần mền quản lí nhà hàng do nhóm sinh viên trường Đại h
 
 ## 📌 Mục lục
 - [🚀 Tính năng](#-tính-năng)
-- [📷 Ảnh minh họa](#-ảnh-minh-họa)
+- [🖼️ Ảnh minh họa](#-ảnh-minh-họa)
 - [👤 Tác giả](#-tác-giả)
 
 ## 🚀 Tính năng
