@@ -24,3 +24,21 @@ C:\Users\haidu\Source\Repos\Windows-Project\obj\Debug\Restaura.FBAF3D39.Up2Date
 C:\Users\haidu\Source\Repos\Windows-Project\obj\Debug\Restaurant Management System.exe
 C:\Users\haidu\Source\Repos\Windows-Project\obj\Debug\Restaurant Management System.pdb
 C:\Users\haidu\Source\Repos\Windows-Project\obj\Debug\Restaurant_Management_System.frmHome.resources
+D:\LEARNING\Winform\Restaurant-Management-System\bin\Debug\Restaurant Management System.exe.config
+D:\LEARNING\Winform\Restaurant-Management-System\bin\Debug\Restaurant Management System.exe
+D:\LEARNING\Winform\Restaurant-Management-System\bin\Debug\Restaurant Management System.pdb
+D:\LEARNING\Winform\Restaurant-Management-System\bin\Debug\Guna.UI2.dll
+D:\LEARNING\Winform\Restaurant-Management-System\obj\Debug\Restaurant Management System.csproj.AssemblyReference.cache
+D:\LEARNING\Winform\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.frmHome.resources
+D:\LEARNING\Winform\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.frmLogin.resources
+D:\LEARNING\Winform\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.frmMain.resources
+D:\LEARNING\Winform\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.Properties.Resources.resources
+D:\LEARNING\Winform\Restaurant-Management-System\obj\Debug\Restaurant Management System.csproj.GenerateResource.cache
+D:\LEARNING\Winform\Restaurant-Management-System\obj\Debug\Restaurant Management System.csproj.CoreCompileInputs.cache
+D:\LEARNING\Winform\Restaurant-Management-System\obj\Debug\Restaura.FBAF3D39.Up2Date
+D:\LEARNING\Winform\Restaurant-Management-System\obj\Debug\Restaurant Management System.exe
+D:\LEARNING\Winform\Restaurant-Management-System\obj\Debug\Restaurant Management System.pdb
+D:\LEARNING\Winform\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.SampleAdd.resources
+D:\LEARNING\Winform\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.SampleView.resources
+D:\LEARNING\Winform\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.View.frmCategoryView.resources
+D:\LEARNING\Winform\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.Model.frmCategoryAdd.resources
