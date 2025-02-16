@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Restaurant_Management_System.View;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,12 +35,17 @@ namespace Restaurant_Management_System
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            //lbUser.Text = MainClass.USER;
         }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
             AddControls(new frmHome());
+        }
+
+        private void btnCategory_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmCategoryView());
         }
     }
 }

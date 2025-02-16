@@ -3,31 +3,7 @@
   "WorkspaceRootPath": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\view\\frmcategoryview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:view\\frmcategoryview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\view\\frmcategoryview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:view\\frmcategoryview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|d:\\learning\\winform\\restaurant-management-system\\model\\frmcategoryadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:model\\frmcategoryadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|d:\\learning\\winform\\restaurant-management-system\\sampleadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:sampleadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|d:\\learning\\winform\\restaurant-management-system\\model\\frmcategoryadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:model\\frmcategoryadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|d:\\learning\\winform\\restaurant-management-system\\sampleadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:sampleadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|d:\\learning\\winform\\restaurant-management-system\\sampleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\sampleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:sampleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -35,48 +11,88 @@
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:sampleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\backend\\receptionist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:backend\\receptionist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\backend\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:backend\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\view\\frmcategoryview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:view\\frmcategoryview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:frmmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\view\\frmcategoryview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:view\\frmcategoryview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\sampleadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:sampleadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\mainclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:mainclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\model\\frmcategoryadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:model\\frmcategoryadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|d:\\learning\\winform\\restaurant-management-system\\model\\frmcategoryadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:model\\frmcategoryadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\sampleadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:sampleadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|d:\\learning\\winform\\restaurant-management-system\\sampleadd.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:sampleadd.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\restaurantdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:restaurantdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\backend\\isearchreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:backend\\isearchreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\backend\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:backend\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\backend\\receptionist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:backend\\receptionist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\restaurantdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:restaurantdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|solutionrelative:frmmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Restaurant Management System.csproj|D:\\LEARNING\\Winform\\Restaurant-Management-System\\backend\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -102,7 +118,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 32,
+          "SelectedChildIndex": 27,
           "Children": [
             {
               "$type": "Bookmark",
@@ -210,65 +226,36 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmCategoryAdd.cs",
-              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Model\\frmCategoryAdd.cs",
-              "RelativeDocumentMoniker": "Model\\frmCategoryAdd.cs",
-              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Model\\frmCategoryAdd.cs",
-              "RelativeToolTip": "Model\\frmCategoryAdd.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAD4vwwAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "SampleView.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\SampleView.cs",
+              "RelativeDocumentMoniker": "SampleView.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\SampleView.cs [Design]",
+              "RelativeToolTip": "SampleView.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T08:36:55.662Z",
+              "WhenOpened": "2025-02-10T11:41:34.774Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmMain.cs",
+              "RelativeToolTip": "frmMain.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwDAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T09:46:52.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "frmCategoryAdd.cs [Design]",
-              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Model\\frmCategoryAdd.cs",
-              "RelativeDocumentMoniker": "Model\\frmCategoryAdd.cs",
-              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Model\\frmCategoryAdd.cs [Design]",
-              "RelativeToolTip": "Model\\frmCategoryAdd.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T08:36:54.303Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SampleAdd.cs",
-              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\SampleAdd.cs",
-              "RelativeDocumentMoniker": "SampleAdd.cs",
-              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\SampleAdd.cs",
-              "RelativeToolTip": "SampleAdd.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAlwB0AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T08:29:37.544Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SampleAdd.cs [Design]",
-              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\SampleAdd.cs",
-              "RelativeDocumentMoniker": "SampleAdd.cs",
-              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\SampleAdd.cs [Design]",
-              "RelativeToolTip": "SampleAdd.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T08:29:25.114Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "frmCategoryView.cs [Design]",
               "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\View\\frmCategoryView.cs",
               "RelativeDocumentMoniker": "View\\frmCategoryView.cs",
@@ -280,57 +267,200 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "frmCategoryView.cs",
               "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\View\\frmCategoryView.cs",
               "RelativeDocumentMoniker": "View\\frmCategoryView.cs",
               "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\View\\frmCategoryView.cs",
               "RelativeToolTip": "View\\frmCategoryView.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAApwBUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAawDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-10T12:52:43.1Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SampleView.cs [Design]",
-              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\SampleView.cs",
-              "RelativeDocumentMoniker": "SampleView.cs",
-              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\SampleView.cs [Design]*",
-              "RelativeToolTip": "SampleView.cs [Design]*",
+              "DocumentIndex": 3,
+              "Title": "frmLogin.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmLogin.cs",
+              "RelativeDocumentMoniker": "frmLogin.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmLogin.cs [Design]",
+              "RelativeToolTip": "frmLogin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T11:41:34.774Z",
+              "WhenOpened": "2025-02-10T00:29:35.317Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmLogin.cs",
+              "RelativeDocumentMoniker": "frmLogin.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmLogin.cs",
+              "RelativeToolTip": "frmLogin.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAhwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T01:50:29.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "SampleView.cs",
               "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\SampleView.cs",
               "RelativeDocumentMoniker": "SampleView.cs",
-              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\SampleView.cs*",
-              "RelativeToolTip": "SampleView.cs*",
-              "ViewState": "AgIAACAAAAAAAAAAAAD4vy0AAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\SampleView.cs",
+              "RelativeToolTip": "SampleView.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAlwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-10T12:52:13.183Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Person.cs",
-              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Backend\\Person.cs",
-              "RelativeDocumentMoniker": "Backend\\Person.cs",
-              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Backend\\Person.cs",
-              "RelativeToolTip": "Backend\\Person.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmMain.cs",
+              "RelativeDocumentMoniker": "frmMain.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmMain.cs [Design]",
+              "RelativeToolTip": "frmMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T11:51:18.002Z"
+              "WhenOpened": "2025-02-10T09:38:56.114Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "frmHome.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmHome.cs",
+              "RelativeDocumentMoniker": "frmHome.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmHome.cs [Design]",
+              "RelativeToolTip": "frmHome.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T10:33:14.539Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SampleAdd.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\SampleAdd.cs",
+              "RelativeDocumentMoniker": "SampleAdd.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\SampleAdd.cs [Design]",
+              "RelativeToolTip": "SampleAdd.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T08:29:25.114Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainClass.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\MainClass.cs",
+              "RelativeDocumentMoniker": "MainClass.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\MainClass.cs",
+              "RelativeToolTip": "MainClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T08:47:35.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "frmCategoryAdd.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Model\\frmCategoryAdd.cs",
+              "RelativeDocumentMoniker": "Model\\frmCategoryAdd.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Model\\frmCategoryAdd.cs",
+              "RelativeToolTip": "Model\\frmCategoryAdd.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAA3wDQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T08:42:15.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "frmCategoryAdd.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Model\\frmCategoryAdd.cs",
+              "RelativeDocumentMoniker": "Model\\frmCategoryAdd.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Model\\frmCategoryAdd.cs [Design]",
+              "RelativeToolTip": "Model\\frmCategoryAdd.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T08:42:14.164Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SampleAdd.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\SampleAdd.cs",
+              "RelativeDocumentMoniker": "SampleAdd.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\SampleAdd.cs",
+              "RelativeToolTip": "SampleAdd.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA3wA8AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T08:29:37.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SampleAdd.Designer.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\SampleAdd.Designer.cs",
+              "RelativeDocumentMoniker": "SampleAdd.Designer.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\SampleAdd.Designer.cs",
+              "RelativeToolTip": "SampleAdd.Designer.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAtwIAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T08:06:54.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RestaurantDiagram.cd",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\RestaurantDiagram.cd",
+              "RelativeDocumentMoniker": "RestaurantDiagram.cd",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\RestaurantDiagram.cd",
+              "RelativeToolTip": "RestaurantDiagram.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2025-02-10T02:41:35.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-02-14T02:27:55.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ISearchReservation.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Backend\\ISearchReservation.cs",
+              "RelativeDocumentMoniker": "Backend\\ISearchReservation.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Backend\\ISearchReservation.cs",
+              "RelativeToolTip": "Backend\\ISearchReservation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T08:45:04.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Receptionist.cs",
               "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Backend\\Receptionist.cs",
               "RelativeDocumentMoniker": "Backend\\Receptionist.cs",
@@ -338,116 +468,12 @@
               "RelativeToolTip": "Backend\\Receptionist.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T11:51:19.339Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "frmHome.cs",
-              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmHome.cs",
-              "RelativeDocumentMoniker": "frmHome.cs",
-              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmHome.cs",
-              "RelativeToolTip": "frmHome.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T11:21:25.953Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "frmHome.cs [Design]",
-              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmHome.cs",
-              "RelativeDocumentMoniker": "frmHome.cs",
-              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmHome.cs [Design]",
-              "RelativeToolTip": "frmHome.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T10:33:14.539Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "frmMain.cs",
-              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmMain.cs",
-              "RelativeDocumentMoniker": "frmMain.cs",
-              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmMain.cs",
-              "RelativeToolTip": "frmMain.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T09:46:52.986Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "frmMain.cs [Design]",
-              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmMain.cs",
-              "RelativeDocumentMoniker": "frmMain.cs",
-              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmMain.cs [Design]",
-              "RelativeToolTip": "frmMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T09:38:56.114Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "frmLogin.cs [Design]",
-              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmLogin.cs",
-              "RelativeDocumentMoniker": "frmLogin.cs",
-              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmLogin.cs [Design]",
-              "RelativeToolTip": "frmLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T00:29:35.317Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "frmMain.Designer.cs",
-              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmMain.Designer.cs",
-              "RelativeDocumentMoniker": "frmMain.Designer.cs",
-              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmMain.Designer.cs",
-              "RelativeToolTip": "frmMain.Designer.cs",
-              "ViewState": "AgIAAEIBAAAAAAAAAAAYwF8BAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T10:19:17.142Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Backend\\Customer.cs",
-              "RelativeDocumentMoniker": "Backend\\Customer.cs",
-              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Backend\\Customer.cs",
-              "RelativeToolTip": "Backend\\Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T09:38:44.062Z"
+              "WhenOpened": "2025-02-10T11:51:19.339Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "Manager.cs",
-              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Backend\\Manager.cs",
-              "RelativeDocumentMoniker": "Backend\\Manager.cs",
-              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Backend\\Manager.cs",
-              "RelativeToolTip": "Backend\\Manager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T09:38:43.308Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "frmLogin.cs",
-              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmLogin.cs",
-              "RelativeDocumentMoniker": "frmLogin.cs",
-              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmLogin.cs",
-              "RelativeToolTip": "frmLogin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAcwB0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T01:50:29.453Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -455,22 +481,77 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T10:16:40.922Z"
+              "WhenOpened": "2025-02-10T10:16:40.922Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "RestaurantDiagram.cd",
-              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\RestaurantDiagram.cd",
-              "RelativeDocumentMoniker": "RestaurantDiagram.cd",
-              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\RestaurantDiagram.cd",
-              "RelativeToolTip": "RestaurantDiagram.cd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
-              "WhenOpened": "2025-02-10T02:41:35.515Z"
+              "Title": "Person.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Backend\\Person.cs",
+              "RelativeDocumentMoniker": "Backend\\Person.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Backend\\Person.cs",
+              "RelativeToolTip": "Backend\\Person.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T11:51:18.002Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
+              "Title": "frmHome.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmHome.cs",
+              "RelativeDocumentMoniker": "frmHome.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmHome.cs",
+              "RelativeToolTip": "frmHome.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T11:21:25.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "frmMain.Designer.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmMain.Designer.cs",
+              "RelativeDocumentMoniker": "frmMain.Designer.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\frmMain.Designer.cs",
+              "RelativeToolTip": "frmMain.Designer.cs",
+              "ViewState": "AgIAAEIBAAAAAAAAAAAYwF8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T10:19:17.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Backend\\Customer.cs",
+              "RelativeDocumentMoniker": "Backend\\Customer.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Backend\\Customer.cs",
+              "RelativeToolTip": "Backend\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T09:38:44.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Backend\\Manager.cs",
+              "RelativeDocumentMoniker": "Backend\\Manager.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Backend\\Manager.cs",
+              "RelativeToolTip": "Backend\\Manager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T09:38:43.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "Chef.cs",
               "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Backend\\Chef.cs",
               "RelativeDocumentMoniker": "Backend\\Chef.cs",
@@ -478,11 +559,12 @@
               "RelativeToolTip": "Backend\\Chef.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T02:41:32.278Z"
+              "WhenOpened": "2025-02-10T02:41:32.278Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "user.png - PNG [512x512, 32 bit, PNG]",
               "DocumentMoniker": "D:\\LEARNING\\Winform\\Restaurant-Management-System\\Resources\\user.png",
               "RelativeDocumentMoniker": "Resources\\user.png",

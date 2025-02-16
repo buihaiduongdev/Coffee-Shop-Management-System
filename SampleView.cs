@@ -45,5 +45,10 @@ namespace Restaurant_Management_System
         {
 
         }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

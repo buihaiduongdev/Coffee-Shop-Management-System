@@ -28,5 +28,10 @@ namespace Restaurant_Management_System
             Guna2MessageDialog guna2MessageDialog = new Guna2MessageDialog();
             guna2MessageDialog.Show("Please enter user and password");// Chua can giua duoc
         }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
