@@ -42,3 +42,23 @@ D:\LEARNING\Winform\Restaurant-Management-System\obj\Debug\Restaurant_Management
 D:\LEARNING\Winform\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.SampleView.resources
 D:\LEARNING\Winform\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.View.frmCategoryView.resources
 D:\LEARNING\Winform\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.Model.frmCategoryAdd.resources
+S:\WINFORM\Restaurant-Management-System\bin\Debug\Restaurant Management System.exe.config
+S:\WINFORM\Restaurant-Management-System\bin\Debug\Restaurant Management System.exe
+S:\WINFORM\Restaurant-Management-System\bin\Debug\Restaurant Management System.pdb
+S:\WINFORM\Restaurant-Management-System\bin\Debug\Guna.UI2.dll
+S:\WINFORM\Restaurant-Management-System\obj\Debug\Restaurant Management System.csproj.AssemblyReference.cache
+S:\WINFORM\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.frmHome.resources
+S:\WINFORM\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.frmLogin.resources
+S:\WINFORM\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.frmMain.resources
+S:\WINFORM\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.Model.frmCategoryAdd.resources
+S:\WINFORM\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.Properties.Resources.resources
+S:\WINFORM\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.SampleAdd.resources
+S:\WINFORM\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.SampleView.resources
+S:\WINFORM\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.View.frmCategoryView.resources
+S:\WINFORM\Restaurant-Management-System\obj\Debug\Restaurant Management System.csproj.GenerateResource.cache
+S:\WINFORM\Restaurant-Management-System\obj\Debug\Restaurant Management System.csproj.CoreCompileInputs.cache
+S:\WINFORM\Restaurant-Management-System\obj\Debug\Restaura.FBAF3D39.Up2Date
+S:\WINFORM\Restaurant-Management-System\obj\Debug\Restaurant Management System.exe
+S:\WINFORM\Restaurant-Management-System\obj\Debug\Restaurant Management System.pdb
+S:\WINFORM\Restaurant-Management-System\bin\Debug\System.Data.SqlClient.dll
+S:\WINFORM\Restaurant-Management-System\bin\Debug\System.Data.SqlClient.xml
