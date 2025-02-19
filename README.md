@@ -1,3 +1,7 @@
+# GHI CHÚ
+sys 5 chưa làm product
+
+
 # Restaurent Management System
 
 Phần mền quản lí nhà hàng do nhóm sinh viên trường Đại học Sư phạm Kỹ thuật TP. HCM phát triển
