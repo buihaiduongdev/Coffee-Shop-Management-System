@@ -47,5 +47,25 @@ namespace Restaurant_Management_System
         {
             AddControls(new frmCategoryView());
         }
+
+        private void centerPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnTable_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmTableView());
+        }
+
+        private void btnProduct_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStaff_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmStaffView());
+        }
     }
 }

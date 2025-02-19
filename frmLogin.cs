@@ -44,7 +44,7 @@ namespace Restaurant_Management_System
 
             if (dt.Rows.Count > 0)
             {
-                MessageBox.Show("Login Successfull!");
+                MessageBox.Show("Login Successful!");
                 this.Hide();
                 frmMain mainForm = new frmMain();
                 mainForm.Show();
