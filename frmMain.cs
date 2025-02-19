@@ -1,4 +1,5 @@
-﻿using Restaurant_Management_System.View;
+﻿using Restaurant_Management_System.Model;
+using Restaurant_Management_System.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -66,6 +67,11 @@ namespace Restaurant_Management_System
         private void btnStaff_Click(object sender, EventArgs e)
         {
             AddControls(new frmStaffView());
+        }
+
+        private void btnPos_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmPOS());
         }
     }
 }
