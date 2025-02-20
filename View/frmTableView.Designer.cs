@@ -148,18 +148,18 @@
             this.dgvedit.FillWeight = 50F;
             this.dgvedit.HeaderText = "";
             this.dgvedit.Image = ((System.Drawing.Image)(resources.GetObject("dgvedit.Image")));
-            this.dgvedit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dgvedit.MinimumWidth = 50;
             this.dgvedit.Name = "dgvedit";
             this.dgvedit.Width = 50;
             // 
             // dgvdel
             // 
-            this.dgvdel.FillWeight = 127.7372F;
+            this.dgvdel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvdel.FillWeight = 50F;
             this.dgvdel.HeaderText = "";
-            this.dgvdel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dgvdel.MinimumWidth = 50;
             this.dgvdel.Name = "dgvdel";
+            this.dgvdel.Width = 50;
             // 
             // frmTableView
             // 

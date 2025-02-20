@@ -132,3 +132,5 @@ C:\Users\haidu\Source\Repos\Restaurant-Management-System\obj\Debug\Restaurant Ma
 C:\Users\haidu\Source\Repos\Restaurant-Management-System\obj\Debug\Restaurant Management System.pdb
 C:\Users\haidu\source\repos\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.Model.frmPOS.resources
 C:\Users\haidu\source\repos\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.Model.ucProduct.resources
+C:\Users\haidu\source\repos\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.Model.frmTableSelect.resources
+C:\Users\haidu\source\repos\Restaurant-Management-System\obj\Debug\Restaurant_Management_System.Model.frmWaiterSelect.resources
