@@ -240,7 +240,7 @@
     <None Include="restaurantDBDataSet.xss">
       <DependentUpon>restaurantDBDataSet.xsd</DependentUpon>
     </None>
-    <None Include="RestaurantDiagram.cd" />
+    <None Include="SystemDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -1,0 +1,28 @@
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\bin\Debug\Restaurant Management System.exe.config
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\bin\Debug\Restaurant Management System.exe
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\bin\Debug\Restaurant Management System.pdb
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\bin\Debug\Guna.UI2.dll
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlClient.dll
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlClient.xml
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.AssemblyReference.cache
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmHome.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmLogin.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmMain.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmCategoryAdd.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmPOS.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmStaffAdd.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmTableAdd.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmTableSelect.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmWaiterSelect.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucProduct.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Properties.Resources.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.SampleAdd.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.SampleView.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmCategoryView.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmStaffView.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmTableView.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.GenerateResource.cache
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.CoreCompileInputs.cache
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Coffee-S.3221D379.Up2Date
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.exe
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.pdb
