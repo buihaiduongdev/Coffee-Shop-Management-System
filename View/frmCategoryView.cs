@@ -32,11 +32,12 @@ namespace Restaurant_Management_System.View
         {
             //GetData();
             // Đảm bảo cột 3 là kiểu DataGridViewImageColumn
+            // Đảm bảo cột là kiểu DataGridViewImageColumn
             DataGridViewImageColumn imageColumn = (DataGridViewImageColumn)dgvCategory.Columns[3];
             imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
 
-            // Gán ảnh vào ô
-            dgvCategory.Rows[0].Cells[3].Value = Image.FromFile(@"C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\Resources\store.png");
+            // Gán ảnh từ Resources
+            dgvCategory.Rows[0].Cells[3].Value = Properties.Resources.store;
         }
         public override void btnAdd_Click(object sender, EventArgs e)
         {
