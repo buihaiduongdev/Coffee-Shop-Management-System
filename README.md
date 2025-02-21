@@ -2,9 +2,9 @@
 sys 5 chưa làm product
 
 
-# Restaurent Management System
+# Coffee Shop Management System
 
-Phần mền quản lí nhà hàng do nhóm sinh viên trường Đại học Sư phạm Kỹ thuật TP. HCM phát triển
+Phần mền quản lí hệ thống bán coffee do nhóm sinh viên trường Đại học Sư phạm Kỹ thuật TP. HCM phát triển
 
 ## 📌 Mục lục
 - [🚀 Tính năng](#-tính-năng)
@@ -26,10 +26,10 @@ Phần mền quản lí nhà hàng do nhóm sinh viên trường Đại h
 
 ## 👤 Tác giả
 - **Nhóm phát triển:**  
-  - [buihaiduongdev](https://github.com/buihaiduongdev)  
-  - [Anthai2](https://github.com/Anthai2)  
-  - [kẻ hủy diệt](https://github.com/Sangchaos)
+  - [Bùi Hải Dương](https://github.com/buihaiduongdev)  
+  - [Võ An Thái](https://github.com/Anthai2)  
+  - [Đinh Văn Sáng](https://github.com/Sangchaos)
   - [Thái Quang Huy](https://github.com/HuyQuangThai)
-  - [ChauKimLuong116](https://github.com/ChauKimLuong116)
+  - [Châu Kim Lương](https://github.com/ChauKimLuong116)
 
 
