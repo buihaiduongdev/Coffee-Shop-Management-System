@@ -26,3 +26,36 @@ C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Coffee
 C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Coffee-S.3221D379.Up2Date
 C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.exe
 C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.pdb
+D:\LEARNING\New folder\Coffee-Shop-Management-System\bin\Debug\Restaurant Management System.exe.config
+D:\LEARNING\New folder\Coffee-Shop-Management-System\bin\Debug\Restaurant Management System.exe
+D:\LEARNING\New folder\Coffee-Shop-Management-System\bin\Debug\Restaurant Management System.pdb
+D:\LEARNING\New folder\Coffee-Shop-Management-System\bin\Debug\Guna.UI2.dll
+D:\LEARNING\New folder\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlClient.dll
+D:\LEARNING\New folder\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlClient.xml
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.AssemblyReference.cache
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmHome.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmLogin.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmMain.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmCategoryAdd.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmPOS.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmStaffAdd.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmTableAdd.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmTableSelect.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmWaiterSelect.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucProduct.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Properties.Resources.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.SampleAdd.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.SampleView.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmCategoryView.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmKitchenView.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmStaffView.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmTableView.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.GenerateResource.cache
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.CoreCompileInputs.cache
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Coffee-S.3221D379.Up2Date
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.exe
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.pdb
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmBillList.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmCheckout.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmProductAdd.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmProductView.resources

@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using Restaurant_Management_System.View;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -101,5 +104,44 @@ namespace Restaurant_Management_System.Model
 
         }
         //cac ham BE load tu 23p den het video
+        //O duoi tinh tu 1:07 cua video sys 9
+        private void btnBill_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void dgvPOS_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+
+        }
+
+        private void dgvPOS_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //int count = 0;
+            //foreach (DataGridViewRow row in Guna2DataGridView1.Rows)
+            //{
+            //    count++;
+            //    row.Cells[0].Value = count;
+            //}
+        }
+
+        private void btnBillList_Click(object sender, EventArgs e)
+        {
+            //phut 10:55 sys9
+        }
+
+        private void btnCheckout_Click(object sender, EventArgs e)
+        {
+            //frmCheckout frm = new frmCheckout();
+            //frm.MainID = id;
+            //MainID = 0;
+            //dgvPOS.Rows.Clear();
+            //lblTable.Text = "";
+            //lblWaiter.Text = "";
+            //lblTable.Visible = false;
+            //lblWaiter.Visible = false;
+            //lblTotal.Text = "00";
+        }
+        
     }
 }

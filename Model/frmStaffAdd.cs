@@ -26,30 +26,7 @@ namespace Restaurant_Management_System.Model
 
         public override void btnSave_Click(object sender, EventArgs e)
         {
-            //string qry = "";
-            //if (id == 0)//Insert
-            //{
-            //    qry = "Insert into Staff Values(@Name, @phone, @role)";
-            //}
-            //else
-            //{
-            //    qry = "Update Staff Set sName = @Name, sPhone = @phone, sRole = @role,where staffID = @id";
-            //}
-            //Hashtable ht = new Hashtable();
-            //ht.Add("@id", id);
-            //ht.Add("@Name", txtName.Text);
-            //ht.Add("@phone", txtPhone.Text);
-            //ht.Add("@role", cbRole.Text);
-
-            //if (MainClass.SQl(qry, ht) > 0)
-            //{
-            //    Guna2MessageDialog2.Show("Saved successlly...");
-            //    id = 0;
-            //    txtName.Text = "";
-            //    txtPhone.Text = "";
-            //    cbRole.SelectedIndex = -1;
-            //    txtName.Focus();
-            //}
+            
             string firstName = txtFirstName.Text;
             string lastName = txtLastName.Text;
             string employeeID = txtEmployeeID.Text;

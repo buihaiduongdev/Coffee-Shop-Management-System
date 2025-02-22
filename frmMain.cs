@@ -73,5 +73,10 @@ namespace Restaurant_Management_System
         {
             AddControls(new frmPOS());
         }
+
+        private void btnKitchen_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmKitchenView());
+        }
     }
 }
