@@ -8,6 +8,6 @@ namespace Restaurant_Management_System
 {
     class MainClass
     {
-        //public static readonly string con_string = "Data Source="
+        public static readonly string con_string = "Data Source=";
     }
 }

@@ -19,12 +19,14 @@ namespace Restaurant_Management_System.Model
         public event EventHandler onSelect = null;
 
         public int id { get; set; }
-        public string PPrice { get; set; }
+        public decimal PPrice { get; set; }
         public string PName 
         { 
             get { return lblProductName.Text; } 
             set { lblProductName.Text = value; }
         }
+
+        public string category { get; set; }
         public Image PImage {
             get { return txtImage.Image; }
             set{ txtImage.Image = value; }

@@ -57,7 +57,7 @@
             this.guna2PictureBox1.Image = global::Restaurant_Management_System.Properties.Resources.user;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(86, 4);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(70, 75);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -99,7 +99,7 @@
             this.btnHome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnHome.ImageOffset = new System.Drawing.Point(10, 0);
             this.btnHome.Location = new System.Drawing.Point(36, 194);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(4);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(225, 56);
             this.btnHome.TabIndex = 2;
@@ -129,7 +129,7 @@
             this.btnCategory.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCategory.ImageOffset = new System.Drawing.Point(10, 0);
             this.btnCategory.Location = new System.Drawing.Point(36, 258);
-            this.btnCategory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCategory.Margin = new System.Windows.Forms.Padding(4);
             this.btnCategory.Name = "btnCategory";
             this.btnCategory.Size = new System.Drawing.Size(225, 56);
             this.btnCategory.TabIndex = 3;
@@ -159,7 +159,7 @@
             this.btnProduct.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnProduct.ImageOffset = new System.Drawing.Point(10, 0);
             this.btnProduct.Location = new System.Drawing.Point(36, 321);
-            this.btnProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProduct.Margin = new System.Windows.Forms.Padding(4);
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.Size = new System.Drawing.Size(225, 56);
             this.btnProduct.TabIndex = 4;
@@ -189,7 +189,7 @@
             this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button4.ImageOffset = new System.Drawing.Point(10, 0);
             this.guna2Button4.Location = new System.Drawing.Point(29, 385);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.Size = new System.Drawing.Size(225, 56);
             this.guna2Button4.TabIndex = 5;
@@ -218,7 +218,7 @@
             this.btnTable.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTable.ImageOffset = new System.Drawing.Point(10, 0);
             this.btnTable.Location = new System.Drawing.Point(36, 385);
-            this.btnTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTable.Margin = new System.Windows.Forms.Padding(4);
             this.btnTable.Name = "btnTable";
             this.btnTable.Size = new System.Drawing.Size(225, 56);
             this.btnTable.TabIndex = 9;
@@ -248,7 +248,7 @@
             this.btnStaff.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnStaff.ImageOffset = new System.Drawing.Point(10, 0);
             this.btnStaff.Location = new System.Drawing.Point(36, 449);
-            this.btnStaff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStaff.Margin = new System.Windows.Forms.Padding(4);
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.Size = new System.Drawing.Size(225, 56);
             this.btnStaff.TabIndex = 10;
@@ -278,7 +278,7 @@
             this.btnPos.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPos.ImageOffset = new System.Drawing.Point(10, 0);
             this.btnPos.Location = new System.Drawing.Point(36, 512);
-            this.btnPos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPos.Margin = new System.Windows.Forms.Padding(4);
             this.btnPos.Name = "btnPos";
             this.btnPos.Size = new System.Drawing.Size(225, 56);
             this.btnPos.TabIndex = 11;
@@ -308,13 +308,14 @@
             this.btnKitchen.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnKitchen.ImageOffset = new System.Drawing.Point(10, 0);
             this.btnKitchen.Location = new System.Drawing.Point(36, 576);
-            this.btnKitchen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKitchen.Margin = new System.Windows.Forms.Padding(4);
             this.btnKitchen.Name = "btnKitchen";
             this.btnKitchen.Size = new System.Drawing.Size(225, 56);
             this.btnKitchen.TabIndex = 12;
             this.btnKitchen.Text = "Kitchen";
             this.btnKitchen.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnKitchen.TextOffset = new System.Drawing.Point(20, 0);
+            this.btnKitchen.Click += new System.EventHandler(this.btnKitchen_Click);
             // 
             // guna2Panel1
             // 
@@ -333,7 +334,7 @@
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
             this.guna2Panel1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(261, 812);
             this.guna2Panel1.TabIndex = 0;
@@ -359,7 +360,7 @@
             this.btnSetting.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSetting.ImageOffset = new System.Drawing.Point(10, 0);
             this.btnSetting.Location = new System.Drawing.Point(36, 640);
-            this.btnSetting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(4);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Size = new System.Drawing.Size(225, 56);
             this.btnSetting.TabIndex = 13;
@@ -373,7 +374,7 @@
             this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.btnExit.IconColor = System.Drawing.Color.White;
             this.btnExit.Location = new System.Drawing.Point(925, 15);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(56, 36);
             this.btnExit.TabIndex = 0;
@@ -386,7 +387,7 @@
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox2.Location = new System.Drawing.Point(861, 15);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(56, 36);
             this.guna2ControlBox2.TabIndex = 1;
@@ -398,7 +399,7 @@
             this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox3.Location = new System.Drawing.Point(798, 15);
-            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(56, 36);
             this.guna2ControlBox3.TabIndex = 2;
@@ -423,7 +424,7 @@
             this.guna2Panel2.Controls.Add(this.btnExit);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(261, 0);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(989, 68);
             this.guna2Panel2.TabIndex = 1;
@@ -432,7 +433,7 @@
             // 
             this.centerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.centerPanel.Location = new System.Drawing.Point(261, 68);
-            this.centerPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.centerPanel.Margin = new System.Windows.Forms.Padding(4);
             this.centerPanel.Name = "centerPanel";
             this.centerPanel.Size = new System.Drawing.Size(989, 744);
             this.centerPanel.TabIndex = 2;
@@ -449,7 +450,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMain";
             this.Text = "frmMain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
