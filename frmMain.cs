@@ -39,7 +39,7 @@ namespace Restaurant_Management_System
             //lbUser.Text = MainClass.USER;
         }
 
-        private void btnHome_Click(object sender, EventArgs e)
+        public void btnHome_Click(object sender, EventArgs e)
         {
             AddControls(new frmHome());
         }
@@ -71,7 +71,12 @@ namespace Restaurant_Management_System
 
         private void btnPos_Click(object sender, EventArgs e)
         {
-            AddControls(new frmPOS());
+            AddControls(new frmHome());
+            btnPos.Checked = false;
+            btnHome.Checked = true;
+            frmPOS frmPOS = new frmPOS();
+            this.SuspendLayout();
+            frmPOS.Show();
         }
 
         private void btnKitchen_Click(object sender, EventArgs e)

@@ -41,7 +41,7 @@
             this.btnDelivery = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnKot = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnBillList = new Guna.UI2.WinForms.Guna2TileButton();
-            this.tnHold = new Guna.UI2.WinForms.Guna2TileButton();
+            this.btnHold = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnNew = new Guna.UI2.WinForms.Guna2TileButton();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -54,21 +54,20 @@
             this.cmbCategory = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ProductPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.dgvPOS = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Categories = new System.Windows.Forms.Label();
-            this.ucProduct1 = new Restaurant_Management_System.Model.ucProduct();
             this.dgvSno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Categories = new System.Windows.Forms.Label();
+            this.lblDriverName = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.CategoryPanel.SuspendLayout();
-            this.ProductPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPOS)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,7 +81,7 @@
             this.guna2Panel1.Controls.Add(this.btnDelivery);
             this.guna2Panel1.Controls.Add(this.btnKot);
             this.guna2Panel1.Controls.Add(this.btnBillList);
-            this.guna2Panel1.Controls.Add(this.tnHold);
+            this.guna2Panel1.Controls.Add(this.btnHold);
             this.guna2Panel1.Controls.Add(this.btnNew);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
@@ -244,27 +243,28 @@
             this.btnBillList.Text = "Bill List";
             this.btnBillList.Click += new System.EventHandler(this.btnBillList_Click);
             // 
-            // tnHold
+            // btnHold
             // 
-            this.tnHold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
-            this.tnHold.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
-            this.tnHold.BorderRadius = 10;
-            this.tnHold.BorderThickness = 2;
-            this.tnHold.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
-            this.tnHold.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.tnHold.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.tnHold.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.tnHold.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.tnHold.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
-            this.tnHold.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tnHold.ForeColor = System.Drawing.Color.White;
-            this.tnHold.Image = global::Restaurant_Management_System.Properties.Resources.store;
-            this.tnHold.Location = new System.Drawing.Point(280, 12);
-            this.tnHold.Name = "tnHold";
-            this.tnHold.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tnHold.Size = new System.Drawing.Size(70, 63);
-            this.tnHold.TabIndex = 5;
-            this.tnHold.Text = "Hold";
+            this.btnHold.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
+            this.btnHold.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
+            this.btnHold.BorderRadius = 10;
+            this.btnHold.BorderThickness = 2;
+            this.btnHold.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
+            this.btnHold.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHold.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHold.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHold.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHold.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
+            this.btnHold.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnHold.ForeColor = System.Drawing.Color.White;
+            this.btnHold.Image = global::Restaurant_Management_System.Properties.Resources.store;
+            this.btnHold.Location = new System.Drawing.Point(280, 12);
+            this.btnHold.Name = "btnHold";
+            this.btnHold.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnHold.Size = new System.Drawing.Size(70, 63);
+            this.btnHold.TabIndex = 5;
+            this.btnHold.Text = "Hold";
+            this.btnHold.Click += new System.EventHandler(this.btnHold_Click);
             // 
             // btnNew
             // 
@@ -407,7 +407,6 @@
             this.ProductPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ProductPanel.Controls.Add(this.ucProduct1);
             this.ProductPanel.Location = new System.Drawing.Point(161, 141);
             this.ProductPanel.Name = "ProductPanel";
             this.ProductPanel.Size = new System.Drawing.Size(542, 384);
@@ -473,56 +472,7 @@
             this.dgvPOS.ThemeStyle.RowsStyle.Height = 35;
             this.dgvPOS.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvPOS.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-   
             this.dgvPOS.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvPOS_CellFormatting);
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.DefaultText = "";
-            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.IconLeft = global::Restaurant_Management_System.Properties.Resources.store;
-            this.txtSearch.Location = new System.Drawing.Point(165, 97);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.PasswordChar = '\0';
-            this.txtSearch.PlaceholderText = "Search Here";
-            this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(321, 40);
-            this.txtSearch.TabIndex = 12;
-            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
-            // 
-            // Categories
-            // 
-            this.Categories.AutoSize = true;
-            this.Categories.Location = new System.Drawing.Point(32, 114);
-            this.Categories.Name = "Categories";
-            this.Categories.Size = new System.Drawing.Size(91, 23);
-            this.Categories.TabIndex = 13;
-            this.Categories.Text = "Categories";
-            // 
-            // ucProduct1
-            // 
-            this.ucProduct1.category = null;
-            this.ucProduct1.id = 0;
-            this.ucProduct1.Location = new System.Drawing.Point(4, 12);
-            this.ucProduct1.Margin = new System.Windows.Forms.Padding(4, 12, 4, 12);
-            this.ucProduct1.Name = "ucProduct1";
-            this.ucProduct1.PImage = ((System.Drawing.Image)(resources.GetObject("ucProduct1.PImage")));
-            this.ucProduct1.PName = "Product Name";
-            this.ucProduct1.PPrice = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.ucProduct1.Size = new System.Drawing.Size(362, 665);
-            this.ucProduct1.TabIndex = 0;
             // 
             // dgvSno
             // 
@@ -577,10 +527,53 @@
             this.dgvAmount.Name = "dgvAmount";
             this.dgvAmount.Width = 60;
             // 
+            // txtSearch
+            // 
+            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearch.DefaultText = "";
+            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.IconLeft = global::Restaurant_Management_System.Properties.Resources.store;
+            this.txtSearch.Location = new System.Drawing.Point(165, 97);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PasswordChar = '\0';
+            this.txtSearch.PlaceholderText = "Search Here";
+            this.txtSearch.SelectedText = "";
+            this.txtSearch.Size = new System.Drawing.Size(321, 40);
+            this.txtSearch.TabIndex = 12;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
+            // Categories
+            // 
+            this.Categories.AutoSize = true;
+            this.Categories.Location = new System.Drawing.Point(32, 114);
+            this.Categories.Name = "Categories";
+            this.Categories.Size = new System.Drawing.Size(71, 17);
+            this.Categories.TabIndex = 13;
+            this.Categories.Text = "Categories";
+            // 
+            // lblDriverName
+            // 
+            this.lblDriverName.BackColor = System.Drawing.Color.Transparent;
+            this.lblDriverName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDriverName.ForeColor = System.Drawing.Color.Gray;
+            this.lblDriverName.Location = new System.Drawing.Point(492, 106);
+            this.lblDriverName.Name = "lblDriverName";
+            this.lblDriverName.Size = new System.Drawing.Size(103, 25);
+            this.lblDriverName.TabIndex = 14;
+            this.lblDriverName.Text = "Driver Name";
+            // 
             // frmPOS
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1080, 640);
+            this.Controls.Add(this.lblDriverName);
             this.Controls.Add(this.Categories);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvPOS);
@@ -600,7 +593,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.CategoryPanel.ResumeLayout(false);
-            this.ProductPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPOS)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -619,7 +611,7 @@
         private Guna.UI2.WinForms.Guna2TileButton btnDelivery;
         private Guna.UI2.WinForms.Guna2TileButton btnKot;
         private Guna.UI2.WinForms.Guna2TileButton btnBillList;
-        private Guna.UI2.WinForms.Guna2TileButton tnHold;
+        private Guna.UI2.WinForms.Guna2TileButton btnHold;
         public System.Windows.Forms.Label lblWaiter;
         public System.Windows.Forms.Label lblTable;
         private Guna.UI2.WinForms.Guna2PictureBox btnExit;
@@ -630,7 +622,6 @@
         public System.Windows.Forms.Label lblCost;
         public System.Windows.Forms.Label label4;
         public Guna.UI2.WinForms.Guna2TextBox txtSearch;
-        private ucProduct ucProduct1;
         public Guna.UI2.WinForms.Guna2Button btnCheckout;
         private Guna.UI2.WinForms.Guna2ComboBox cmbCategory;
         private System.Windows.Forms.Label Categories;
@@ -640,5 +631,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvQty;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvAmount;
+        public System.Windows.Forms.Label lblDriverName;
     }
 }
