@@ -46,22 +46,23 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnCheckout = new Guna.UI2.WinForms.Guna2Button();
             this.lbl = new System.Windows.Forms.Label();
             this.lblCost = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.CategoryPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.cmbCategory = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ProductPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.ucProduct1 = new Restaurant_Management_System.Model.ucProduct();
             this.dgvPOS = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Categories = new System.Windows.Forms.Label();
+            this.ucProduct1 = new Restaurant_Management_System.Model.ucProduct();
             this.dgvSno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dvgQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dvgPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvQty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnCheckout = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -325,6 +326,21 @@
             this.guna2Panel2.Size = new System.Drawing.Size(1080, 94);
             this.guna2Panel2.TabIndex = 1;
             // 
+            // btnCheckout
+            // 
+            this.btnCheckout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCheckout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCheckout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCheckout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCheckout.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCheckout.ForeColor = System.Drawing.Color.White;
+            this.btnCheckout.Location = new System.Drawing.Point(584, 18);
+            this.btnCheckout.Name = "btnCheckout";
+            this.btnCheckout.Size = new System.Drawing.Size(180, 45);
+            this.btnCheckout.TabIndex = 16;
+            this.btnCheckout.Text = "CHECK OUT";
+            this.btnCheckout.Click += new System.EventHandler(this.btnCheckout_Click);
+            // 
             // lbl
             // 
             this.lbl.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -365,25 +381,26 @@
             // 
             this.CategoryPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.CategoryPanel.Controls.Add(this.guna2Button1);
+            this.CategoryPanel.Controls.Add(this.cmbCategory);
             this.CategoryPanel.Location = new System.Drawing.Point(12, 141);
             this.CategoryPanel.Name = "CategoryPanel";
-            this.CategoryPanel.Size = new System.Drawing.Size(126, 384);
+            this.CategoryPanel.Size = new System.Drawing.Size(143, 384);
             this.CategoryPanel.TabIndex = 2;
             // 
-            // guna2Button1
+            // cmbCategory
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(3, 3);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(120, 45);
-            this.guna2Button1.TabIndex = 4;
-            this.guna2Button1.Text = "guna2Button1";
+            this.cmbCategory.BackColor = System.Drawing.Color.Transparent;
+            this.cmbCategory.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategory.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbCategory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbCategory.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbCategory.ItemHeight = 30;
+            this.cmbCategory.Location = new System.Drawing.Point(3, 3);
+            this.cmbCategory.Name = "cmbCategory";
+            this.cmbCategory.Size = new System.Drawing.Size(140, 36);
+            this.cmbCategory.TabIndex = 24;
             // 
             // ProductPanel
             // 
@@ -391,22 +408,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ProductPanel.Controls.Add(this.ucProduct1);
-            this.ProductPanel.Location = new System.Drawing.Point(144, 141);
+            this.ProductPanel.Location = new System.Drawing.Point(161, 141);
             this.ProductPanel.Name = "ProductPanel";
-            this.ProductPanel.Size = new System.Drawing.Size(559, 384);
+            this.ProductPanel.Size = new System.Drawing.Size(542, 384);
             this.ProductPanel.TabIndex = 3;
-            // 
-            // ucProduct1
-            // 
-            this.ucProduct1.id = 0;
-            this.ucProduct1.Location = new System.Drawing.Point(4, 4);
-            this.ucProduct1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.ucProduct1.Name = "ucProduct1";
-            this.ucProduct1.PImage = ((System.Drawing.Image)(resources.GetObject("ucProduct1.PImage")));
-            this.ucProduct1.PName = "Product Name";
-            this.ucProduct1.PPrice = null;
-            this.ucProduct1.Size = new System.Drawing.Size(180, 182);
-            this.ucProduct1.TabIndex = 0;
             // 
             // dgvPOS
             // 
@@ -428,8 +433,8 @@
             this.dgvSno,
             this.dgvid,
             this.dgvName,
-            this.dvgQty,
-            this.dvgPrice,
+            this.dgvQty,
+            this.dgvPrice,
             this.dgvAmount});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -468,8 +473,56 @@
             this.dgvPOS.ThemeStyle.RowsStyle.Height = 35;
             this.dgvPOS.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvPOS.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvPOS.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPOS_CellContentClick);
+   
             this.dgvPOS.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvPOS_CellFormatting);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearch.DefaultText = "";
+            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.IconLeft = global::Restaurant_Management_System.Properties.Resources.store;
+            this.txtSearch.Location = new System.Drawing.Point(165, 97);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PasswordChar = '\0';
+            this.txtSearch.PlaceholderText = "Search Here";
+            this.txtSearch.SelectedText = "";
+            this.txtSearch.Size = new System.Drawing.Size(321, 40);
+            this.txtSearch.TabIndex = 12;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
+            // Categories
+            // 
+            this.Categories.AutoSize = true;
+            this.Categories.Location = new System.Drawing.Point(32, 114);
+            this.Categories.Name = "Categories";
+            this.Categories.Size = new System.Drawing.Size(91, 23);
+            this.Categories.TabIndex = 13;
+            this.Categories.Text = "Categories";
+            // 
+            // ucProduct1
+            // 
+            this.ucProduct1.category = null;
+            this.ucProduct1.id = 0;
+            this.ucProduct1.Location = new System.Drawing.Point(4, 12);
+            this.ucProduct1.Margin = new System.Windows.Forms.Padding(4, 12, 4, 12);
+            this.ucProduct1.Name = "ucProduct1";
+            this.ucProduct1.PImage = ((System.Drawing.Image)(resources.GetObject("ucProduct1.PImage")));
+            this.ucProduct1.PName = "Product Name";
+            this.ucProduct1.PPrice = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.ucProduct1.Size = new System.Drawing.Size(362, 665);
+            this.ucProduct1.TabIndex = 0;
             // 
             // dgvSno
             // 
@@ -497,23 +550,23 @@
             this.dgvName.MinimumWidth = 6;
             this.dgvName.Name = "dgvName";
             // 
-            // dvgQty
+            // dgvQty
             // 
-            this.dvgQty.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dvgQty.FillWeight = 30F;
-            this.dvgQty.HeaderText = "Qty";
-            this.dvgQty.MinimumWidth = 30;
-            this.dvgQty.Name = "dvgQty";
-            this.dvgQty.Width = 30;
+            this.dgvQty.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvQty.FillWeight = 30F;
+            this.dgvQty.HeaderText = "Qty";
+            this.dgvQty.MinimumWidth = 30;
+            this.dgvQty.Name = "dgvQty";
+            this.dgvQty.Width = 30;
             // 
-            // dvgPrice
+            // dgvPrice
             // 
-            this.dvgPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dvgPrice.FillWeight = 50F;
-            this.dvgPrice.HeaderText = "Price";
-            this.dvgPrice.MinimumWidth = 50;
-            this.dvgPrice.Name = "dvgPrice";
-            this.dvgPrice.Width = 50;
+            this.dgvPrice.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvPrice.FillWeight = 50F;
+            this.dgvPrice.HeaderText = "Price";
+            this.dgvPrice.MinimumWidth = 50;
+            this.dgvPrice.Name = "dgvPrice";
+            this.dgvPrice.Width = 50;
             // 
             // dgvAmount
             // 
@@ -524,46 +577,11 @@
             this.dgvAmount.Name = "dgvAmount";
             this.dgvAmount.Width = 60;
             // 
-            // txtSearch
-            // 
-            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.DefaultText = "";
-            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.IconLeft = global::Restaurant_Management_System.Properties.Resources.store;
-            this.txtSearch.Location = new System.Drawing.Point(155, 97);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.PasswordChar = '\0';
-            this.txtSearch.PlaceholderText = "Search Here";
-            this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(321, 40);
-            this.txtSearch.TabIndex = 12;
-            // 
-            // btnCheckout
-            // 
-            this.btnCheckout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCheckout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCheckout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCheckout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCheckout.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCheckout.ForeColor = System.Drawing.Color.White;
-            this.btnCheckout.Location = new System.Drawing.Point(584, 18);
-            this.btnCheckout.Name = "btnCheckout";
-            this.btnCheckout.Size = new System.Drawing.Size(180, 45);
-            this.btnCheckout.TabIndex = 16;
-            this.btnCheckout.Text = "CHECK OUT";
-            this.btnCheckout.Click += new System.EventHandler(this.btnCheckout_Click);
-            // 
             // frmPOS
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1080, 640);
+            this.Controls.Add(this.Categories);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dgvPOS);
             this.Controls.Add(this.ProductPanel);
@@ -585,6 +603,7 @@
             this.ProductPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPOS)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -607,18 +626,19 @@
         private System.Windows.Forms.FlowLayoutPanel CategoryPanel;
         private System.Windows.Forms.FlowLayoutPanel ProductPanel;
         private Guna.UI2.WinForms.Guna2DataGridView dgvPOS;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSno;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dvgQty;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dvgPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvAmount;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         public System.Windows.Forms.Label lbl;
         public System.Windows.Forms.Label lblCost;
         public System.Windows.Forms.Label label4;
         public Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private ucProduct ucProduct1;
         public Guna.UI2.WinForms.Guna2Button btnCheckout;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbCategory;
+        private System.Windows.Forms.Label Categories;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvSno;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvQty;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvAmount;
     }
 }

@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Restaurant_Management_System.Backend;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,46 +18,50 @@ namespace Restaurant_Management_System.Model
         public frmCategoryAdd()
         {
             InitializeComponent();
-        
-            //btnSave.Enabled = true;
-            //btnClose.Enabled = true;
 
         }
 
         private void frmCategoryAdd_Load(object sender, EventArgs e)
         {
-            btnSave.Click += btnSave_Click;
-            btnClose.Click += btnClose_Click;
+
         }
-        public int id = 0;
+
 
         public override void btnSave_Click(object sender, EventArgs e)
         {
-            //string qry = "";
-            //if (id == 0)//Insert
-            //{
-            //    qry = "Insert into category Values(@Name)";
-            //}
-            //else 
-            //{
-            //    qry = "Update category Set catName = @Name where catID = @id";
-            //}
-            //Hashtable ht = new Hashtable();
-            //ht.Add("@id", id);
-            //ht.Add("@Name", txtName.Text);
+            string categoryID = txtCategoryID.Text.Trim();
+            string categoryName = txtCategoryName.Text.Trim();
 
-            //if(MainClass.SQl(qry, ht) > 0)
-            //{
-            //    MessageBox.Show("Saved successlly...");
-            //    id = 0;
-            //  txtName.Text = "";
-            //    txtName.Focus();
-            //}
+            try
+            {
+        
+                string query = "INSERT INTO Categories (CategoryID, CategoryName) VALUES (@CategoryID, @CategoryName)";
+
+
+                SqlParameter[] parameters = {
+                    new SqlParameter("@CategoryID", categoryID),
+                    new SqlParameter("@CategoryName", categoryName)
+                };
+
+ 
+                int rowsAffected = DatabaseHelper.ExecuteNonQuery(query, parameters);
+
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Thêm danh mục thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtCategoryID.Clear();
+                    txtCategoryName.Clear(); 
+                }
+                else
+                {
+                    MessageBox.Show("Thêm danh mục thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void txtName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

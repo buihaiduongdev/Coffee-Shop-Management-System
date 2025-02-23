@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
@@ -21,88 +22,105 @@ namespace Restaurant_Management_System.Model
         {
             InitializeComponent();
         }
-        public int id = 0;
-
-        //string filePath;
-        ////phut 30 sys5
-        //Byte[] imageByteArray;
-        ////For Image
-        //Image temp = new Bitmap(txtImage.Image);
-        //MemoryStream ms = new MemoryStream();
-        //temp.Save (ms, System.Drawing.Imaging.ImageFormat.Png );
-        //imageByteArray  = ms.ToArray();
+     
 
         private void btnBrowse_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Images(.jpg, .png) |* .png; *.jpg";
-            if(ofd.ShowDialog() == DialogResult.OK)
+            // Tạo hộp thoại chọn file
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
+            openFileDialog.Title = "Chọn ảnh sản phẩm";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                filePath = ofd.FileName;
-                txtImage.Image = new Bitmap(filePath);
+                // Hiển thị ảnh trong PictureBox
+                picImage.Image = Image.FromFile(openFileDialog.FileName);
+                picImage.SizeMode = PictureBoxSizeMode.StretchImage; // Hiển thị ảnh vừa khung
             }
         }
 
-        //private void frmProductAdd_Load(object sender, EventArgs e)
-        //{
-        //    string qry = "select catID 'id', catName 'name' from category ";
-        //    MainClass.CBFill(qry, cbCat);
-        //    if(cID > 0)
-        //    {
-        //        cbCat.SelectedValue = ClientIDMode;
-        //    }
-        //}
+        private byte[] ConvertImageToByteArray(PictureBox pictureBox)
+        {
+            MemoryStream ms = new MemoryStream();
+
+            pictureBox.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+            return ms.ToArray();
+        }
+
         public override void btnSave_Click(object sender, EventArgs e)
         {
 
-            ////PHẦN NÀY SỬA THEO DATABASE CỦA PRODUCT
-            //string firstName = txtFirstName.Text;
-            //string lastName = txtLastName.Text;
-            //string employeeID = txtEmployeeID.Text;
-            //string username = txtUserName.Text;
-            //string password = txtPassword.Text;
-            //string phone = txtPhone.Text;
-            //string role = cbRole.SelectedItem.ToString();
-            //string Strsalary = txtSalary.Text;
-            //decimal salary = decimal.Parse(txtSalary.Text);
+            string strProductID = txtProductID.Text;
+            string productName = txtName.Text;
+            string strPrice = txtPrice.Text;
+            string category = cmbCategory.SelectedItem.ToString();
+            int productID = int.Parse(strProductID); 
+            decimal price = decimal.Parse(strPrice);
+            byte[] imageBytes = ConvertImageToByteArray(picImage);
+  
+            string query = "INSERT INTO Products(ProductID, ProductName, Price, Image,CategoryName) " +
+                           "VALUES(@ProductID, @ProductName, @Price, @Image, @CategoryName )";
 
-            //String query = "INSERT INTO Employees(EmployeeID, Username, Password, LastName, FirstName, Phone, Image, Role, Salary) " +
-            //       "VALUES(@EmployeeID, @Username, @Password, @LastName, @FirstName, @Phone, @Image, @Role, @Salary)";
+     
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@ProductID", productID), 
+                new SqlParameter("@ProductName", productName),
+                new SqlParameter("@Price", price),
+                new SqlParameter("@Image", SqlDbType.VarBinary) { Value = (imageBytes != null ? (object)imageBytes : DBNull.Value) },
+                new SqlParameter("@CategoryName", category)
+            };
 
-            //// Tạo các tham số để truyền vào câu lệnh SQL
-            //SqlParameter[] parameters = new SqlParameter[]
-            //{
-            //    new SqlParameter("@EmployeeID", employeeID),
-            //    new SqlParameter("@Username", username),
-            //    new SqlParameter("@Password", password),
-            //    new SqlParameter("@LastName", lastName),
-            //    new SqlParameter("@FirstName", firstName),
-            //    new SqlParameter("@Phone", phone),
-            //    new SqlParameter("@Image", DBNull.Value),  // Giá trị NULL cho Image
-            //    new SqlParameter("@Role", role),
-            //    new SqlParameter("@Salary", salary)
-            //};
+            try
+            {
+       
+                int rowsAffected = DatabaseHelper.ExecuteNonQuery(query, parameters);
 
-            //try
-            //{
-            //    // Gọi ExecuteNonQuery và lấy số dòng bị ảnh hưởng
-            //    int rowsAffected = DatabaseHelper.ExecuteNonQuery(query, parameters);
+          
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Sản phẩm đã được thêm thành công!");
+                }
+                else
+                {
+                    MessageBox.Show("Không có thay đổi nào được thực hiện.");
+                }
+            }
+            catch (Exception ex)
+            {
+    
+                MessageBox.Show("Lỗi khi thực thi câu lệnh SQL: " + ex.Message);
+            }
 
-            //    // Kiểm tra số dòng bị ảnh hưởng và kích hoạt hành động
-            //    if (rowsAffected > 0)
-            //    {
-            //        MessageBox.Show("Nhân viên đã được thêm thành công!");
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Không có thay đổi nào được thực hiện.");
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-            //    // Bắt lỗi và hiển thị thông báo
-            //    MessageBox.Show("Lỗi khi thực thi câu lệnh SQL: " + ex.Message);
-            //}
+
         }
+
+        private void frmProductAdd_Load(object sender, EventArgs e)
+        {
+            LoadCategories(); // Gọi hàm tải danh mục khi Form load
+        }
+
+        private void LoadCategories()
+        {
+            string query = "SELECT DISTINCT CategoryName FROM Categories";
+            DataTable dt = DatabaseHelper.ExecuteQuery(query);
+
+            cmbCategory.Items.Clear(); 
+
+            foreach (DataRow row in dt.Rows)
+            {
+                cmbCategory.Items.Add(row["CategoryName"].ToString()); 
+            }
+
+            if (cmbCategory.Items.Count > 0)
+            {
+                cmbCategory.SelectedIndex = 0; 
+            }
+        }
+
+
+
+
+
     }
 }
