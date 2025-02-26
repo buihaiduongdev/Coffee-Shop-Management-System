@@ -19,7 +19,10 @@ namespace Restaurant_Management_System.Model
         public event EventHandler onSelect = null;
 
         public int id { get; set; }
-        public decimal PPrice { get; set; }
+        public decimal PPrice {
+            get { return Convert.ToDecimal(lblProductPrice.Text); }
+            set { lblProductPrice.Text = value.ToString("0.##") + " VND"; }
+        }
         public string PName 
         { 
             get { return lblProductName.Text; } 
@@ -31,6 +34,7 @@ namespace Restaurant_Management_System.Model
             get { return txtImage.Image; }
             set{ txtImage.Image = value; }
         }
+
 
         private void txtImage_Click(object sender, EventArgs e)
         {

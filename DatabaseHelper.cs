@@ -43,5 +43,21 @@ namespace Restaurant_Management_System.Backend
                 }
             }
         }
+
+        // 🔹 Hàm thực hiện truy vấn trả về một giá trị duy nhất (ví dụ: COUNT, SUM, MAX, MIN)
+        public static object ExecuteScalar(string query, SqlParameter[] parameters = null)
+        {
+            using (SqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    if (parameters != null)
+                        cmd.Parameters.AddRange(parameters);
+                    return cmd.ExecuteScalar();
+                }
+            }
+        }
+
     }
 }
