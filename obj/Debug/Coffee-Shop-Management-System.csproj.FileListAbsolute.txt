@@ -92,3 +92,6 @@ S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\Guna.UI2.dll
 S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlClient.dll
 S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlClient.xml
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Coffee-S.3221D379.Up2Date
+S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmCustomer.resources
+S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmBarista.resources
+S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Receptionist.frmReceptionist.resources

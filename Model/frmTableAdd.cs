@@ -25,7 +25,6 @@ namespace Restaurant_Management_System.Model
 
         private void frmTableAdd_Load(object sender, EventArgs e)
         {
-            cmbStatus.SelectedIndex = 0;
         }
         public void InsertTable()
         {
@@ -83,7 +82,7 @@ namespace Restaurant_Management_System.Model
                     return;
                 }
 
-                string status = "Empty"; 
+                string status = cmbStatus.SelectedItem.ToString() ; 
 
                 string queryUpdate = @"
                     UPDATE Tables 
