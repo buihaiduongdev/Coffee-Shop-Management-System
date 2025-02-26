@@ -235,6 +235,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Model\frmAddCustomer.resx">
       <DependentUpon>frmAddCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\frmBillList.resx">
       <DependentUpon>frmBillList.cs</DependentUpon>
@@ -296,6 +297,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmStaffView.resx">
       <DependentUpon>frmStaffView.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmTableView.resx">
       <DependentUpon>frmTableView.cs</DependentUpon>
@@ -332,6 +334,8 @@
   <ItemGroup>
     <None Include="Resources\store.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\cart.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
