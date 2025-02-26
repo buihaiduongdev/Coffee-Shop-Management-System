@@ -18,11 +18,12 @@ namespace Restaurant_Management_System.Model
 {
     public partial class frmProductAdd : SampleAdd
     {
-        public frmProductAdd()
+        public frmProductAdd(int productID)
         {
             InitializeComponent();
+            ProductID = productID;
         }
-     
+        int ProductID;
 
         private void btnBrowse_Click(object sender, EventArgs e)
         {
@@ -46,25 +47,23 @@ namespace Restaurant_Management_System.Model
             pictureBox.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
             return ms.ToArray();
         }
-
-        public override void btnSave_Click(object sender, EventArgs e)
+        private void InsertProduct()
         {
-
             string strProductID = txtProductID.Text;
             string productName = txtName.Text;
             string strPrice = txtPrice.Text;
             string category = cmbCategory.SelectedItem.ToString();
-            int productID = int.Parse(strProductID); 
+            int productID = int.Parse(strProductID);
             decimal price = decimal.Parse(strPrice);
             byte[] imageBytes = ConvertImageToByteArray(picImage);
-  
+
             string query = "INSERT INTO Products(ProductID, ProductName, Price, Image,CategoryName) " +
                            "VALUES(@ProductID, @ProductName, @Price, @Image, @CategoryName )";
 
-     
+
             SqlParameter[] parameters = new SqlParameter[]
             {
-                new SqlParameter("@ProductID", productID), 
+                new SqlParameter("@ProductID", productID),
                 new SqlParameter("@ProductName", productName),
                 new SqlParameter("@Price", price),
                 new SqlParameter("@Image", SqlDbType.VarBinary) { Value = (imageBytes != null ? (object)imageBytes : DBNull.Value) },
@@ -73,10 +72,10 @@ namespace Restaurant_Management_System.Model
 
             try
             {
-       
+
                 int rowsAffected = DatabaseHelper.ExecuteNonQuery(query, parameters);
 
-          
+
                 if (rowsAffected > 0)
                 {
                     MessageBox.Show("Sản phẩm đã được thêm thành công!");
@@ -88,9 +87,80 @@ namespace Restaurant_Management_System.Model
             }
             catch (Exception ex)
             {
-    
+
                 MessageBox.Show("Lỗi khi thực thi câu lệnh SQL: " + ex.Message);
             }
+        }
+
+        public void UpdateProduct(int productID)
+        {
+            try
+            {
+                string productName = txtName.Text.Trim();
+                string strPrice = txtPrice.Text.Trim();
+                string category = cmbCategory.SelectedItem?.ToString();
+
+                if (string.IsNullOrEmpty(productName) || string.IsNullOrEmpty(strPrice) || string.IsNullOrEmpty(category))
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin sản phẩm!", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (!decimal.TryParse(strPrice, out decimal price) || price <= 0)
+                {
+                    MessageBox.Show("Giá sản phẩm không hợp lệ!", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                byte[] imageBytes = ConvertImageToByteArray(picImage);
+
+                string query = @"
+                    UPDATE Products 
+                    SET ProductName = @ProductName, 
+                        Price = @Price, 
+                        Image = @Image, 
+                        CategoryName = @CategoryName
+                    WHERE ProductID = @ProductID";
+
+                SqlParameter[] parameters = new SqlParameter[]
+                {
+                    new SqlParameter("@ProductID", productID),
+                    new SqlParameter("@ProductName", productName),
+                    new SqlParameter("@Price", price),
+                    new SqlParameter("@Image", (object)imageBytes ?? DBNull.Value),
+                    new SqlParameter("@CategoryName", category)
+                };
+
+                int rowsAffected = DatabaseHelper.ExecuteNonQuery(query, parameters);
+
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Sản phẩm đã được cập nhật thành công!");
+                }
+                else
+                {
+                    MessageBox.Show("Không có thay đổi nào được thực hiện.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi cập nhật sản phẩm: " + ex.Message);
+            }
+        }
+
+        public override void btnSave_Click(object sender, EventArgs e)
+        {
+            if(ProductID == -1)
+            {
+                InsertProduct();
+                this.Close();
+            }
+            else
+            {
+                UpdateProduct(ProductID);
+                this.Close();
+            }
+            
 
 
         }

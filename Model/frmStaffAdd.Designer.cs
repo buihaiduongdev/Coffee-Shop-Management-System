@@ -76,7 +76,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(41, 117);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(85, 25);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(68, 18);
             this.guna2HtmlLabel1.TabIndex = 2;
             this.guna2HtmlLabel1.Text = "First Name";
             // 
@@ -131,13 +131,12 @@
             this.cbRole.ItemHeight = 30;
             this.cbRole.Items.AddRange(new object[] {
             "Manager",
-            "Cashier",
-            "Waiter",
-            "Cleaning",
-            "Other"});
+            "Barista",
+            "Receptionist"});
             this.cbRole.Location = new System.Drawing.Point(41, 385);
             this.cbRole.Name = "cbRole";
             this.cbRole.Size = new System.Drawing.Size(244, 36);
+            this.cbRole.StartIndex = 0;
             this.cbRole.TabIndex = 7;
             // 
             // txtLastName
@@ -166,7 +165,7 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(329, 117);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(84, 25);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(68, 18);
             this.guna2HtmlLabel4.TabIndex = 8;
             this.guna2HtmlLabel4.Text = "Last Name";
             // 
@@ -196,7 +195,7 @@
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Location = new System.Drawing.Point(329, 230);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(20, 25);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(16, 18);
             this.guna2HtmlLabel5.TabIndex = 10;
             this.guna2HtmlLabel5.Text = "ID";
             // 
@@ -226,7 +225,7 @@
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Location = new System.Drawing.Point(329, 457);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(74, 25);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(63, 18);
             this.guna2HtmlLabel6.TabIndex = 14;
             this.guna2HtmlLabel6.Text = "Password";
             // 
@@ -256,7 +255,7 @@
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Location = new System.Drawing.Point(329, 344);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(88, 25);
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(72, 18);
             this.guna2HtmlLabel7.TabIndex = 12;
             this.guna2HtmlLabel7.Text = "User Name";
             // 
@@ -286,7 +285,7 @@
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Location = new System.Drawing.Point(41, 457);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(48, 25);
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(42, 18);
             this.guna2HtmlLabel8.TabIndex = 16;
             this.guna2HtmlLabel8.Text = "Salary";
             // 

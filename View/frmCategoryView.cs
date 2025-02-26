@@ -1,8 +1,10 @@
-﻿using Restaurant_Management_System.Model;
+﻿using Restaurant_Management_System.Backend;
+using Restaurant_Management_System.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Security.Policy;
@@ -18,69 +20,106 @@ namespace Restaurant_Management_System.View
         {
             InitializeComponent();
         }
-        //public void GetData()
-        //{
-        //    string qry = "Select * From category where catName like '%" + txtSearch.Text + "%'";
-        //    ListBox lb = new ListBox();
-        //    lb.Items.Add(dgvid);
-        //    lb.Items.Add(dgvName);
 
-        //    MainClass.LoadData(qry, guna2DataGridView1, lb);
-        //}
-        //Phần này thiếu MainClass nên t command hết
         private void frmCategoryView_Load(object sender, EventArgs e)
         {
-            //GetData();
-            // Đảm bảo cột 3 là kiểu DataGridViewImageColumn
-            // Đảm bảo cột là kiểu DataGridViewImageColumn
+
             DataGridViewImageColumn imageColumn = (DataGridViewImageColumn)dgvCategory.Columns[3];
             imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
 
-            // Gán ảnh từ Resources
             dgvCategory.Rows[0].Cells[3].Value = Properties.Resources.store;
+            LoadCategoryData();
         }
         public override void btnAdd_Click(object sender, EventArgs e)
         {
-            frmCategoryAdd frm  = new frmCategoryAdd();
+            frmCategoryAdd frm  = new frmCategoryAdd(-1);
             frm.ShowDialog();
-            //GetData();
+            LoadCategoryData();
+        }
+
+        private void LoadCategoryData()
+
+        {
+            string query = "SELECT CategoryID, CategoryName FROM Categories";
+
+            try
+            {
+                DataTable dt = DatabaseHelper.ExecuteQuery(query); 
+
+                dgvCategory.Rows.Clear();
+
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    dgvCategory.Rows.Add();
+                    dgvCategory.Rows[i].Cells["dgvSno"].Value = i + 1; // STT
+                    dgvCategory.Rows[i].Cells["dgvCategoryID"].Value = dt.Rows[i]["CategoryID"];
+                    dgvCategory.Rows[i].Cells["dgvCategoryName"].Value = dt.Rows[i]["CategoryName"];
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải dữ liệu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         public override void txtSearch_TextChanged(object sender, EventArgs e)
         {
+            string searchValue = txtSearch.Text.Trim().ToLower();
 
+            foreach (DataGridViewRow row in dgvCategory.Rows)
+            {
+                if (row.Cells["dgvCategoryID"].Value != null && row.Cells["dgvCategoryName"].Value != null)
+                {
+                    string id = row.Cells["dgvCategoryID"].Value.ToString().ToLower();
+                    string name = row.Cells["dgvCategoryName"].Value.ToString().ToLower();
+
+                    // Nếu ID hoặc Name chứa chuỗi tìm kiếm thì hiển thị, ngược lại ẩn
+                    row.Visible = id.Contains(searchValue) || name.Contains(searchValue);
+                }
+            }
         }
-        
 
-        private void guna2DataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvCategory_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0) 
+            {
+                if (e.ColumnIndex == dgvCategory.Columns["dgvedit"].Index)
+                {
+                    string categoryID = dgvCategory.Rows[e.RowIndex].Cells["dgvCategoryID"].Value.ToString();
+                    int id = Convert.ToInt32(categoryID);
+                    frmCategoryAdd frm = new frmCategoryAdd(id);
+     
+                    frm.txtCategoryName.Text = Convert.ToString(dgvCategory.CurrentRow.Cells["dgvCategoryName"].Value);
+                    frm.ShowDialog();
+                    LoadCategoryData(); 
+                }
 
+
+                if (e.ColumnIndex == dgvCategory.Columns["dgvdel"].Index)
+                {
+                    string categoryID = dgvCategory.Rows[e.RowIndex].Cells["dgvCategoryID"].Value.ToString();
+                    DialogResult result = MessageBox.Show($"Bạn có chắc muốn xóa danh mục {categoryID}?",
+                                                          "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        string deleteQuery = "DELETE FROM Categories WHERE CategoryID = @CategoryID";
+                        SqlParameter[] param = { new SqlParameter("@CategoryID", categoryID) };
+
+                        int rowsAffected = DatabaseHelper.ExecuteNonQuery(deleteQuery, param);
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show($"Đã xóa danh mục {categoryID} thành công!");
+                            LoadCategoryData();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Lỗi khi xóa danh mục!");
+                        }
+                    }
+                }
+            }
         }
 
-        private void guna2DataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //if(guna2DataGridView1.CurrentCell.OwningColumn.Name == "dvgedit")
-            //{
-            //    frmCategoryAdd frm = new frmCategoryAdd();
-            //    frm.id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dvgid"].Value);
-            //    frm.txtName.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dvgName"].Value);
-            //    frm.ShowDialog();
-            //    GetData();
-            //}
-            //if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dvgdel")
-            //{
-                
-            //    int id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dvgid"].Value);
-            //    string qry = "Delete from category where catID= " + id + "";
-            //    Hashtable ht = new Hashtable();
-            //    MainClass.SQl(qry, ht);
-
-            //    MessageBox.Show("Deleted successfully...");
-            //    GetData();
-            //}
-            //Chưa có file BE MainClass
-
-        }
-       
     }
 }
