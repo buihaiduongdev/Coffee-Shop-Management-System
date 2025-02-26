@@ -18,8 +18,6 @@ namespace Restaurant_Management_System.Model
 {
     public partial class frmPOS : Form
     {
-        private frmMain mainForm; // Biến để lưu tham chiếu đến frmMain
-
         public frmPOS()
         {
             InitializeComponent();
@@ -31,8 +29,6 @@ namespace Restaurant_Management_System.Model
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
-            frmMain frmMain = new frmMain();
-            frmMain.AddControls(new frmHome());
         }
 
         private void frmPOS_Load(object sender, EventArgs e)
@@ -147,9 +143,6 @@ namespace Restaurant_Management_System.Model
             lblTable.Visible = false;
             lblWaiter.Visible = false;
             orderType = "Delivery";
-
-            frmAddCustomer frmAddCustomer = new frmAddCustomer();  
-            //Them mainclass.cs moi goi duoc frm nay
         }
 
         private void btnTakeAway_Click(object sender, EventArgs e)
@@ -248,15 +241,6 @@ namespace Restaurant_Management_System.Model
             //lblTotal.Text = "00";
         }
 
-        //SYS 10 0:00
-        private void btnHold_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void frmPOS_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            //mainForm.AddControls(new frmHome());
-        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucProduct));
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.lblProductName = new System.Windows.Forms.Label();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
@@ -78,7 +79,7 @@
             // 
             // txtImage
             // 
-            this.txtImage.Image = global::Restaurant_Management_System.Properties.Resources.store;
+            this.txtImage.Image = ((System.Drawing.Image)(resources.GetObject("txtImage.Image")));
             this.txtImage.ImageRotate = 0F;
             this.txtImage.Location = new System.Drawing.Point(40, 12);
             this.txtImage.Name = "txtImage";

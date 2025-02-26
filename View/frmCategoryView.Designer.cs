@@ -37,8 +37,8 @@
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dgvCategory = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dgvSno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCategoryID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
             this.dgvdel = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
@@ -129,8 +129,8 @@
             this.dgvCategory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvCategory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvSno,
-            this.dgvid,
-            this.dgvName,
+            this.dgvCategoryID,
+            this.dgvCategoryName,
             this.dgvedit,
             this.dgvdel});
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -170,8 +170,7 @@
             this.dgvCategory.ThemeStyle.RowsStyle.Height = 35;
             this.dgvCategory.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvCategory.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvCategory.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView2_CellClick);
-            this.dgvCategory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView2_CellContentClick);
+            this.dgvCategory.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategory_CellClick);
             // 
             // dgvSno
             // 
@@ -182,21 +181,21 @@
             this.dgvSno.Name = "dgvSno";
             this.dgvSno.Width = 70;
             // 
-            // dgvid
+            // dgvCategoryID
             // 
-            this.dgvid.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvid.FillWeight = 74.08759F;
-            this.dgvid.HeaderText = "id";
-            this.dgvid.MinimumWidth = 6;
-            this.dgvid.Name = "dgvid";
-            this.dgvid.Width = 179;
+            this.dgvCategoryID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvCategoryID.FillWeight = 74.08759F;
+            this.dgvCategoryID.HeaderText = "CategoryID";
+            this.dgvCategoryID.MinimumWidth = 6;
+            this.dgvCategoryID.Name = "dgvCategoryID";
+            this.dgvCategoryID.Width = 179;
             // 
-            // dgvName
+            // dgvCategoryName
             // 
-            this.dgvName.FillWeight = 74.08759F;
-            this.dgvName.HeaderText = "Name";
-            this.dgvName.MinimumWidth = 6;
-            this.dgvName.Name = "dgvName";
+            this.dgvCategoryName.FillWeight = 74.08759F;
+            this.dgvCategoryName.HeaderText = "CategoryName";
+            this.dgvCategoryName.MinimumWidth = 6;
+            this.dgvCategoryName.Name = "dgvCategoryName";
             // 
             // dgvedit
             // 
@@ -243,8 +242,8 @@
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2DataGridView dgvCategory;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvSno;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCategoryID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCategoryName;
         private System.Windows.Forms.DataGridViewImageColumn dgvedit;
         private System.Windows.Forms.DataGridViewImageColumn dgvdel;
     }
