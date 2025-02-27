@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -20,14 +21,12 @@ namespace Restaurant_Management_System.Customer
         {
             InitializeComponent();
         }
-
         public class Product
         {
             public string Name { get; set; }
             public decimal Price { get; set; }
             public string ImagePath { get; set; }
         }
-
         private void frmCustomer_Load(object sender, EventArgs e)
         {
             ProductPanel.Controls.Clear();
@@ -36,7 +35,6 @@ namespace Restaurant_Management_System.Customer
             loadProducts();
 
         }
-
         private void addItems(string ProductID, string ProductName, string Price, Image image, string CategoryName)
         {
             var u = new ucProduct()
@@ -49,31 +47,7 @@ namespace Restaurant_Management_System.Customer
 
             };
             ProductPanel.Controls.Add(u);
-
-            u.onSelect += (ss, ee) =>
-            {
-                var wdg = (ucProduct)ss;
-
-                foreach (DataGridViewRow item in dgvPOS.Rows)
-                {
-                    // this will check if product already there then add one to quantity and update price
-                    if (Convert.ToInt32(item.Cells["dgvId"].Value) == wdg.id)
-                    {
-                        item.Cells["dgvQty"].Value = int.Parse(item.Cells["dgvQty"].Value.ToString()) + 1;
-                        item.Cells["dgvAmount"].Value = int.Parse(item.Cells["dgvQty"].Value.ToString()) *
-                                                         double.Parse(item.Cells["dgvPrice"].Value.ToString());
-                        GetTotal();
-                        return;
-
-                    }
-                }
-                dgvPOS.Rows.Add(new object[] { 0, wdg.id, wdg.PName, 1, wdg.PPrice, wdg.PPrice });
-                GetTotal();
-
-            };
-
         }
-
         private void loadProducts()
         {
             string qry = "SELECT * FROM Products ";
@@ -93,14 +67,15 @@ namespace Restaurant_Management_System.Customer
                 );
             }
         }
-
         private void loadCategories()
         {
             flpCategory.FlowDirection = FlowDirection.BottomUp;
 
-
             string query = "SELECT DISTINCT CategoryName FROM Categories";
             DataTable dt = DatabaseHelper.ExecuteQuery(query);
+
+            int buttonWidth = 150;
+            int margin = (flpCategory.Width - (buttonWidth * dt.Rows.Count)) / (dt.Rows.Count * 2);
 
             foreach (DataRow row in dt.Rows)
             {
@@ -108,33 +83,81 @@ namespace Restaurant_Management_System.Customer
 
                 btnCategory.Text = row["CategoryName"].ToString();
                 btnCategory.FillColor = this.BackColor;
-                btnCategory.ForeColor = ColorTranslator.FromHtml("#C0AA83");
-                btnCategory.Size = new Size(150, 40);
-                btnCategory.Font = new Font("Onest", 14, FontStyle.Bold);
+                btnCategory.ForeColor = ColorTranslator.FromHtml("#533914");
+                btnCategory.Size = new Size(buttonWidth, 40);
+                btnCategory.Font = new Font("JetBrains Mono NL", 14, FontStyle.Bold);
                 btnCategory.BorderRadius = 20;
+                btnCategory.Margin = new Padding(margin, 0, margin, 0);
 
-                flpCategory.Controls.Add(btnCategory);
-            }
-        }
-
-        private void GetTotal()
-        {
-            double tot = 0;
-            lblCost.Text = "";
-
-            foreach (DataGridViewRow item in dgvPOS.Rows)
-            {
-                // Kiểm tra nếu ô không null
-                if (item.Cells["dgvAmount"].Value != null &&
-                    double.TryParse(item.Cells["dgvAmount"].Value.ToString(), out double amount))
+                btnCategory.Click += (sender, e) =>
                 {
-                    tot += amount;
-                }
-            }
+                    foreach (var control in flpCategory.Controls)
+                    {
+                        Guna2Button btn = (Guna2Button)control;
 
-            lblCost.Text = tot.ToString();
+                        if (btn == sender)
+                        {
+                            btn.FillColor = ColorTranslator.FromHtml("#533914");
+                            btn.ForeColor = ColorTranslator.FromHtml("#FDF1DB");
+                        }
+                        else
+                        {
+                            btn.FillColor = this.BackColor;
+                            btn.ForeColor = ColorTranslator.FromHtml("#533914");
+                        }
+                    }
+
+                    string categoryName = ((Guna2Button)sender).Text;
+                    FilterProductsByCategory(categoryName);
+                };
+                flpCategory.Controls.Add(btnCategory);
+
+            }
+        }
+        private void FilterProductsByCategory(string categoryName)
+        {
+            // Sử dụng tham số thay vì string interpolation để tránh SQL injection
+            string query = "SELECT * FROM Products WHERE CategoryName = @Category";
+
+            // Tạo tham số SQL
+            SqlParameter categoryParam = new SqlParameter("@Category", SqlDbType.NVarChar);
+            categoryParam.Value = categoryName;
+
+            // Chuyển List<SqlParameter> thành mảng SqlParameter[]
+            SqlParameter[] parameters = new SqlParameter[] { categoryParam };
+
+            // Thực thi câu truy vấn với tham số
+            DataTable dtProducts = DatabaseHelper.ExecuteQuery(query, parameters);
+
+            // Cập nhật giao diện với danh sách sản phẩm đã lọc
+            ProductPanel.Controls.Clear(); // Xóa trước khi thêm lại
+            redisplayProduct(dtProducts);
+        }
+        private void redisplayProduct(DataTable products)
+        {
+            foreach (DataRow item in products.Rows)
+            {
+                Byte[] imagearray = (byte[])item["Image"];
+                byte[] imagebytearray = imagearray;
+
+                addItems(
+                    item["ProductID"].ToString(),
+                    item["ProductName"].ToString(),
+                    item["Price"].ToString(),
+                    Image.FromStream(new MemoryStream(imagearray)),
+                    item["CategoryName"].ToString()
+                );
+            }
         }
 
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            foreach (var item in ProductPanel.Controls)
+            {
+                var pro = (ucProduct)item;
+                pro.Visible = pro.PName.ToLower().Contains(txtSearch.Text.Trim().ToLower());
+            }
+        }
 
     }
 }
