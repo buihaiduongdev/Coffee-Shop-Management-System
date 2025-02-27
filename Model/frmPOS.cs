@@ -37,7 +37,6 @@ namespace Restaurant_Management_System.Model
             LoadCategories();
             ProductPanel.Controls.Clear();
             loadProducts();
-
         }
 
         //SYS6 23:00

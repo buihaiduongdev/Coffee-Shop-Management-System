@@ -95,3 +95,41 @@ S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Coffee-S.3221D379.Up2Date
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmCustomer.resources
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmBarista.resources
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Receptionist.frmReceptionist.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\bin\Debug\Restaurant Management System.exe.config
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\bin\Debug\Restaurant Management System.exe
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\bin\Debug\Restaurant Management System.pdb
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\bin\Debug\Guna.UI2.dll
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlClient.dll
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlClient.xml
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.AssemblyReference.cache
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmBarista.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmCustomer.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmHome.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmLogin.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmMain.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmBillList.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmCategoryAdd.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmCheckout.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmPOS.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmProductAdd.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmStaffAdd.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmTableAdd.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmTableSelect.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmWaiterSelect.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucProduct.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Properties.Resources.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Receptionist.frmReceptionist.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.SampleAdd.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.SampleView.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmCategoryView.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmKitchenView.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmProductView.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmStaffView.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmTableView.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.GenerateResource.cache
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.CoreCompileInputs.cache
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Coffee-S.3221D379.Up2Date
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.exe
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.pdb
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.ucKitchen.resources
+C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmKitchen.resources

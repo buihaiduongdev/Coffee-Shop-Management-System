@@ -69,20 +69,18 @@
             this.guna2Panel2.Controls.Add(this.guna2ControlBox2);
             this.guna2Panel2.Controls.Add(this.btnExit);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel2.Location = new System.Drawing.Point(248, 0);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Panel2.Location = new System.Drawing.Point(186, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1342, 39);
+            this.guna2Panel2.Size = new System.Drawing.Size(1006, 30);
             this.guna2Panel2.TabIndex = 4;
             // 
             // lblUser
             // 
             this.lblUser.AutoSize = true;
             this.lblUser.BackColor = System.Drawing.Color.Transparent;
-            this.lblUser.Location = new System.Drawing.Point(17, 16);
-            this.lblUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUser.Location = new System.Drawing.Point(13, 12);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(46, 17);
+            this.lblUser.Size = new System.Drawing.Size(35, 13);
             this.lblUser.TabIndex = 3;
             this.lblUser.Text = "label2";
             // 
@@ -92,10 +90,9 @@
             this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(1202, 0);
-            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(902, 0);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
-            this.guna2ControlBox3.Size = new System.Drawing.Size(49, 38);
+            this.guna2ControlBox3.Size = new System.Drawing.Size(37, 29);
             this.guna2ControlBox3.TabIndex = 2;
             // 
             // guna2ControlBox2
@@ -104,10 +101,9 @@
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1250, 0);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(938, 0);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(49, 38);
+            this.guna2ControlBox2.Size = new System.Drawing.Size(37, 29);
             this.guna2ControlBox2.TabIndex = 1;
             // 
             // btnExit
@@ -115,10 +111,9 @@
             this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.btnExit.IconColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(1293, 0);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExit.Location = new System.Drawing.Point(970, 0);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(49, 38);
+            this.btnExit.Size = new System.Drawing.Size(37, 29);
             this.btnExit.TabIndex = 0;
             // 
             // guna2Panel1
@@ -132,16 +127,15 @@
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
             this.guna2Panel1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(248, 857);
+            this.guna2Panel1.Size = new System.Drawing.Size(186, 655);
             this.guna2Panel1.TabIndex = 3;
             // 
             // btnSetting
             // 
             this.btnSetting.AutoRoundedCorners = true;
             this.btnSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
-            this.btnSetting.BorderRadius = 29;
+            this.btnSetting.BorderRadius = 22;
             this.btnSetting.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnSetting.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
             this.btnSetting.CustomizableEdges.BottomRight = false;
@@ -156,10 +150,9 @@
             this.btnSetting.Image = global::Restaurant_Management_System.Properties.Resources.user;
             this.btnSetting.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSetting.ImageOffset = new System.Drawing.Point(10, 0);
-            this.btnSetting.Location = new System.Drawing.Point(31, 343);
-            this.btnSetting.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSetting.Location = new System.Drawing.Point(23, 262);
             this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Size = new System.Drawing.Size(197, 60);
+            this.btnSetting.Size = new System.Drawing.Size(148, 46);
             this.btnSetting.TabIndex = 13;
             this.btnSetting.Text = "Settings";
             this.btnSetting.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -169,7 +162,7 @@
             // 
             this.btnPos.AutoRoundedCorners = true;
             this.btnPos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
-            this.btnPos.BorderRadius = 29;
+            this.btnPos.BorderRadius = 22;
             this.btnPos.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnPos.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
             this.btnPos.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -185,10 +178,9 @@
             this.btnPos.Image = global::Restaurant_Management_System.Properties.Resources.user;
             this.btnPos.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnPos.ImageOffset = new System.Drawing.Point(10, 0);
-            this.btnPos.Location = new System.Drawing.Point(31, 207);
-            this.btnPos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPos.Location = new System.Drawing.Point(23, 158);
             this.btnPos.Name = "btnPos";
-            this.btnPos.Size = new System.Drawing.Size(197, 60);
+            this.btnPos.Size = new System.Drawing.Size(148, 46);
             this.btnPos.TabIndex = 11;
             this.btnPos.Text = "POS";
             this.btnPos.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -198,7 +190,7 @@
             // 
             this.btnTable.AutoRoundedCorners = true;
             this.btnTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
-            this.btnTable.BorderRadius = 29;
+            this.btnTable.BorderRadius = 22;
             this.btnTable.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnTable.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
             this.btnTable.CheckedState.Image = global::Restaurant_Management_System.Properties.Resources.user;
@@ -214,10 +206,9 @@
             this.btnTable.Image = global::Restaurant_Management_System.Properties.Resources.user;
             this.btnTable.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTable.ImageOffset = new System.Drawing.Point(10, 0);
-            this.btnTable.Location = new System.Drawing.Point(31, 275);
-            this.btnTable.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTable.Location = new System.Drawing.Point(23, 210);
             this.btnTable.Name = "btnTable";
-            this.btnTable.Size = new System.Drawing.Size(197, 60);
+            this.btnTable.Size = new System.Drawing.Size(148, 46);
             this.btnTable.TabIndex = 9;
             this.btnTable.Text = "Reverse Tables";
             this.btnTable.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -228,10 +219,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(4, 88);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(3, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(222, 92);
+            this.label1.Size = new System.Drawing.Size(166, 70);
             this.label1.TabIndex = 1;
             this.label1.Text = "Coffee Shop Management System";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -241,10 +231,9 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::Restaurant_Management_System.Properties.Resources.user;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(75, 4);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(56, 3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(61, 80);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(46, 61);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -252,10 +241,9 @@
             // 
             // flpCategory
             // 
-            this.flpCategory.Location = new System.Drawing.Point(412, 47);
-            this.flpCategory.Margin = new System.Windows.Forms.Padding(4);
+            this.flpCategory.Location = new System.Drawing.Point(309, 36);
             this.flpCategory.Name = "flpCategory";
-            this.flpCategory.Size = new System.Drawing.Size(910, 66);
+            this.flpCategory.Size = new System.Drawing.Size(682, 50);
             this.flpCategory.TabIndex = 4;
             // 
             // guna2BorderlessForm1
@@ -302,12 +290,13 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvPOS.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPOS.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvPOS.Location = new System.Drawing.Point(1414, 16);
+            this.dgvPOS.Location = new System.Drawing.Point(1060, 12);
+            this.dgvPOS.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvPOS.Name = "dgvPOS";
             this.dgvPOS.RowHeadersVisible = false;
             this.dgvPOS.RowHeadersWidth = 51;
             this.dgvPOS.RowTemplate.Height = 35;
-            this.dgvPOS.Size = new System.Drawing.Size(151, 121);
+            this.dgvPOS.Size = new System.Drawing.Size(113, 93);
             this.dgvPOS.TabIndex = 12;
             this.dgvPOS.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvPOS.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -390,27 +379,29 @@
             this.lblCost.BackColor = System.Drawing.Color.Transparent;
             this.lblCost.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCost.ForeColor = System.Drawing.Color.Black;
-            this.lblCost.Location = new System.Drawing.Point(1322, 88);
+            this.lblCost.Location = new System.Drawing.Point(992, 67);
+            this.lblCost.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCost.Name = "lblCost";
-            this.lblCost.Size = new System.Drawing.Size(77, 25);
+            this.lblCost.Size = new System.Drawing.Size(58, 19);
             this.lblCost.TabIndex = 15;
             this.lblCost.Text = "0.00";
             // 
             // ProductPanel
             // 
             this.ProductPanel.AutoScroll = true;
-            this.ProductPanel.Location = new System.Drawing.Point(306, 157);
+            this.ProductPanel.Location = new System.Drawing.Point(230, 120);
+            this.ProductPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ProductPanel.Name = "ProductPanel";
-            this.ProductPanel.Size = new System.Drawing.Size(1294, 688);
+            this.ProductPanel.Size = new System.Drawing.Size(970, 526);
             this.ProductPanel.TabIndex = 16;
             this.ProductPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ProductPanel_Paint);
             // 
             // frmCustomer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
-            this.ClientSize = new System.Drawing.Size(1590, 857);
+            this.ClientSize = new System.Drawing.Size(1192, 655);
             this.Controls.Add(this.ProductPanel);
             this.Controls.Add(this.lblCost);
             this.Controls.Add(this.dgvPOS);
@@ -419,7 +410,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmCustomer";
             this.Text = "frmCustomer";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

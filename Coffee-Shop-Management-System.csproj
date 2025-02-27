@@ -71,6 +71,18 @@
     <Compile Include="Barista\frmBarista.Designer.cs">
       <DependentUpon>frmBarista.cs</DependentUpon>
     </Compile>
+    <Compile Include="Barista\frmKitchen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barista\frmKitchen.Designer.cs">
+      <DependentUpon>frmKitchen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Barista\ucKitchen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Barista\ucKitchen.Designer.cs">
+      <DependentUpon>ucKitchen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customer\frmCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +226,12 @@
     </Compile>
     <EmbeddedResource Include="Barista\frmBarista.resx">
       <DependentUpon>frmBarista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barista\frmKitchen.resx">
+      <DependentUpon>frmKitchen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barista\ucKitchen.resx">
+      <DependentUpon>ucKitchen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Customer\frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>

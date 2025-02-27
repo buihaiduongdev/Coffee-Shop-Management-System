@@ -1,4 +1,5 @@
 ﻿using Restaurant_Management_System.Backend;
+using Restaurant_Management_System.Barista;
 using Restaurant_Management_System.Customer;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace Restaurant_Management_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain());
+            Application.Run(new frmBarista());
         }
     }
 
