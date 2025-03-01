@@ -5,6 +5,7 @@ using System.Drawing;
 
 using Restaurant_Management_System.Backend;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 
 namespace Restaurant_Management_System.Barista
 {
@@ -23,16 +24,19 @@ namespace Restaurant_Management_System.Barista
 
         public void LoadOrders(string statusFilter)
         {
-            string query = $@"
-            SELECT O.OrderID, O.OrderDayTime, O.OrderType, 
-                Pre.PreparationID, Pre.Status, Pre.StartTime, Pre.EndTime, Pre.TableID,
-                P.ProductID, P.ProductName, P.Price, P.Image
-            FROM Orders O
+            string query = @"
+            SELECT O.OrderID, O.OrderDay, Pre.PreparationID, Pre.Status, Pre.StartTime, Pre.EndTime, Pre.TableID, p.ProductName
+            FROM Orders as O
             INNER JOIN Preparations Pre ON O.OrderID = Pre.OrderID
-            INNER JOIN Products P ON O.ProductID = P.ProductID
-            WHERE Pre.Status = '{statusFilter}'";
+            INNER JOIN Products P ON Pre.ProductID = P.ProductID
+            WHERE Pre.Status = @StatusFilter
+            ";
 
-            DataTable dt = DatabaseHelper.ExecuteQuery(query);
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                 new SqlParameter("@StatusFilter", statusFilter)
+            };
+            DataTable dt = DatabaseHelper.ExecuteQuery(query, parameters);
 
             flpOrders.Controls.Clear(); // Xóa các order cũ trước khi load mới
 
@@ -41,7 +45,7 @@ namespace Restaurant_Management_System.Barista
                 int preparationID = Convert.ToInt32(row["PreparationID"]);
                 string name = row["ProductName"].ToString();
                 string status = row["Status"].ToString();
-                DateTime orderTime = Convert.ToDateTime(row["OrderDayTime"]);
+                DateTime orderTime = Convert.ToDateTime(row["OrderDay"]);
 
                 TimeSpan elapsed = DateTime.Now - orderTime; // Tính thời gian chờ
 
