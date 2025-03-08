@@ -31,7 +31,10 @@
             this.flpOrders = new System.Windows.Forms.FlowLayoutPanel();
             this.tnPending = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnProcessing = new Guna.UI2.WinForms.Guna2TileButton();
+            this.flpTable = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnALL = new Guna.UI2.WinForms.Guna2TileButton();
             this.btnCompleted = new Guna.UI2.WinForms.Guna2TileButton();
+            this.flpTable.SuspendLayout();
             this.SuspendLayout();
             // 
             // flpOrders
@@ -41,7 +44,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flpOrders.Location = new System.Drawing.Point(9, 64);
             this.flpOrders.Name = "flpOrders";
-            this.flpOrders.Size = new System.Drawing.Size(825, 385);
+            this.flpOrders.Size = new System.Drawing.Size(654, 385);
             this.flpOrders.TabIndex = 3;
             // 
             // tnPending
@@ -50,7 +53,8 @@
             this.tnPending.BorderColor = System.Drawing.Color.Teal;
             this.tnPending.BorderRadius = 10;
             this.tnPending.BorderThickness = 2;
-            this.tnPending.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
+            this.tnPending.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
+            this.tnPending.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
             this.tnPending.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.tnPending.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.tnPending.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -88,6 +92,40 @@
             this.btnProcessing.Text = "Processing";
             this.btnProcessing.Click += new System.EventHandler(this.btnProcessing_Click);
             // 
+            // flpTable
+            // 
+            this.flpTable.AutoScroll = true;
+            this.flpTable.Controls.Add(this.btnALL);
+            this.flpTable.Dock = System.Windows.Forms.DockStyle.Right;
+            this.flpTable.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flpTable.Location = new System.Drawing.Point(673, 0);
+            this.flpTable.Name = "flpTable";
+            this.flpTable.Size = new System.Drawing.Size(176, 504);
+            this.flpTable.TabIndex = 14;
+            this.flpTable.WrapContents = false;
+            // 
+            // btnALL
+            // 
+            this.btnALL.BackColor = System.Drawing.Color.White;
+            this.btnALL.BorderColor = System.Drawing.Color.Teal;
+            this.btnALL.BorderRadius = 10;
+            this.btnALL.BorderThickness = 2;
+            this.btnALL.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
+            this.btnALL.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
+            this.btnALL.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnALL.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnALL.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnALL.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnALL.FillColor = System.Drawing.Color.Teal;
+            this.btnALL.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnALL.ForeColor = System.Drawing.Color.White;
+            this.btnALL.Location = new System.Drawing.Point(3, 3);
+            this.btnALL.Name = "btnALL";
+            this.btnALL.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnALL.Size = new System.Drawing.Size(150, 50);
+            this.btnALL.TabIndex = 12;
+            this.btnALL.Text = "ALL";
+            // 
             // btnCompleted
             // 
             this.btnCompleted.BackColor = System.Drawing.Color.White;
@@ -116,6 +154,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(849, 504);
+            this.Controls.Add(this.flpTable);
             this.Controls.Add(this.btnCompleted);
             this.Controls.Add(this.btnProcessing);
             this.Controls.Add(this.tnPending);
@@ -126,6 +165,7 @@
             this.Name = "frmKitchen";
             this.Text = "frmKitchen";
             this.Load += new System.EventHandler(this.frmKitchen_Load);
+            this.flpTable.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -135,6 +175,8 @@
         private System.Windows.Forms.FlowLayoutPanel flpOrders;
         private Guna.UI2.WinForms.Guna2TileButton tnPending;
         private Guna.UI2.WinForms.Guna2TileButton btnProcessing;
+        private System.Windows.Forms.FlowLayoutPanel flpTable;
+        private Guna.UI2.WinForms.Guna2TileButton btnALL;
         private Guna.UI2.WinForms.Guna2TileButton btnCompleted;
     }
 }

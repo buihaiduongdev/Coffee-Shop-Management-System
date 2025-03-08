@@ -6,11 +6,16 @@ using System.Drawing;
 using Restaurant_Management_System.Backend;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using TheArtOfDevHtmlRenderer.Adapters.Entities;
+using System.Web.UI.WebControls;
+using Guna.UI2.WinForms;
 
 namespace Restaurant_Management_System.Barista
 {
     public partial class frmKitchen : Form
     {
+        string status = "";
+        private Guna2Button previousButton = null;
         public frmKitchen()
         {
             InitializeComponent();
@@ -18,11 +23,69 @@ namespace Restaurant_Management_System.Barista
 
         private void frmKitchen_Load(object sender, EventArgs e)
         {
+            loadTable();
             flpOrders.Controls.Clear();
-            LoadOrders("Pending");
+            tnPending.Checked = true;
+            status = "Pending"; // Đặt trạng thái mặc định là "Pending"
+            LoadOrders(status);
+
+            // Chọn mặc định "ALL" trong danh sách bàn
+            if (flpTable.Controls.Count > 0)
+            {
+                Guna2Button btnAll = flpTable.Controls[0] as Guna2Button; // Lấy button đầu tiên (ALL)
+                if (btnAll != null)
+                {
+                    btnAll.PerformClick(); // Kích hoạt sự kiện Click
+                }
+            }
         }
 
-        public void LoadOrders(string statusFilter)
+        public void loadTable() {
+            string query = @"
+             SELECT DISTINCT T.TableID
+             FROM Tables as T
+             INNER JOIN Preparations Pre ON T.TableID = Pre.TableID
+            ";
+            DataTable dt = DatabaseHelper.ExecuteQuery(query);
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                Guna2Button btnTable = new Guna2Button();
+                string tableID = dt.Rows[i]["TableID"].ToString(); // Lấy giá trị ID
+
+                btnTable.Text = "Table " + tableID; // Hiển thị trên nút
+                btnTable.Tag = tableID; // Gán ID vào Tag
+                btnTable.Size = new Size(150, 50);
+                btnTable.FillColor = Color.Teal;
+                btnTable.BorderRadius = 15;
+                btnTable.Click += BtnTable_Click;
+                flpTable.Controls.Add(btnTable);
+            }
+        }
+
+        private void BtnTable_Click(object sender, EventArgs e)
+        {
+            Guna2Button clickedButton = sender as Guna2Button;
+            if (clickedButton != null)
+            {
+                // Đổi màu nút trước đó về màu mặc định (nếu có)
+                if (previousButton != null && previousButton != clickedButton)
+                {
+                    previousButton.FillColor = Color.Teal; // Màu ban đầu
+                }
+
+                // Cập nhật màu cho nút vừa được nhấn
+                clickedButton.FillColor = Color.FromArgb(241, 85, 126); // Màu khi chọn
+
+                // Lưu lại nút đã được nhấn
+                previousButton = clickedButton;
+
+                // Chuyển đổi Tag thành ID và tải dữ liệu
+                int tableID = Convert.ToInt32(clickedButton.Tag);
+                LoadOrders(status, tableID);
+            }
+        }
+
+        public void LoadOrders(string statusFilter, int tableID = -1)
         {
             string query = @"
             SELECT O.OrderID, O.OrderDay, Pre.PreparationID, Pre.Status, Pre.StartTime, Pre.EndTime, Pre.TableID, p.ProductName
@@ -31,12 +94,28 @@ namespace Restaurant_Management_System.Barista
             INNER JOIN Products P ON Pre.ProductID = P.ProductID
             WHERE Pre.Status = @StatusFilter
             ";
-
             SqlParameter[] parameters = new SqlParameter[]
             {
                  new SqlParameter("@StatusFilter", statusFilter)
             };
             DataTable dt = DatabaseHelper.ExecuteQuery(query, parameters);
+            if (tableID != -1) {
+            query = @"
+            SELECT O.OrderID, O.OrderDay, Pre.PreparationID, Pre.Status, Pre.StartTime, Pre.EndTime, Pre.TableID, p.ProductName
+            FROM Orders as O
+            INNER JOIN Preparations Pre ON O.OrderID = Pre.OrderID
+            INNER JOIN Products P ON Pre.ProductID = P.ProductID
+            INNER JOIN Tables T ON T.TableID = Pre.TableID
+            WHERE Pre.Status = @StatusFilter AND Pre.TableID = @TableID
+            ";
+            parameters = new SqlParameter[]
+            {
+                 new SqlParameter("@StatusFilter", statusFilter),
+                 new SqlParameter("@TableID", tableID)
+            };
+                dt = DatabaseHelper.ExecuteQuery(query, parameters);
+            }
+        
 
             flpOrders.Controls.Clear(); // Xóa các order cũ trước khi load mới
 
@@ -59,20 +138,45 @@ namespace Restaurant_Management_System.Barista
 
         private void btnCompleted_Click(object sender, EventArgs e)
         {
+            status = "Completed";
             LoadOrders("Completed");
+            btnCompleted.FillColor = Color.FromArgb(241, 85, 126);
+            btnCompleted.BorderColor = Color.FromArgb(241, 85, 126);
+
+            tnPending.FillColor = Color.Teal;
+            btnProcessing.FillColor = Color.Teal;
+
+            tnPending.BorderColor = Color.Teal;
+            btnProcessing.BorderColor = Color.Teal;
 
         }
 
         private void tnPending_Click(object sender, EventArgs e)
         {
+            status = "Pending";
             LoadOrders("Pending");
+            tnPending.FillColor = Color.FromArgb(241, 85, 126);
+            tnPending.BorderColor = Color.FromArgb(241, 85, 126);
 
+            btnCompleted.FillColor = Color.Teal;
+            btnProcessing.FillColor = Color.Teal;
+
+            btnCompleted.BorderColor = Color.Teal;
+            btnProcessing.BorderColor = Color.Teal;
         }
 
         private void btnProcessing_Click(object sender, EventArgs e)
         {
+            status = "Processing";
             LoadOrders("Processing");
+            btnProcessing.FillColor = Color.FromArgb(241, 85, 126);
+            btnProcessing.BorderColor = Color.FromArgb(241, 85, 126);
 
+            tnPending.FillColor = Color.Teal;
+            btnCompleted.FillColor = Color.Teal;
+
+            tnPending.BorderColor = Color.Teal;
+            btnCompleted.BorderColor = Color.Teal;
         }
     }
 }
