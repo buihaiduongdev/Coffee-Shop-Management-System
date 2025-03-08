@@ -141,13 +141,6 @@ namespace Restaurant_Management_System.Barista
 
                 ucKitchen orderControl = new ucKitchen(preparationID, name, status, elapsed);
                 orderControl.RefreshOrders = () => LoadOrders(statusFilter); // Gán delegate
-
-                orderControl.Click += (s, e) =>
-                {
-                    frmOrderDetail detailForm = new frmOrderDetail(preparationID);
-                    detailForm.ShowDialog(); // Mở form chi tiết
-                };
-
                 flpOrders.Controls.Add(orderControl);
             }
         }

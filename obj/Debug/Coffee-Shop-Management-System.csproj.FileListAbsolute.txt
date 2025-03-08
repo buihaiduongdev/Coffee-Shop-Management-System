@@ -182,3 +182,4 @@ C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restau
 C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmKitchenView.resources
 C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmProductView.resources
 C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmOrderDetail.resources
+C:\Users\haidu\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmOrderDetail.resources

@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtCapacity = new Guna.UI2.WinForms.Guna2TextBox();
             this.ư = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cmbStatus = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -66,7 +68,7 @@
             this.ư.BackColor = System.Drawing.Color.Transparent;
             this.ư.Location = new System.Drawing.Point(27, 136);
             this.ư.Name = "ư";
-            this.ư.Size = new System.Drawing.Size(56, 18);
+            this.ư.Size = new System.Drawing.Size(44, 15);
             this.ư.TabIndex = 4;
             this.ư.Text = "Capacity";
             // 
@@ -75,7 +77,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(27, 247);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(40, 18);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(33, 15);
             this.guna2HtmlLabel1.TabIndex = 6;
             this.guna2HtmlLabel1.Text = "Status";
             // 
@@ -101,15 +103,22 @@
             this.cmbStatus.TabIndex = 7;
             this.cmbStatus.SelectedIndexChanged += new System.EventHandler(this.cmbStatus_SelectedIndexChanged);
             // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
             // frmTableAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 446);
             this.Controls.Add(this.cmbStatus);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.txtCapacity);
             this.Controls.Add(this.ư);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmTableAdd";
             this.Text = "frmTableAdd";
             this.Load += new System.EventHandler(this.frmTableAdd_Load);
@@ -123,5 +132,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel ư;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2ComboBox cmbStatus;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
     }
 }

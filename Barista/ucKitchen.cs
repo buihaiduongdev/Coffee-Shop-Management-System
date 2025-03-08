@@ -18,6 +18,14 @@ namespace Restaurant_Management_System.Barista
             this.ProductName = productName;
             this.Status = status;
             this.orderTime = DateTime.Now - elapsedTime;
+            this.SetStyle(ControlStyles.Selectable, true);
+            this.Click += UcKitchen_Click;
+
+            // Bắt sự kiện Click trên tất cả control con
+            foreach (Control control in this.Controls)
+            {
+                control.Click += UcKitchen_Click;
+            }
 
             UpdateWaitingTime(); // Cập nhật thời gian chờ ngay khi load
 
@@ -41,6 +49,12 @@ namespace Restaurant_Management_System.Barista
                 InitializeTimer();
                 timer.Start();
             }
+        }
+
+        private void UcKitchen_Click(object sender, EventArgs e)
+        {
+            frmOrderDetail frmOrderDetail = new frmOrderDetail(preparationID);
+            frmOrderDetail.ShowDialog();
         }
 
         private void InitializeTimer()
