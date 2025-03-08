@@ -23,13 +23,22 @@ namespace Restaurant_Management_System.Barista
 
         private void frmKitchen_Load(object sender, EventArgs e)
         {
-            loadTable();
             flpOrders.Controls.Clear();
             tnPending.Checked = true;
             status = "Pending"; // Đặt trạng thái mặc định là "Pending"
             LoadOrders(status);
 
-            // Chọn mặc định "ALL" trong danh sách bàn
+            Guna2Button btnTable = new Guna2Button();
+            btnTable.Text = "ALL";
+            btnTable.Tag = "-1";
+            btnTable.Size = new Size(150, 50);
+            btnTable.FillColor = Color.Teal;
+            btnTable.BorderRadius = 15;
+            btnTable.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            btnTable.Click += BtnTable_Click;
+            flpTable.Controls.Add(btnTable);
+
+            loadTable();
             if (flpTable.Controls.Count > 0)
             {
                 Guna2Button btnAll = flpTable.Controls[0] as Guna2Button; // Lấy button đầu tiên (ALL)
@@ -57,6 +66,7 @@ namespace Restaurant_Management_System.Barista
                 btnTable.Size = new Size(150, 50);
                 btnTable.FillColor = Color.Teal;
                 btnTable.BorderRadius = 15;
+                btnTable.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
                 btnTable.Click += BtnTable_Click;
                 flpTable.Controls.Add(btnTable);
             }
@@ -82,6 +92,7 @@ namespace Restaurant_Management_System.Barista
                 // Chuyển đổi Tag thành ID và tải dữ liệu
                 int tableID = Convert.ToInt32(clickedButton.Tag);
                 LoadOrders(status, tableID);
+
             }
         }
 
@@ -131,6 +142,12 @@ namespace Restaurant_Management_System.Barista
                 ucKitchen orderControl = new ucKitchen(preparationID, name, status, elapsed);
                 orderControl.RefreshOrders = () => LoadOrders(statusFilter); // Gán delegate
 
+                orderControl.Click += (s, e) =>
+                {
+                    frmOrderDetail detailForm = new frmOrderDetail(preparationID);
+                    detailForm.ShowDialog(); // Mở form chi tiết
+                };
+
                 flpOrders.Controls.Add(orderControl);
             }
         }
@@ -140,14 +157,6 @@ namespace Restaurant_Management_System.Barista
         {
             status = "Completed";
             LoadOrders("Completed");
-            btnCompleted.FillColor = Color.FromArgb(241, 85, 126);
-            btnCompleted.BorderColor = Color.FromArgb(241, 85, 126);
-
-            tnPending.FillColor = Color.Teal;
-            btnProcessing.FillColor = Color.Teal;
-
-            tnPending.BorderColor = Color.Teal;
-            btnProcessing.BorderColor = Color.Teal;
 
         }
 
@@ -155,28 +164,12 @@ namespace Restaurant_Management_System.Barista
         {
             status = "Pending";
             LoadOrders("Pending");
-            tnPending.FillColor = Color.FromArgb(241, 85, 126);
-            tnPending.BorderColor = Color.FromArgb(241, 85, 126);
-
-            btnCompleted.FillColor = Color.Teal;
-            btnProcessing.FillColor = Color.Teal;
-
-            btnCompleted.BorderColor = Color.Teal;
-            btnProcessing.BorderColor = Color.Teal;
         }
 
         private void btnProcessing_Click(object sender, EventArgs e)
         {
             status = "Processing";
             LoadOrders("Processing");
-            btnProcessing.FillColor = Color.FromArgb(241, 85, 126);
-            btnProcessing.BorderColor = Color.FromArgb(241, 85, 126);
-
-            tnPending.FillColor = Color.Teal;
-            btnCompleted.FillColor = Color.Teal;
-
-            tnPending.BorderColor = Color.Teal;
-            btnCompleted.BorderColor = Color.Teal;
         }
     }
 }

@@ -1,18 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\",
+  "WorkspaceRootPath": "C:\\Users\\DuongLapTop\\source\\repos\\Coffee-Shop-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\barista\\frmkitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|c:\\users\\duonglaptop\\source\\repos\\coffee-shop-management-system\\barista\\frmkitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:barista\\frmkitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|c:\\users\\haidu\\source\\repos\\coffee-shop-management-system\\barista\\frmbarista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:barista\\frmbarista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|c:\\users\\duonglaptop\\source\\repos\\coffee-shop-management-system\\barista\\frmorderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:barista\\frmorderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|c:\\users\\haidu\\source\\repos\\coffee-shop-management-system\\barista\\frmkitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|c:\\users\\duonglaptop\\source\\repos\\coffee-shop-management-system\\barista\\frmkitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:barista\\frmkitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|c:\\users\\duonglaptop\\source\\repos\\coffee-shop-management-system\\barista\\uckitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:barista\\uckitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,33 +26,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 15,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmKitchen.cs",
-              "DocumentMoniker": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmKitchen.cs",
-              "RelativeDocumentMoniker": "Barista\\frmKitchen.cs",
-              "ToolTip": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmKitchen.cs",
-              "RelativeToolTip": "Barista\\frmKitchen.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAcwHwAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T03:19:49.125Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmBarista.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmBarista.cs",
-              "RelativeDocumentMoniker": "Barista\\frmBarista.cs",
-              "ToolTip": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmBarista.cs [Design]",
-              "RelativeToolTip": "Barista\\frmBarista.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T04:53:17.124Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:10:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:10:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Bookmark",
@@ -56,37 +86,57 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmKitchen.cs",
+              "DocumentMoniker": "C:\\Users\\DuongLapTop\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmKitchen.cs",
+              "RelativeDocumentMoniker": "Barista\\frmKitchen.cs",
+              "ToolTip": "C:\\Users\\DuongLapTop\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmKitchen.cs",
+              "RelativeToolTip": "Barista\\frmKitchen.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAowIMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T06:59:02.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ucKitchen.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\DuongLapTop\\source\\repos\\Coffee-Shop-Management-System\\Barista\\ucKitchen.cs",
+              "RelativeDocumentMoniker": "Barista\\ucKitchen.cs",
+              "ToolTip": "C:\\Users\\DuongLapTop\\source\\repos\\Coffee-Shop-Management-System\\Barista\\ucKitchen.cs [Design]",
+              "RelativeToolTip": "Barista\\ucKitchen.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T06:58:56.24Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "frmKitchen.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmKitchen.cs",
+              "DocumentMoniker": "C:\\Users\\DuongLapTop\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmKitchen.cs",
               "RelativeDocumentMoniker": "Barista\\frmKitchen.cs",
-              "ToolTip": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmKitchen.cs [Design]",
+              "ToolTip": "C:\\Users\\DuongLapTop\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmKitchen.cs [Design]",
               "RelativeToolTip": "Barista\\frmKitchen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T16:53:18.827Z",
+              "WhenOpened": "2025-03-08T06:58:24.921Z",
               "EditorCaption": " [Design]"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 280,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmOrderDetail.cs",
+              "DocumentMoniker": "C:\\Users\\DuongLapTop\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmOrderDetail.cs",
+              "RelativeDocumentMoniker": "Barista\\frmOrderDetail.cs",
+              "ToolTip": "C:\\Users\\DuongLapTop\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmOrderDetail.cs",
+              "RelativeToolTip": "Barista\\frmOrderDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T06:56:16.647Z",
+              "EditorCaption": ""
             }
           ]
         }

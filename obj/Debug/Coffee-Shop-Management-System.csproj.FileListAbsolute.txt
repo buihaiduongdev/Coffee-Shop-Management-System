@@ -171,3 +171,14 @@ E:\HK2_2\WINFORM\Coffee-Shop\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop
 E:\HK2_2\WINFORM\Coffee-Shop\Coffee-Shop-Management-System\obj\Debug\Coffee-S.3221D379.Up2Date
 E:\HK2_2\WINFORM\Coffee-Shop\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.exe
 E:\HK2_2\WINFORM\Coffee-Shop\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.pdb
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmBarista.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmKitchen.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.ucKitchen.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmCustomer.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmBillList.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmCheckout.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmProductAdd.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Receptionist.frmReceptionist.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmKitchenView.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmProductView.resources
+C:\Users\DuongLapTop\source\repos\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmOrderDetail.resources
