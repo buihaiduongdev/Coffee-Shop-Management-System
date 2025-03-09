@@ -130,7 +130,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlProduct);
-            this.Margin = new System.Windows.Forms.Padding(10);
             this.Name = "ucProduct";
             this.Size = new System.Drawing.Size(252, 259);
             this.pnlProduct.ResumeLayout(false);

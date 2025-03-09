@@ -83,12 +83,20 @@
     <Compile Include="Barista\ucKitchen.Designer.cs">
       <DependentUpon>ucKitchen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Customer\frmCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\frmCart.Designer.cs">
+      <DependentUpon>frmCart.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customer\frmCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Customer\frmCustomer.Designer.cs">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Customer\Item.cs" />
+    <Compile Include="Customer\Product.cs" />
     <Compile Include="DatabaseHelper.cs" />
     <Compile Include="frmHome.cs">
       <SubType>Form</SubType>
@@ -233,6 +241,9 @@
     <EmbeddedResource Include="Barista\ucKitchen.resx">
       <DependentUpon>ucKitchen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Customer\frmCart.resx">
+      <DependentUpon>frmCart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Customer\frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -346,6 +357,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\search-interface-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
