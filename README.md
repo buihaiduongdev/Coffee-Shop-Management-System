@@ -30,6 +30,6 @@ Phần mền quản lí hệ thống bán coffee do nhóm sinh viên trư
   - [Võ An Thái](https://github.com/Anthai2)  
   - [Đinh Văn Sáng](https://github.com/Sangchaos)
   - [Thái Quang Huy](https://github.com/HuyQuangThai)
-  - [Châu Kim Lương](https://github.com/ChauKimLuong116)
+  - [Châu Kim Lương](https://github.com/ChauKimLuong)
 
 
