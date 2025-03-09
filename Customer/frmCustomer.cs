@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using Guna.UI2.WinForms;
 using Restaurant_Management_System.Backend;
 using Restaurant_Management_System.Model;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Header;
 
 namespace Restaurant_Management_System.Customer
 {
@@ -21,11 +22,31 @@ namespace Restaurant_Management_System.Customer
         {
             InitializeComponent();
         }
-        public class Product
+
+        private BindingList<Item> cart = new BindingList<Item>();
+
+        private void Product_ClickAddItem(object sender, Product product)
         {
-            public string Name { get; set; }
-            public decimal Price { get; set; }
-            public string ImagePath { get; set; }
+            bool exist = false;
+            foreach (Item item in cart)
+            {
+                if (item.Product.ProductID == product.ProductID)
+                {
+                    item.Quantity++;
+                    exist = true;
+                    break;  
+                }
+            }
+            if (!exist) cart.Add(new Item(product, 1));
+
+            int itemQuantity = 0;
+
+            foreach (var item in cart)
+            {
+                itemQuantity += item.Quantity;
+            }
+
+            lblCart.Text = itemQuantity.ToString();
         }
         private void frmCustomer_Load(object sender, EventArgs e)
         {
@@ -33,7 +54,6 @@ namespace Restaurant_Management_System.Customer
 
             loadCategories();
             loadProducts();
-
         }
         private void addItems(string ProductID, string ProductName, string Price, Image image, string CategoryName)
         {
@@ -46,6 +66,8 @@ namespace Restaurant_Management_System.Customer
                 id = Convert.ToInt32(ProductID)
 
             };
+
+            u.ClickAddItem += Product_ClickAddItem;
             ProductPanel.Controls.Add(u);
         }
         private void loadProducts()
@@ -149,7 +171,6 @@ namespace Restaurant_Management_System.Customer
                 );
             }
         }
-
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             foreach (var item in ProductPanel.Controls)
@@ -158,8 +179,17 @@ namespace Restaurant_Management_System.Customer
                 pro.Visible = pro.PName.ToLower().Contains(txtSearch.Text.Trim().ToLower());
             }
         }
+        private void pbCart_Click(object sender, EventArgs e)
+        {
+            frmCart fCart = new frmCart(cart);
+            fCart.ShowDialog();
 
+            updateCart();
+        }
 
-
+        private void updateCart()
+        {
+            lblCart.Text = cart.Sum(item => item.Quantity).ToString();
+        }
     }
 }
