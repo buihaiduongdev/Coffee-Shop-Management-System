@@ -301,7 +301,7 @@
             this.lblCart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(57)))), ((int)(((byte)(20)))));
             this.lblCart.Font = new System.Drawing.Font("Onest ExtraBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCart.ForeColor = System.Drawing.Color.White;
-            this.lblCart.Location = new System.Drawing.Point(1351, 107);
+            this.lblCart.Location = new System.Drawing.Point(1352, 107);
             this.lblCart.Name = "lblCart";
             this.lblCart.Size = new System.Drawing.Size(14, 26);
             this.lblCart.TabIndex = 23;
