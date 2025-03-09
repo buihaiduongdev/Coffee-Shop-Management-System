@@ -26,13 +26,30 @@ namespace Restaurant_Management_System.Customer
         {
             loadItem();
             config();
+            loadRows();
         }
+        private void loadRows()
+        {
+            int headerHeight = dgvCart.ColumnHeadersHeight;
+            int rowHeight = dgvCart.RowTemplate.Height;
+            int rowCount = dgvCart.RowCount;
+
+            dgvCart.Height = headerHeight + rowHeight * Math.Min(rowCount, 7);
+
+            if (rowCount > 7)
+            {
+                dgvCart.ScrollBars = ScrollBars.Vertical;
+                dgvCart.Width = dgvCart.Width + 17;
+            }
+
+        }
+
         private void config()
         {
             dgvCart.AlternatingRowsDefaultCellStyle = null;
-            dgvCart.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
             dgvCart.Height = dgvCart.Rows.GetRowsHeight(DataGridViewElementStates.Visible) + dgvCart.ColumnHeadersHeight;
             dgvCart.Columns["colQuantity"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
         }
         private void loadItem()
         {
@@ -61,8 +78,7 @@ namespace Restaurant_Management_System.Customer
             {
                 dgvCart.Rows[i].Cells["colDelete"].Value = Properties.Resources.delete;
             }
-
-
+            dgvCart.ClearSelection();
 
         }
 
@@ -79,6 +95,11 @@ namespace Restaurant_Management_System.Customer
                 }
             }
             loadItem();
+        }
+
+        private void pbBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
