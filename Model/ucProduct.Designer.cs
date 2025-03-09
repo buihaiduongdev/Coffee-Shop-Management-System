@@ -113,7 +113,6 @@
             this.lblProductName2.Size = new System.Drawing.Size(38, 25);
             this.lblProductName2.TabIndex = 5;
             this.lblProductName2.Text = "Tên";
-            this.lblProductName2.Click += new System.EventHandler(this.lblProductName2_Click);
             // 
             // lblProductPrice2
             // 
@@ -131,9 +130,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlProduct);
+            this.Margin = new System.Windows.Forms.Padding(10);
             this.Name = "ucProduct";
             this.Size = new System.Drawing.Size(252, 259);
-            this.Load += new System.EventHandler(this.ucProduct_Load);
             this.pnlProduct.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.panel2.ResumeLayout(false);
