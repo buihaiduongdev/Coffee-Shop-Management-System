@@ -27,7 +27,7 @@ namespace Restaurant_Management_System.Model
         public int id { get; set; }
         public decimal PPrice {
             get { return Convert.ToDecimal(lblProductPrice2.Text.Replace(" VND", "").Trim());}
-            set { lblProductPrice2.Text = value.ToString("0.##") + " VND"; }
+            set { lblProductPrice2.Text = value.ToString("0.##"); }
         }
         public string PName 
         { 
@@ -73,6 +73,11 @@ namespace Restaurant_Management_System.Model
             };
 
             ClickAddItem?.Invoke(this, product);
+        }
+
+        private void lblProductPrice2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -107,7 +107,7 @@ namespace Restaurant_Management_System.Customer
                 btnCategory.FillColor = this.BackColor;
                 btnCategory.ForeColor = ColorTranslator.FromHtml("#533914");
                 btnCategory.Size = new Size(buttonWidth, 40);
-                btnCategory.Font = new Font("JetBrains Mono NL", 14, FontStyle.Bold);
+                btnCategory.Font = new Font("JetBrains Mono", 14, FontStyle.Bold);
                 btnCategory.BorderRadius = 20;
                 btnCategory.Margin = new Padding(margin, 0, margin, 0);
 
@@ -190,6 +190,16 @@ namespace Restaurant_Management_System.Customer
         private void updateCart()
         {
             lblCart.Text = cart.Sum(item => item.Quantity).ToString();
+        }
+
+        private void lblCart_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ControlBox3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

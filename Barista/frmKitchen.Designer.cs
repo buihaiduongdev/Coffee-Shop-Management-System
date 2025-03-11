@@ -39,9 +39,10 @@
             this.flpOrders.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.flpOrders.AutoScroll = true;
             this.flpOrders.Location = new System.Drawing.Point(9, 64);
             this.flpOrders.Name = "flpOrders";
-            this.flpOrders.Size = new System.Drawing.Size(825, 385);
+            this.flpOrders.Size = new System.Drawing.Size(825, 531);
             this.flpOrders.TabIndex = 3;
             // 
             // tnPending
@@ -112,10 +113,10 @@
             // 
             // frmKitchen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(849, 504);
+            this.ClientSize = new System.Drawing.Size(849, 653);
             this.Controls.Add(this.btnCompleted);
             this.Controls.Add(this.btnProcessing);
             this.Controls.Add(this.tnPending);

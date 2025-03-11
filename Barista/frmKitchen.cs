@@ -25,10 +25,11 @@ namespace Restaurant_Management_System.Barista
         public void LoadOrders(string statusFilter)
         {
             string query = @"
-            SELECT O.OrderID, O.OrderDay, Pre.PreparationID, Pre.Status, Pre.StartTime, Pre.EndTime, Pre.TableID, p.ProductName
+            SELECT O.OrderID, O.OrderDay, Pre.PreparationID, Pre.Status, Pre.StartTime, Pre.EndTime, Pre.TableID, p.ProductName, od.Quantity, od.ProductID
             FROM Orders as O
-            INNER JOIN Preparations Pre ON O.OrderID = Pre.OrderID
-            INNER JOIN Products P ON Pre.ProductID = P.ProductID
+            INNER JOIN [Order Details] od ON od.OrderID = o.OrderID
+            INNER JOIN Preparations Pre ON od.OrderDetailID = Pre.PreparationID
+            INNER JOIN Products P ON od.ProductID = P.ProductID
             WHERE Pre.Status = @StatusFilter
             ";
 
@@ -44,6 +45,7 @@ namespace Restaurant_Management_System.Barista
             {
                 int preparationID = Convert.ToInt32(row["PreparationID"]);
                 string name = row["ProductName"].ToString();
+                int quantity = Convert.ToInt32(row["Quantity"]);
                 string status = row["Status"].ToString();
                 DateTime orderTime = Convert.ToDateTime(row["OrderDay"]);
 
