@@ -213,3 +213,6 @@ E:\HK2_2\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_S
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmKitchen.resources
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.ucKitchen.resources
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmCart.resources
+E:\HK2_2\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmLoginRegister.resources
+E:\HK2_2\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucLogin.resources
+E:\HK2_2\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucRegister.resources

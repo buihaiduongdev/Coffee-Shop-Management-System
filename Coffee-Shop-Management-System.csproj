@@ -110,6 +110,12 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogin2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin2.Designer.cs">
+      <DependentUpon>frmLogin2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,11 +177,23 @@
     <Compile Include="Model\frmWaiterSelect.Designer.cs">
       <DependentUpon>frmWaiterSelect.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\ucLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\ucLogin.Designer.cs">
+      <DependentUpon>ucLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\ucProduct.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Model\ucProduct.Designer.cs">
       <DependentUpon>ucProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ucRegister.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\ucRegister.Designer.cs">
+      <DependentUpon>ucRegister.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -253,6 +271,9 @@
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin2.resx">
+      <DependentUpon>frmLogin2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -283,8 +304,14 @@
     <EmbeddedResource Include="Model\frmWaiterSelect.resx">
       <DependentUpon>frmWaiterSelect.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Model\ucLogin.resx">
+      <DependentUpon>ucLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Model\ucProduct.resx">
       <DependentUpon>ucProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\ucRegister.resx">
+      <DependentUpon>ucRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -363,6 +390,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9f6496b7-96b9-4292-9d74-091e8c031755.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\73ea671c2543c9a2e3b4cfc391c7b51c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgPnl2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgPnl4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgPnl%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

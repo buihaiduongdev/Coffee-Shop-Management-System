@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
@@ -37,6 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -52,19 +52,6 @@
             this.guna2Panel1.Size = new System.Drawing.Size(386, 231);
             this.guna2Panel1.TabIndex = 2;
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::Restaurant_Management_System.Properties.Resources.user;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(107, 46);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(164, 127);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 8;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -72,7 +59,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(12, 200);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(181, 23);
+            this.label3.Size = new System.Drawing.Size(146, 19);
             this.label3.TabIndex = 0;
             this.label3.Text = "Enter user information";
             // 
@@ -81,7 +68,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(78, 234);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 23);
+            this.label1.Size = new System.Drawing.Size(71, 19);
             this.label1.TabIndex = 2;
             this.label1.Text = "Username";
             // 
@@ -131,7 +118,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(78, 348);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 23);
+            this.label2.Size = new System.Drawing.Size(67, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "Password";
             // 
@@ -171,9 +158,22 @@
             this.btnExit.Text = "Exit";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = global::Restaurant_Management_System.Properties.Resources.user;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(107, 46);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(164, 127);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 8;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
+            // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(386, 540);
             this.Controls.Add(this.btnExit);
