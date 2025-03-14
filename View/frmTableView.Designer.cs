@@ -37,7 +37,6 @@
             this.dgvTableID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvCapacity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvEmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
             this.dgvdel = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTables)).BeginInit();
@@ -82,7 +81,6 @@
             this.dgvTableID,
             this.dgvCapacity,
             this.dgvStatus,
-            this.dgvEmployeeID,
             this.dgvedit,
             this.dgvdel});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -157,13 +155,6 @@
             this.dgvStatus.Name = "dgvStatus";
             this.dgvStatus.ReadOnly = true;
             // 
-            // dgvEmployeeID
-            // 
-            this.dgvEmployeeID.HeaderText = "EmployeeID";
-            this.dgvEmployeeID.MinimumWidth = 6;
-            this.dgvEmployeeID.Name = "dgvEmployeeID";
-            this.dgvEmployeeID.ReadOnly = true;
-            // 
             // dgvedit
             // 
             this.dgvedit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
@@ -209,7 +200,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvTableID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvCapacity;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvStatus;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvEmployeeID;
         private System.Windows.Forms.DataGridViewImageColumn dgvedit;
         private System.Windows.Forms.DataGridViewImageColumn dgvdel;
     }

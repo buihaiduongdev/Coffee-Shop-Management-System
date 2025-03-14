@@ -1,6 +1,7 @@
 ﻿using Restaurant_Management_System.Backend;
 using Restaurant_Management_System.Barista;
 using Restaurant_Management_System.Customer;
+using Restaurant_Management_System.Receptionist;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -20,7 +21,7 @@ namespace Restaurant_Management_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLoginRegister());
+            Application.Run(new frmReceptionist());  
         }
     }
 

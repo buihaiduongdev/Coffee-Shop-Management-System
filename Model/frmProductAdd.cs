@@ -49,21 +49,19 @@ namespace Restaurant_Management_System.Model
         }
         private void InsertProduct()
         {
-            string strProductID = txtProductID.Text;
             string productName = txtName.Text;
             string strPrice = txtPrice.Text;
             string category = cmbCategory.SelectedItem.ToString();
-            int productID = int.Parse(strProductID);
             decimal price = decimal.Parse(strPrice);
             byte[] imageBytes = ConvertImageToByteArray(picImage);
 
-            string query = "INSERT INTO Products(ProductID, ProductName, Price, Image,CategoryName) " +
-                           "VALUES(@ProductID, @ProductName, @Price, @Image, @CategoryName )";
+            string query = "INSERT INTO Products(ProductName, Price, Image,CategoryName) " +
+                           "VALUES( @ProductName, @Price, @Image, @CategoryName )";
 
 
             SqlParameter[] parameters = new SqlParameter[]
             {
-                new SqlParameter("@ProductID", productID),
+  
                 new SqlParameter("@ProductName", productName),
                 new SqlParameter("@Price", price),
                 new SqlParameter("@Image", SqlDbType.VarBinary) { Value = (imageBytes != null ? (object)imageBytes : DBNull.Value) },

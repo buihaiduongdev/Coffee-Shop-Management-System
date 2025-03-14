@@ -28,27 +28,25 @@ namespace Restaurant_Management_System.Model
         {
             string firstName = txtFirstName.Text;
             string lastName = txtLastName.Text;
-            string employeeID = txtEmployeeID.Text;
-            string username = txtUserName.Text;
+            string username = "NV" + txtUserName.Text;
             string password = txtPassword.Text;
             string phone = txtPhone.Text;
             string role = cbRole.SelectedItem.ToString();
             string Strsalary = txtSalary.Text;
             decimal salary = decimal.Parse(txtSalary.Text);
 
-            String query = "INSERT INTO Employees(EmployeeID, Username, Password, LastName, FirstName, Phone, Image, Role, Salary) " +
-                   "VALUES(@EmployeeID, @Username, @Password, @LastName, @FirstName, @Phone, @Image, @Role, @Salary)";
+            String query = "INSERT INTO Employees(Username, Password, LastName, FirstName, Phone, Image, Role, Salary) " +
+                   "VALUES(@Username, @Password, @LastName, @FirstName, @Phone, @Image, @Role, @Salary)";
 
-            // Tạo các tham số để truyền vào câu lệnh SQL
+
             SqlParameter[] parameters = new SqlParameter[]
             {
-                new SqlParameter("@EmployeeID", employeeID),
                 new SqlParameter("@Username", username),
                 new SqlParameter("@Password", password),
                 new SqlParameter("@LastName", lastName),
                 new SqlParameter("@FirstName", firstName),
                 new SqlParameter("@Phone", phone),
-                new SqlParameter("@Image", DBNull.Value),  // Giá trị NULL cho Image
+                new SqlParameter("@Image", DBNull.Value),  
                 new SqlParameter("@Role", role),
                 new SqlParameter("@Salary", salary)
             };

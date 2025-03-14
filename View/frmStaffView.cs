@@ -89,43 +89,6 @@ namespace Restaurant_Management_System.View
             }
         }
 
-
-
-
-
-        private void guna2DataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dvgedit")
-            //{
-            //    frmStaffAdd frm = new frmStaffAdd();
-            //    frm.id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dvgid"].Value);
-            //    frm.txtName.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dvgName"].Value);
-            //    frm.txtPhone.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dvgPhone"].Value);
-            //    frm.cbRole.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dvgRole"].Value);
-            //    frm.ShowDialog();
-            //    GetData();
-            //}
-            //if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dvgdel")
-            //{
-            //    //đưa ra thông báo có Xóa hay không
-            //    guna2MessageDialog1.Icon = Guna.UI2.WinForms.MessageDialogIcon.Question;
-            //    guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.YesNo;
-            //    if (Guna2MessageDialog1.Show("Bạn có muốn xóa không?") == DialogResult.Yes)
-            //    {
-            //        int id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dvgid"].Value);
-            //        string qry = "Delete from staff where staffID= " + id + "";
-            //        Hashtable ht = new Hashtable();
-            //        MainClass.SQl(qry, ht);
-
-            //        guna2MessageDialog1.Icon = Guna.UI2.WinForms.MessageDialogIcon.Information;
-            //        guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
-            //        guna2MessageDialog1.Show("Deleted successfully...");
-            //        GetData();
-            //    }
-            //}
-            //Chưa có file BE MainClass
-        }
-
         private void dgvEmployee_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0) // Đảm bảo không click vào Header
@@ -146,9 +109,6 @@ namespace Restaurant_Management_System.View
 
                         frmStaffAdd frm = new frmStaffAdd(employeeID);
 
-                        // Gán dữ liệu từ database vào các TextBox trên form
-                        frm.txtEmployeeID.Text = row["EmployeeID"].ToString();
-                        frm.txtEmployeeID.Enabled = false; // Không cho sửa EmployeeID
                         frm.txtFirstName.Text = row["FirstName"].ToString();
                         frm.txtLastName.Text = row["LastName"].ToString();
                         frm.txtUserName.Text = row["Username"].ToString();

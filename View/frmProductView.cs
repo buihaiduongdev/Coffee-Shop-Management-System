@@ -125,8 +125,6 @@ namespace Restaurant_Management_System.View
                     int id = Convert.ToInt32(productID);
 
                     frmProductAdd frm = new frmProductAdd(id);
-                    frm.txtProductID.Text = productID;
-                    frm.txtProductID.Enabled = false;
                     frm.txtName.Text = Convert.ToString(dgvProduct.CurrentRow.Cells["dgvProductName"].Value);
                     frm.txtPrice.Text = Convert.ToString(dgvProduct.CurrentRow.Cells["dgvPrice"].Value);
                     frm.ShowDialog();

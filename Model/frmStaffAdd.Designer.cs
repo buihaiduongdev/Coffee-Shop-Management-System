@@ -36,8 +36,6 @@
             this.cbRole = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtLastName = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtEmployeeID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
@@ -169,36 +167,6 @@
             this.guna2HtmlLabel4.TabIndex = 8;
             this.guna2HtmlLabel4.Text = "Last Name";
             // 
-            // txtEmployeeID
-            // 
-            this.txtEmployeeID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmployeeID.DefaultText = "";
-            this.txtEmployeeID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEmployeeID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEmployeeID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmployeeID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmployeeID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmployeeID.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtEmployeeID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtEmployeeID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmployeeID.Location = new System.Drawing.Point(329, 271);
-            this.txtEmployeeID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtEmployeeID.Name = "txtEmployeeID";
-            this.txtEmployeeID.PasswordChar = '\0';
-            this.txtEmployeeID.PlaceholderText = "";
-            this.txtEmployeeID.SelectedText = "";
-            this.txtEmployeeID.Size = new System.Drawing.Size(244, 43);
-            this.txtEmployeeID.TabIndex = 11;
-            // 
-            // guna2HtmlLabel5
-            // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(329, 230);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(16, 18);
-            this.guna2HtmlLabel5.TabIndex = 10;
-            this.guna2HtmlLabel5.Text = "ID";
-            // 
             // txtPassword
             // 
             this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -211,7 +179,7 @@
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Location = new System.Drawing.Point(329, 498);
+            this.txtPassword.Location = new System.Drawing.Point(329, 378);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '\0';
@@ -223,7 +191,7 @@
             // guna2HtmlLabel6
             // 
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(329, 457);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(329, 337);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(63, 18);
             this.guna2HtmlLabel6.TabIndex = 14;
@@ -241,7 +209,7 @@
             this.txtUserName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUserName.Location = new System.Drawing.Point(329, 385);
+            this.txtUserName.Location = new System.Drawing.Point(329, 265);
             this.txtUserName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.PasswordChar = '\0';
@@ -253,7 +221,7 @@
             // guna2HtmlLabel7
             // 
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(329, 344);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(329, 224);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(72, 18);
             this.guna2HtmlLabel7.TabIndex = 12;
@@ -300,8 +268,6 @@
             this.Controls.Add(this.guna2HtmlLabel6);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.guna2HtmlLabel7);
-            this.Controls.Add(this.txtEmployeeID);
-            this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.guna2HtmlLabel4);
             this.Controls.Add(this.cbRole);
@@ -328,8 +294,6 @@
         public Guna.UI2.WinForms.Guna2ComboBox cbRole;
         public Guna.UI2.WinForms.Guna2TextBox txtLastName;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        public Guna.UI2.WinForms.Guna2TextBox txtEmployeeID;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         public Guna.UI2.WinForms.Guna2TextBox txtPassword;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         public Guna.UI2.WinForms.Guna2TextBox txtUserName;

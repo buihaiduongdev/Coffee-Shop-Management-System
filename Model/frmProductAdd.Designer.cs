@@ -36,8 +36,6 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnBrowse = new Guna.UI2.WinForms.Guna2Button();
             this.picImage = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.txtProductID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cmbCategory = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.picImage)).BeginInit();
@@ -146,36 +144,6 @@
             this.picImage.TabIndex = 19;
             this.picImage.TabStop = false;
             // 
-            // txtProductID
-            // 
-            this.txtProductID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtProductID.DefaultText = "";
-            this.txtProductID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtProductID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtProductID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtProductID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtProductID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProductID.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtProductID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtProductID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtProductID.Location = new System.Drawing.Point(277, 160);
-            this.txtProductID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtProductID.Name = "txtProductID";
-            this.txtProductID.PasswordChar = '\0';
-            this.txtProductID.PlaceholderText = "";
-            this.txtProductID.SelectedText = "";
-            this.txtProductID.Size = new System.Drawing.Size(140, 43);
-            this.txtProductID.TabIndex = 21;
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(277, 117);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(62, 18);
-            this.guna2HtmlLabel3.TabIndex = 20;
-            this.guna2HtmlLabel3.Text = "ProductID";
-            // 
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
@@ -207,8 +175,6 @@
             this.ClientSize = new System.Drawing.Size(662, 521);
             this.Controls.Add(this.cmbCategory);
             this.Controls.Add(this.guna2HtmlLabel5);
-            this.Controls.Add(this.txtProductID);
-            this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.picImage);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.txtPrice);
@@ -234,8 +200,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         public Guna.UI2.WinForms.Guna2Button btnBrowse;
         private Guna.UI2.WinForms.Guna2CirclePictureBox picImage;
-        public Guna.UI2.WinForms.Guna2TextBox txtProductID;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2ComboBox cmbCategory;
     }

@@ -27,7 +27,7 @@ namespace Restaurant_Management_System.View
         private void LoadTableData()
         {
             string query = @"
-        SELECT TableID, Capacity, Status, EmployeeID
+        SELECT TableID, Capacity, Status
         FROM Tables"; // Chỉ lấy cột cần thiết
 
             try
@@ -43,7 +43,6 @@ namespace Restaurant_Management_System.View
                     dgvTables.Rows[i].Cells["dgvTableID"].Value = dt.Rows[i]["TableID"];
                     dgvTables.Rows[i].Cells["dgvCapacity"].Value = dt.Rows[i]["Capacity"];
                     dgvTables.Rows[i].Cells["dgvStatus"].Value = dt.Rows[i]["Status"];
-                    dgvTables.Rows[i].Cells["dgvEmployeeID"].Value = dt.Rows[i]["EmployeeID"];
                 }
             }
             catch (Exception ex)
@@ -65,13 +64,13 @@ namespace Restaurant_Management_System.View
 
             foreach (DataGridViewRow row in dgvTables.Rows)
             {
-                if (row.Cells["dgvTableID"].Value != null && row.Cells["dgvStatus"].Value != null && row.Cells["dgvEmployeeID"].Value != null)
+                if (row.Cells["dgvTableID"].Value != null && row.Cells["dgvStatus"].Value != null )
                 {
                     string id = row.Cells["dgvTableID"].Value.ToString().ToLower();
                     string status = row.Cells["dgvStatus"].Value.ToString().ToLower();
-                    string employee = row.Cells["dgvEmployeeID"].Value.ToString().ToLower();
 
-                    row.Visible = id.Contains(searchValue) || status.Contains(searchValue) || employee.Contains(searchValue);
+
+                    row.Visible = id.Contains(searchValue) || status.Contains(searchValue);
                 }
             }
         }
