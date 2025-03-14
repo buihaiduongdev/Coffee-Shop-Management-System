@@ -10,12 +10,13 @@ namespace Restaurant_Management_System.Barista
         private DateTime orderTime;
         private int preparationID; // ID đơn hàng để cập nhật trạng thái
         public Action RefreshOrders; // Delegate để gọi LoadOrders()
-
-        public ucKitchen(int preparationID, string productName, string status, TimeSpan elapsedTime)
+        public ucKitchen(int preparationID, string productName, string orderID, int quantity, string status, TimeSpan elapsedTime)
         {
             InitializeComponent();
             this.preparationID = preparationID;
             this.ProductName = productName;
+            this.OrderID = orderID;
+            this.Quantity = quantity;   
             this.Status = status;
             this.orderTime = DateTime.Now - elapsedTime;
             this.SetStyle(ControlStyles.Selectable, true);
@@ -53,7 +54,7 @@ namespace Restaurant_Management_System.Barista
 
         private void UcKitchen_Click(object sender, EventArgs e)
         {
-            frmOrderDetail frmOrderDetail = new frmOrderDetail(preparationID);
+            frmOrderDetail frmOrderDetail = new frmOrderDetail(preparationID, this.Status);
             frmOrderDetail.ShowDialog();
         }
 
@@ -86,7 +87,17 @@ namespace Restaurant_Management_System.Barista
             get { return lblProductName.Text; }
             set { lblProductName.Text = value; }
         }
+        public string OrderID
+        {
+            get { return lblOrderID.Text; }
+            set { lblOrderID.Text = value; }
+        }
 
+        public int Quantity
+        {
+            get { return int.Parse(lblQuantity.Text); }
+            set { lblQuantity.Text = value.ToString(); }
+        }
         public string Status
         {
             get { return lblStatus.Text; }
@@ -137,7 +148,6 @@ namespace Restaurant_Management_System.Barista
                 UpdateOrderStatus("Completed");
             }
             RefreshOrders?.Invoke(); // Gọi LoadOrders() từ frmKitchen
-
         }
     }
 

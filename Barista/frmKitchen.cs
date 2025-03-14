@@ -14,6 +14,7 @@ namespace Restaurant_Management_System.Barista
 {
     public partial class frmKitchen : Form
     {
+        public static frmKitchen FrmKitchen;
         string status = "";
         private Guna2Button previousButton = null;
         public frmKitchen()
@@ -23,6 +24,7 @@ namespace Restaurant_Management_System.Barista
 
         private void frmKitchen_Load(object sender, EventArgs e)
         {
+            FrmKitchen = this;
             flpOrders.Controls.Clear();
             tnPending.Checked = true;
             status = "Pending"; // Đặt trạng thái mặc định là "Pending"
@@ -99,10 +101,12 @@ namespace Restaurant_Management_System.Barista
         public void LoadOrders(string statusFilter, int tableID = -1)
         {
             string query = @"
-            SELECT O.OrderID, O.OrderDay, Pre.PreparationID, Pre.Status, Pre.StartTime, Pre.EndTime, Pre.TableID, p.ProductName
+            SELECT O.OrderID, OD.Quantity, O.OrderDay, Pre.PreparationID, Pre.Status, Pre.StartTime, Pre.EndTime, Pre.TableID, p.ProductName
             FROM Orders as O
             INNER JOIN Preparations Pre ON O.OrderID = Pre.OrderID
             INNER JOIN Products P ON Pre.ProductID = P.ProductID
+            INNER JOIN Tables T ON T.TableID = Pre.TableID
+            INNER JOIN Order_Details OD ON O.OrderID = OD.OrderID
             WHERE Pre.Status = @StatusFilter
             ";
             SqlParameter[] parameters = new SqlParameter[]
@@ -112,11 +116,12 @@ namespace Restaurant_Management_System.Barista
             DataTable dt = DatabaseHelper.ExecuteQuery(query, parameters);
             if (tableID != -1) {
             query = @"
-            SELECT O.OrderID, O.OrderDay, Pre.PreparationID, Pre.Status, Pre.StartTime, Pre.EndTime, Pre.TableID, p.ProductName
+            SELECT O.OrderID, OD.Quantity, O.OrderDay, Pre.PreparationID, Pre.Status, Pre.StartTime, Pre.EndTime, Pre.TableID, p.ProductName
             FROM Orders as O
             INNER JOIN Preparations Pre ON O.OrderID = Pre.OrderID
             INNER JOIN Products P ON Pre.ProductID = P.ProductID
             INNER JOIN Tables T ON T.TableID = Pre.TableID
+            INNER JOIN Order_Details OD ON O.OrderID = OD.OrderID
             WHERE Pre.Status = @StatusFilter AND Pre.TableID = @TableID
             ";
             parameters = new SqlParameter[]
@@ -134,12 +139,15 @@ namespace Restaurant_Management_System.Barista
             {
                 int preparationID = Convert.ToInt32(row["PreparationID"]);
                 string name = row["ProductName"].ToString();
+                int quantity =int.Parse(row["Quantity"].ToString());
+                string orderID = row["OrderID"].ToString();
                 string status = row["Status"].ToString();
                 DateTime orderTime = Convert.ToDateTime(row["OrderDay"]);
 
                 TimeSpan elapsed = DateTime.Now - orderTime; // Tính thời gian chờ
 
-                ucKitchen orderControl = new ucKitchen(preparationID, name, status, elapsed);
+                ucKitchen orderControl = new ucKitchen(preparationID, name, orderID, quantity,status, elapsed);
+                orderControl.Size = new Size(150, 200);
                 orderControl.RefreshOrders = () => LoadOrders(statusFilter); // Gán delegate
                 flpOrders.Controls.Add(orderControl);
             }
@@ -150,6 +158,7 @@ namespace Restaurant_Management_System.Barista
         {
             status = "Completed";
             LoadOrders("Completed");
+            
 
         }
 

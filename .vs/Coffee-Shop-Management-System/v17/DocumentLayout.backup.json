@@ -3,32 +3,37 @@
   "WorkspaceRootPath": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\barista\\frmorderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:barista\\frmorderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_PI07PGT/CoffeeShopDB/True/SqlTable/dbo.Preparations.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|c:\\users\\haidu\\source\\repos\\coffee-shop-management-system\\barista\\frmorderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:barista\\frmorderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|c:\\users\\haidu\\source\\repos\\coffee-shop-management-system\\barista\\uckitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:barista\\uckitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|c:\\users\\haidu\\source\\repos\\coffee-shop-management-system\\barista\\frmkitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:barista\\frmkitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|c:\\users\\haidu\\source\\repos\\coffee-shop-management-system\\barista\\frmkitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:barista\\frmkitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|c:\\users\\haidu\\source\\repos\\coffee-shop-management-system\\barista\\uckitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:barista\\uckitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\barista\\uckitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:barista\\uckitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|c:\\users\\haidu\\source\\repos\\coffee-shop-management-system\\barista\\frmorderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:barista\\frmorderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|c:\\users\\haidu\\source\\repos\\coffee-shop-management-system\\barista\\frmbarista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:barista\\frmbarista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\barista\\frmkitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:barista\\frmkitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_PI07PGT/CoffeeShopDB/True/SqlTable/dbo.Orders.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|c:\\users\\haidu\\source\\repos\\coffee-shop-management-system\\barista\\frmkitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:barista\\frmkitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_PI07PGT/CoffeeShopDB/True/SqlTable/dbo.Order_Details.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +43,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,89 +55,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmBarista.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmBarista.cs",
-              "RelativeDocumentMoniker": "Barista\\frmBarista.cs",
-              "ToolTip": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmBarista.cs [Design]",
-              "RelativeToolTip": "Barista\\frmBarista.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T08:36:02.968Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmOrderDetail.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmOrderDetail.cs",
-              "RelativeDocumentMoniker": "Barista\\frmOrderDetail.cs",
-              "ToolTip": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmOrderDetail.cs [Design]*",
-              "RelativeToolTip": "Barista\\frmOrderDetail.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T08:36:01.433Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ucKitchen.cs",
-              "DocumentMoniker": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\ucKitchen.cs",
-              "RelativeDocumentMoniker": "Barista\\ucKitchen.cs",
-              "ToolTip": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\ucKitchen.cs",
-              "RelativeToolTip": "Barista\\ucKitchen.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAswDgAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T08:33:35.866Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "ucKitchen.cs [Design]",
               "DocumentMoniker": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\ucKitchen.cs",
               "RelativeDocumentMoniker": "Barista\\ucKitchen.cs",
               "ToolTip": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\ucKitchen.cs [Design]",
               "RelativeToolTip": "Barista\\ucKitchen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T06:58:56.24Z",
+              "WhenOpened": "2025-03-14T16:17:48.909Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "dbo.Preparations [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_PI07PGT/CoffeeShopDB/True/SqlTable/dbo.Preparations.sql",
+              "ToolTip": "dbo.Preparations [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-14T16:09:51.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ucKitchen.cs",
+              "DocumentMoniker": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\ucKitchen.cs",
+              "RelativeDocumentMoniker": "Barista\\ucKitchen.cs",
+              "ToolTip": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\ucKitchen.cs",
+              "RelativeToolTip": "Barista\\ucKitchen.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAiwJcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T16:22:41.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "frmKitchen.cs [Design]",
               "DocumentMoniker": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmKitchen.cs",
               "RelativeDocumentMoniker": "Barista\\frmKitchen.cs",
               "ToolTip": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmKitchen.cs [Design]",
               "RelativeToolTip": "Barista\\frmKitchen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T06:58:24.921Z",
+              "WhenOpened": "2025-03-14T16:17:52.335Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmOrderDetail.cs",
-              "DocumentMoniker": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmOrderDetail.cs",
-              "RelativeDocumentMoniker": "Barista\\frmOrderDetail.cs",
-              "ToolTip": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmOrderDetail.cs*",
-              "RelativeToolTip": "Barista\\frmOrderDetail.cs*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBcAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T06:56:16.647Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "frmKitchen.cs",
               "DocumentMoniker": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmKitchen.cs",
               "RelativeDocumentMoniker": "Barista\\frmKitchen.cs",
               "ToolTip": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmKitchen.cs",
               "RelativeToolTip": "Barista\\frmKitchen.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAAAYwKgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHsAAAAAAAAAAADgv5UAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T06:59:02.86Z",
+              "WhenOpened": "2025-03-14T16:07:13.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmOrderDetail.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmOrderDetail.cs",
+              "RelativeDocumentMoniker": "Barista\\frmOrderDetail.cs",
+              "ToolTip": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmOrderDetail.cs [Design]",
+              "RelativeToolTip": "Barista\\frmOrderDetail.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T16:22:30.186Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmBarista.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmBarista.cs",
+              "RelativeDocumentMoniker": "Barista\\frmBarista.cs",
+              "ToolTip": "C:\\Users\\haidu\\source\\repos\\Coffee-Shop-Management-System\\Barista\\frmBarista.cs [Design]",
+              "RelativeToolTip": "Barista\\frmBarista.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T16:17:51.136Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "dbo.Orders [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_PI07PGT/CoffeeShopDB/True/SqlTable/dbo.Orders.sql",
+              "ToolTip": "dbo.Orders [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-14T16:09:57.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "dbo.Order_Details [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_PI07PGT/CoffeeShopDB/True/SqlTable/dbo.Order_Details.sql",
+              "ToolTip": "dbo.Order_Details [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-14T16:10:04.026Z",
               "EditorCaption": ""
             }
           ]

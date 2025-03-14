@@ -15,11 +15,19 @@ namespace Restaurant_Management_System.Barista
     public partial class frmOrderDetail : Form
     {
         int PreID = -1;
-        public frmOrderDetail(int preID)
+        private string status;
+        public frmOrderDetail(int preID, string status)
         {
             InitializeComponent();
             this.PreID = preID;
+            this.status = status;
             loadOderInfo();
+
+            if(status == "Completed")
+            {
+                btnCancel.Visible = false;
+                btnCancel.Enabled = false;
+            }
         }
 
         private void loadOderInfo(){
@@ -66,6 +74,27 @@ namespace Restaurant_Management_System.Barista
         private void btnClose_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            if (PreID != -1)
+            {
+                string query = @"
+                DELETE 
+                FROM Preparations
+                WHERE PreparationID = @PreID;
+                ";
+                SqlParameter[] parameters = new SqlParameter[]
+                {
+                 new SqlParameter("@PreID", PreID)
+                };
+                int rowEffected = DatabaseHelper.ExecuteNonQuery(query, parameters);
+                this.Close();
+                if (rowEffected > 0) {
+                    frmKitchen.FrmKitchen.LoadOrders(status);
+                }
+            }
         }
     }
 }
