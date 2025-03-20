@@ -47,16 +47,20 @@
             this.btnAdd.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnAdd.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAdd.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnAdd.Image = global::Restaurant_Management_System.Properties.Resources.coffee_table;
             this.btnAdd.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Normal;
             this.btnAdd.Location = new System.Drawing.Point(40, 64);
             this.btnAdd.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             // 
             // guna2HtmlLabel1
             // 
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(647, 27);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(683, 27);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(74, 33);
             // 
             // guna2HtmlLabel2
             // 
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.Text = "Tables";
             // 
             // dgvTables
@@ -97,7 +101,7 @@
             this.dgvTables.RowHeadersVisible = false;
             this.dgvTables.RowHeadersWidth = 51;
             this.dgvTables.RowTemplate.Height = 35;
-            this.dgvTables.Size = new System.Drawing.Size(926, 335);
+            this.dgvTables.Size = new System.Drawing.Size(910, 338);
             this.dgvTables.TabIndex = 9;
             this.dgvTables.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvTables.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -178,7 +182,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(974, 567);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(220)))));
+            this.ClientSize = new System.Drawing.Size(958, 570);
             this.Controls.Add(this.dgvTables);
             this.Name = "frmTableView";
             this.Text = "frmTableView";

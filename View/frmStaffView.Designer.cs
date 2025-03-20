@@ -53,18 +53,24 @@
             // 
             this.btnAdd.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnAdd.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnAdd.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnAdd.HoverState.ImageSize = new System.Drawing.Size(60, 60);
+            this.btnAdd.Image = global::Restaurant_Management_System.Properties.Resources.staff;
             this.btnAdd.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Normal;
-            this.btnAdd.Location = new System.Drawing.Point(40, 66);
+            this.btnAdd.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnAdd.Location = new System.Drawing.Point(40, 64);
             this.btnAdd.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            // 
+            this.btnAdd.Size = new System.Drawing.Size(93, 90);
+           
             // guna2HtmlLabel1
             // 
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(653, 27);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(692, 36);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(74, 33);
             // 
             // guna2HtmlLabel2
             // 
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(129, 43);
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(196, 43);
             this.guna2HtmlLabel2.Text = "Emoloyee List";
             // 
             // dgvEmployee
@@ -213,6 +219,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(220)))));
             this.ClientSize = new System.Drawing.Size(980, 633);
             this.Controls.Add(this.dgvEmployee);
             this.Name = "frmStaffView";

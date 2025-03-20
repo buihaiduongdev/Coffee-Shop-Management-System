@@ -47,16 +47,22 @@
             this.btnAdd.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnAdd.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAdd.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnAdd.Image = global::Restaurant_Management_System.Properties.Resources.product;
             this.btnAdd.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Normal;
             this.btnAdd.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_1);
             // 
             // guna2HtmlLabel1
             // 
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(918, 27);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(711, 27);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(157, 33);
+            this.guna2HtmlLabel1.Text = "Search Product";
             // 
             // guna2HtmlLabel2
             // 
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(193, 43);
             this.guna2HtmlLabel2.Text = "Product List";
             // 
             // dgvProduct
@@ -98,7 +104,7 @@
             this.dgvProduct.RowHeadersVisible = false;
             this.dgvProduct.RowHeadersWidth = 51;
             this.dgvProduct.RowTemplate.Height = 35;
-            this.dgvProduct.Size = new System.Drawing.Size(1137, 421);
+            this.dgvProduct.Size = new System.Drawing.Size(1099, 421);
             this.dgvProduct.TabIndex = 9;
             this.dgvProduct.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvProduct.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -127,7 +133,7 @@
             // 
             this.dgvSno.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dgvSno.FillWeight = 70F;
-            this.dgvSno.HeaderText = "Sr#";
+            this.dgvSno.HeaderText = "Number";
             this.dgvSno.MinimumWidth = 70;
             this.dgvSno.Name = "dgvSno";
             this.dgvSno.Width = 70;
@@ -183,7 +189,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1234, 637);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(220)))));
+            this.ClientSize = new System.Drawing.Size(1259, 637);
             this.Controls.Add(this.dgvProduct);
             this.Name = "frmProductView";
             this.Text = "frmProductView";

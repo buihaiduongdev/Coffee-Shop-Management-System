@@ -15,6 +15,7 @@ namespace Restaurant_Management_System
     public partial class frmMain : Form
     {
         private static Panel CenterPanel = new Panel();
+        //
         public frmMain()
         {
             InitializeComponent();
@@ -37,6 +38,7 @@ namespace Restaurant_Management_System
         private void frmMain_Load(object sender, EventArgs e)
         {
             //lbUser.Text = MainClass.USER;
+            MenuSlide.Width = 250;
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -77,6 +79,19 @@ namespace Restaurant_Management_System
         private void btnKitchen_Click(object sender, EventArgs e)
         {
             AddControls(new frmKitchenView());
+        }
+
+
+        private void btnSlide_Click(object sender, EventArgs e)
+        {
+            if (MenuSlide.Width == 250) // Nếu đang mở rộng
+            {
+                MenuSlide.Width = 85; // Thu nhỏ
+            }
+            else
+            {
+                MenuSlide.Width = 250; // Mở rộng
+            }
         }
     }
 }

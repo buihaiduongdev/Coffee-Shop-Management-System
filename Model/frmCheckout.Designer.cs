@@ -40,6 +40,8 @@
             // 
             // label1
             // 
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Size = new System.Drawing.Size(195, 54);
             this.label1.Text = "Check Out";
             // 
             // guna2ControlBox1
@@ -64,6 +66,8 @@
             // 
             // txtBillAmount
             // 
+            this.txtBillAmount.AutoRoundedCorners = true;
+            this.txtBillAmount.BorderRadius = 20;
             this.txtBillAmount.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtBillAmount.DefaultText = "";
             this.txtBillAmount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -87,23 +91,27 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(27, 130);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(69, 18);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(95, 31);
             this.guna2HtmlLabel1.TabIndex = 5;
             this.guna2HtmlLabel1.Text = "Bill Amount";
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(356, 130);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(110, 18);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(132, 31);
             this.guna2HtmlLabel2.TabIndex = 7;
             this.guna2HtmlLabel2.Text = "Payment Receive";
             // 
             // txtReceive
             // 
+            this.txtReceive.AutoRoundedCorners = true;
+            this.txtReceive.BorderRadius = 20;
             this.txtReceive.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtReceive.DefaultText = "";
             this.txtReceive.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -114,7 +122,7 @@
             this.txtReceive.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtReceive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtReceive.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtReceive.Location = new System.Drawing.Point(376, 178);
+            this.txtReceive.Location = new System.Drawing.Point(369, 178);
             this.txtReceive.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtReceive.Name = "txtReceive";
             this.txtReceive.PasswordChar = '\0';
@@ -127,14 +135,17 @@
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(27, 239);
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(27, 240);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(50, 18);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(60, 31);
             this.guna2HtmlLabel3.TabIndex = 9;
             this.guna2HtmlLabel3.Text = "Change";
             // 
             // txtChange
             // 
+            this.txtChange.AutoRoundedCorners = true;
+            this.txtChange.BorderRadius = 20;
             this.txtChange.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtChange.DefaultText = "";
             this.txtChange.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));

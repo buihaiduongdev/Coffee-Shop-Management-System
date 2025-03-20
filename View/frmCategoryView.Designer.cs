@@ -45,18 +45,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategory)).BeginInit();
             this.SuspendLayout();
             // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(693, 27);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(74, 33);
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(182, 43);
+            this.guna2HtmlLabel2.Text = "Category List";
+            // 
             // btnAdd
             // 
             this.btnAdd.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnAdd.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAdd.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.btnAdd.Image = global::Restaurant_Management_System.Properties.Resources.categories;
             this.btnAdd.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Normal;
             this.btnAdd.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(102, 25);
-            this.guna2HtmlLabel2.Text = "Category List";
             // 
             // guna2DataGridView1
             // 
@@ -219,6 +227,7 @@
             // frmCategoryView
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(220)))));
             this.ClientSize = new System.Drawing.Size(1131, 721);
             this.Controls.Add(this.dgvCategory);
             this.Controls.Add(this.guna2DataGridView1);

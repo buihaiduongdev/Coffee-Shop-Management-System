@@ -36,11 +36,14 @@
             // 
             // label1
             // 
-            this.label1.Size = new System.Drawing.Size(155, 54);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Size = new System.Drawing.Size(235, 54);
             this.label1.Text = "Table Details";
             // 
             // txtCapacity
             // 
+            this.txtCapacity.AutoRoundedCorners = true;
+            this.txtCapacity.BorderRadius = 22;
             this.txtCapacity.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCapacity.DefaultText = "";
             this.txtCapacity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -51,37 +54,41 @@
             this.txtCapacity.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCapacity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtCapacity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCapacity.Location = new System.Drawing.Point(27, 182);
+            this.txtCapacity.Location = new System.Drawing.Point(186, 183);
             this.txtCapacity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCapacity.Name = "txtCapacity";
             this.txtCapacity.PasswordChar = '\0';
             this.txtCapacity.PlaceholderText = "";
             this.txtCapacity.SelectedText = "";
-            this.txtCapacity.Size = new System.Drawing.Size(244, 47);
+            this.txtCapacity.Size = new System.Drawing.Size(150, 47);
             this.txtCapacity.TabIndex = 5;
             this.txtCapacity.TextChanged += new System.EventHandler(this.txtCapacity_TextChanged);
             // 
             // ư
             // 
             this.ư.BackColor = System.Drawing.Color.Transparent;
-            this.ư.Location = new System.Drawing.Point(27, 136);
+            this.ư.Font = new System.Drawing.Font("Sitka Banner", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ư.Location = new System.Drawing.Point(169, 131);
             this.ư.Name = "ư";
-            this.ư.Size = new System.Drawing.Size(56, 18);
+            this.ư.Size = new System.Drawing.Size(78, 35);
             this.ư.TabIndex = 4;
             this.ư.Text = "Capacity";
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(27, 247);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Sitka Banner", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(169, 254);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(40, 18);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(57, 35);
             this.guna2HtmlLabel1.TabIndex = 6;
             this.guna2HtmlLabel1.Text = "Status";
             // 
             // cmbStatus
             // 
+            this.cmbStatus.AutoRoundedCorners = true;
             this.cmbStatus.BackColor = System.Drawing.Color.Transparent;
+            this.cmbStatus.BorderRadius = 17;
             this.cmbStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbStatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -94,9 +101,9 @@
             "Occupied ",
             "Reserved ",
             "Unavailable "});
-            this.cmbStatus.Location = new System.Drawing.Point(27, 279);
+            this.cmbStatus.Location = new System.Drawing.Point(186, 295);
             this.cmbStatus.Name = "cmbStatus";
-            this.cmbStatus.Size = new System.Drawing.Size(140, 36);
+            this.cmbStatus.Size = new System.Drawing.Size(150, 36);
             this.cmbStatus.StartIndex = 0;
             this.cmbStatus.TabIndex = 7;
             this.cmbStatus.SelectedIndexChanged += new System.EventHandler(this.cmbStatus_SelectedIndexChanged);
