@@ -39,13 +39,9 @@ namespace Restaurant_Management_System.Model
             get { return pbImage.Image; }
             set{ pbImage.Image = value; }
         }
-        private void txtImage_Click(object sender, EventArgs e)
-        {
-            onSelect?.Invoke(this, e);
-        }
         private void btnAddToCart_MouseDown(object sender, MouseEventArgs e)
         {
-            btnAddToCart.FillColor = ColorTranslator.FromHtml("#0ACD4D");
+            btnAddToCart.FillColor = ColorTranslator.FromHtml("#18CB6C");
         }
         private void btnAddToCart_MouseUp(object sender, MouseEventArgs e)
         {
@@ -75,9 +71,32 @@ namespace Restaurant_Management_System.Model
             ClickAddItem?.Invoke(this, product);
         }
 
-        private void lblProductPrice2_Click(object sender, EventArgs e)
+        private void pbImage_Click(object sender, EventArgs e)
         {
+            frmProductDetail detailForm = new frmProductDetail(
+                id,
+                PName,
+                PPrice,
+                PImage,
+                category
+            );
 
+            detailForm.ClickAddItem += (s, product) =>
+            {
+                ClickAddItem?.Invoke(this, product);
+            };
+
+            if (this.FindForm() is frmCustomer mainForm)
+            {
+                mainForm.Hide();
+            }
+
+            detailForm.ShowDialog();
+
+            if (this.FindForm() is frmCustomer mainFormRestored)
+            {
+                mainFormRestored.Show();
+            }
         }
     }
 }

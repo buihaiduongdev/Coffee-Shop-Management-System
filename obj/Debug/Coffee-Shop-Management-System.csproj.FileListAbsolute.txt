@@ -309,3 +309,5 @@ E:\HK2_2\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.c
 E:\HK2_2\Coffee-Shop-Management-System\obj\Debug\Coffee-S.3221D379.Up2Date
 E:\HK2_2\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.exe
 E:\HK2_2\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.pdb
+E:\HK2_2\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmProductDetail.resources
+E:\HK2_2\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucProductDetail.resources

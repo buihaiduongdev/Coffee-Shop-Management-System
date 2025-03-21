@@ -96,6 +96,12 @@
     <Compile Include="Customer\frmCustomer.Designer.cs">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Customer\frmProductDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\frmProductDetail.Designer.cs">
+      <DependentUpon>frmProductDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customer\Item.cs" />
     <Compile Include="Customer\Product.cs" />
     <Compile Include="DatabaseHelper.cs" />
@@ -184,6 +190,12 @@
     <Compile Include="Model\ucProduct.Designer.cs">
       <DependentUpon>ucProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\ucProductDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\ucProductDetail.Designer.cs">
+      <DependentUpon>ucProductDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\ucRegister.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -251,6 +263,8 @@
     <Compile Include="View\frmTableView.Designer.cs">
       <DependentUpon>frmTableView.cs</DependentUpon>
     </Compile>
+    <None Include="Resources\business.png" />
+    <None Include="Resources\back-button.png" />
     <None Include="Resources\bill.png" />
     <None Include="Resources\categories.png" />
     <None Include="Resources\coffee-table.png" />
@@ -271,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Customer\frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\frmProductDetail.resx">
+      <DependentUpon>frmProductDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
@@ -313,6 +330,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Model\ucProduct.resx">
       <DependentUpon>ucProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\ucProductDetail.resx">
+      <DependentUpon>ucProductDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\ucRegister.resx">
       <DependentUpon>ucRegister.cs</DependentUpon>
