@@ -33,6 +33,7 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -53,6 +54,7 @@
             this.Name = "frmLoginRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLoginRegister";
+            this.Load += new System.EventHandler(this.frmLoginRegister_Load_1);
             this.ResumeLayout(false);
 
         }
