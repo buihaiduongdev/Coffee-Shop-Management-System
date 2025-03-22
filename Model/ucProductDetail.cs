@@ -18,6 +18,7 @@ namespace Restaurant_Management_System.Model
             InitializeComponent();
             pnlProduct.BorderRadius = 20;
             btnAddToCart.Click += btnAddToCart2_Click;
+            cbSize.SelectedIndexChanged += cbSize_SelectedIndexChanged;
         }
         public event EventHandler onSelect = null;
 
@@ -25,7 +26,7 @@ namespace Restaurant_Management_System.Model
 
         public int id { get; set; }
         private decimal _pPrice;
-
+        private decimal _basePrice;
         public decimal PPrice
         {
             get
@@ -40,9 +41,21 @@ namespace Restaurant_Management_System.Model
             set
             {
                 _pPrice = value;
-                lblProductPrice2.Text = $"{value.ToString("0.##")}";
+                _basePrice = value;   
+
+                if (cbSize.SelectedIndex == 1)
+                {
+                    _pPrice += 3000;
+                }
+                else if (cbSize.SelectedIndex == 2)
+                {
+                    _pPrice += 5000;
+                }
+
+                lblProductPrice2.Text = $"{_pPrice.ToString("0.##")} VND";
             }
         }
+
         public string PName
         {
             get { return lblProductName2.Text; }
@@ -53,6 +66,24 @@ namespace Restaurant_Management_System.Model
         {
             get { return pbImage.Image; }
             set { pbImage.Image = value; }
+        }
+
+        public string PIce
+        {
+            get { return cbIce.SelectedItem.ToString(); }
+            set { cbIce.SelectedItem = value; }
+        }
+
+        public string PSize
+        {
+            get { return cbSize.SelectedItem.ToString(); }
+            set { cbSize.SelectedItem = value; }
+        }
+
+        public string PSugar
+        {
+            get { return cbSugar.SelectedItem.ToString(); }
+            set { cbSugar.SelectedItem = value; }
         }
         private void txtImage_Click(object sender, EventArgs e)
         {
@@ -67,7 +98,11 @@ namespace Restaurant_Management_System.Model
                 ProductName = this.PName,
                 Price = this.PPrice,
                 Image = this.PImage,
-                CategoryName = this.category
+                CategoryName = this.category,
+
+                Ice = this.PIce,
+                Size = this.PSize,
+                Sugar = this.PSugar
             };
 
             ClickAddItem?.Invoke(this, product);
@@ -87,6 +122,11 @@ namespace Restaurant_Management_System.Model
         private void pbBack_Click(object sender, EventArgs e)
         {
             OnClose?.Invoke();
+        }
+
+        private void cbSize_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            PPrice = _basePrice;
         }
     }
 }

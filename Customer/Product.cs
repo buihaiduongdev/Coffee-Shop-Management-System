@@ -15,14 +15,21 @@ namespace Restaurant_Management_System.Customer
         public Image productImage;
         public string categoryName;
 
+        private string ice;
+        private string size;
+        private string sugar;
 
-        public Product(int productID, string productName, decimal price, Image image, string categoryName)
+
+        public Product(int productID, string productName, decimal price, Image image, string categoryName, string ice, string size, string sugar)
         {
             this.productID = productID;
             this.productName = productName;
             this.price = price;
             this.productImage = image;
             this.categoryName = categoryName;
+            this.ice = ice;
+            this.size = size;
+            this.sugar = sugar;
         }
 
         public Product() { }
@@ -32,5 +39,8 @@ namespace Restaurant_Management_System.Customer
         public decimal Price { get => price; set => price = value; }
         public Image Image { get => productImage; set => productImage = value; }
         public string CategoryName { get => categoryName; set => categoryName = value; }
+        public string Ice { get => ice; set => ice = value; }
+        public string Size { get => size; set => size = value; }
+        public string Sugar { get => sugar; set => sugar = value; }
     }
 }

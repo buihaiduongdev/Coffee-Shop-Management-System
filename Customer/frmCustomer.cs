@@ -30,7 +30,11 @@ namespace Restaurant_Management_System.Customer
             bool exist = false;
             foreach (Item item in cart)
             {
-                if (item.Product.ProductID == product.ProductID)
+                if (item.Product.ProductID == product.ProductID &
+                     item.Product.Ice == product.Ice &
+                     item.Product.Size == product.Size &
+                     item.Product.Sugar == product.Sugar
+                    )
                 {
                     item.Quantity++;
                     exist = true;

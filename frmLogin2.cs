@@ -39,6 +39,7 @@ namespace Restaurant_Management_System
             loginControl.OnSwitchToRegister += SwitchToRegister; // Đăng ký sự kiện chuyển qua đăng ký
             this.Controls.Clear(); // Xóa các điều khiển cũ
             this.Controls.Add(loginControl); // Thêm UserControl đăng nhập
+    
         }
 
         private void DisplayRegister()
@@ -49,6 +50,7 @@ namespace Restaurant_Management_System
             registerControl.OnSwitchToLogin += SwitchToLogin; // Đăng ký sự kiện chuyển qua đăng nhập
             this.Controls.Clear(); // Xóa các điều khiển cũ
             this.Controls.Add(registerControl); // Thêm UserControl đăng ký
+        
         }
 
         private void SwitchToRegister()

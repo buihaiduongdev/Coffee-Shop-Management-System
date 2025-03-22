@@ -61,7 +61,12 @@ namespace Restaurant_Management_System.Customer
                 ProductID = 0,
                 ProductName = "Tổng",
                 Price = itemList.Sum(item => item.Product.Price * item.Quantity),
-                Quantity = itemList.Sum(item => item.Quantity)
+                Quantity = itemList.Sum(item => item.Quantity),
+
+                Ice = "50%",
+                Size = "M",
+                Sugar = "50"
+     
             };
 
             dgvCart.DataSource = itemList.Select(item => new
@@ -69,7 +74,11 @@ namespace Restaurant_Management_System.Customer
                 ProductID = item.Product.ProductID,
                 ProductName = item.Product.ProductName,
                 Price = item.Product.Price,
-                Quantity = item.Quantity
+                Quantity = item.Quantity,
+                Ice = item.Product.Ice,
+                Size = item.Product.Size,
+                Sugar = item.Product.Sugar
+
             }).Append(rowTotalPrice).ToList();
 
             var totalRow = dgvCart.Rows[dgvCart.Rows.Count - 1];
@@ -125,8 +134,8 @@ namespace Restaurant_Management_System.Customer
                 };
                 object result = DatabaseHelper.ExecuteScalar(query2, parameters);
                 int orderID = Convert.ToInt32(result);
-                string query3 = "INSERT INTO [Order Details] (OrderID, ProductID, UnitPrice, Quantity) " +
-                    "VALUES (@OrderID, @ProductID, @UnitPrice, @Quantity); SELECT SCOPE_IDENTITY();";
+                string query3 = "INSERT INTO [Order Details] (OrderID, ProductID, UnitPrice, Quantity, Ice, Size, Sugar) " +
+                    "VALUES (@OrderID, @ProductID, @UnitPrice, @Quantity, @Ice, @Size, @Sugar); SELECT SCOPE_IDENTITY();";
 
                 string query4 = "INSERT INTO Preparations (PreparationID,Status) VALUES (@PreparationID,@Status)";
                 foreach (DataGridViewRow row in dgvCart.Rows)
@@ -136,11 +145,18 @@ namespace Restaurant_Management_System.Customer
                         int productID = Convert.ToInt32(row.Cells["colProductID"].Value);
                         decimal price = Convert.ToDecimal(row.Cells["colPrice"].Value);
                         int quantity = Convert.ToInt32(row.Cells["colQuantity"].Value);
+                        string ice = Convert.ToString(row.Cells["colIce"].Value);
+                        string sugar = Convert.ToString(row.Cells["colSugar"].Value);
+                        string size = Convert.ToString(row.Cells["colSize"].Value);
+
                         SqlParameter[] parameters2 = {
                             new SqlParameter("@OrderID", orderID),
                             new SqlParameter("@ProductID", productID),
                             new SqlParameter("@UnitPrice", price),
-                            new SqlParameter("@Quantity", quantity)
+                            new SqlParameter("@Quantity", quantity),
+                            new SqlParameter("@Ice", ice),
+                            new SqlParameter("@Size", size),
+                            new SqlParameter("@Sugar", sugar)
                         };
                         object detailResult = DatabaseHelper.ExecuteScalar(query3, parameters2);
                         int orderDetailID = Convert.ToInt32(detailResult);
@@ -171,5 +187,7 @@ namespace Restaurant_Management_System.Customer
         {
 
         }
+
+
     }
 }

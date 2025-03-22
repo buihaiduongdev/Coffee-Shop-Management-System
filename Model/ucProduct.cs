@@ -25,19 +25,21 @@ namespace Restaurant_Management_System.Model
         public event EventHandler<Product> ClickAddItem;
 
         public int id { get; set; }
-        public decimal PPrice {
-            get { return Convert.ToDecimal(lblProductPrice2.Text.Replace(" VND", "").Trim());}
+        public decimal PPrice
+        {
+            get { return Convert.ToDecimal(lblProductPrice2.Text.Replace(" VND", "").Trim()); }
             set { lblProductPrice2.Text = value.ToString("0.##"); }
         }
-        public string PName 
-        { 
-            get { return lblProductName2.Text; } 
+        public string PName
+        {
+            get { return lblProductName2.Text; }
             set { lblProductName2.Text = value; }
         }
         public string category { get; set; }
-        public Image PImage {
+        public Image PImage
+        {
             get { return pbImage.Image; }
-            set{ pbImage.Image = value; }
+            set { pbImage.Image = value; }
         }
         private void btnAddToCart_MouseDown(object sender, MouseEventArgs e)
         {
@@ -65,7 +67,11 @@ namespace Restaurant_Management_System.Model
                 ProductName = this.PName,
                 Price = this.PPrice,
                 Image = this.PImage,
-                CategoryName = this.category
+                CategoryName = this.category,
+
+                Ice = "50%",
+                Size = "M",
+                Sugar = "50%"
             };
 
             ClickAddItem?.Invoke(this, product);
@@ -86,10 +92,7 @@ namespace Restaurant_Management_System.Model
                 ClickAddItem?.Invoke(this, product);
             };
 
-            if (this.FindForm() is frmCustomer mainForm)
-            {
-                mainForm.Hide();
-            }
+ 
 
             detailForm.ShowDialog();
 

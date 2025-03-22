@@ -34,11 +34,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvCart = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.colProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDelete = new System.Windows.Forms.DataGridViewImageColumn();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnPay = new Guna.UI2.WinForms.Guna2Button();
             this.pbBack = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -47,6 +42,14 @@
             this.guna2RadioButton1 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.colProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDelete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.colIce = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSugar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSize = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
             this.gbPaymentMethod.SuspendLayout();
@@ -78,7 +81,10 @@
             this.colProductName,
             this.colPrice,
             this.colQuantity,
-            this.colDelete});
+            this.colDelete,
+            this.colIce,
+            this.colSugar,
+            this.colSize});
             this.dgvCart.Cursor = System.Windows.Forms.Cursors.Hand;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(150)))), ((int)(((byte)(63)))));
@@ -131,55 +137,6 @@
             this.dgvCart.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(99)))), ((int)(((byte)(30)))));
             this.dgvCart.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvCart.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCart_CellClick);
-            // 
-            // colProductID
-            // 
-            this.colProductID.DataPropertyName = "ProductID";
-            this.colProductID.HeaderText = "Mã SP";
-            this.colProductID.MinimumWidth = 6;
-            this.colProductID.Name = "colProductID";
-            this.colProductID.ReadOnly = true;
-            this.colProductID.Visible = false;
-            this.colProductID.Width = 50;
-            // 
-            // colProductName
-            // 
-            this.colProductName.DataPropertyName = "ProductName";
-            this.colProductName.FillWeight = 216.8008F;
-            this.colProductName.HeaderText = "Tên";
-            this.colProductName.MinimumWidth = 190;
-            this.colProductName.Name = "colProductName";
-            this.colProductName.ReadOnly = true;
-            this.colProductName.Width = 240;
-            // 
-            // colPrice
-            // 
-            this.colPrice.DataPropertyName = "Price";
-            this.colPrice.FillWeight = 76.14214F;
-            this.colPrice.HeaderText = "Giá";
-            this.colPrice.MinimumWidth = 75;
-            this.colPrice.Name = "colPrice";
-            this.colPrice.ReadOnly = true;
-            this.colPrice.Width = 90;
-            // 
-            // colQuantity
-            // 
-            this.colQuantity.DataPropertyName = "Quantity";
-            this.colQuantity.FillWeight = 7.057093F;
-            this.colQuantity.HeaderText = "Số lượng";
-            this.colQuantity.MinimumWidth = 80;
-            this.colQuantity.Name = "colQuantity";
-            this.colQuantity.ReadOnly = true;
-            this.colQuantity.Width = 110;
-            // 
-            // colDelete
-            // 
-            this.colDelete.HeaderText = "";
-            this.colDelete.MinimumWidth = 20;
-            this.colDelete.Name = "colDelete";
-            this.colDelete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colDelete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.colDelete.Width = 20;
             // 
             // guna2HtmlLabel1
             // 
@@ -311,6 +268,79 @@
             this.guna2Panel1.Size = new System.Drawing.Size(721, 740);
             this.guna2Panel1.TabIndex = 10;
             // 
+            // colProductID
+            // 
+            this.colProductID.DataPropertyName = "ProductID";
+            this.colProductID.HeaderText = "Mã SP";
+            this.colProductID.MinimumWidth = 6;
+            this.colProductID.Name = "colProductID";
+            this.colProductID.ReadOnly = true;
+            this.colProductID.Visible = false;
+            this.colProductID.Width = 50;
+            // 
+            // colProductName
+            // 
+            this.colProductName.DataPropertyName = "ProductName";
+            this.colProductName.FillWeight = 216.8008F;
+            this.colProductName.HeaderText = "Tên";
+            this.colProductName.MinimumWidth = 190;
+            this.colProductName.Name = "colProductName";
+            this.colProductName.ReadOnly = true;
+            this.colProductName.Width = 240;
+            // 
+            // colPrice
+            // 
+            this.colPrice.DataPropertyName = "Price";
+            this.colPrice.FillWeight = 76.14214F;
+            this.colPrice.HeaderText = "Giá";
+            this.colPrice.MinimumWidth = 75;
+            this.colPrice.Name = "colPrice";
+            this.colPrice.ReadOnly = true;
+            this.colPrice.Width = 90;
+            // 
+            // colQuantity
+            // 
+            this.colQuantity.DataPropertyName = "Quantity";
+            this.colQuantity.FillWeight = 7.057093F;
+            this.colQuantity.HeaderText = "Số lượng";
+            this.colQuantity.MinimumWidth = 80;
+            this.colQuantity.Name = "colQuantity";
+            this.colQuantity.ReadOnly = true;
+            this.colQuantity.Width = 110;
+            // 
+            // colDelete
+            // 
+            this.colDelete.HeaderText = "";
+            this.colDelete.MinimumWidth = 20;
+            this.colDelete.Name = "colDelete";
+            this.colDelete.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colDelete.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.colDelete.Width = 20;
+            // 
+            // colIce
+            // 
+            this.colIce.DataPropertyName = "Ice";
+            this.colIce.HeaderText = "Đá";
+            this.colIce.MinimumWidth = 6;
+            this.colIce.Name = "colIce";
+            this.colIce.Width = 125;
+            // 
+            // colSugar
+            // 
+            this.colSugar.DataPropertyName = "Sugar";
+            this.colSugar.HeaderText = "Đường";
+            this.colSugar.MinimumWidth = 6;
+            this.colSugar.Name = "colSugar";
+            this.colSugar.Width = 125;
+            // 
+            // colSize
+            // 
+            this.colSize.DataPropertyName = "Size";
+            this.colSize.HeaderText = "Size";
+            this.colSize.MinimumWidth = 6;
+            this.colSize.Name = "colSize";
+            this.colSize.Width = 125;
+            // 
             // frmCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -356,5 +386,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn colQuantity;
         private System.Windows.Forms.DataGridViewImageColumn colDelete;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colIce;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSugar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSize;
     }
 }
