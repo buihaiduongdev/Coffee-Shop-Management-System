@@ -216,48 +216,6 @@ S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.
 E:\HK2_2\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmLoginRegister.resources
 E:\HK2_2\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucLogin.resources
 E:\HK2_2\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucRegister.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\bin\Debug\Restaurant Management System.exe.config
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\bin\Debug\Restaurant Management System.exe
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\bin\Debug\Restaurant Management System.pdb
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\bin\Debug\Guna.UI2.dll
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlClient.dll
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlClient.xml
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.AssemblyReference.cache
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmBarista.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmKitchen.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.ucKitchen.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmCart.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmCustomer.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmHome.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmLogin.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmLoginRegister.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmMain.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmCategoryAdd.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmCheckout.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmPOS.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmProductAdd.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmStaffAdd.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmTableAdd.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmTableSelect.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmWaiterSelect.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucLogin.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucProduct.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucRegister.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Properties.Resources.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Receptionist.frmReceptionist.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.SampleAdd.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.SampleView.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmBillList.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmCategoryView.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmKitchenView.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmProductView.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmStaffView.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmTableView.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.GenerateResource.cache
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.CoreCompileInputs.cache
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Coffee-S.3221D379.Up2Date
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.exe
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.pdb
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmBarista.resources
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmKitchen.resources
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.ucKitchen.resources
@@ -311,5 +269,45 @@ E:\HK2_2\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.ex
 E:\HK2_2\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.pdb
 E:\HK2_2\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmProductDetail.resources
 E:\HK2_2\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucProductDetail.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.AssemblyReference.cache
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmBarista.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmKitchen.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.ucKitchen.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmCart.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmCustomer.resources
 S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmProductDetail.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmHome.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmLoginRegister.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmMain.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmCategoryAdd.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmCheckout.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmProductAdd.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmStaffAdd.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmTableAdd.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmTableSelect.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmWaiterSelect.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucLogin.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucProduct.resources
 S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucProductDetail.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucRegister.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Properties.Resources.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Receptionist.frmReceptionist.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.SampleAdd.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.SampleView.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmBillList.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmCategoryView.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmKitchenView.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmProductView.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmStaffView.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmTableView.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.GenerateResource.cache
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.CoreCompileInputs.cache
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\bin\Debug\Restaurant Management System.exe.config
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\bin\Debug\Restaurant Management System.exe
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\bin\Debug\Restaurant Management System.pdb
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\bin\Debug\Guna.UI2.dll
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlClient.dll
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlClient.xml
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Coffee-S.3221D379.Up2Date
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.exe
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.pdb

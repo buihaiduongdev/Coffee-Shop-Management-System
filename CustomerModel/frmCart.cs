@@ -15,13 +15,15 @@ namespace Restaurant_Management_System.Customer
 {
     public partial class frmCart : Form
     {
+        private int customerID;
 
         BindingList<Item> itemList;
-        public frmCart(BindingList<Item> cart)
+        public frmCart(BindingList<Item> cart, int CustomerID)
         {
             InitializeComponent();
             itemList = cart;
             itemList.ListChanged += (s, e) => loadItem();
+            customerID = CustomerID;
         }
 
 
@@ -123,12 +125,14 @@ namespace Restaurant_Management_System.Customer
 
         private void checkout()
         {
+      
             DateTime currentDateTime = DateTime.Now;
             string orderType = "Takeaway";
             try
             {
-                string query2 = "INSERT INTO Orders (OrderDay, OrderType) VALUES (@OrderDay, @OrderType); SELECT SCOPE_IDENTITY();";
+                string query2 = "INSERT INTO Orders (CustomerID, OrderDay, OrderType) VALUES (@CustomerID, @OrderDay, @OrderType); SELECT SCOPE_IDENTITY();";
                 SqlParameter[] parameters = {
+                    new SqlParameter("@CustomerID", customerID),
                     new SqlParameter("@OrderDay", currentDateTime),
                     new SqlParameter("@OrderType", orderType)
                 };

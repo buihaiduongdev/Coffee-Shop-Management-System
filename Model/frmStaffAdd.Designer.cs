@@ -145,7 +145,7 @@
             this.cbRole.Location = new System.Drawing.Point(150, 461);
             this.cbRole.Name = "cbRole";
             this.cbRole.Size = new System.Drawing.Size(244, 36);
-            this.cbRole.StartIndex = 0;
+            this.cbRole.StartIndex = 1;
             this.cbRole.TabIndex = 7;
             // 
             // txtLastName

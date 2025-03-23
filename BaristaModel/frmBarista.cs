@@ -7,16 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Restaurant_Management_System.Backend;
 using Restaurant_Management_System.Model;
 
 namespace Restaurant_Management_System.Barista
 {
     public partial class frmBarista : Form
     {
-        public frmBarista()
+        Employee baristaInfo;
+        public frmBarista(Employee emp)
         {
             InitializeComponent();
+            baristaInfo = emp;
         }
+        
         public void AddControls(Form form)
         {
             centerPanel.Controls.Clear();
@@ -28,6 +32,16 @@ namespace Restaurant_Management_System.Barista
         private void btnKitchen_Click(object sender, EventArgs e)
         {
             AddControls(new frmKitchen());
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();  
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

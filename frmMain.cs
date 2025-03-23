@@ -1,4 +1,5 @@
-﻿using Restaurant_Management_System.Model;
+﻿using Restaurant_Management_System.Backend;
+using Restaurant_Management_System.Model;
 using Restaurant_Management_System.View;
 using System;
 using System.Collections.Generic;
@@ -15,12 +16,16 @@ namespace Restaurant_Management_System
     public partial class frmMain : Form
     {
         private static Panel CenterPanel = new Panel();
+        private Employee manager;
+        private int id;
         //
-        public frmMain()
+        public frmMain(Employee emp)
         {
             InitializeComponent();
+            manager = emp;
+            id = manager.ID;
         }
-
+        
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -71,10 +76,6 @@ namespace Restaurant_Management_System
             AddControls(new frmStaffView());
         }
 
-        private void btnPos_Click(object sender, EventArgs e)
-        {
-            AddControls(new frmPOS());
-        }
 
         private void btnKitchen_Click(object sender, EventArgs e)
         {
@@ -92,6 +93,11 @@ namespace Restaurant_Management_System
             {
                 MenuSlide.Width = 250; // Mở rộng
             }
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

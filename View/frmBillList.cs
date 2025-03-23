@@ -9,9 +9,11 @@ namespace Restaurant_Management_System.Model
 {
     public partial class frmBillList : SampleView
     {
-        public frmBillList()
+        int receptionistID;
+        public frmBillList(int ReceptionistID)
         {
             InitializeComponent();
+            receptionistID = ReceptionistID;
         }
 
         private void frmBillList_Load(object sender, EventArgs e)
@@ -28,6 +30,7 @@ namespace Restaurant_Management_System.Model
                     ON o.OrderID = p.PreparationID
                     JOIN [Order Details] od
                     ON o.OrderID = od.OrderID
+                    Where o.Status = 'Pending'
                     GROUP BY o.OrderID, p.TableID, o.OrderType, o.Status
                 ";
 
@@ -61,8 +64,13 @@ namespace Restaurant_Management_System.Model
                 if (e.ColumnIndex == dgvBill.Columns["dgvConfirm"].Index)
                 {
                     string orderID = dgvBill.Rows[e.RowIndex].Cells["dgvOrderID"].Value.ToString();
-                    string updateQuery = "UPDATE Orders SET Status = 'Confirmed' WHERE OrderID = @OrderID";
-                    SqlParameter[] param = { new SqlParameter("@OrderID", orderID) };
+                    string updateQuery = "UPDATE Orders SET Status = 'Confirmed', EmployeeID = @EmployeeID " +
+                                        "WHERE OrderID = @OrderID";
+
+                    SqlParameter[] param = {
+                        new SqlParameter("@OrderID", orderID) ,
+                        new SqlParameter("@EmployeeID", receptionistID)
+                    };
 
                     try
                     {
@@ -87,8 +95,13 @@ namespace Restaurant_Management_System.Model
                 {
                     string orderID = dgvBill.Rows[e.RowIndex].Cells["dgvOrderID"].Value.ToString();
 
-                    string updateQuery = "UPDATE Orders SET Status = 'Rejected' WHERE OrderID = @OrderID";
-                    SqlParameter[] param = { new SqlParameter("@OrderID", orderID) };
+                    string updateQuery = "UPDATE Orders SET Status = 'Rejected', EmployeeID = @EmployeeID " +
+                                        "WHERE OrderID = @OrderID";
+
+                    SqlParameter[] param = {
+                        new SqlParameter("@OrderID", orderID) ,
+                        new SqlParameter("@EmployeeID", receptionistID) 
+                    };
 
                     try
                     {
@@ -96,6 +109,7 @@ namespace Restaurant_Management_System.Model
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show($"Đã từ chối hóa đơn {orderID} thành công!");
+                         
                             LoadData();
                         }
                         else

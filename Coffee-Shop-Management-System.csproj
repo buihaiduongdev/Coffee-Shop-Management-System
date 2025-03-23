@@ -56,66 +56,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Backend\Chef.cs" />
+    <Compile Include="Backend\AccountDAO.cs" />
     <Compile Include="Backend\Customer.cs" />
+    <Compile Include="Backend\Employee.cs" />
     <Compile Include="Backend\ICreateReport.cs" />
     <Compile Include="Backend\IGenerateReport.cs" />
     <Compile Include="Backend\ISalary.cs" />
     <Compile Include="Backend\ISearchFood.cs" />
     <Compile Include="Backend\ISearchReservation.cs" />
-    <Compile Include="Backend\Manager.cs" />
     <Compile Include="Backend\Person.cs" />
-    <Compile Include="Backend\Receptionist.cs" />
-    <Compile Include="Barista\frmBarista.cs">
+    <Compile Include="BaristaModel\frmBarista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Barista\frmBarista.Designer.cs">
+    <Compile Include="BaristaModel\frmBarista.Designer.cs">
       <DependentUpon>frmBarista.cs</DependentUpon>
     </Compile>
-    <Compile Include="Barista\frmKitchen.cs">
+    <Compile Include="BaristaModel\frmKitchen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Barista\frmKitchen.Designer.cs">
+    <Compile Include="BaristaModel\frmKitchen.Designer.cs">
       <DependentUpon>frmKitchen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Barista\ucKitchen.cs">
+    <Compile Include="BaristaModel\ucKitchen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Barista\ucKitchen.Designer.cs">
+    <Compile Include="BaristaModel\ucKitchen.Designer.cs">
       <DependentUpon>ucKitchen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Customer\frmCart.cs">
+    <Compile Include="CustomerModel\frmCart.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Customer\frmCart.Designer.cs">
+    <Compile Include="CustomerModel\frmCart.Designer.cs">
       <DependentUpon>frmCart.cs</DependentUpon>
     </Compile>
-    <Compile Include="Customer\frmCustomer.cs">
+    <Compile Include="CustomerModel\frmCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Customer\frmCustomer.Designer.cs">
+    <Compile Include="CustomerModel\frmCustomer.Designer.cs">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Customer\frmProductDetail.cs">
+    <Compile Include="CustomerModel\frmProductDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Customer\frmProductDetail.Designer.cs">
+    <Compile Include="CustomerModel\frmProductDetail.Designer.cs">
       <DependentUpon>frmProductDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="Customer\Item.cs" />
-    <Compile Include="Customer\Product.cs" />
+    <Compile Include="CustomerModel\Item.cs" />
+    <Compile Include="CustomerModel\Product.cs" />
     <Compile Include="DatabaseHelper.cs" />
     <Compile Include="frmHome.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmHome.Designer.cs">
       <DependentUpon>frmHome.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin2.cs">
       <SubType>Form</SubType>
@@ -129,7 +122,6 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainClass.cs" />
     <Compile Include="Model\frmCategoryAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,12 +133,6 @@
     </Compile>
     <Compile Include="Model\frmCheckout.Designer.cs">
       <DependentUpon>frmCheckout.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Model\frmPOS.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Model\frmPOS.Designer.cs">
-      <DependentUpon>frmPOS.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\frmProductAdd.cs">
       <SubType>Form</SubType>
@@ -204,10 +190,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Receptionist\frmReceptionist.cs">
+    <Compile Include="ReceptionistModel\frmReceptionist.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Receptionist\frmReceptionist.Designer.cs">
+    <Compile Include="ReceptionistModel\frmReceptionist.Designer.cs">
       <DependentUpon>frmReceptionist.cs</DependentUpon>
     </Compile>
     <Compile Include="restaurantDBDataSet.Designer.cs">
@@ -271,29 +257,26 @@
     <None Include="Resources\staff.png" />
     <None Include="Resources\product.png" />
     <None Include="Resources\web.png" />
-    <EmbeddedResource Include="Barista\frmBarista.resx">
+    <EmbeddedResource Include="BaristaModel\frmBarista.resx">
       <DependentUpon>frmBarista.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Barista\frmKitchen.resx">
+    <EmbeddedResource Include="BaristaModel\frmKitchen.resx">
       <DependentUpon>frmKitchen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Barista\ucKitchen.resx">
+    <EmbeddedResource Include="BaristaModel\ucKitchen.resx">
       <DependentUpon>ucKitchen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Customer\frmCart.resx">
+    <EmbeddedResource Include="CustomerModel\frmCart.resx">
       <DependentUpon>frmCart.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Customer\frmCustomer.resx">
+    <EmbeddedResource Include="CustomerModel\frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Customer\frmProductDetail.resx">
+    <EmbeddedResource Include="CustomerModel\frmProductDetail.resx">
       <DependentUpon>frmProductDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin2.resx">
       <DependentUpon>frmLogin2.cs</DependentUpon>
@@ -306,9 +289,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Model\frmCheckout.resx">
       <DependentUpon>frmCheckout.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Model\frmPOS.resx">
-      <DependentUpon>frmPOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\frmProductAdd.resx">
       <DependentUpon>frmProductAdd.cs</DependentUpon>
@@ -347,7 +327,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Receptionist\frmReceptionist.resx">
+    <EmbeddedResource Include="ReceptionistModel\frmReceptionist.resx">
       <DependentUpon>frmReceptionist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SampleAdd.resx">

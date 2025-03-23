@@ -43,37 +43,31 @@ namespace Restaurant_Management_System.Model
             // Kiểm tra nếu 2 ký tự đầu của username là 'NV'
             if (username.Length >= 2 && username.Substring(0, 2)== "NV")
             {
-                // Kiểm tra trong bảng Employees
-                string query = "SELECT Role FROM Employees WHERE Username = @username AND Password = @password";
-                SqlParameter[] parameters = new SqlParameter[]
+                 Employee emp = AccountDAO.CheckEmployeeLogin(username, password);
+
+                if (emp != null)
                 {
-                    new SqlParameter("@username", username),
-                    new SqlParameter("@password", password)
-                };
+                    this.Hide();
 
-                object result = DatabaseHelper.ExecuteScalar(query, parameters);
-                if (result != null)
-                {
-                    string role = result.ToString();
-
-                    // Kiểm tra role và mở form tương ứng
-                    if (role == "Manager")
+                    if (emp.Role == "Manager")
                     {
-                        frmMain managerForm = new frmMain();
-                        managerForm.Show();
+                        frmMain f = new frmMain(emp);
+                        f.ShowDialog();
                     }
-                    else if (role == "Barista")
+                    else if (emp.Role == "Barista")
                     {
-                        frmBarista baristaForm = new frmBarista();
-                        baristaForm.Show();
+                        frmBarista b = new frmBarista(emp); 
+                        b.ShowDialog();
                     }
-                    else if (role == "Receptionist")
+                    else if (emp.Role == "Receptionist")
                     {
-                        frmReceptionist receptionistForm = new frmReceptionist();
-                        receptionistForm.Show();
+                        frmReceptionist b = new frmReceptionist(emp);
+                        b.ShowDialog();
                     }
-
-                    this.Hide(); 
+                    this.Show();
+                    txtUsername.Clear();
+                    txtPassword.Clear();
+                    txtUsername.Focus();
                 }
                 else
                 {
@@ -82,22 +76,18 @@ namespace Restaurant_Management_System.Model
             }
             else
             {
-                
-                string query = "SELECT * FROM Customers WHERE Username = @username AND Password = @password";
-                SqlParameter[] parameters = new SqlParameter[]
-                {
-                    new SqlParameter("@username", username),
-                    new SqlParameter("@password", password)
-                };
 
-                DataTable dt = DatabaseHelper.ExecuteQuery(query, parameters);
-                int row = dt.Rows.Count;
-                if (row == 1)
+                CustomerInfo cus = AccountDAO.CheckCustomerLogin(username, password);
+                if (cus != null)
                 {
-                    // Nếu tìm thấy khách hàng
-                    frmCustomer customerForm = new frmCustomer();
-                    customerForm.Show();
-                    this.Hide(); // Ẩn form đăng nhập
+                    this.Hide();
+                    frmCustomer f = new frmCustomer(cus); // truyền Customer
+                    f.ShowDialog();
+                    this.Show();
+
+                    txtUsername.Clear();
+                    txtPassword.Clear();
+                    txtUsername.Focus();
                 }
                 else
                 {

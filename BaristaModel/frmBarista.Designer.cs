@@ -34,6 +34,7 @@
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.btnSetting = new Guna.UI2.WinForms.Guna2Button();
             this.btnKitchen = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,7 +54,7 @@
             this.guna2Panel2.Controls.Add(this.btnExit);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(261, 0);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(939, 68);
             this.guna2Panel2.TabIndex = 4;
@@ -76,7 +77,7 @@
             this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox3.Location = new System.Drawing.Point(748, 15);
-            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(56, 36);
             this.guna2ControlBox3.TabIndex = 2;
@@ -88,7 +89,7 @@
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
             this.guna2ControlBox2.Location = new System.Drawing.Point(811, 15);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(56, 36);
             this.guna2ControlBox2.TabIndex = 1;
@@ -99,13 +100,15 @@
             this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.btnExit.IconColor = System.Drawing.Color.White;
             this.btnExit.Location = new System.Drawing.Point(875, 15);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(56, 36);
             this.btnExit.TabIndex = 0;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Controls.Add(this.btnLogout);
             this.guna2Panel1.Controls.Add(this.btnSetting);
             this.guna2Panel1.Controls.Add(this.btnKitchen);
             this.guna2Panel1.Controls.Add(this.label1);
@@ -114,10 +117,26 @@
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
             this.guna2Panel1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(261, 812);
             this.guna2Panel1.TabIndex = 3;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.Location = new System.Drawing.Point(44, 736);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(180, 45);
+            this.btnLogout.TabIndex = 15;
+            this.btnLogout.Text = "Đăng xuất";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnSetting
             // 
@@ -140,7 +159,7 @@
             this.btnSetting.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSetting.ImageOffset = new System.Drawing.Point(10, 0);
             this.btnSetting.Location = new System.Drawing.Point(23, 236);
-            this.btnSetting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(4);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Size = new System.Drawing.Size(225, 57);
             this.btnSetting.TabIndex = 13;
@@ -169,7 +188,7 @@
             this.btnKitchen.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnKitchen.ImageOffset = new System.Drawing.Point(10, 0);
             this.btnKitchen.Location = new System.Drawing.Point(23, 172);
-            this.btnKitchen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKitchen.Margin = new System.Windows.Forms.Padding(4);
             this.btnKitchen.Name = "btnKitchen";
             this.btnKitchen.Size = new System.Drawing.Size(225, 57);
             this.btnKitchen.TabIndex = 12;
@@ -197,7 +216,7 @@
             this.guna2PictureBox1.Image = global::Restaurant_Management_System.Properties.Resources.user;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(85, 4);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(69, 75);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -209,7 +228,7 @@
             // 
             this.centerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.centerPanel.Location = new System.Drawing.Point(261, 68);
-            this.centerPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.centerPanel.Margin = new System.Windows.Forms.Padding(4);
             this.centerPanel.Name = "centerPanel";
             this.centerPanel.Size = new System.Drawing.Size(939, 744);
             this.centerPanel.TabIndex = 5;
@@ -249,5 +268,6 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Panel centerPanel;
+        private Guna.UI2.WinForms.Guna2Button btnLogout;
     }
 }

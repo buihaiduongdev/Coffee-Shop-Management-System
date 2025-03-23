@@ -18,9 +18,13 @@ namespace Restaurant_Management_System.Customer
 {
     public partial class frmCustomer : Form
     {
-        public frmCustomer()
+        private CustomerInfo customr;
+        private int customerID;
+        public frmCustomer(CustomerInfo cus)
         {
             InitializeComponent();
+            customr = cus;
+            customerID = cus.ID;
         }
 
         private BindingList<Item> cart = new BindingList<Item>();
@@ -185,7 +189,7 @@ namespace Restaurant_Management_System.Customer
         }
         private void pbCart_Click(object sender, EventArgs e)
         {
-            frmCart fCart = new frmCart(cart);
+            frmCart fCart = new frmCart(cart, customerID);
             fCart.ShowDialog();
 
             updateCart();
@@ -204,6 +208,16 @@ namespace Restaurant_Management_System.Customer
         private void guna2ControlBox3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

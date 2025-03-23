@@ -3,24 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Restaurant
+namespace Restaurant_Management_System.Backend
 {
-    public class Customer : Person, ISearchFood, ISearchReservation
+    public class CustomerInfo : Person
     {
-        private int rank;
+        private byte[] image;
+        private string rank ;
 
-        public Customer()
+        public CustomerInfo(int id, string username, string password, string lastName, string firstName, string phone,
+                        byte[] image, string rank)
+            : base(id, username, password, lastName, firstName, phone)
         {
-            throw new System.NotImplementedException();
+            this.image = image;
+            this.rank = rank;
         }
 
-        public int Rank
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        public byte[] Image { get => image; set => image = value; }
+        public string Rank { get => rank; set => rank = value; }
 
         public void ViewMenu()
         {
