@@ -65,9 +65,9 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(118)))), ((int)(((byte)(95)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(333, 573);
+            this.guna2Panel1.Size = new System.Drawing.Size(444, 705);
             this.guna2Panel1.TabIndex = 2;
             // 
             // guna2CirclePictureBox1
@@ -75,17 +75,18 @@
             this.guna2CirclePictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(93, 17);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(124, 21);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(150, 150);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(200, 185);
             this.guna2CirclePictureBox1.TabIndex = 5;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
             // txtFirstname
             // 
             this.txtFirstname.AutoRoundedCorners = true;
-            this.txtFirstname.BorderRadius = 22;
+            this.txtFirstname.BorderRadius = 27;
             this.txtFirstname.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtFirstname.DefaultText = "";
             this.txtFirstname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -96,20 +97,20 @@
             this.txtFirstname.Font = new System.Drawing.Font("Sitka Banner", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFirstname.ForeColor = System.Drawing.Color.Black;
             this.txtFirstname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFirstname.Location = new System.Drawing.Point(155, 252);
-            this.txtFirstname.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtFirstname.Location = new System.Drawing.Point(207, 310);
+            this.txtFirstname.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtFirstname.Name = "txtFirstname";
             this.txtFirstname.PasswordChar = '\0';
             this.txtFirstname.PlaceholderText = "Tên ";
             this.txtFirstname.SelectedText = "";
-            this.txtFirstname.Size = new System.Drawing.Size(147, 46);
+            this.txtFirstname.Size = new System.Drawing.Size(196, 57);
             this.txtFirstname.TabIndex = 40;
             this.txtFirstname.TextOffset = new System.Drawing.Point(10, -5);
             // 
             // txtLastname
             // 
             this.txtLastname.AutoRoundedCorners = true;
-            this.txtLastname.BorderRadius = 22;
+            this.txtLastname.BorderRadius = 27;
             this.txtLastname.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLastname.DefaultText = "";
             this.txtLastname.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -120,20 +121,20 @@
             this.txtLastname.Font = new System.Drawing.Font("Sitka Banner", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastname.ForeColor = System.Drawing.Color.Black;
             this.txtLastname.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLastname.Location = new System.Drawing.Point(28, 252);
-            this.txtLastname.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtLastname.Location = new System.Drawing.Point(37, 310);
+            this.txtLastname.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtLastname.Name = "txtLastname";
             this.txtLastname.PasswordChar = '\0';
             this.txtLastname.PlaceholderText = "Họ";
             this.txtLastname.SelectedText = "";
-            this.txtLastname.Size = new System.Drawing.Size(80, 46);
+            this.txtLastname.Size = new System.Drawing.Size(107, 57);
             this.txtLastname.TabIndex = 41;
             this.txtLastname.TextOffset = new System.Drawing.Point(10, -5);
             // 
             // txtPhone
             // 
             this.txtPhone.AutoRoundedCorners = true;
-            this.txtPhone.BorderRadius = 22;
+            this.txtPhone.BorderRadius = 27;
             this.txtPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPhone.DefaultText = "";
             this.txtPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -144,13 +145,13 @@
             this.txtPhone.Font = new System.Drawing.Font("Sitka Banner", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone.ForeColor = System.Drawing.Color.Black;
             this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhone.Location = new System.Drawing.Point(28, 390);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtPhone.Location = new System.Drawing.Point(37, 480);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '\0';
             this.txtPhone.PlaceholderText = "Số điện thoại";
             this.txtPhone.SelectedText = "";
-            this.txtPhone.Size = new System.Drawing.Size(272, 46);
+            this.txtPhone.Size = new System.Drawing.Size(363, 57);
             this.txtPhone.TabIndex = 37;
             this.txtPhone.TextOffset = new System.Drawing.Point(10, -5);
             // 
@@ -164,9 +165,10 @@
             this.btnSwitchToLogin2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(118)))), ((int)(((byte)(95)))));
             this.btnSwitchToLogin2.Font = new System.Drawing.Font("Sitka Subheading", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSwitchToLogin2.ForeColor = System.Drawing.Color.White;
-            this.btnSwitchToLogin2.Location = new System.Drawing.Point(28, 526);
+            this.btnSwitchToLogin2.Location = new System.Drawing.Point(37, 647);
+            this.btnSwitchToLogin2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSwitchToLogin2.Name = "btnSwitchToLogin2";
-            this.btnSwitchToLogin2.Size = new System.Drawing.Size(274, 30);
+            this.btnSwitchToLogin2.Size = new System.Drawing.Size(365, 37);
             this.btnSwitchToLogin2.TabIndex = 32;
             this.btnSwitchToLogin2.Text = "Trở lại trang đăng nhập";
             this.btnSwitchToLogin2.Click += new System.EventHandler(this.btnSwitchToLogin2_Click);
@@ -181,16 +183,17 @@
             this.btnSwitchToLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(118)))), ((int)(((byte)(95)))));
             this.btnSwitchToLogin.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSwitchToLogin.ForeColor = System.Drawing.Color.White;
-            this.btnSwitchToLogin.Location = new System.Drawing.Point(21, 602);
+            this.btnSwitchToLogin.Location = new System.Drawing.Point(28, 741);
+            this.btnSwitchToLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSwitchToLogin.Name = "btnSwitchToLogin";
-            this.btnSwitchToLogin.Size = new System.Drawing.Size(122, 30);
+            this.btnSwitchToLogin.Size = new System.Drawing.Size(163, 37);
             this.btnSwitchToLogin.TabIndex = 31;
             this.btnSwitchToLogin.Text = "Đăng nhập";
             // 
             // btnRegister
             // 
             this.btnRegister.AutoRoundedCorners = true;
-            this.btnRegister.BorderRadius = 23;
+            this.btnRegister.BorderRadius = 28;
             this.btnRegister.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnRegister.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnRegister.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -198,10 +201,10 @@
             this.btnRegister.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(59)))), ((int)(((byte)(40)))));
             this.btnRegister.Font = new System.Drawing.Font("Sitka Banner", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(28, 458);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnRegister.Location = new System.Drawing.Point(37, 564);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(272, 48);
+            this.btnRegister.Size = new System.Drawing.Size(363, 59);
             this.btnRegister.TabIndex = 27;
             this.btnRegister.Text = "Đăng kí";
             this.btnRegister.TextOffset = new System.Drawing.Point(0, -5);
@@ -217,16 +220,17 @@
             this.guna2Button2.FillColor = System.Drawing.Color.White;
             this.guna2Button2.Font = new System.Drawing.Font("Sitka Subheading", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(118)))), ((int)(((byte)(95)))));
-            this.guna2Button2.Location = new System.Drawing.Point(189, 602);
+            this.guna2Button2.Location = new System.Drawing.Point(252, 741);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(122, 30);
+            this.guna2Button2.Size = new System.Drawing.Size(163, 37);
             this.guna2Button2.TabIndex = 30;
             this.guna2Button2.Text = "Đăng kí";
             // 
             // txtUsername
             // 
             this.txtUsername.AutoRoundedCorners = true;
-            this.txtUsername.BorderRadius = 22;
+            this.txtUsername.BorderRadius = 27;
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsername.DefaultText = "";
             this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -237,20 +241,20 @@
             this.txtUsername.Font = new System.Drawing.Font("Sitka Banner", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.Color.Black;
             this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Location = new System.Drawing.Point(28, 184);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtUsername.Location = new System.Drawing.Point(37, 226);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PasswordChar = '\0';
             this.txtUsername.PlaceholderText = "Tên người dùng";
             this.txtUsername.SelectedText = "";
-            this.txtUsername.Size = new System.Drawing.Size(272, 46);
+            this.txtUsername.Size = new System.Drawing.Size(363, 57);
             this.txtUsername.TabIndex = 15;
             this.txtUsername.TextOffset = new System.Drawing.Point(10, -5);
             // 
             // txtPassword
             // 
             this.txtPassword.AutoRoundedCorners = true;
-            this.txtPassword.BorderRadius = 22;
+            this.txtPassword.BorderRadius = 27;
             this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.DefaultText = "";
             this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -261,15 +265,16 @@
             this.txtPassword.Font = new System.Drawing.Font("Sitka Banner", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.Black;
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Location = new System.Drawing.Point(28, 317);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtPassword.Location = new System.Drawing.Point(37, 390);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '\0';
+            this.txtPassword.PasswordChar = '●';
             this.txtPassword.PlaceholderText = "Mật khẩu";
             this.txtPassword.SelectedText = "";
-            this.txtPassword.Size = new System.Drawing.Size(272, 46);
+            this.txtPassword.Size = new System.Drawing.Size(363, 57);
             this.txtPassword.TabIndex = 27;
             this.txtPassword.TextOffset = new System.Drawing.Point(10, -5);
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // guna2ContextMenuStrip1
             // 
@@ -288,12 +293,13 @@
             // 
             // ucRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2Panel1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ucRegister";
-            this.Size = new System.Drawing.Size(333, 573);
+            this.Size = new System.Drawing.Size(444, 705);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);

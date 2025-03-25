@@ -54,7 +54,7 @@
             this.pnlProduct.Controls.Add(this.panel2);
             this.pnlProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlProduct.Location = new System.Drawing.Point(0, 0);
-            this.pnlProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlProduct.Margin = new System.Windows.Forms.Padding(4);
             this.pnlProduct.Name = "pnlProduct";
             this.pnlProduct.Size = new System.Drawing.Size(411, 409);
             this.pnlProduct.TabIndex = 2;
@@ -65,7 +65,7 @@
             this.pbImage.Image = global::Restaurant_Management_System.Properties.Resources.store;
             this.pbImage.ImageRotate = 0F;
             this.pbImage.Location = new System.Drawing.Point(59, 0);
-            this.pbImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbImage.Margin = new System.Windows.Forms.Padding(4);
             this.pbImage.Name = "pbImage";
             this.pbImage.Size = new System.Drawing.Size(280, 281);
             this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -82,9 +82,9 @@
             this.panel2.Controls.Add(this.lblProductName2);
             this.panel2.Controls.Add(this.lblProductPrice2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Font = new System.Drawing.Font("Onest", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(0, 281);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(411, 128);
             this.panel2.TabIndex = 2;
@@ -101,7 +101,7 @@
             this.btnAddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.btnAddToCart.ForeColor = System.Drawing.Color.White;
             this.btnAddToCart.Location = new System.Drawing.Point(55, 69);
-            this.btnAddToCart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddToCart.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddToCart.Name = "btnAddToCart";
             this.btnAddToCart.Size = new System.Drawing.Size(295, 43);
             this.btnAddToCart.TabIndex = 6;
@@ -114,7 +114,7 @@
             this.lblProductName2.BackColor = System.Drawing.Color.Transparent;
             this.lblProductName2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProductName2.Location = new System.Drawing.Point(39, 16);
-            this.lblProductName2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblProductName2.Margin = new System.Windows.Forms.Padding(4);
             this.lblProductName2.Name = "lblProductName2";
             this.lblProductName2.Size = new System.Drawing.Size(49, 31);
             this.lblProductName2.TabIndex = 5;
@@ -126,7 +126,7 @@
             this.lblProductPrice2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProductPrice2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(203)))), ((int)(((byte)(108)))));
             this.lblProductPrice2.Location = new System.Drawing.Point(325, 16);
-            this.lblProductPrice2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblProductPrice2.Margin = new System.Windows.Forms.Padding(4);
             this.lblProductPrice2.Name = "lblProductPrice2";
             this.lblProductPrice2.Size = new System.Drawing.Size(45, 31);
             this.lblProductPrice2.TabIndex = 4;

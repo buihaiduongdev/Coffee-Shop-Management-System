@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace Restaurant_Management_System.View
 {
-    public partial class frmTableView : SampleView
+    public partial class frmTableView :SampleView
     {
         public frmTableView()
         {

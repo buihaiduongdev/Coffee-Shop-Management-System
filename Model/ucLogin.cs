@@ -21,6 +21,9 @@ namespace Restaurant_Management_System.Model
         {
             InitializeComponent();
         }
+
+        public bool PasswordChar { get; internal set; }
+
         public event Action OnSwitchToRegister;
 
         private void btnLogin_Click(object sender, EventArgs e)

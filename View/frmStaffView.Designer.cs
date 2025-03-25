@@ -60,11 +60,11 @@
             this.btnAdd.Location = new System.Drawing.Point(40, 64);
             this.btnAdd.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.btnAdd.Size = new System.Drawing.Size(93, 90);
-           
+            // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(692, 36);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(523, 37);
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(74, 33);
             // 
             // guna2HtmlLabel2

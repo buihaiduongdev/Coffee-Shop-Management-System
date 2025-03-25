@@ -55,7 +55,7 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(683, 27);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(778, 27);
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(74, 33);
             // 
             // guna2HtmlLabel2
@@ -101,7 +101,7 @@
             this.dgvTables.RowHeadersVisible = false;
             this.dgvTables.RowHeadersWidth = 51;
             this.dgvTables.RowTemplate.Height = 35;
-            this.dgvTables.Size = new System.Drawing.Size(910, 338);
+            this.dgvTables.Size = new System.Drawing.Size(1005, 327);
             this.dgvTables.TabIndex = 9;
             this.dgvTables.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvTables.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -183,7 +183,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(220)))));
-            this.ClientSize = new System.Drawing.Size(958, 570);
+            this.ClientSize = new System.Drawing.Size(1053, 559);
             this.Controls.Add(this.dgvTables);
             this.Name = "frmTableView";
             this.Text = "frmTableView";

@@ -34,10 +34,8 @@ D:\LEARNING\New folder\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlCl
 D:\LEARNING\New folder\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlClient.xml
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.AssemblyReference.cache
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmHome.resources
-D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmLogin.resources
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmMain.resources
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmCategoryAdd.resources
-D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmPOS.resources
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmStaffAdd.resources
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmTableAdd.resources
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmTableSelect.resources
@@ -311,3 +309,49 @@ S:\WINFORM\getlogin\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlClien
 S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Coffee-S.3221D379.Up2Date
 S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.exe
 S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.pdb
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmProductDetail.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucProductDetail.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\bin\Debug\FontAwesome.Sharp.dll
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.AssemblyReference.cache
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.exe
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.pdb
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\Restaurant Management System.exe.config
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\Restaurant Management System.exe
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\Restaurant Management System.pdb
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\FontAwesome.Sharp.dll
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\Guna.UI2.dll
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlClient.dll
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlClient.xml
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmBarista.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmKitchen.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.ucKitchen.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmCart.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmCustomer.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmProductDetail.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmLoginRegister.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmMain.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmCategoryAdd.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmCheckout.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmProductAdd.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmStaffAdd.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmTableAdd.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmTableSelect.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmWaiterSelect.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucLogin.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucProduct.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucProductDetail.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucRegister.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Properties.Resources.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Receptionist.frmReceptionist.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.SampleAdd.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.SampleView.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmBillList.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmCategoryView.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmKitchenView.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmProductView.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmStaffView.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmTableView.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.GenerateResource.cache
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.CoreCompileInputs.cache
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Coffee-S.3221D379.Up2Date
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmHome.resources

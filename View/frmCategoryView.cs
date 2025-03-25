@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 namespace Restaurant_Management_System.View
 {
-    public partial class frmCategoryView : SampleView
+    public partial class frmCategoryView : Form
     {
         public frmCategoryView()
         {
@@ -30,12 +30,12 @@ namespace Restaurant_Management_System.View
             dgvCategory.Rows[0].Cells[3].Value = Properties.Resources.store;
             LoadCategoryData();
         }
-        public override void btnAdd_Click(object sender, EventArgs e)
-        {
-            frmCategoryAdd frm  = new frmCategoryAdd(-1);
-            frm.ShowDialog();
-            LoadCategoryData();
-        }
+        //public override void btnAdd_Click(object sender, EventArgs e)
+        //{
+        //    frmCategoryAdd frm  = new frmCategoryAdd(-1);
+        //    frm.ShowDialog();
+        //    LoadCategoryData();
+        //}
 
         private void LoadCategoryData()
 
@@ -62,22 +62,10 @@ namespace Restaurant_Management_System.View
             }
         }
 
-        public override void txtSearch_TextChanged(object sender, EventArgs e)
-        {
-            string searchValue = txtSearch.Text.Trim().ToLower();
+        //public override void txtSearch_TextChanged(object sender, EventArgs e)
+        //{
 
-            foreach (DataGridViewRow row in dgvCategory.Rows)
-            {
-                if (row.Cells["dgvCategoryID"].Value != null && row.Cells["dgvCategoryName"].Value != null)
-                {
-                    string id = row.Cells["dgvCategoryID"].Value.ToString().ToLower();
-                    string name = row.Cells["dgvCategoryName"].Value.ToString().ToLower();
-
-                    // Nếu ID hoặc Name chứa chuỗi tìm kiếm thì hiển thị, ngược lại ẩn
-                    row.Visible = id.Contains(searchValue) || name.Contains(searchValue);
-                }
-            }
-        }
+        //}
 
         private void dgvCategory_CellClick(object sender, DataGridViewCellEventArgs e)
         {

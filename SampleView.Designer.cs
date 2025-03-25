@@ -79,7 +79,7 @@
             // 
             this.guna2HtmlLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(484, 27);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(649, 27);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(46, 18);
             this.guna2HtmlLabel1.TabIndex = 2;
@@ -90,10 +90,12 @@
             // 
             this.guna2Separator1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Separator1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Separator1.Location = new System.Drawing.Point(40, 142);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(953, 12);
+            this.guna2Separator1.Size = new System.Drawing.Size(1165, 22);
             this.guna2Separator1.TabIndex = 5;
+            this.guna2Separator1.UseTransparentBackground = true;
             // 
             // btnAdd
             // 

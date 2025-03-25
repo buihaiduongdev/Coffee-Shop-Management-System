@@ -25,6 +25,9 @@ namespace Restaurant_Management_System
             manager = emp;
             id = manager.ID;
         }
+        public frmMain(){
+            InitializeComponent();
+        }
         
         private void btnExit_Click(object sender, EventArgs e)
         {

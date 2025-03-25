@@ -85,14 +85,14 @@
             this.pnlProduct.Location = new System.Drawing.Point(0, 0);
             this.pnlProduct.Margin = new System.Windows.Forms.Padding(4);
             this.pnlProduct.Name = "pnlProduct";
-            this.pnlProduct.Size = new System.Drawing.Size(572, 592);
+            this.pnlProduct.Size = new System.Drawing.Size(866, 609);
             this.pnlProduct.TabIndex = 3;
             // 
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Image = global::Restaurant_Management_System.Properties.Resources.business;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(363, 214);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(349, 214);
             this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -120,7 +120,7 @@
             this.lblProductPrice2.BackColor = System.Drawing.Color.Transparent;
             this.lblProductPrice2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProductPrice2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(203)))), ((int)(((byte)(108)))));
-            this.lblProductPrice2.Location = new System.Drawing.Point(431, 219);
+            this.lblProductPrice2.Location = new System.Drawing.Point(397, 224);
             this.lblProductPrice2.Margin = new System.Windows.Forms.Padding(4);
             this.lblProductPrice2.Name = "lblProductPrice2";
             this.lblProductPrice2.Size = new System.Drawing.Size(45, 31);
@@ -131,7 +131,7 @@
             // 
             this.lblProductName2.BackColor = System.Drawing.Color.Transparent;
             this.lblProductName2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProductName2.Location = new System.Drawing.Point(363, 121);
+            this.lblProductName2.Location = new System.Drawing.Point(372, 43);
             this.lblProductName2.Margin = new System.Windows.Forms.Padding(4);
             this.lblProductName2.MaximumSize = new System.Drawing.Size(200, 64);
             this.lblProductName2.Name = "lblProductName2";
@@ -154,10 +154,10 @@
             this.panel2.Controls.Add(this.btnAddToCart);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(0, 347);
+            this.panel2.Location = new System.Drawing.Point(0, 364);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(572, 245);
+            this.panel2.Size = new System.Drawing.Size(866, 245);
             this.panel2.TabIndex = 2;
             // 
             // panel1
@@ -178,7 +178,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(572, 245);
+            this.panel1.Size = new System.Drawing.Size(866, 245);
             this.panel1.TabIndex = 19;
             // 
             // panel3
@@ -193,12 +193,12 @@
             this.panel3.Controls.Add(this.cbSize);
             this.panel3.Controls.Add(this.guna2HtmlLabel11);
             this.panel3.Controls.Add(this.btnAddToCart2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(572, 245);
+            this.panel3.Size = new System.Drawing.Size(866, 245);
             this.panel3.TabIndex = 19;
             // 
             // pbBack
@@ -218,7 +218,7 @@
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(499, 193);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(486, 214);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(400, 246);
@@ -244,7 +244,7 @@
             "30%",
             "50%",
             "70%"});
-            this.cbIce.Location = new System.Drawing.Point(391, 107);
+            this.cbIce.Location = new System.Drawing.Point(455, 23);
             this.cbIce.Margin = new System.Windows.Forms.Padding(4);
             this.cbIce.Name = "cbIce";
             this.cbIce.Size = new System.Drawing.Size(117, 36);
@@ -256,7 +256,7 @@
             // 
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(340, 116);
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(352, 31);
             this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(28, 27);
@@ -294,10 +294,10 @@
             this.guna2HtmlLabel10.AutoSize = false;
             this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(36, 116);
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(24, 111);
             this.guna2HtmlLabel10.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(97, 31);
+            this.guna2HtmlLabel10.Size = new System.Drawing.Size(108, 36);
             this.guna2HtmlLabel10.TabIndex = 15;
             this.guna2HtmlLabel10.Text = "Đường";
             this.guna2HtmlLabel10.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
@@ -321,7 +321,7 @@
             "M",
             "L",
             "XL"});
-            this.cbSize.Location = new System.Drawing.Point(141, 23);
+            this.cbSize.Location = new System.Drawing.Point(140, 23);
             this.cbSize.Margin = new System.Windows.Forms.Padding(4);
             this.cbSize.Name = "cbSize";
             this.cbSize.Size = new System.Drawing.Size(117, 36);
@@ -334,7 +334,7 @@
             // 
             this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel11.Location = new System.Drawing.Point(77, 32);
+            this.guna2HtmlLabel11.Location = new System.Drawing.Point(36, 23);
             this.guna2HtmlLabel11.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
             this.guna2HtmlLabel11.Size = new System.Drawing.Size(42, 27);
@@ -687,7 +687,7 @@
             this.Controls.Add(this.pnlProduct);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ucProductDetail";
-            this.Size = new System.Drawing.Size(572, 592);
+            this.Size = new System.Drawing.Size(866, 609);
             this.pnlProduct.ResumeLayout(false);
             this.pnlProduct.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();

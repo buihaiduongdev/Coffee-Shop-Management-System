@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductAdd));
             this.txtPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -142,7 +141,7 @@
             // 
             // picImage
             // 
-            this.picImage.Image = ((System.Drawing.Image)(resources.GetObject("picImage.Image")));
+            this.picImage.Image = global::Restaurant_Management_System.Properties.Resources.Coffee_Logo_Design_Vector_Hd_Images__Coffee_Logo_Design__Coffee__Logo__Cafe_PNG_Image_For_Free_Download_removebg_preview;
             this.picImage.ImageRotate = 0F;
             this.picImage.Location = new System.Drawing.Point(294, 103);
             this.picImage.Name = "picImage";
