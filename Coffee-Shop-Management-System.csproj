@@ -108,8 +108,21 @@
     <Compile Include="CustomerModel\frmProductDetail.Designer.cs">
       <DependentUpon>frmProductDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomerModel\frmReserveTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerModel\frmReserveTable.Designer.cs">
+      <DependentUpon>frmReserveTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerModel\Item.cs" />
     <Compile Include="CustomerModel\Product.cs" />
+    <Compile Include="CustomerModel\Table.cs" />
+    <Compile Include="CustomerModel\ucTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomerModel\ucTable.Designer.cs">
+      <DependentUpon>ucTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseHelper.cs" />
     <Compile Include="frmLogin2.cs">
       <SubType>Form</SubType>
@@ -256,12 +269,19 @@
     <Compile Include="View\frmHome.Designer.cs">
       <DependentUpon>frmHome.cs</DependentUpon>
     </Compile>
+    <None Include="Resources\coffee-table1.png" />
     <Content Include="Resources\Delivered.png" />
     <Content Include="Resources\Home.png" />
     <Content Include="Resources\List.png" />
     <Content Include="Resources\NewUser.png" />
     <Content Include="Resources\Processed.png" />
     <Content Include="Resources\Screenshot 2025-03-25 194756.png" />
+    <EmbeddedResource Include="CustomerModel\frmReserveTable.resx">
+      <DependentUpon>frmReserveTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerModel\ucTable.resx">
+      <DependentUpon>ucTable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
     </EmbeddedResource>

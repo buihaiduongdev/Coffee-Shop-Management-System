@@ -398,3 +398,5 @@ E:\HK2_2\WINFORM\clone\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Manag
 E:\HK2_2\WINFORM\clone\Coffee-Shop-Management-System\obj\Debug\Coffee-S.3221D379.Up2Date
 E:\HK2_2\WINFORM\clone\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.exe
 E:\HK2_2\WINFORM\clone\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.pdb
+E:\HK2_2\WINFORM\clone\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.frmReserveTable.resources
+E:\HK2_2\WINFORM\clone\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.ucTable.resources
