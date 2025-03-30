@@ -1,6 +1,7 @@
 ﻿using Restaurant_Management_System.Backend;
 using Restaurant_Management_System.Barista;
 using Restaurant_Management_System.Customer;
+using Restaurant_Management_System.CustomerModel;
 using Restaurant_Management_System.Receptionist;
 using Restaurant_Management_System.View;
 using System;
@@ -22,7 +23,7 @@ namespace Restaurant_Management_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmCustomer());  
+            Application.Run(new frmReserveTable());  
         }
     }
 }
