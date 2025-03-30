@@ -30,7 +30,7 @@ namespace Restaurant_Management_System
            int nBottomRect,
            int nWidthEllipse,
            int nHeightEllipse
-       );
+        );
         private void DisplayLogin()
         {
             // Tạo và hiển thị UserControl đăng nhập
