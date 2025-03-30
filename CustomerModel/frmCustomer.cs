@@ -27,6 +27,11 @@ namespace Restaurant_Management_System.Customer
             customerID = cus.ID;
         }
 
+        public frmCustomer()
+        {
+            InitializeComponent();
+        }
+
         private BindingList<Item> cart = new BindingList<Item>();
 
         private void Product_ClickAddItem(object sender, Product product)
