@@ -34,9 +34,7 @@ namespace Restaurant_Management_System.Receptionist
 
         private void btnTable_Click(object sender, EventArgs e)
         {
-            frmTableView frm = new frmTableView();
-            frm.btnAdd.Visible = false;
-            AddControls(frm);
+            AddControls(new frmTableViews());
         }
 
 
@@ -55,6 +53,11 @@ namespace Restaurant_Management_System.Receptionist
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnLogout_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

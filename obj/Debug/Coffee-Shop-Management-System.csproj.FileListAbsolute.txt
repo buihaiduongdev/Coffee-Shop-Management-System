@@ -409,3 +409,5 @@ S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Managemen
 S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmHome.resources
 S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.frmOnlinePayment.resources
 S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmOrderDetail.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmOrderDetail.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.frmOnlinePayment.resources

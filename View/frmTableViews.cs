@@ -108,5 +108,7 @@ namespace Restaurant_Management_System.View
         {
             LoadTableData();
         }
+
+      
     }
 }
