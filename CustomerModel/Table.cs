@@ -9,9 +9,22 @@ namespace Restaurant_Management_System.CustomerModel
 {
     public class Table
     {
-        public int TableID { get; set; }
-        public int Capacity { get; set; }
-        public string Status { get; set; }
+        private int tableID;
+        private int capacity;
+        private string status;
+
+        public Table(int tableID, int capacity, string status)
+        {
+            this.tableID = tableID;
+            this.capacity = capacity;
+            this.status = status;
+        }
+
+        public int TableID { get => tableID; set => tableID = value; }
+        public int Capacity { get => capacity; set => capacity = value; }
+        public string Status { get => status; set => status = value; }
+
+
 
         public Color GetStatusColor()
         {

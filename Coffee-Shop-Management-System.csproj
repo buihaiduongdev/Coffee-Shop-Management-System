@@ -84,6 +84,12 @@
     <Compile Include="BaristaModel\frmKitchen.Designer.cs">
       <DependentUpon>frmKitchen.cs</DependentUpon>
     </Compile>
+    <Compile Include="BaristaModel\frmOrderDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaristaModel\frmOrderDetail.Designer.cs">
+      <DependentUpon>frmOrderDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="BaristaModel\ucKitchen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -101,6 +107,12 @@
     </Compile>
     <Compile Include="CustomerModel\frmCustomer.Designer.cs">
       <DependentUpon>frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerModel\frmOnlinePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerModel\frmOnlinePayment.Designer.cs">
+      <DependentUpon>frmOnlinePayment.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomerModel\frmProductDetail.cs">
       <SubType>Form</SubType>
@@ -275,6 +287,12 @@
     <Compile Include="View\frmTableViews.Designer.cs">
       <DependentUpon>frmTableViews.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BaristaModel\frmOrderDetail.resx">
+      <DependentUpon>frmOrderDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerModel\frmOnlinePayment.resx">
+      <DependentUpon>frmOnlinePayment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\frmTableViews.resx">
       <DependentUpon>frmTableViews.cs</DependentUpon>
     </EmbeddedResource>

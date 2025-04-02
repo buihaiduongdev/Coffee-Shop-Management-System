@@ -33,6 +33,7 @@
             this.btnReserve = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.lblCapicity = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -43,6 +44,7 @@
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderColor = System.Drawing.Color.White;
             this.guna2Panel1.BorderRadius = 35;
+            this.guna2Panel1.Controls.Add(this.lblCapicity);
             this.guna2Panel1.Controls.Add(this.lblNameTable);
             this.guna2Panel1.Controls.Add(this.btnReserve);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
@@ -66,6 +68,7 @@
             this.lblNameTable.Size = new System.Drawing.Size(62, 31);
             this.lblNameTable.TabIndex = 2;
             this.lblNameTable.Text = "Bàn x";
+            this.lblNameTable.Click += new System.EventHandler(this.lblNameTable_Click);
             // 
             // btnReserve
             // 
@@ -109,6 +112,18 @@
             this.guna2CirclePictureBox1.TabIndex = 1;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
+            // lblCapicity
+            // 
+            this.lblCapicity.BackColor = System.Drawing.Color.Transparent;
+            this.lblCapicity.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCapicity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(83)))), ((int)(((byte)(51)))));
+            this.lblCapicity.Location = new System.Drawing.Point(231, 211);
+            this.lblCapicity.Margin = new System.Windows.Forms.Padding(4);
+            this.lblCapicity.Name = "lblCapicity";
+            this.lblCapicity.Size = new System.Drawing.Size(59, 31);
+            this.lblCapicity.TabIndex = 3;
+            this.lblCapicity.Text = "x chỗ";
+            // 
             // ucTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -133,5 +148,6 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnReserve;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNameTable;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblCapicity;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Restaurant_Management_System.Backend;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,24 +44,36 @@ namespace Restaurant_Management_System.CustomerModel
                 this.Region = new Region(path);
             }
         }
+        public string SelectedTableName { get; private set; }
 
         private void frmReserveTable_Load(object sender, EventArgs e)
         {
             borderRadius();
-            for (int i = 1; i <= 18; i++)
+
+            string query = @"SELECT * FROM Tables";
+            DataTable dt = DatabaseHelper.ExecuteQuery(query);
+
+            flpTable.Controls.Clear();
+
+            foreach (DataRow row in dt.Rows)
             {
-                // Khởi tạo UC
-                ucTable table = new ucTable();
+                var tableData = new Table(
+                    Convert.ToInt32(row["TableID"]),
+                    Convert.ToInt32(row["Capacity"]),
+                    (row["Status"]).ToString()
+                );
 
-                // Set thuộc tính nếu cần (ví dụ: số bàn)
-                //table.lblTable = i;
-                //table.TableName = "Bàn " + i.ToString();
-
-                // Thêm vào FlowLayoutPanel
-                flpTable.Controls.Add(table);
-                //guna2Panel1.Controls.Add(table);
+                var tableUC = new ucTable(tableData);
+                tableUC.OnTableSelected += (tableName) =>
+                {
+                    this.SelectedTableName = tableName;
+                    this.DialogResult = DialogResult.OK;
+                    this.Close(); 
+                };
+                flpTable.Controls.Add(tableUC);
             }
         }
+
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {

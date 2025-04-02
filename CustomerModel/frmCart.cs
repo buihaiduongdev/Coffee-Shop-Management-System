@@ -19,6 +19,7 @@ using System.Windows.Forms;
 using Restaurant_Management_System.Model;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Guna.UI2.WinForms;
+using Restaurant_Management_System.CustomerModel;
 
 namespace Restaurant_Management_System.Customer
 {
@@ -160,26 +161,32 @@ namespace Restaurant_Management_System.Customer
         {
             checkout();
         }
-
+        private string orderType = "TakeAway";
+        private string paymentType = "Cash";
+        private int tableID;
         private void checkout()
         {
       
             DateTime currentDateTime = DateTime.Now;
-            string orderType = "Takeaway";
+           
             try
             {
-                string query2 = "INSERT INTO Orders (CustomerID, OrderDay, OrderType) VALUES (@CustomerID, @OrderDay, @OrderType); SELECT SCOPE_IDENTITY();";
+                string query2 = "INSERT INTO Orders (CustomerID, OrderDay, OrderType, PaymentType) VALUES " +
+                    "(@CustomerID, @OrderDay, @OrderType, @PaymentType); SELECT SCOPE_IDENTITY();";
                 SqlParameter[] parameters = {
                     new SqlParameter("@CustomerID", customerID),
                     new SqlParameter("@OrderDay", currentDateTime),
-                    new SqlParameter("@OrderType", orderType)
+                    new SqlParameter("@OrderType", orderType),
+                    new SqlParameter("@PaymentType", paymentType)
+                    
+
                 };
                 object result = DatabaseHelper.ExecuteScalar(query2, parameters);
                 int orderID = Convert.ToInt32(result);
                 string query3 = "INSERT INTO [Order Details] (OrderID, ProductID, UnitPrice, Quantity, Ice, Size, Sugar) " +
                     "VALUES (@OrderID, @ProductID, @UnitPrice, @Quantity, @Ice, @Size, @Sugar); SELECT SCOPE_IDENTITY();";
 
-                string query4 = "INSERT INTO Preparations (PreparationID,Status) VALUES (@PreparationID,@Status)";
+                string query4 = "INSERT INTO Preparations (PreparationID,Status, TableID) VALUES (@PreparationID,@Status, @TableID)";
                 foreach (DataGridViewRow row in dgvCart.Rows)
                 {
                     if (!row.IsNewRow && row.Cells["colProductName"].Value.ToString() != "Tổng")
@@ -204,7 +211,8 @@ namespace Restaurant_Management_System.Customer
                         int orderDetailID = Convert.ToInt32(detailResult);
                         SqlParameter[] parameters3 = {
                             new SqlParameter("@PreparationID", orderDetailID),
-                            new SqlParameter("@Status", "Pending")
+                            new SqlParameter("@Status", "Pending"),
+                            new SqlParameter("@TableID", tableID)
                         };
                         DatabaseHelper.ExecuteNonQuery(query4, parameters3);
                     }
@@ -238,6 +246,72 @@ namespace Restaurant_Management_System.Customer
         private void guna2HtmlLabel3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2RadioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCash_Click(object sender, EventArgs e)
+        {
+            btnCard.Enabled = false;
+            paymentType = "Cash";
+        }
+
+        private void btnCard_Click(object sender, EventArgs e)
+        {
+            btnCash.Enabled = false;
+            frmOnlinePayment frmOnlinePayment = new frmOnlinePayment();
+            frmOnlinePayment.ShowDialog();
+
+            paymentType = "Online";
+        }
+
+        private void btnCash_DoubleClick(object sender, EventArgs e)
+        {
+            btnCard.Enabled = true;
+            
+        }
+
+        private void btnCard_DoubleClick(object sender, EventArgs e)
+        {
+            btnCash.Enabled = true;
+        }
+
+        private void btnTackaway_Click(object sender, EventArgs e)
+        {
+            btnDiveIn.Enabled = false;
+            orderType = "TakeAway";
+        }
+
+        private void btnTackaway_DoubleClick(object sender, EventArgs e)
+        {
+            btnDiveIn.Enabled = true;
+        }
+
+        private void btnDiveIn_Click(object sender, EventArgs e)
+        {
+            btnTackaway.Enabled = false;
+            frmReserveTable tableForm = new frmReserveTable();
+
+
+
+
+            if (tableForm.ShowDialog() == DialogResult.OK)
+            {
+                string selectedTable = tableForm.SelectedTableName;
+                btnDiveIn.Text = selectedTable;
+                orderType = "DineIn";
+
+                string tableIDStr = selectedTable.Replace("Bàn ", "").Trim();
+                tableID = Convert.ToInt32(tableIDStr);
+            }
+        }
+
+        private void btnDiveIn_DoubleClick(object sender, EventArgs e)
+        {
+            btnTackaway.Enabled = true;
         }
     }
 }

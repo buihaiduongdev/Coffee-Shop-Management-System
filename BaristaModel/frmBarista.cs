@@ -14,13 +14,12 @@ namespace Restaurant_Management_System.Barista
 {
     public partial class frmBarista : Form
     {
-        Employee baristaInfo;
+        int baristaID;
         public frmBarista(Employee emp)
         {
             InitializeComponent();
-            baristaInfo = emp;
+            baristaID = emp.ID;
         }
-        
         public void AddControls(Form form)
         {
             centerPanel.Controls.Clear();
@@ -31,17 +30,22 @@ namespace Restaurant_Management_System.Barista
         }
         private void btnKitchen_Click(object sender, EventArgs e)
         {
-            AddControls(new frmKitchen());
-        }
-
-        private void btnLogout_Click(object sender, EventArgs e)
-        {
-            this.Close();  
+            AddControls(new frmKitchen(baristaID));
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void frmBarista_Load(object sender, EventArgs e)
+        {
+            AddControls(new frmKitchen(baristaID));
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

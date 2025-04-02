@@ -273,7 +273,6 @@ S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Managemen
 S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmCart.resources
 S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmCustomer.resources
 S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmProductDetail.resources
-S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmHome.resources
 S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmLoginRegister.resources
 S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmMain.resources
 S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmCategoryAdd.resources
@@ -403,3 +402,10 @@ D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Manage
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.ucTable.resources
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmHome.resources
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmTableViews.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\bin\Debug\FontAwesome.Sharp.dll
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmTableViews.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.frmReserveTable.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.ucTable.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmHome.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.frmOnlinePayment.resources
+S:\WINFORM\getlogin\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmOrderDetail.resources

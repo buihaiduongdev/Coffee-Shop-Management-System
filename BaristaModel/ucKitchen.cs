@@ -10,14 +10,25 @@ namespace Restaurant_Management_System.Barista
         private DateTime orderTime;
         private int preparationID; // ID đơn hàng để cập nhật trạng thái
         public Action RefreshOrders; // Delegate để gọi LoadOrders()
-
-        public ucKitchen(int preparationID, string productName, string status, TimeSpan elapsedTime)
+        private int baristaID;
+        public ucKitchen(int preparationID, string productName, string orderID, int quantity, string status, TimeSpan elapsedTime, int baristaID)
         {
             InitializeComponent();
             this.preparationID = preparationID;
             this.ProductName = productName;
+            this.OrderID = orderID;
+            this.Quantity = quantity;   
             this.Status = status;
             this.orderTime = DateTime.Now - elapsedTime;
+            this.SetStyle(ControlStyles.Selectable, true);
+            this.Click += UcKitchen_Click;
+            this.baristaID = baristaID;
+
+            // Bắt sự kiện Click trên tất cả control con
+            foreach (Control control in this.Controls)
+            {
+                control.Click += UcKitchen_Click;
+            }
 
             UpdateWaitingTime(); // Cập nhật thời gian chờ ngay khi load
 
@@ -41,6 +52,12 @@ namespace Restaurant_Management_System.Barista
                 InitializeTimer();
                 timer.Start();
             }
+        }
+
+        private void UcKitchen_Click(object sender, EventArgs e)
+        {
+            frmOrderDetail frmOrderDetail = new frmOrderDetail(preparationID, this.Status);
+            frmOrderDetail.ShowDialog();
         }
 
         private void InitializeTimer()
@@ -72,7 +89,17 @@ namespace Restaurant_Management_System.Barista
             get { return lblProductName.Text; }
             set { lblProductName.Text = value; }
         }
+        public string OrderID
+        {
+            get { return lblOrderID.Text; }
+            set { lblOrderID.Text = value; }
+        }
 
+        public int Quantity
+        {
+            get { return int.Parse(lblQuantity.Text); }
+            set { lblQuantity.Text = value.ToString(); }
+        }
         public string Status
         {
             get { return lblStatus.Text; }
@@ -95,21 +122,33 @@ namespace Restaurant_Management_System.Barista
                     btnAction.Visible = false; // Ẩn nút nếu đơn đã hoàn thành
                 }
 
-                if (value == "Completed")
+                if (Status == "Completed" && timer != null)
                 {
-                    timer?.Stop();
-                    WaitingTime = "Đã hoàn thành";
+                    timer.Stop();
+                    timer.Dispose();
+                    timer = null;
                 }
             }
         }
 
         private void UpdateOrderStatus(string newStatus)
         {
-            string query = $"UPDATE Preparations SET Status = '{newStatus}' WHERE PreparationID = {this.preparationID}";
+            string query;
+
+            if (newStatus == "Completed")
+            {
+                query = $"UPDATE Preparations SET Status = '{newStatus}', EndTime = GETDATE(), EmployeeID = '{this.baristaID}' WHERE PreparationID = {this.preparationID}";
+            }
+            else
+            {
+                query = $"UPDATE Preparations SET Status = '{newStatus}',EmployeeID = '{this.baristaID}'  WHERE PreparationID = {this.preparationID}";
+            }
+
             DatabaseHelper.ExecuteNonQuery(query);
 
-            this.Status = newStatus; // Cập nhật giao diện ngay lập tức
+            this.Status = newStatus; 
         }
+
 
         private void btnAction_Click_1(object sender, EventArgs e)
         {
@@ -123,7 +162,6 @@ namespace Restaurant_Management_System.Barista
                 UpdateOrderStatus("Completed");
             }
             RefreshOrders?.Invoke(); // Gọi LoadOrders() từ frmKitchen
-
         }
     }
 

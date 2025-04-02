@@ -199,8 +199,7 @@ namespace Restaurant_Management_System.Customer
             fCart.ShowDialog();
 
             updateCart();
-            frmReserveTable freserve = new frmReserveTable();
-            freserve.ShowDialog();
+       
         }
 
         private void updateCart()
