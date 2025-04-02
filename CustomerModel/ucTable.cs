@@ -32,15 +32,16 @@ namespace Restaurant_Management_System.CustomerModel
         {
             if (IsReserved)
             {
-                btnReserve.Text = "Đã đặt";
+                btnReserve.Text = "Đã chọn";
                 btnReserve.FillColor = ColorTranslator.FromHtml("#F87168");
             }
             else
             {
-                btnReserve.Text = "Đặt bàn";
+                btnReserve.Text = "Chọn bàn";
                 btnReserve.FillColor = ColorTranslator.FromHtml("#3B9E62");
             }
         }
 
+   
     }
 }

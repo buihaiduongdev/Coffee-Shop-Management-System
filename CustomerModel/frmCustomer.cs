@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
 using Restaurant_Management_System.Backend;
+using Restaurant_Management_System.CustomerModel;
 using Restaurant_Management_System.Model;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Header;
 
@@ -198,6 +199,8 @@ namespace Restaurant_Management_System.Customer
             fCart.ShowDialog();
 
             updateCart();
+            frmReserveTable freserve = new frmReserveTable();
+            freserve.ShowDialog();
         }
 
         private void updateCart()

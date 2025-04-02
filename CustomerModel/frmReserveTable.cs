@@ -47,7 +47,7 @@ namespace Restaurant_Management_System.CustomerModel
         private void frmReserveTable_Load(object sender, EventArgs e)
         {
             borderRadius();
-            for (int i = 1; i <= 10; i++)
+            for (int i = 1; i <= 18; i++)
             {
                 // Khởi tạo UC
                 ucTable table = new ucTable();
@@ -58,12 +58,18 @@ namespace Restaurant_Management_System.CustomerModel
 
                 // Thêm vào FlowLayoutPanel
                 flpTable.Controls.Add(table);
+                //guna2Panel1.Controls.Add(table);
             }
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void flpTable_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

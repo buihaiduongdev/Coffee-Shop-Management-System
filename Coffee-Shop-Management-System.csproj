@@ -269,6 +269,15 @@
     <Compile Include="View\frmHome.Designer.cs">
       <DependentUpon>frmHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\frmTableViews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmTableViews.Designer.cs">
+      <DependentUpon>frmTableViews.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\frmTableViews.resx">
+      <DependentUpon>frmTableViews.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Resources\coffee-table1.png" />
     <Content Include="Resources\Delivered.png" />
     <Content Include="Resources\Home.png" />

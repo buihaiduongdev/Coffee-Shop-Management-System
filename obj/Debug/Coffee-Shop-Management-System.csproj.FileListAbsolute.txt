@@ -33,7 +33,6 @@ D:\LEARNING\New folder\Coffee-Shop-Management-System\bin\Debug\Guna.UI2.dll
 D:\LEARNING\New folder\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlClient.dll
 D:\LEARNING\New folder\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlClient.xml
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.AssemblyReference.cache
-D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmHome.resources
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmMain.resources
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmCategoryAdd.resources
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmStaffAdd.resources
@@ -400,3 +399,7 @@ E:\HK2_2\WINFORM\clone\Coffee-Shop-Management-System\obj\Debug\Restaurant Manage
 E:\HK2_2\WINFORM\clone\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.pdb
 E:\HK2_2\WINFORM\clone\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.frmReserveTable.resources
 E:\HK2_2\WINFORM\clone\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.ucTable.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.frmReserveTable.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.ucTable.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmHome.resources
+D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmTableViews.resources

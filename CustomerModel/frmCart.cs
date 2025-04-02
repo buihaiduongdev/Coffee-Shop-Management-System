@@ -230,6 +230,14 @@ namespace Restaurant_Management_System.Customer
 
         }
 
+        private void gbPaymentMethod_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void guna2HtmlLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
