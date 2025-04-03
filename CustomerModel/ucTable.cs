@@ -1,5 +1,8 @@
-﻿using Restaurant_Management_System.Customer;
+﻿using Restaurant_Management_System.Backend;
+using Restaurant_Management_System.Customer;
 using System;
+using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -8,61 +11,76 @@ namespace Restaurant_Management_System.CustomerModel
     public partial class ucTable : UserControl
     {
         private Table table;
-        private bool isReserved = false;
-
-
-        public event Action<ucTable> OnTableClicked;
+        string status;
+       
         public event Action<string> OnTableSelected;
-        public ucTable(Table table)
+        int tableID;
+        public ucTable(Table Table)
         {
             InitializeComponent();
-            this.table = table;
-
+            
+            table = Table;
+            tableID = table.TableID;    
+            status = table.Status;
             lblNameTable.Text = $"Bàn {table.TableID}";
-
             lblCapicity.Text = $"{table.Capacity} chỗ";
- 
+             // Thêm dòng này để cập nhật trạng thái ban đầu
         }
 
         private void btnReserve_Click(object sender, EventArgs e)
         {
-
-            DialogResult result = MessageBox.Show(
-                "Bạn có chắc muốn chọn bàn này không?",
-                "Xác nhận chọn bàn",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question
-            );
-
-            if ( result == DialogResult.Yes )
+            MessageBox.Show("Trạng thái bàn: " + status);
+            if (status.Equals("Empty", StringComparison.OrdinalIgnoreCase))
             {
-                OnTableClicked?.Invoke(this);
+                var result = MessageBox.Show(
+                    "Bạn có chắc muốn chọn bàn này không?",
+                    "Xác nhận chọn bàn",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question
+                );
 
-                isReserved = true;
-
-                UpdateUI();
-
-                OnTableSelected?.Invoke(lblNameTable.Text);
-            }
-        }
-
-        private void UpdateUI()
-        {
-            if (isReserved)
-            {
-                btnReserve.Text = "Đã chọn";
-                btnReserve.FillColor = ColorTranslator.FromHtml("#F87168");
+                if (result == DialogResult.Yes)
+                {
+ 
+                    OnTableSelected?.Invoke(lblNameTable.Text);
+                }
             }
             else
             {
-                btnReserve.Text = "Chọn bàn";
-                btnReserve.FillColor = ColorTranslator.FromHtml("#3B9E62");
+                MessageBox.Show("Bàn này đã được đặt trước!");
             }
         }
 
-        private void lblNameTable_Click(object sender, EventArgs e)
+
+        //private void UpdateUI()
+        //{
+
+        //    if (status == "Empty")
+        //    {
+        //        btnReserve.Text = "Chọn bàn";
+        //        btnReserve.FillColor = ColorTranslator.FromHtml("#3B9E62");
+
+
+        //    }
+        //    else
+        //    {
+        //        btnReserve.Text = "Đã chọn";
+        //        btnReserve.FillColor = ColorTranslator.FromHtml("#F87168");
+
+
+        //    }
+        //}
+
+        private void ucTable_Load(object sender, EventArgs e)
         {
-            
+
+
+
+        }
+
+        private void guna2Panel1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(status);
         }
     }
 }

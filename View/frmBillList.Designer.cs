@@ -34,7 +34,6 @@
             this.dgvBill = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dgvSrNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvOrderID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvTable = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvOrderType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -85,7 +84,6 @@
             this.dgvBill.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dgvSrNo,
             this.dgvOrderID,
-            this.dgvTable,
             this.dgvOrderType,
             this.dgvStatus,
             this.dgvTotal,
@@ -147,12 +145,6 @@
             this.dgvOrderID.MinimumWidth = 6;
             this.dgvOrderID.Name = "dgvOrderID";
             this.dgvOrderID.Width = 170;
-            // 
-            // dgvTable
-            // 
-            this.dgvTable.HeaderText = "Table";
-            this.dgvTable.MinimumWidth = 6;
-            this.dgvTable.Name = "dgvTable";
             // 
             // dgvOrderType
             // 
@@ -216,7 +208,6 @@
         private Guna.UI2.WinForms.Guna2DataGridView dgvBill;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvSrNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvOrderID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvTable;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvOrderType;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvStatus;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvTotal;

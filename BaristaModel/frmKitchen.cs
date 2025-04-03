@@ -107,14 +107,13 @@ namespace Restaurant_Management_System.Barista
         public void LoadOrders(string statusFilter, int tableID = -1)
         {
             string query = @"
-            SELECT O.OrderID, OD.Quantity, O.OrderDay, Pre.PreparationID, Pre.Status, 
+            SELECT O.OrderID, OD.Quantity, O.OrderDay, Pre.PreparationID, Pre.Status, O.status,
                    Pre.StartTime, Pre.EndTime, Pre.TableID, p.ProductName
             FROM Orders as O
             JOIN [Order Details] OD ON O.OrderID = OD.OrderID
             JOIN Preparations as Pre ON Pre.PreparationID = OD.OrderDetailID
             JOIN Products P ON P.ProductID = OD.ProductID
-            WHERE Pre.Status = @StatusFilter AND Pre.StartTime BETWEEN DATEADD(HOUR, -2, GETDATE()) AND GETDATE()
-
+            WHERE Pre.Status = @StatusFilter AND Pre.StartTime BETWEEN DATEADD(HOUR, -2, GETDATE()) AND GETDATE() AND O.status = 'Confirmed'
              ";
             // lấy 2 tiếng trước thôiiiii
           List<SqlParameter> parameters = new List<SqlParameter>

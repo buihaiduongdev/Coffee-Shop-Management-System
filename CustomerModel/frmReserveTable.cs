@@ -49,31 +49,42 @@ namespace Restaurant_Management_System.CustomerModel
         private void frmReserveTable_Load(object sender, EventArgs e)
         {
             borderRadius();
+            loadtable();
+            
+        }
+        DataTable dt = new DataTable();
+        private void loadtable()
+        {
 
             string query = @"SELECT * FROM Tables";
-            DataTable dt = DatabaseHelper.ExecuteQuery(query);
-
+            
+            
+            dt = DatabaseHelper.ExecuteQuery(query);
             flpTable.Controls.Clear();
-
+            string s = "";
             foreach (DataRow row in dt.Rows)
             {
-                var tableData = new Table(
+                Table tableData = new Table(
                     Convert.ToInt32(row["TableID"]),
                     Convert.ToInt32(row["Capacity"]),
                     (row["Status"]).ToString()
-                );
 
+                    
+
+                );
+                s += (row["Status"]).ToString();
+                s += "\n";
                 var tableUC = new ucTable(tableData);
                 tableUC.OnTableSelected += (tableName) =>
                 {
                     this.SelectedTableName = tableName;
                     this.DialogResult = DialogResult.OK;
-                    this.Close(); 
+                    this.Close();
                 };
                 flpTable.Controls.Add(tableUC);
             }
+            MessageBox.Show(s);
         }
-
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
@@ -83,6 +94,13 @@ namespace Restaurant_Management_System.CustomerModel
         private void flpTable_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+
+
+        private void frmReserveTable_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            dt.Clear();
         }
     }
 }

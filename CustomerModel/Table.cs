@@ -26,14 +26,14 @@ namespace Restaurant_Management_System.CustomerModel
 
 
 
-        public Color GetStatusColor()
-        {
-            return Status == "Available" ? Color.LightGreen : Color.IndianRed;
-        }
+        //public Color GetStatusColor()
+        //{
+        //    return Status == "Available" ? Color.LightGreen : Color.IndianRed;
+        //}
 
-        public void ToggleStatus()
-        {
-            Status = Status == "Available" ? "Reserved" : "Available";
-        }
+        //public void ToggleStatus()
+        //{
+        //    Status = Status == "Available" ? "Reserved" : "Available";
+        //}
     }
 }

@@ -163,7 +163,7 @@ namespace Restaurant_Management_System.Customer
         }
         private string orderType = "TakeAway";
         private string paymentType = "Cash";
-        private int tableID;
+        private int? tableID;
         private void checkout()
         {
       
@@ -171,6 +171,17 @@ namespace Restaurant_Management_System.Customer
            
             try
             {
+                if (tableID != null) {
+                    string query = @"UPDATE Tables 
+                                    SET status = 'Occupied'
+                                    WHERE TableID = @TableID";
+
+                    SqlParameter[] para = { new SqlParameter("@TableID", tableID) };
+
+                    DatabaseHelper.ExecuteNonQuery(query, para);
+                            
+                }
+
                 string query2 = "INSERT INTO Orders (CustomerID, OrderDay, OrderType, PaymentType) VALUES " +
                     "(@CustomerID, @OrderDay, @OrderType, @PaymentType); SELECT SCOPE_IDENTITY();";
                 SqlParameter[] parameters = {
@@ -212,7 +223,8 @@ namespace Restaurant_Management_System.Customer
                         SqlParameter[] parameters3 = {
                             new SqlParameter("@PreparationID", orderDetailID),
                             new SqlParameter("@Status", "Pending"),
-                            new SqlParameter("@TableID", tableID)
+                            new SqlParameter("@TableID", (object)tableID ?? DBNull.Value
+)
                         };
                         DatabaseHelper.ExecuteNonQuery(query4, parameters3);
                     }
@@ -220,6 +232,8 @@ namespace Restaurant_Management_System.Customer
                 itemList.Clear();
                 MessageBox.Show("Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
+
+
             }
             catch (Exception ex)
             {
@@ -306,6 +320,8 @@ namespace Restaurant_Management_System.Customer
 
                 string tableIDStr = selectedTable.Replace("Bàn ", "").Trim();
                 tableID = Convert.ToInt32(tableIDStr);
+
+                
             }
         }
 
