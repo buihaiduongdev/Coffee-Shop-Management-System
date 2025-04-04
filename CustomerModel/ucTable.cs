@@ -21,16 +21,17 @@ namespace Restaurant_Management_System.CustomerModel
             
             table = Table;
             tableID = table.TableID;    
-            status = table.Status;
             lblNameTable.Text = $"Bàn {table.TableID}";
             lblCapicity.Text = $"{table.Capacity} chỗ";
-             // Thêm dòng này để cập nhật trạng thái ban đầu
+            status = table.Status?.Trim();
+            UpdateUI();
+
         }
 
         private void btnReserve_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Trạng thái bàn: " + status);
-            if (status.Equals("Empty", StringComparison.OrdinalIgnoreCase))
+
+            if (status.Trim().Equals("Empty", StringComparison.OrdinalIgnoreCase))
             {
                 var result = MessageBox.Show(
                     "Bạn có chắc muốn chọn bàn này không?",
@@ -43,6 +44,7 @@ namespace Restaurant_Management_System.CustomerModel
                 {
  
                     OnTableSelected?.Invoke(lblNameTable.Text);
+
                 }
             }
             else
@@ -52,24 +54,24 @@ namespace Restaurant_Management_System.CustomerModel
         }
 
 
-        //private void UpdateUI()
-        //{
+        private void UpdateUI()
+        {
 
-        //    if (status == "Empty")
-        //    {
-        //        btnReserve.Text = "Chọn bàn";
-        //        btnReserve.FillColor = ColorTranslator.FromHtml("#3B9E62");
-
-
-        //    }
-        //    else
-        //    {
-        //        btnReserve.Text = "Đã chọn";
-        //        btnReserve.FillColor = ColorTranslator.FromHtml("#F87168");
+            if (status == "Empty")
+            {
+                btnReserve.Text = "Chọn bàn";
+                btnReserve.FillColor = ColorTranslator.FromHtml("#3B9E62");
 
 
-        //    }
-        //}
+            }
+            else
+            {
+                btnReserve.Text = "Đã chọn";
+                btnReserve.FillColor = ColorTranslator.FromHtml("#F87168");
+
+
+            }
+        }
 
         private void ucTable_Load(object sender, EventArgs e)
         {
@@ -80,7 +82,7 @@ namespace Restaurant_Management_System.CustomerModel
 
         private void guna2Panel1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(status);
+     
         }
     }
 }
