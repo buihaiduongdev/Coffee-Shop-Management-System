@@ -132,4 +132,19 @@
   <metadata name="dgvdel.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAF0AAAA1CAYAAAAj1uf0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vgAADr4B6kKxwAAAAd5JREFUeF7tmLFKxEAURfdDLS39AkGwETs7KxthC0GsRJttFts0NlvZ2dhY+QVZ
+        bmAgPJ/JZDfJfWPug0OWbDKzHCYvd2e1Pj+pxbys7AkxPZJOQNIJSDoBSScg6QQknYCkE5B0AkVK365v
+        6ur5vjk+XJ7++j46xUiHXIj++f6qbeF8SfLDS3+6Pmuk5tT75rG53o4RjbDSIW/39mK9ZhXuiyw/nPTX
+        24v6o9pajwfV565qxrNzsAkjfXN31UiaojAuXrp2ThZ06ZDhvRynKMwTQT5NOnous5g9nyY9N5FMVZjf
+        /qa5oEnXSieink4EMqZML0hHdk4WYaQnkKvHko+8r5zeAeS090/G/EeKcSPJp0u3PR2poi0Mn7GnklPe
+        ve2UtPie3pdevNXqxUyItLuMOU/JItOLJ9Ar25cht72f3h5zyL6NcnpGdSWQQ/ZtFrnSE7an9xWuRY/H
+        SsVx6L326WBAl55QTieinD4jyukzYnu6l7WV00eiL714q9WLmcrpA/AEemX7snL6EfStdFtdCUQ5fSC2
+        p/eVcvqIKKcTUU4nkpNA/iqbfKIRVnrimJwelfDSE0NyenSKkZ7oyumlUJz0/4CkE5B0ApJOQNIJSDoB
+        SScg6QQknYCkE9gDFY9A8tPrPRkAAAAASUVORK5CYII=
+</value>
+  </data>
 </root>

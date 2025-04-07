@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pbHeaderIcon = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.Header = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHeaderIcon)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.label1);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
+            this.guna2Panel1.Controls.Add(this.Header);
+            this.guna2Panel1.Controls.Add(this.pbHeaderIcon);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(58)))), ((int)(((byte)(20)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
@@ -50,27 +50,17 @@
             this.guna2Panel1.Size = new System.Drawing.Size(800, 100);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // label1
+            // pbHeaderIcon
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(131, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 54);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Header";
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(24, 12);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(79, 70);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 2;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
+            this.pbHeaderIcon.BackColor = System.Drawing.Color.Transparent;
+            this.pbHeaderIcon.ImageRotate = 0F;
+            this.pbHeaderIcon.Location = new System.Drawing.Point(24, 12);
+            this.pbHeaderIcon.Name = "pbHeaderIcon";
+            this.pbHeaderIcon.Size = new System.Drawing.Size(79, 70);
+            this.pbHeaderIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbHeaderIcon.TabIndex = 2;
+            this.pbHeaderIcon.TabStop = false;
+            this.pbHeaderIcon.UseTransparentBackground = true;
             // 
             // guna2Panel2
             // 
@@ -121,6 +111,20 @@
             this.btnClose.Text = "CLOSE";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // Header
+            // 
+            this.Header.AutoSize = false;
+            this.Header.AutoSizeHeightOnly = true;
+            this.Header.BackColor = System.Drawing.Color.Transparent;
+            this.Header.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Header.ForeColor = System.Drawing.Color.White;
+            this.Header.Location = new System.Drawing.Point(139, 29);
+            this.Header.Name = "Header";
+            this.Header.Size = new System.Drawing.Size(137, 35);
+            this.Header.TabIndex = 3;
+            this.Header.Text = "Header";
+            this.Header.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // SampleAdd
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -135,7 +139,7 @@
             this.Text = "SampleAdd";
             this.Load += new System.EventHandler(this.SampleAdd_Load);
             this.guna2Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHeaderIcon)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -145,9 +149,9 @@
 
         public Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         public Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        public System.Windows.Forms.Label label1;
-        public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        public Guna.UI2.WinForms.Guna2PictureBox pbHeaderIcon;
         public Guna.UI2.WinForms.Guna2Button btnClose;
         public Guna.UI2.WinForms.Guna2Button btnSave;
+        public Guna.UI2.WinForms.Guna2HtmlLabel Header;
     }
 }

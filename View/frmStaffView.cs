@@ -14,12 +14,15 @@ using System.Windows.Forms;
 
 namespace Restaurant_Management_System.View
 {
-    public partial class frmStaffView : SampleView
+    public partial class frmStaffView : Form
     {
         public frmStaffView()
         {
             InitializeComponent();
         }
+
+        Color ButtonEnabled = Color.CornflowerBlue;
+        Color ButtonDisable = Color.Silver;
 
         private void frmStaffView_Load(object sender, EventArgs e)
         {
@@ -33,7 +36,7 @@ namespace Restaurant_Management_System.View
                        Phone, 
                        Role, 
                        Salary
-                FROM Employees"; 
+                FROM Employees WHERE IsDeleted = 0"; 
 
             try
             {
@@ -51,25 +54,56 @@ namespace Restaurant_Management_System.View
                     dgvEmployee.Rows[i].Cells["dgvRole"].Value = dt.Rows[i]["Role"];
                     dgvEmployee.Rows[i].Cells["dgvSalary"].Value = dt.Rows[i]["Salary"];
                 }
+                lblNumberEmployee.Text = $"Employee [{dt.Rows.Count}]";
+                dgvEmployee.AllowUserToAddRows = false;
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi khi tải dữ liệu nhân viên: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void guna2DataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        
+        private void LoadEmployeeDataSplitRole(string role)
         {
+            string query = $@"
+                SELECT EmployeeID, 
+                       (FirstName + ' ' + LastName) AS FullName, 
+                       Phone, 
+                       Role, 
+                       Salary
+                FROM Employees WHERE Role = '{role}' AND IsDeleted = 0";
+            try
+            {
+                DataTable dt = DatabaseHelper.ExecuteQuery(query);
 
-        }
+                dgvEmployee.Rows.Clear();
 
-        public override void btnAdd_Click(object sender, EventArgs e)
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    dgvEmployee.Rows.Add();
+                    dgvEmployee.Rows[i].Cells["dgvSno"].Value = i + 1; // STT tự động tăng
+                    dgvEmployee.Rows[i].Cells["dgvEmployeeID"].Value = dt.Rows[i]["EmployeeID"];
+                    dgvEmployee.Rows[i].Cells["dgvFullName"].Value = dt.Rows[i]["FullName"];
+                    dgvEmployee.Rows[i].Cells["dgvPhone"].Value = dt.Rows[i]["Phone"];
+                    dgvEmployee.Rows[i].Cells["dgvRole"].Value = dt.Rows[i]["Role"];
+                    dgvEmployee.Rows[i].Cells["dgvSalary"].Value = dt.Rows[i]["Salary"];
+                }
+                lblNumberEmployee.Text = $"Employee [{dgvEmployee.RowCount}]";
+                dgvEmployee.AllowUserToAddRows = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải dữ liệu nhân viên: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        } 
+
+        public void btnAdd_Click(object sender, EventArgs e)
         {
             frmStaffAdd frm = new frmStaffAdd("");
             frm.ShowDialog();
         }
 
-        public override void txtSearch_TextChanged(object sender, EventArgs e)
+        public void txtSearch_TextChanged(object sender, EventArgs e)
         {
             string searchValue = txtSearch.Text.Trim().ToLower();
 
@@ -136,7 +170,7 @@ namespace Restaurant_Management_System.View
 
                     if (result == DialogResult.Yes)
                     {
-                        string deleteQuery = "DELETE FROM Employees WHERE EmployeeID = @EmployeeID";
+                        string deleteQuery = "UPDATE Employees SET IsDeleted = 1 WHERE EmployeeID = @EmployeeID";
                         SqlParameter[] param = { new SqlParameter("@EmployeeID", employeeID) };
 
                         int rowsAffected = DatabaseHelper.ExecuteNonQuery(deleteQuery, param);
@@ -154,6 +188,78 @@ namespace Restaurant_Management_System.View
             }
         }
 
-        
+        private void btnAllPeople_Click(object sender, EventArgs e)
+        {
+            btnAllPeople.FillColor = ButtonEnabled;
+            btnAllPeople.BorderColor = ButtonEnabled;
+            btnManager.FillColor = ButtonDisable;
+            btnManager.BorderColor = ButtonDisable;
+            btnReceptionist.FillColor = ButtonDisable;
+            btnReceptionist.BorderColor = ButtonDisable;
+            btnWaiter.FillColor = ButtonDisable;
+            btnWaiter.BorderColor = ButtonDisable;
+            LoadEmployeeData();
+        }
+
+        private void btnManager_Click(object sender, EventArgs e)
+        {
+            btnManager.FillColor = ButtonEnabled;
+            btnManager.BorderColor = ButtonEnabled;
+            btnAllPeople.FillColor = ButtonDisable;
+            btnAllPeople.BorderColor = ButtonDisable;
+            btnReceptionist.FillColor = ButtonDisable;
+            btnReceptionist.BorderColor = ButtonDisable;
+            btnWaiter.FillColor = ButtonDisable;
+            btnWaiter.BorderColor = ButtonDisable;
+            btnBarista.FillColor = ButtonDisable;
+            btnBarista.BorderColor = ButtonDisable;
+            LoadEmployeeDataSplitRole(btnManager.Text);
+
+        }
+
+        private void btnReceptionist_Click(object sender, EventArgs e)
+        {
+            btnReceptionist.FillColor = ButtonEnabled;
+            btnReceptionist.BorderColor = ButtonEnabled;
+            btnAllPeople.FillColor = ButtonDisable;
+            btnAllPeople.BorderColor = ButtonDisable;
+            btnManager.FillColor = ButtonDisable;
+            btnManager.BorderColor = ButtonDisable;
+            btnWaiter.FillColor = ButtonDisable;
+            btnWaiter.BorderColor = ButtonDisable;
+            btnBarista.FillColor = ButtonDisable;
+            btnBarista.BorderColor = ButtonDisable;
+            LoadEmployeeDataSplitRole(btnReceptionist.Text);
+        }
+
+        private void btnBarista_Click(object sender, EventArgs e)
+        {
+            btnBarista.FillColor = ButtonEnabled;
+            btnBarista.BorderColor = ButtonEnabled;
+            btnAllPeople.FillColor = ButtonDisable;
+            btnAllPeople.BorderColor = ButtonDisable;
+            btnManager.FillColor = ButtonDisable;
+            btnManager.BorderColor = ButtonDisable;
+            btnWaiter.FillColor = ButtonDisable;
+            btnWaiter.BorderColor = ButtonDisable;
+            btnReceptionist.FillColor = ButtonDisable;
+            btnReceptionist.BorderColor = ButtonDisable;
+            LoadEmployeeDataSplitRole(btnBarista.Text);
+        }
+
+        private void btnWaiter_Click(object sender, EventArgs e)
+        {
+            btnWaiter.FillColor = ButtonEnabled;
+            btnWaiter.BorderColor = ButtonEnabled;
+            btnAllPeople.FillColor = ButtonDisable;
+            btnAllPeople.BorderColor = ButtonDisable;
+            btnManager.FillColor = ButtonDisable;
+            btnManager.BorderColor = ButtonDisable;
+            btnBarista.FillColor = ButtonDisable;
+            btnBarista.BorderColor = ButtonDisable;
+            btnReceptionist.FillColor = ButtonDisable;
+            btnReceptionist.BorderColor = ButtonDisable;
+            LoadEmployeeDataSplitRole(btnWaiter.Text);
+        }
     }
 }

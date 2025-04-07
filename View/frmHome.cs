@@ -73,22 +73,9 @@ namespace Restaurant_Management_System.View
             chartSalesWeek.ChartAreas[0].AxisY2.MajorGrid.Enabled = false;
         }
 
-        private void chartSalesWeek_MouseMove(object sender, MouseEventArgs e)
+        private void btnSearch_Click(object sender, EventArgs e)
         {
-            ToolTip toolTip = new ToolTip();
-            HitTestResult result = chartSalesWeek.HitTest(e.X, e.Y);
 
-            if (result.ChartElementType == ChartElementType.DataPoint)
-            {
-                int index = result.PointIndex;
-
-                double sales = chartSalesWeek.Series[0].Points[index].YValues[0];
-                double revenue = chartSalesWeek.Series[1].Points[index].YValues[0];
-                string day = chartSalesWeek.Series[0].Points[index].XValue.ToString();
-
-                toolTip.Show($"Date {day}\nSales: {sales} Products\nRevenue: ${revenue}", chartSalesWeek, e.X, e.Y - 15);
-            }
-            else toolTip.Hide(chartSalesWeek);
         }
     }
 }

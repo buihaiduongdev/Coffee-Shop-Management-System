@@ -41,7 +41,7 @@ namespace Restaurant_Management_System.View
 
                     if (result == DialogResult.Yes)
                     {
-                        string deleteQuery = $"DELETE FROM Tables WHERE TableID = @TableID";
+                        string deleteQuery = $"UPDATE Tables SET IsDeleted = 1 WHERE TableID = @TableID";
                         SqlParameter[] param = { new SqlParameter("@TableID", tableID) };
 
                         int rowsAffected = DatabaseHelper.ExecuteNonQuery(deleteQuery, param);
@@ -79,7 +79,8 @@ namespace Restaurant_Management_System.View
         {
             string query = @"
         SELECT TableID, Capacity, Status
-        FROM Tables"; // Chỉ lấy cột cần thiết
+        FROM Tables
+        WHERE IsDeleted = 0"; // Chỉ lấy cột cần thiết
 
             try
             {

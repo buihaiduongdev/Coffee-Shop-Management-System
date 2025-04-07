@@ -13,19 +13,15 @@ using System.Windows.Forms;
 
 namespace Restaurant_Management_System.Model
 {
-    public partial class frmCategoryAdd :SampleAdd
+    public partial class frmCategoryAdd :Form
     {
         public frmCategoryAdd(int categoryID)
         {
             InitializeComponent();
             CategoryID = categoryID;
-
+            pbHeaderIcon.Image = Properties.Resources.Categories;
         }
         int CategoryID;
-        private void frmCategoryAdd_Load(object sender, EventArgs e)
-        {
-            
-        }
         private void InsertCategory()
         {
             string query = "SELECT MAX(CategoryID) FROM Categories";
@@ -33,49 +29,43 @@ namespace Restaurant_Management_System.Model
             int categoryID = (result == DBNull.Value || result == null) ? 1 : Convert.ToInt32(result) + 1; // Bắt đầu từ 1 nếu bảng trống
             string categoryName = txtCategoryName.Text.Trim();
 
-            try
+            string query2 = "INSERT INTO Categories (CategoryID, CategoryName) VALUES (@CategoryID, @CategoryName)";
+
+            if (string.IsNullOrEmpty(categoryName))
             {
-
-                string query2 = "INSERT INTO Categories (CategoryID, CategoryName) VALUES (@CategoryID, @CategoryName)";
-
-
-                SqlParameter[] parameters = {
-                    new SqlParameter("@CategoryID", categoryID),
-                    new SqlParameter("@CategoryName", categoryName)
-                };
-
-
-                int rowsAffected = DatabaseHelper.ExecuteNonQuery(query2, parameters);
-
-                if (rowsAffected > 0)
-                {
-                    MessageBox.Show("Thêm danh mục thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtCategoryName.Clear();
-                }
-                else
-                {
-                    MessageBox.Show("Thêm danh mục thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                throw new ArgumentNullException("Lỗi nhập liệu! Vui lòng điền đầy đủ thông tin");
             }
-            catch (Exception ex)
+
+            SqlParameter[] parameters = {
+                new SqlParameter("@CategoryID", categoryID),
+                new SqlParameter("@CategoryName", categoryName)
+            };
+
+
+            int rowsAffected = DatabaseHelper.ExecuteNonQuery(query2, parameters);
+
+            if (rowsAffected > 0)
             {
-                MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Thêm danh mục thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtCategoryName.Clear();
+            }
+            else
+            {
+                MessageBox.Show("Thêm danh mục thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void UpdateCategory(int CategoryID)
         {
-            try
-            {
                 string categoryName = txtCategoryName.Text.Trim();
 
                 if (string.IsNullOrEmpty(categoryName))
                 {
-                    MessageBox.Show("Vui lòng nhập tên danh mục!", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
+                    throw new ArgumentNullException("Lỗi nhập liệu! Vui lòng điền đầy đủ thông tin");
+
                 }
 
-                string queryUpdate = "UPDATE Categories SET CategoryName = @CategoryName WHERE CategoryID = @CategoryID";
+            string queryUpdate = "UPDATE Categories SET CategoryName = @CategoryName WHERE CategoryID = @CategoryID";
 
                 SqlParameter[] parameters = {
             new SqlParameter("@CategoryID", CategoryID),
@@ -86,35 +76,42 @@ namespace Restaurant_Management_System.Model
 
                 if (rowsAffected > 0)
                 {
-                    MessageBox.Show("Danh mục đã được cập nhật thành công!");
+                    MessageBox.Show("Danh mục đã được cập nhật thành công!", "Notification");
                     this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Không có thay đổi nào được thực hiện.");
+                    MessageBox.Show("Không có thay đổi nào được thực hiện.", "Notification");
+                }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            bool AddCategory = false;
+            try
+            {
+                if (CategoryID == -1)
+                {
+                    AddCategory = true;
+                    InsertCategory();
+                    this.Close();
+                }
+                else
+                {
+                    UpdateCategory(CategoryID);
+                    this.Close();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi cập nhật danh mục: " + ex.Message);
+                if (AddCategory) MessageBox.Show("Lỗi thêm danh mục: " + ex.Message, "Notification");
+                else MessageBox.Show("Lỗi cập nhật danh mục: " + ex.Message, "Notification");
             }
         }
 
-
-        public override void btnSave_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
-            if (CategoryID == -1)
-            {
-                InsertCategory();
-                this.Close();
-            }
-            else
-            {
-                UpdateCategory(CategoryID);
-                this.Close();
-            }
+            this.Close();
         }
-
-        
     }
 }

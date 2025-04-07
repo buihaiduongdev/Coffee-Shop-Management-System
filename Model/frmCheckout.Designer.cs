@@ -38,12 +38,6 @@
             this.txtChange = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Size = new System.Drawing.Size(195, 54);
-            this.label1.Text = "Check Out";
-            // 
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));

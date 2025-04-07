@@ -86,7 +86,7 @@ namespace Restaurant_Management_System.Customer
         }
         private void loadProducts()
         {
-            string qry = "SELECT * FROM Products ";
+            string qry = "SELECT * FROM Products WHERE IsDeleted = 0";
             DataTable dt = DatabaseHelper.ExecuteQuery(qry);
 
             foreach (DataRow item in dt.Rows)
@@ -107,7 +107,7 @@ namespace Restaurant_Management_System.Customer
         {
             flpCategory.FlowDirection = FlowDirection.BottomUp;
 
-            string query = "SELECT DISTINCT CategoryName FROM Categories";
+            string query = "SELECT DISTINCT CategoryName FROM Categories WHERE IsDeleted = 0";
             DataTable dt = DatabaseHelper.ExecuteQuery(query);
 
             int buttonWidth = 150;
@@ -153,7 +153,7 @@ namespace Restaurant_Management_System.Customer
         private void FilterProductsByCategory(string categoryName)
         {
             // Sử dụng tham số thay vì string interpolation để tránh SQL injection
-            string query = "SELECT * FROM Products WHERE CategoryName = @Category";
+            string query = "SELECT * FROM Products WHERE CategoryName = @Category and WHERE IsDeleted = 0";
 
             // Tạo tham số SQL
             SqlParameter categoryParam = new SqlParameter("@Category", SqlDbType.NVarChar);

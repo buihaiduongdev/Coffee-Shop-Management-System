@@ -2,23 +2,22 @@
 using Restaurant_Management_System.Model;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Restaurant_Management_System.View
 {
-    public partial class frmProductView : SampleView
+    public partial class frmProductView : Form
     {
         public frmProductView()
         {
             InitializeComponent();
         }
+        private DataTable dt;
 
         private void frmProductView_Load(object sender, EventArgs e)
         {
@@ -26,12 +25,11 @@ namespace Restaurant_Management_System.View
         }
         private void LoadProductData()
         {
-            string query = "SELECT ProductID, ProductName, Price, CategoryName FROM Products"; 
+            string query = "SELECT ProductID, ProductName, Price, CategoryName, Image FROM Products WHERE IsDeleted = 0";
+            List<string> Categories = new List<string> { "Category" };
             try
             {
-                DataTable dt = DatabaseHelper.ExecuteQuery(query);
-
-                
+                dt = DatabaseHelper.ExecuteQuery(query);
                 dgvProduct.Rows.Clear();
 
                 // Duyệt từng dòng dữ liệu từ DataTable và thêm vào DataGridView
@@ -43,75 +41,22 @@ namespace Restaurant_Management_System.View
                     dgvProduct.Rows[i].Cells["dgvProductName"].Value = dt.Rows[i]["ProductName"];
                     dgvProduct.Rows[i].Cells["dgvPrice"].Value = dt.Rows[i]["Price"];
                     dgvProduct.Rows[i].Cells["dgvCategory"].Value = dt.Rows[i]["CategoryName"];
+                    if (!Categories.Contains(dt.Rows[i]["CategoryName"]))
+                    {
+                        Categories.Add(dt.Rows[i]["CategoryName"].ToString());
+                    }
                 }
+                int count = dgvProduct.RowCount;
+                if (count == 0) labelNumberResultFound.Text = $"Result not found";
+                if (count == 1) labelNumberResultFound.Text = $"{count} result found";
+                else labelNumberResultFound.Text = $"{count} results found";
+                dgvProduct.AllowUserToAddRows = false;
+                cbbCategories.DataSource = Categories;
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi khi tải dữ liệu sản phẩm: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void btnAdd_Click_1(object sender, EventArgs e)
-        {
-            frmProductAdd frm = new frmProductAdd(-1);
-            frm.ShowDialog();
-            //GetData();
-
-        }
-
-        public override void txtSearch_TextChanged(object sender, EventArgs e)
-        {
-            string searchValue = txtSearch.Text.Trim().ToLower();
-
-            foreach (DataGridViewRow row in dgvProduct.Rows)
-            {
-                if (row.Cells["dgvProductID"].Value != null &&
-                    row.Cells["dgvProductName"].Value != null &&
-                    row.Cells["dgvCategory"].Value != null)
-                {
-                    string productId = row.Cells["dgvProductID"].Value.ToString().ToLower();
-                    string productName = row.Cells["dgvProductName"].Value.ToString().ToLower();
-                    string category = row.Cells["dgvCategory"].Value.ToString().ToLower();
-
-                    // Kiểm tra tìm kiếm theo ID, tên sản phẩm hoặc danh mục
-                    row.Visible = productId.Contains(searchValue) ||
-                                  productName.Contains(searchValue) ||
-                                  category.Contains(searchValue);
-                }
-            }
-        }
-
-        private void guna2DataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dvgedit")
-            //{
-            //    frmStaffAdd frm = new frmStaffAdd();
-            //    frm.id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dvgid"].Value);
-            //    frm.txtName.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dvgName"].Value);
-            //    frm.txtPhone.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dvgPhone"].Value);
-            //    frm.cbRole.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dvgRole"].Value);
-            //    frm.ShowDialog();
-            //    GetData();
-            //}
-            //if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dvgdel")
-            //{
-            //    //đưa ra thông báo có Xóa hay không
-            //    guna2MessageDialog1.Icon = Guna.UI2.WinForms.MessageDialogIcon.Question;
-            //    guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.YesNo;
-            //    if (Guna2MessageDialog1.Show("Bạn có muốn xóa không?") == DialogResult.Yes)
-            //    {
-            //        int id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dvgid"].Value);
-            //        string qry = "Delete from products where pID= " + id + "";
-            //        Hashtable ht = new Hashtable();
-            //        MainClass.SQl(qry, ht);
-
-            //        guna2MessageDialog1.Icon = Guna.UI2.WinForms.MessageDialogIcon.Information;
-            //        guna2MessageDialog1.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
-            //        guna2MessageDialog1.Show("Deleted successfully...");
-            //        GetData();
-            //    }
-            //}
-            //Chưa có file BE MainClass
         }
 
         private void dgvProduct_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -127,6 +72,7 @@ namespace Restaurant_Management_System.View
                     frmProductAdd frm = new frmProductAdd(id);
                     frm.txtName.Text = Convert.ToString(dgvProduct.CurrentRow.Cells["dgvProductName"].Value);
                     frm.txtPrice.Text = Convert.ToString(dgvProduct.CurrentRow.Cells["dgvPrice"].Value);
+                    frm.picImage.Image = ConvertByteArrayToImage((byte[])dt.Rows[e.RowIndex]["Image"]);
                     frm.ShowDialog();
                     LoadProductData();
                 }
@@ -138,7 +84,7 @@ namespace Restaurant_Management_System.View
 
                     if (result == DialogResult.Yes)
                     {
-                        string deleteQuery = "DELETE FROM Products WHERE ProductID = @ProductID";
+                        string deleteQuery = "UPDATE Products SET IsDeleted = 1 WHERE ProductID = @ProductID";
                         SqlParameter[] param = { new SqlParameter("@ProductID", productID) };
 
                         int rowsAffected = DatabaseHelper.ExecuteNonQuery(deleteQuery, param);
@@ -156,5 +102,78 @@ namespace Restaurant_Management_System.View
             }
         }
 
+        private Image ConvertByteArrayToImage(byte[] ByteArray)
+        {
+            using (MemoryStream ms = new MemoryStream(ByteArray))
+            {
+                return Image.FromStream(ms);
+            }
+        }
+
+        private void btnAddProduct_Click(object sender, EventArgs e)
+        {
+            frmProductAdd frm = new frmProductAdd(-1);
+            frm.ShowDialog();
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            int count = 0;
+            string searchValue = txtSearch.Text.Trim().ToLower();
+            foreach (DataGridViewRow row in dgvProduct.Rows)
+            {
+                if (row.Cells["dgvProductID"].Value != null && row.Cells["dgvProductName"].Value != null && row.Cells["dgvCategory"].Value != null)
+                {
+                    string productId = row.Cells["dgvProductID"].Value.ToString().ToLower();
+                    string productName = row.Cells["dgvProductName"].Value.ToString().ToLower();
+                    string productCatagory = row.Cells["dgvCategory"].Value.ToString().ToLower();
+                    bool isContain = productId.Contains(searchValue) || productName.Contains(searchValue) || productCatagory.Contains(searchValue);
+                    row.Visible = isContain;
+                    if (isContain) count++;
+                }
+            }
+            if (count == 0) labelNumberResultFound.Text = $"Result not found";
+            if (count == 1) labelNumberResultFound.Text = $"{count} result found";
+            else labelNumberResultFound.Text = $"{count} results found";
+        }
+
+        private void cbbCategories_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string filterValue = cbbCategories.Text;
+            if (filterValue == "Category")
+            {
+                cbbCategories.SelectedText = "Category";
+                cbbCategories.ForeColor = Color.Gray;
+                LoadProductData();
+            }
+            else
+            {
+                cbbCategories.ForeColor = Color.Black;
+                string query = $"SELECT * FROM Products WHERE CategoryName = N'{filterValue}'";
+                try
+                {
+                    dt = DatabaseHelper.ExecuteQuery(query);
+                    dgvProduct.Rows.Clear();
+                    for (int i = 0; i < dt.Rows.Count; i++)
+                    {
+                        dgvProduct.Rows.Add();
+                        dgvProduct.Rows[i].Cells["dgvSno"].Value = i + 1;
+                        dgvProduct.Rows[i].Cells["dgvProductID"].Value = dt.Rows[i]["ProductID"];
+                        dgvProduct.Rows[i].Cells["dgvProductName"].Value = dt.Rows[i]["ProductName"];
+                        dgvProduct.Rows[i].Cells["dgvPrice"].Value = dt.Rows[i]["Price"];
+                        dgvProduct.Rows[i].Cells["dgvCategory"].Value = dt.Rows[i]["CategoryName"];
+                    }
+                    int count = dgvProduct.RowCount;
+                    if (count == 0) labelNumberResultFound.Text = $"Result not found";
+                    if (count == 1) labelNumberResultFound.Text = $"{count} result found";
+                    else labelNumberResultFound.Text = $"{count} results found";
+                    dgvProduct.AllowUserToAddRows = false;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi tải dữ liệu sản phẩm: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }

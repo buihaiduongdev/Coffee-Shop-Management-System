@@ -16,12 +16,13 @@ using System.Windows.Forms;
 
 namespace Restaurant_Management_System.Model
 {
-    public partial class frmProductAdd : SampleAdd
+    public partial class frmProductAdd : Form
     {
         public frmProductAdd(int productID)
         {
             InitializeComponent();
             ProductID = productID;
+            pbHeaderIcon.Image = Properties.Resources.Products;
         }
         int ProductID;
 
@@ -52,62 +53,57 @@ namespace Restaurant_Management_System.Model
             string productName = txtName.Text;
             string strPrice = txtPrice.Text;
             string category = cmbCategory.SelectedItem.ToString();
-            decimal price = decimal.Parse(strPrice);
             byte[] imageBytes = ConvertImageToByteArray(picImage);
 
             string query = "INSERT INTO Products(ProductName, Price, Image,CategoryName) " +
                            "VALUES( @ProductName, @Price, @Image, @CategoryName )";
 
+            if (string.IsNullOrEmpty(productName) || string.IsNullOrEmpty(strPrice) || string.IsNullOrEmpty(category))
+            {
+                throw new Exception("Lỗi nhập liệu! Vui lòng nhập đầy đủ thông tin sản phẩm!");
+            }
+
+            if (!decimal.TryParse(strPrice, out decimal price) || price <= 0)
+            {
+                throw new Exception("Lỗi nhập liệu! Giá sản phẩm không hợp lệ!");
+            }
 
             SqlParameter[] parameters = new SqlParameter[]
-            {
-  
+{
+
                 new SqlParameter("@ProductName", productName),
                 new SqlParameter("@Price", price),
                 new SqlParameter("@Image", SqlDbType.VarBinary) { Value = (imageBytes != null ? (object)imageBytes : DBNull.Value) },
                 new SqlParameter("@CategoryName", category)
             };
 
-            try
+            int rowsAffected = DatabaseHelper.ExecuteNonQuery(query, parameters);
+
+
+            if (rowsAffected > 0)
             {
-
-                int rowsAffected = DatabaseHelper.ExecuteNonQuery(query, parameters);
-
-
-                if (rowsAffected > 0)
-                {
-                    MessageBox.Show("Sản phẩm đã được thêm thành công!");
-                }
-                else
-                {
-                    MessageBox.Show("Không có thay đổi nào được thực hiện.");
-                }
+                MessageBox.Show("Sản phẩm đã được thêm thành công!");
             }
-            catch (Exception ex)
+            else
             {
-
-                MessageBox.Show("Lỗi khi thực thi câu lệnh SQL: " + ex.Message);
+                MessageBox.Show("Không có thay đổi nào được thực hiện.");
             }
         }
 
         public void UpdateProduct(int productID)
         {
-            try
-            {
                 string productName = txtName.Text.Trim();
                 string strPrice = txtPrice.Text.Trim();
                 string category = cmbCategory.SelectedItem?.ToString();
 
                 if (string.IsNullOrEmpty(productName) || string.IsNullOrEmpty(strPrice) || string.IsNullOrEmpty(category))
                 {
-                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin sản phẩm!", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
+                   throw new Exception("Lỗi nhập liệu! Vui lòng nhập đầy đủ thông tin sản phẩm!");
                 }
 
                 if (!decimal.TryParse(strPrice, out decimal price) || price <= 0)
                 {
-                    MessageBox.Show("Giá sản phẩm không hợp lệ!", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
+                    throw new Exception("Lỗi nhập liệu! Giá sản phẩm không hợp lệ!");
                 }
 
                 byte[] imageBytes = ConvertImageToByteArray(picImage);
@@ -133,34 +129,36 @@ namespace Restaurant_Management_System.Model
 
                 if (rowsAffected > 0)
                 {
-                    MessageBox.Show("Sản phẩm đã được cập nhật thành công!");
+                    MessageBox.Show("Sản phẩm đã được cập nhật thành công!", "Notification");
                 }
                 else
                 {
-                    MessageBox.Show("Không có thay đổi nào được thực hiện.");
+                    MessageBox.Show("Không có thay đổi nào được thực hiện.", "Notification");
+                }
+        }
+
+        public void btnSave_Click(object sender, EventArgs e)
+        {
+            bool AddProduct = false;
+            try
+            {
+                if (ProductID == -1)
+                {
+                    AddProduct = true;
+                    InsertProduct();
+                    this.Close();
+                }
+                else
+                {
+                    UpdateProduct(ProductID);
+                    this.Close();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi cập nhật sản phẩm: " + ex.Message);
+                if (AddProduct)  MessageBox.Show("Lỗi khi thêm sản phẩm: " + ex.Message, "Notification");
+                else MessageBox.Show("Lỗi khi cập nhật sản phẩm: " + ex.Message, "Notification");
             }
-        }
-
-        public override void btnSave_Click(object sender, EventArgs e)
-        {
-            if(ProductID == -1)
-            {
-                InsertProduct();
-                this.Close();
-            }
-            else
-            {
-                UpdateProduct(ProductID);
-                this.Close();
-            }
-            
-
-
         }
 
         private void frmProductAdd_Load(object sender, EventArgs e)
@@ -173,7 +171,8 @@ namespace Restaurant_Management_System.Model
             string query = "SELECT DISTINCT CategoryName FROM Categories";
             DataTable dt = DatabaseHelper.ExecuteQuery(query);
 
-            cmbCategory.Items.Clear(); 
+            cmbCategory.Items.Clear();
+            cmbCategory.Items.Add("");
 
             foreach (DataRow row in dt.Rows)
             {
@@ -186,9 +185,19 @@ namespace Restaurant_Management_System.Model
             }
         }
 
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
 
+        }
 
+        private void txtPrice_TextChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

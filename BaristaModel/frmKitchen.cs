@@ -61,6 +61,7 @@ namespace Restaurant_Management_System.Barista
              SELECT DISTINCT T.TableID
              FROM Tables as T
              INNER JOIN Preparations Pre ON T.TableID = Pre.TableID
+             WHERE IsDeleted = 0
             ";
             DataTable dt = DatabaseHelper.ExecuteQuery(query);
             for (int i = 0; i < dt.Rows.Count; i++)

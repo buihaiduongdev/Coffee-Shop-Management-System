@@ -1,6 +1,7 @@
 ﻿using Restaurant_Management_System.Backend;
 using Restaurant_Management_System.Model;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,23 +25,19 @@ namespace Restaurant_Management_System.View
         private void frmCategoryView_Load(object sender, EventArgs e)
         {
 
-            DataGridViewImageColumn imageColumn = (DataGridViewImageColumn)dgvCategory.Columns[3];
-            imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
+            //DataGridViewImageColumn imageColumn = (DataGridViewImageColumn)dgvCategory.Columns[3];
+            //imageColumn.ImageLayout = DataGridViewImageCellLayout.Stretch;
 
-            dgvCategory.Rows[0].Cells[3].Value = Properties.Resources.store;
+            //dgvCategory.Rows[0].Cells[3].Value = Properties.Resources.store;
             LoadCategoryData();
+            if (dgvCategory.RowCount <= 1) labelNumberResultFound.Text = $"{dgvCategory.RowCount.ToString()} result found";
+            else labelNumberResultFound.Text = $"{dgvCategory.RowCount.ToString()} results found";
+            dgvCategory.AllowUserToAddRows = false;
         }
-        //public override void btnAdd_Click(object sender, EventArgs e)
-        //{
-        //    frmCategoryAdd frm  = new frmCategoryAdd(-1);
-        //    frm.ShowDialog();
-        //    LoadCategoryData();
-        //}
-
         private void LoadCategoryData()
 
         {
-            string query = "SELECT CategoryID, CategoryName FROM Categories";
+            string query = "SELECT CategoryID, CategoryName FROM Categories WHERE IsDeleted = 0";
 
             try
             {
@@ -55,17 +52,13 @@ namespace Restaurant_Management_System.View
                     dgvCategory.Rows[i].Cells["dgvCategoryID"].Value = dt.Rows[i]["CategoryID"];
                     dgvCategory.Rows[i].Cells["dgvCategoryName"].Value = dt.Rows[i]["CategoryName"];
                 }
+                lbl_TotalNumberCategories.Text = dgvCategory.RowCount.ToString();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi khi tải dữ liệu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        //public override void txtSearch_TextChanged(object sender, EventArgs e)
-        //{
-
-        //}
 
         private void dgvCategory_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -91,7 +84,7 @@ namespace Restaurant_Management_System.View
 
                     if (result == DialogResult.Yes)
                     {
-                        string deleteQuery = "DELETE FROM Categories WHERE CategoryID = @CategoryID";
+                        string deleteQuery = "UPDATE Categories SET IsDeleted = 1 WHERE CategoryID = @CategoryID";
                         SqlParameter[] param = { new SqlParameter("@CategoryID", categoryID) };
 
                         int rowsAffected = DatabaseHelper.ExecuteNonQuery(deleteQuery, param);
@@ -109,5 +102,31 @@ namespace Restaurant_Management_System.View
             }
         }
 
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string searchValue = txtSearch.Text.Trim().ToLower();
+            int count = 0;
+
+            foreach (DataGridViewRow row in dgvCategory.Rows)
+            {
+                if (row.Cells["dgvCategoryID"].Value != null && row.Cells["dgvCategoryName"].Value != null)
+                {
+                    string id = row.Cells["dgvCategoryID"].Value.ToString().ToLower();
+                    string name = row.Cells["dgvCategoryName"].Value.ToString().ToLower();
+                    bool IsContain = id.Contains(searchValue) || name.Contains(searchValue);
+                    row.Visible = IsContain;
+                    if (IsContain) count++;
+                }
+            }
+            if (count == 0) labelNumberResultFound.Text = $"Result not found";
+            if (count == 1) labelNumberResultFound.Text = $"{count} result found";
+            else labelNumberResultFound.Text = $"{count} results found";
+        }
+
+        private void btnAddCatagory_Click(object sender, EventArgs e)
+        {
+            frmCategoryAdd frm = new frmCategoryAdd(-1);
+            frm.ShowDialog();
+        }
     }
 }

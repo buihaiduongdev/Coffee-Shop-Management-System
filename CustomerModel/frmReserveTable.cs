@@ -56,7 +56,7 @@ namespace Restaurant_Management_System.CustomerModel
         private void loadtable()
         {
 
-            string query = @"SELECT * FROM Tables";
+            string query = @"SELECT * FROM Tables WHERE IsDeleted = 0";
             
             
             dt = DatabaseHelper.ExecuteQuery(query);
@@ -83,7 +83,7 @@ namespace Restaurant_Management_System.CustomerModel
                 };
                 flpTable.Controls.Add(tableUC);
             }
-            MessageBox.Show(s);
+            //MessageBox.Show(s);
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)

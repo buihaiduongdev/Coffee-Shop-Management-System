@@ -66,7 +66,7 @@ namespace Restaurant_Management_System
 
         private void btnTable_Click(object sender, EventArgs e)
         {
-            AddControls(new frmTableViews());
+            AddControls(new frmTableView());
         }
 
         private void btnProduct_Click(object sender, EventArgs e)

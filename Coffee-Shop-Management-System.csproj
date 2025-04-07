@@ -108,6 +108,12 @@
     <Compile Include="CustomerModel\frmCustomer.Designer.cs">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomerModel\frmInfoOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerModel\frmInfoOrder.Designer.cs">
+      <DependentUpon>frmInfoOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerModel\frmOnlinePayment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,12 @@
     <Compile Include="CustomerModel\Item.cs" />
     <Compile Include="CustomerModel\Product.cs" />
     <Compile Include="CustomerModel\Table.cs" />
+    <Compile Include="CustomerModel\ucConfirm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomerModel\ucConfirm.Designer.cs">
+      <DependentUpon>ucConfirm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerModel\ucTable.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -216,6 +228,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ReceptionistModel\frmReceptionist.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -287,21 +304,40 @@
     <Compile Include="View\frmTableViews.Designer.cs">
       <DependentUpon>frmTableViews.cs</DependentUpon>
     </Compile>
+    <Content Include="Resources\BlankPicture.png" />
+    <Content Include="Resources\CoffeeTableIcon %282%29.png" />
+    <Content Include="Resources\coffeetableIcon.png" />
+    <Content Include="Resources\excel.png" />
+    <Content Include="Resources\free.png" />
+    <Content Include="Resources\reservation.png" />
+    <Content Include="Resources\team.png" />
     <EmbeddedResource Include="BaristaModel\frmOrderDetail.resx">
       <DependentUpon>frmOrderDetail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomerModel\frmInfoOrder.resx">
+      <DependentUpon>frmInfoOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerModel\frmOnlinePayment.resx">
       <DependentUpon>frmOnlinePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerModel\ucConfirm.resx">
+      <DependentUpon>ucConfirm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmTableViews.resx">
       <DependentUpon>frmTableViews.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Resources\coffee-table1.png" />
+    <Content Include="Resources\CatagoriesAdd.png" />
+    <Content Include="Resources\Categories.png" />
     <Content Include="Resources\Delivered.png" />
+    <Content Include="Resources\employee.png" />
     <Content Include="Resources\Home.png" />
     <Content Include="Resources\List.png" />
     <Content Include="Resources\NewUser.png" />
     <Content Include="Resources\Processed.png" />
+    <Content Include="Resources\ProductIcon%282%29.png" />
+    <Content Include="Resources\ProductIcon.png" />
+    <Content Include="Resources\Products.png" />
     <Content Include="Resources\Screenshot 2025-03-25 194756.png" />
     <EmbeddedResource Include="CustomerModel\frmReserveTable.resx">
       <DependentUpon>frmReserveTable.cs</DependentUpon>
@@ -315,7 +351,6 @@
     <None Include="Resources\business.png" />
     <None Include="Resources\back-button.png" />
     <None Include="Resources\bill.png" />
-    <None Include="Resources\categories.png" />
     <None Include="Resources\coffee-table.png" />
     <None Include="Resources\staff.png" />
     <None Include="Resources\product.png" />
@@ -379,14 +414,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="ReceptionistModel\frmReceptionist.resx">
       <DependentUpon>frmReceptionist.cs</DependentUpon>
     </EmbeddedResource>
