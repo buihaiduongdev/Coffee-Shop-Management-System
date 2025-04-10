@@ -100,24 +100,26 @@ namespace Restaurant_Management_System.Customer
             var rowTotalPrice = new
             {
                 ProductID = 0,
-                ProductName = "Tổng",
+                
                 Price = itemList.Sum(item => item.Product.Price * item.Quantity),
                 Quantity = itemList.Sum(item => item.Quantity),
                 Ice = "",
                 Size = "",
-                Sugar = ""
-     
+                Sugar = "",
+                ProductName = "Tổng"
+
             };
 
             dgvCart.DataSource = itemList.Select(item => new
             {
                 ProductID = item.Product.ProductID,
-                ProductName = item.Product.ProductName,
+               
                 Price = item.Product.Price,
                 Quantity = item.Quantity,
                 Ice = item.Product.Ice,
                 Size = item.Product.Size,
-                Sugar = item.Product.Sugar
+                Sugar = item.Product.Sugar,
+                ProductName = item.Product.ProductName
 
             }).Append(rowTotalPrice).ToList();
 
@@ -328,6 +330,21 @@ namespace Restaurant_Management_System.Customer
         private void btnDiveIn_DoubleClick(object sender, EventArgs e)
         {
             btnTackaway.Enabled = true;
+        }
+
+        private void dgvCart_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2GroupBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

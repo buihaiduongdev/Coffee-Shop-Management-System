@@ -144,7 +144,7 @@
             this.txtPassword.PlaceholderText = "Mật khẩu";
             this.txtPassword.SelectedText = "";
             this.txtPassword.Size = new System.Drawing.Size(363, 57);
-            this.txtPassword.TabIndex = 27;
+            this.txtPassword.TabIndex = 16;
             this.txtPassword.TextOffset = new System.Drawing.Point(10, -3);
             this.txtPassword.UseSystemPasswordChar = true;
             // 

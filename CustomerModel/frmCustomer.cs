@@ -226,5 +226,10 @@ namespace Restaurant_Management_System.Customer
         {
             Application.Exit();
         }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -42,7 +42,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel1.BorderColor = System.Drawing.Color.White;
+            this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(187)))), ((int)(((byte)(120)))));
             this.guna2Panel1.BorderRadius = 35;
             this.guna2Panel1.Controls.Add(this.lblCapicity);
             this.guna2Panel1.Controls.Add(this.lblNameTable);
@@ -54,31 +54,31 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(6);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(309, 295);
+            this.guna2Panel1.Size = new System.Drawing.Size(321, 314);
             this.guna2Panel1.TabIndex = 0;
             this.guna2Panel1.Click += new System.EventHandler(this.guna2Panel1_Click);
             // 
             // lblCapicity
             // 
             this.lblCapicity.BackColor = System.Drawing.Color.Transparent;
-            this.lblCapicity.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCapicity.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCapicity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(83)))), ((int)(((byte)(51)))));
-            this.lblCapicity.Location = new System.Drawing.Point(231, 211);
+            this.lblCapicity.Location = new System.Drawing.Point(197, 20);
             this.lblCapicity.Margin = new System.Windows.Forms.Padding(4);
             this.lblCapicity.Name = "lblCapicity";
-            this.lblCapicity.Size = new System.Drawing.Size(59, 31);
+            this.lblCapicity.Size = new System.Drawing.Size(64, 31);
             this.lblCapicity.TabIndex = 3;
             this.lblCapicity.Text = "x chỗ";
             // 
             // lblNameTable
             // 
             this.lblNameTable.BackColor = System.Drawing.Color.Transparent;
-            this.lblNameTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(83)))), ((int)(((byte)(51)))));
-            this.lblNameTable.Location = new System.Drawing.Point(124, 0);
+            this.lblNameTable.Location = new System.Drawing.Point(49, 20);
             this.lblNameTable.Margin = new System.Windows.Forms.Padding(4);
             this.lblNameTable.Name = "lblNameTable";
-            this.lblNameTable.Size = new System.Drawing.Size(62, 31);
+            this.lblNameTable.Size = new System.Drawing.Size(67, 31);
             this.lblNameTable.TabIndex = 2;
             this.lblNameTable.Text = "Bàn x";
             // 
@@ -105,10 +105,10 @@
             // 
             this.guna2PictureBox1.Image = global::Restaurant_Management_System.Properties.Resources.coffee_table1;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(49, 28);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(49, 39);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(227, 214);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(223, 203);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -132,7 +132,7 @@
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "ucTable";
-            this.Size = new System.Drawing.Size(309, 295);
+            this.Size = new System.Drawing.Size(321, 314);
             this.Load += new System.EventHandler(this.ucTable_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
