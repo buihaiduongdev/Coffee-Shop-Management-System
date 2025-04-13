@@ -15,6 +15,7 @@ namespace Restaurant_Management_System.CustomerModel
     public partial class ucConfirm : UserControl
     {
         orderInfo currentOrder;
+        //orderID detailOrder;
         public ucConfirm()
         {
             InitializeComponent();
@@ -127,5 +128,40 @@ namespace Restaurant_Management_System.CustomerModel
             }
         }
 
+        private void btnOrderDetail_Click(object sender, EventArgs e)
+        {
+            frmDetailInfo detailInfo = new frmDetailInfo(currentOrder.OrderID);
+            detailInfo.ShowDialog();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblOrderID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblOrderDate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblStatus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pbImage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

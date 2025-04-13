@@ -30,11 +30,11 @@
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblOrderDate = new System.Windows.Forms.Label();
-            this.btnOrderDetail = new FontAwesome.Sharp.IconButton();
             this.label2 = new System.Windows.Forms.Label();
             this.lblOrderID = new System.Windows.Forms.Label();
             this.btnAction = new Guna.UI2.WinForms.Guna2Button();
             this.lblStatus = new System.Windows.Forms.Label();
+            this.btnOrderDetail = new FontAwesome.Sharp.IconButton();
             this.pbImage = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
@@ -58,6 +58,7 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(312, 308);
             this.guna2Panel1.TabIndex = 14;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // lblOrderDate
             // 
@@ -70,18 +71,7 @@
             this.lblOrderDate.Size = new System.Drawing.Size(135, 20);
             this.lblOrderDate.TabIndex = 22;
             this.lblOrderDate.Text = "Ngày đặt hàng:";
-            // 
-            // btnOrderDetail
-            // 
-            this.btnOrderDetail.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnOrderDetail.IconColor = System.Drawing.Color.Black;
-            this.btnOrderDetail.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnOrderDetail.Location = new System.Drawing.Point(155, 188);
-            this.btnOrderDetail.Name = "btnOrderDetail";
-            this.btnOrderDetail.Size = new System.Drawing.Size(35, 24);
-            this.btnOrderDetail.TabIndex = 21;
-            this.btnOrderDetail.Text = "...";
-            this.btnOrderDetail.UseVisualStyleBackColor = true;
+            this.lblOrderDate.Click += new System.EventHandler(this.lblOrderDate_Click);
             // 
             // label2
             // 
@@ -94,6 +84,7 @@
             this.label2.Size = new System.Drawing.Size(76, 20);
             this.label2.TabIndex = 19;
             this.label2.Text = "Chi tiết:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblOrderID
             // 
@@ -106,6 +97,7 @@
             this.lblOrderID.Size = new System.Drawing.Size(76, 20);
             this.lblOrderID.TabIndex = 18;
             this.lblOrderID.Text = "OrderID";
+            this.lblOrderID.Click += new System.EventHandler(this.lblOrderID_Click);
             // 
             // btnAction
             // 
@@ -135,6 +127,20 @@
             this.lblStatus.Size = new System.Drawing.Size(100, 20);
             this.lblStatus.TabIndex = 15;
             this.lblStatus.Text = "Trạng thái:";
+            this.lblStatus.Click += new System.EventHandler(this.lblStatus_Click);
+            // 
+            // btnOrderDetail
+            // 
+            this.btnOrderDetail.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnOrderDetail.IconColor = System.Drawing.Color.Black;
+            this.btnOrderDetail.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnOrderDetail.Location = new System.Drawing.Point(155, 188);
+            this.btnOrderDetail.Name = "btnOrderDetail";
+            this.btnOrderDetail.Size = new System.Drawing.Size(35, 24);
+            this.btnOrderDetail.TabIndex = 21;
+            this.btnOrderDetail.Text = "...";
+            this.btnOrderDetail.UseVisualStyleBackColor = true;
+            this.btnOrderDetail.Click += new System.EventHandler(this.btnOrderDetail_Click);
             // 
             // pbImage
             // 
@@ -149,6 +155,7 @@
             this.pbImage.TabIndex = 14;
             this.pbImage.TabStop = false;
             this.pbImage.UseTransparentBackground = true;
+            this.pbImage.Click += new System.EventHandler(this.pbImage_Click);
             // 
             // ucConfirm
             // 

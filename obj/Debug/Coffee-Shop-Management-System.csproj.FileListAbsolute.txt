@@ -529,3 +529,5 @@ S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucLogin.resources
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucProductDetail.resources
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.ucRegister.resources
+D:\LEARNING\Winform\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.ucDetail.resources
+D:\LEARNING\Winform\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.frmDetailInfo.resources

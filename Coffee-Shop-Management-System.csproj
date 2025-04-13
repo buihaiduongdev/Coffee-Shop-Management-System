@@ -108,6 +108,12 @@
     <Compile Include="CustomerModel\frmCustomer.Designer.cs">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomerModel\frmDetailInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerModel\frmDetailInfo.Designer.cs">
+      <DependentUpon>frmDetailInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerModel\frmInfoOrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,7 +139,9 @@
       <DependentUpon>frmReserveTable.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomerModel\Item.cs" />
+    <Compile Include="CustomerModel\orderdetailInfo.cs" />
     <Compile Include="CustomerModel\orderInfo.cs" />
+    <Compile Include="CustomerModel\OrderRepository.cs" />
     <Compile Include="CustomerModel\Product.cs" />
     <Compile Include="CustomerModel\Table.cs" />
     <Compile Include="CustomerModel\ucConfirm.cs">
@@ -141,6 +149,12 @@
     </Compile>
     <Compile Include="CustomerModel\ucConfirm.Designer.cs">
       <DependentUpon>ucConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerModel\ucDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomerModel\ucDetail.Designer.cs">
+      <DependentUpon>ucDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomerModel\ucTable.cs">
       <SubType>UserControl</SubType>
@@ -315,6 +329,9 @@
     <EmbeddedResource Include="BaristaModel\frmOrderDetail.resx">
       <DependentUpon>frmOrderDetail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomerModel\frmDetailInfo.resx">
+      <DependentUpon>frmDetailInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerModel\frmInfoOrder.resx">
       <DependentUpon>frmInfoOrder.cs</DependentUpon>
     </EmbeddedResource>
@@ -323,6 +340,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerModel\ucConfirm.resx">
       <DependentUpon>ucConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerModel\ucDetail.resx">
+      <DependentUpon>ucDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmTableViews.resx">
       <DependentUpon>frmTableViews.cs</DependentUpon>
