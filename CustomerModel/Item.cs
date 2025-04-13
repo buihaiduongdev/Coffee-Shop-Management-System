@@ -10,7 +10,7 @@ namespace Restaurant_Management_System.Customer
     {
         private Product product;
         private int quantity;
-
+        private string status = "Pending";
         public Item(Product product, int quantity)
         {
             this.product = product;
@@ -20,5 +20,6 @@ namespace Restaurant_Management_System.Customer
 
         public Product Product { get => product; set => product = value; }
         public int Quantity { get => quantity; set => quantity = value; }
+        public string Status { get => status; set => status = value; }
     }
 }

@@ -133,6 +133,7 @@
       <DependentUpon>frmReserveTable.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomerModel\Item.cs" />
+    <Compile Include="CustomerModel\orderInfo.cs" />
     <Compile Include="CustomerModel\Product.cs" />
     <Compile Include="CustomerModel\Table.cs" />
     <Compile Include="CustomerModel\ucConfirm.cs">

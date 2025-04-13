@@ -153,7 +153,7 @@ namespace Restaurant_Management_System.Customer
         private void FilterProductsByCategory(string categoryName)
         {
             // Sử dụng tham số thay vì string interpolation để tránh SQL injection
-            string query = "SELECT * FROM Products WHERE CategoryName = @Category and WHERE IsDeleted = 0";
+            string query = "SELECT * FROM Products WHERE CategoryName = @Category and IsDeleted = 0";
 
             // Tạo tham số SQL
             SqlParameter categoryParam = new SqlParameter("@Category", SqlDbType.NVarChar);
@@ -230,6 +230,12 @@ namespace Restaurant_Management_System.Customer
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnOrders_Click(object sender, EventArgs e)
+        {
+            frmInfoOrder frmInfoOrder = new frmInfoOrder(customerID);
+            frmInfoOrder.Show();
         }
     }
 }

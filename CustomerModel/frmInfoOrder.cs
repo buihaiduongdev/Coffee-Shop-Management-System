@@ -1,7 +1,11 @@
-﻿using System;
+﻿using Restaurant_Management_System.Backend;
+using Restaurant_Management_System.Customer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
@@ -14,9 +18,11 @@ namespace Restaurant_Management_System.CustomerModel
 {
     public partial class frmInfoOrder : Form
     {
-        public frmInfoOrder()
+        int customerID;
+        public frmInfoOrder(int customerID)
         {
             InitializeComponent();
+            this.customerID = customerID;
         }
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -57,5 +63,72 @@ namespace Restaurant_Management_System.CustomerModel
         {
 
         }
+
+        private void LoadData(string statusFilter, string buttonLabel)
+        {
+            string query = @"SELECT o.OrderID, o.OrderDay, o.Status
+                     FROM Orders AS o
+                     WHERE CustomerID = @CustomerID";
+
+            List<SqlParameter> parameters = new List<SqlParameter>
+            {
+                new SqlParameter("@CustomerID", customerID)
+            };
+
+            if (statusFilter != "Tất cả")
+            {
+                query += " AND o.Status = @Status";
+                parameters.Add(new SqlParameter("@Status", statusFilter));
+            }
+            query += " ORDER BY o.OrderDay DESC";
+            DataTable dt = DatabaseHelper.ExecuteQuery(query, parameters.ToArray());
+
+            flowLayoutPanel1.Controls.Clear();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                orderInfo order = new orderInfo()
+                {
+                    OrderID = Convert.ToInt32(row["OrderID"]),
+                    Orderdate = Convert.ToDateTime(row["OrderDay"]),
+                    Status = row["Status"].ToString()
+                };
+
+                ucConfirm confirm = new ucConfirm();
+                confirm.SetData(order);
+                confirm.SetButtonLabel(buttonLabel);
+                flowLayoutPanel1.Controls.Add(confirm);
+            }
+        }
+
+
+        private void btnAll_Click(object sender, EventArgs e)
+        {
+            LoadData("Received", "Đánh giá");
+        }
+
+
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            LoadData("Rejected", "");
+        }
+
+        private void btnFeedback_Click(object sender, EventArgs e)
+        {
+            LoadData("Received", "Đánh giá");
+        }
+
+        private void btnWaitConfirm_Click(object sender, EventArgs e)
+        {
+            LoadData("Pending", "Hủy đơn");
+        }
+
+        private void btnConfirmed_Click(object sender, EventArgs e)
+        {
+            LoadData("Confirmed", "Nhận hàng");
+        }
+
+
     }
 }
