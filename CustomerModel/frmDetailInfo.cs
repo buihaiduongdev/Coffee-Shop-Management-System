@@ -94,6 +94,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
 namespace Restaurant_Management_System.CustomerModel
 {
@@ -181,7 +182,11 @@ namespace Restaurant_Management_System.CustomerModel
                 this.Close();
             }
         }
+        public event Action OnClose;
 
-
+        private void pbBack_Click(object sender, EventArgs e)
+        {
+            OnClose?.Invoke();
+        }
     }
 }

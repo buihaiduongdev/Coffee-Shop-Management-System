@@ -134,9 +134,9 @@
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.White;
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(160, 22);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(244, 47);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(200, 47);
             this.guna2HtmlLabel2.TabIndex = 10;
-            this.guna2HtmlLabel2.Text = "TABLE SETTING";
+            this.guna2HtmlLabel2.Text = "ADD TABLES";
             // 
             // pbHeaderIcon
             // 
@@ -212,6 +212,7 @@
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.txtCapacity);
             this.Controls.Add(this.lblCapacity);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmTableAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

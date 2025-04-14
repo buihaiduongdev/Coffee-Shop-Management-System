@@ -85,12 +85,12 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(186, 33);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(158, 35);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(303, 35);
             this.guna2HtmlLabel1.TabIndex = 3;
-            this.guna2HtmlLabel1.Text = "SETTING CATEGORY";
+            this.guna2HtmlLabel1.Text = "ADD CATEGORY";
             // 
             // guna2HtmlLabel3
             // 
@@ -112,9 +112,9 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(187)))), ((int)(((byte)(120)))));
             this.guna2Panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(187)))), ((int)(((byte)(120)))));
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 303);
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 344);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(508, 74);
+            this.guna2Panel2.Size = new System.Drawing.Size(492, 74);
             this.guna2Panel2.TabIndex = 5;
             // 
             // btnSave
@@ -161,7 +161,7 @@
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(58)))), ((int)(((byte)(20)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(508, 100);
+            this.guna2Panel1.Size = new System.Drawing.Size(492, 100);
             this.guna2Panel1.TabIndex = 6;
             // 
             // pbHeaderIcon
@@ -169,7 +169,7 @@
             this.pbHeaderIcon.BackColor = System.Drawing.Color.Transparent;
             this.pbHeaderIcon.Image = ((System.Drawing.Image)(resources.GetObject("pbHeaderIcon.Image")));
             this.pbHeaderIcon.ImageRotate = 0F;
-            this.pbHeaderIcon.Location = new System.Drawing.Point(90, 12);
+            this.pbHeaderIcon.Location = new System.Drawing.Point(62, 14);
             this.pbHeaderIcon.Name = "pbHeaderIcon";
             this.pbHeaderIcon.Size = new System.Drawing.Size(79, 70);
             this.pbHeaderIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -182,12 +182,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(220)))));
-            this.ClientSize = new System.Drawing.Size(508, 377);
+            this.ClientSize = new System.Drawing.Size(492, 418);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.txtCategoryName);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmCategoryAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

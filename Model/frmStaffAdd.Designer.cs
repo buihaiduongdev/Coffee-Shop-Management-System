@@ -327,7 +327,7 @@
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(479, 47);
             this.guna2HtmlLabel5.TabIndex = 3;
-            this.guna2HtmlLabel5.Text = "SETTING EMPLOYEE";
+            this.guna2HtmlLabel5.Text = "ADD EMPLOYEES";
             // 
             // pbHeaderIcon
             // 
@@ -475,6 +475,7 @@
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.guna2HtmlLabel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmStaffAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

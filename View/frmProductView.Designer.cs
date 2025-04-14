@@ -33,13 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductView));
             this.dgvProduct = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.label17 = new System.Windows.Forms.Label();
-            this.btnAddProduct = new Guna.UI2.WinForms.Guna2Button();
-            this.labelNumberResultFound = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cbbCategories = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnSaveExcel = new Guna.UI2.WinForms.Guna2Button();
             this.dgvSno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,6 +40,13 @@
             this.dgvCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
             this.dgvdel = new System.Windows.Forms.DataGridViewImageColumn();
+            this.label17 = new System.Windows.Forms.Label();
+            this.btnAddProduct = new Guna.UI2.WinForms.Guna2Button();
+            this.labelNumberResultFound = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cbbCategories = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btnSaveExcel = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,6 +116,61 @@
             this.dgvProduct.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduct_CellClick);
             // 
+            // dgvSno
+            // 
+            this.dgvSno.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvSno.FillWeight = 70F;
+            this.dgvSno.HeaderText = "No.";
+            this.dgvSno.MinimumWidth = 70;
+            this.dgvSno.Name = "dgvSno";
+            this.dgvSno.Width = 70;
+            // 
+            // dgvProductID
+            // 
+            this.dgvProductID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvProductID.FillWeight = 74.08759F;
+            this.dgvProductID.HeaderText = "ID";
+            this.dgvProductID.MinimumWidth = 6;
+            this.dgvProductID.Name = "dgvProductID";
+            this.dgvProductID.Width = 179;
+            // 
+            // dgvProductName
+            // 
+            this.dgvProductName.FillWeight = 74.08759F;
+            this.dgvProductName.HeaderText = "Name";
+            this.dgvProductName.MinimumWidth = 6;
+            this.dgvProductName.Name = "dgvProductName";
+            // 
+            // dgvPrice
+            // 
+            this.dgvPrice.HeaderText = "Price";
+            this.dgvPrice.MinimumWidth = 6;
+            this.dgvPrice.Name = "dgvPrice";
+            // 
+            // dgvCategory
+            // 
+            this.dgvCategory.HeaderText = "Category";
+            this.dgvCategory.MinimumWidth = 6;
+            this.dgvCategory.Name = "dgvCategory";
+            // 
+            // dgvedit
+            // 
+            this.dgvedit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvedit.FillWeight = 50F;
+            this.dgvedit.HeaderText = "Action";
+            this.dgvedit.MinimumWidth = 50;
+            this.dgvedit.Name = "dgvedit";
+            this.dgvedit.Width = 50;
+            // 
+            // dgvdel
+            // 
+            this.dgvdel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvdel.FillWeight = 50F;
+            this.dgvdel.HeaderText = "";
+            this.dgvdel.MinimumWidth = 50;
+            this.dgvdel.Name = "dgvdel";
+            this.dgvdel.Width = 50;
+            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -135,6 +190,7 @@
             this.btnAddProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAddProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAddProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnAddProduct.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddProduct.ForeColor = System.Drawing.Color.White;
             this.btnAddProduct.Location = new System.Drawing.Point(1025, 97);
@@ -230,61 +286,6 @@
             this.btnSaveExcel.Text = "Save as ";
             this.btnSaveExcel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSaveExcel.TextOffset = new System.Drawing.Point(20, 0);
-            // 
-            // dgvSno
-            // 
-            this.dgvSno.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvSno.FillWeight = 70F;
-            this.dgvSno.HeaderText = "No.";
-            this.dgvSno.MinimumWidth = 70;
-            this.dgvSno.Name = "dgvSno";
-            this.dgvSno.Width = 70;
-            // 
-            // dgvProductID
-            // 
-            this.dgvProductID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvProductID.FillWeight = 74.08759F;
-            this.dgvProductID.HeaderText = "ID";
-            this.dgvProductID.MinimumWidth = 6;
-            this.dgvProductID.Name = "dgvProductID";
-            this.dgvProductID.Width = 179;
-            // 
-            // dgvProductName
-            // 
-            this.dgvProductName.FillWeight = 74.08759F;
-            this.dgvProductName.HeaderText = "Name";
-            this.dgvProductName.MinimumWidth = 6;
-            this.dgvProductName.Name = "dgvProductName";
-            // 
-            // dgvPrice
-            // 
-            this.dgvPrice.HeaderText = "Price";
-            this.dgvPrice.MinimumWidth = 6;
-            this.dgvPrice.Name = "dgvPrice";
-            // 
-            // dgvCategory
-            // 
-            this.dgvCategory.HeaderText = "Category";
-            this.dgvCategory.MinimumWidth = 6;
-            this.dgvCategory.Name = "dgvCategory";
-            // 
-            // dgvedit
-            // 
-            this.dgvedit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvedit.FillWeight = 50F;
-            this.dgvedit.HeaderText = "Action";
-            this.dgvedit.MinimumWidth = 50;
-            this.dgvedit.Name = "dgvedit";
-            this.dgvedit.Width = 50;
-            // 
-            // dgvdel
-            // 
-            this.dgvdel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvdel.FillWeight = 50F;
-            this.dgvdel.HeaderText = "";
-            this.dgvdel.MinimumWidth = 50;
-            this.dgvdel.Name = "dgvdel";
-            this.dgvdel.Width = 50;
             // 
             // frmProductView
             // 

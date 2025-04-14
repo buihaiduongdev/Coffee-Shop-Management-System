@@ -142,6 +142,7 @@
             this.btnBrowse.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnBrowse.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnBrowse.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBrowse.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnBrowse.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBrowse.ForeColor = System.Drawing.Color.White;
             this.btnBrowse.Location = new System.Drawing.Point(439, 361);
@@ -149,7 +150,7 @@
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(180, 41);
             this.btnBrowse.TabIndex = 18;
-            this.btnBrowse.Text = "Browse";
+            this.btnBrowse.Text = "Add Image";
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // guna2HtmlLabel5
@@ -262,11 +263,11 @@
             this.Header.BackColor = System.Drawing.Color.Transparent;
             this.Header.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Header.ForeColor = System.Drawing.Color.White;
-            this.Header.Location = new System.Drawing.Point(290, 31);
+            this.Header.Location = new System.Drawing.Point(231, 31);
             this.Header.Name = "Header";
             this.Header.Size = new System.Drawing.Size(319, 32);
             this.Header.TabIndex = 3;
-            this.Header.Text = "SETTING PRODUCT";
+            this.Header.Text = "ADD PRODUCTS";
             this.Header.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pbHeaderIcon
@@ -274,7 +275,7 @@
             this.pbHeaderIcon.BackColor = System.Drawing.Color.Transparent;
             this.pbHeaderIcon.Image = ((System.Drawing.Image)(resources.GetObject("pbHeaderIcon.Image")));
             this.pbHeaderIcon.ImageRotate = 0F;
-            this.pbHeaderIcon.Location = new System.Drawing.Point(186, 12);
+            this.pbHeaderIcon.Location = new System.Drawing.Point(127, 12);
             this.pbHeaderIcon.Name = "pbHeaderIcon";
             this.pbHeaderIcon.Size = new System.Drawing.Size(79, 70);
             this.pbHeaderIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -287,6 +288,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(220)))));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(673, 530);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2Panel2);
@@ -299,6 +301,7 @@
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.guna2HtmlLabel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmProductAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

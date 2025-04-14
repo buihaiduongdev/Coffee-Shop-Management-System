@@ -44,6 +44,7 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSlide = new Guna.UI2.WinForms.Guna2ImageButton();
             this.centerPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.MenuSlide.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -99,7 +100,7 @@
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(180, 45);
             this.btnLogout.TabIndex = 26;
-            this.btnLogout.Text = "Đăng xuất";
+            this.btnLogout.Text = "Log out";
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // guna2PictureBox1
@@ -334,6 +335,7 @@
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Silver;
+            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel2.Controls.Add(this.btnSlide);
             this.guna2Panel2.Controls.Add(this.guna2ControlBox3);
             this.guna2Panel2.Controls.Add(this.guna2ControlBox2);
@@ -370,6 +372,17 @@
             this.centerPanel.Size = new System.Drawing.Size(1000, 744);
             this.centerPanel.TabIndex = 2;
             this.centerPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.centerPanel_Paint);
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(82, 15);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(496, 49);
+            this.guna2HtmlLabel1.TabIndex = 3;
+            this.guna2HtmlLabel1.Text = "COFFEE SHOP INFOMATION";
             // 
             // frmMain
             // 
@@ -411,5 +424,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2ImageButton btnSlide;
         private Guna.UI2.WinForms.Guna2Button btnLogout;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }

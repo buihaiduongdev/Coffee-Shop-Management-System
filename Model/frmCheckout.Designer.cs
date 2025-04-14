@@ -38,12 +38,16 @@
             this.txtChange = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
+            // Header
+            // 
+            this.Header.Text = "Check Out";
+            // 
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(678, 28);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(402, 28);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(66, 31);
             this.guna2ControlBox1.TabIndex = 2;
@@ -53,7 +57,7 @@
             this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(669, 39);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(393, 39);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox2.TabIndex = 3;
@@ -73,7 +77,7 @@
             this.txtBillAmount.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtBillAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtBillAmount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBillAmount.Location = new System.Drawing.Point(47, 178);
+            this.txtBillAmount.Location = new System.Drawing.Point(148, 183);
             this.txtBillAmount.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtBillAmount.Name = "txtBillAmount";
             this.txtBillAmount.PasswordChar = '\0';
@@ -85,20 +89,20 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(27, 130);
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Sitka Banner Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(111, 126);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(95, 31);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(112, 35);
             this.guna2HtmlLabel1.TabIndex = 5;
             this.guna2HtmlLabel1.Text = "Bill Amount";
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(356, 130);
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Sitka Banner Semibold", 16.2F, System.Drawing.FontStyle.Bold);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(111, 351);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(132, 31);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(184, 41);
             this.guna2HtmlLabel2.TabIndex = 7;
             this.guna2HtmlLabel2.Text = "Payment Receive";
             // 
@@ -116,7 +120,7 @@
             this.txtReceive.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtReceive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtReceive.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtReceive.Location = new System.Drawing.Point(369, 178);
+            this.txtReceive.Location = new System.Drawing.Point(148, 409);
             this.txtReceive.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtReceive.Name = "txtReceive";
             this.txtReceive.PasswordChar = '\0';
@@ -129,10 +133,10 @@
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(27, 240);
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Sitka Banner Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(111, 233);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(60, 31);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(83, 41);
             this.guna2HtmlLabel3.TabIndex = 9;
             this.guna2HtmlLabel3.Text = "Change";
             // 
@@ -151,7 +155,7 @@
             this.txtChange.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtChange.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtChange.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtChange.Location = new System.Drawing.Point(47, 287);
+            this.txtChange.Location = new System.Drawing.Point(148, 292);
             this.txtChange.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtChange.Name = "txtChange";
             this.txtChange.PasswordChar = '\0';
@@ -163,7 +167,7 @@
             // frmCheckout
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(524, 548);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.txtChange);
             this.Controls.Add(this.guna2HtmlLabel2);
@@ -172,6 +176,7 @@
             this.Controls.Add(this.txtBillAmount);
             this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.guna2ControlBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCheckout";
             this.Text = "frmCheckout";
             this.Load += new System.EventHandler(this.frmCheckout_Load);

@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnOrderDetail = new Guna.UI2.WinForms.Guna2Button();
             this.lblOrderDate = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblOrderID = new System.Windows.Forms.Label();
             this.btnAction = new Guna.UI2.WinForms.Guna2Button();
             this.lblStatus = new System.Windows.Forms.Label();
             this.pbImage = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnOrderDetail = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +59,22 @@
             this.guna2Panel1.Size = new System.Drawing.Size(312, 308);
             this.guna2Panel1.TabIndex = 14;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // btnOrderDetail
+            // 
+            this.btnOrderDetail.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnOrderDetail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnOrderDetail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnOrderDetail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnOrderDetail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnOrderDetail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnOrderDetail.ForeColor = System.Drawing.Color.White;
+            this.btnOrderDetail.Location = new System.Drawing.Point(155, 188);
+            this.btnOrderDetail.Name = "btnOrderDetail";
+            this.btnOrderDetail.Size = new System.Drawing.Size(46, 29);
+            this.btnOrderDetail.TabIndex = 23;
+            this.btnOrderDetail.Text = "...";
+            this.btnOrderDetail.Click += new System.EventHandler(this.btnOrderDetail_Click_1);
             // 
             // lblOrderDate
             // 
@@ -143,21 +159,6 @@
             this.pbImage.TabStop = false;
             this.pbImage.UseTransparentBackground = true;
             this.pbImage.Click += new System.EventHandler(this.pbImage_Click);
-            // 
-            // btnOrderDetail
-            // 
-            this.btnOrderDetail.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnOrderDetail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnOrderDetail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnOrderDetail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnOrderDetail.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnOrderDetail.ForeColor = System.Drawing.Color.White;
-            this.btnOrderDetail.Location = new System.Drawing.Point(218, 178);
-            this.btnOrderDetail.Name = "btnOrderDetail";
-            this.btnOrderDetail.Size = new System.Drawing.Size(46, 29);
-            this.btnOrderDetail.TabIndex = 23;
-            this.btnOrderDetail.Text = "guna2Button1";
-            this.btnOrderDetail.Click += new System.EventHandler(this.btnOrderDetail_Click_1);
             // 
             // ucConfirm
             // 
