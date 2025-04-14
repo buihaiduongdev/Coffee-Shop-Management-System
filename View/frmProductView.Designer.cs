@@ -183,7 +183,7 @@
             // 
             // btnAddProduct
             // 
-            this.btnAddProduct.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btnAddProduct.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnAddProduct.BorderRadius = 10;
             this.btnAddProduct.BorderThickness = 1;
             this.btnAddProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;

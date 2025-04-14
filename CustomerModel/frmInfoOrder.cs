@@ -75,6 +75,8 @@ namespace Restaurant_Management_System.CustomerModel
                 new SqlParameter("@CustomerID", customerID)
             };
 
+
+
             if (statusFilter != "Tất cả")
             {
                 query += " AND o.Status = @Status";
@@ -104,7 +106,7 @@ namespace Restaurant_Management_System.CustomerModel
 
         private void btnAll_Click(object sender, EventArgs e)
         {
-            LoadData("Received", "Đánh giá");
+            LoadData("Tất cả", "Đơn hàng");
         }
 
 
@@ -114,9 +116,10 @@ namespace Restaurant_Management_System.CustomerModel
             LoadData("Rejected", "");
         }
 
-        private void btnFeedback_Click(object sender, EventArgs e)
-        {
+        private void btnFeedback_Click(object sender, EventArgs e) { 
+    
             LoadData("Received", "Đánh giá");
+
         }
 
         private void btnWaitConfirm_Click(object sender, EventArgs e)

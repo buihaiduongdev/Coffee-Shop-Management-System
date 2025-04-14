@@ -230,12 +230,12 @@
         public Guna.UI2.WinForms.Guna2TextBox txtCapacity;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCapacity;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblStatus;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbStatus;
         public Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         public Guna.UI2.WinForms.Guna2PictureBox pbHeaderIcon;
         public Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         public Guna.UI2.WinForms.Guna2Button btnSave;
         public Guna.UI2.WinForms.Guna2Button btnClose;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        public Guna.UI2.WinForms.Guna2ComboBox cmbStatus;
     }
 }

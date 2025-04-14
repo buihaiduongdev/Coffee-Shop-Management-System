@@ -11,6 +11,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OfficeOpenXml;
+using System.IO;
+using System.Globalization;
 
 namespace Restaurant_Management_System.View
 {
@@ -52,7 +55,7 @@ namespace Restaurant_Management_System.View
                     dgvEmployee.Rows[i].Cells["dgvFullName"].Value = dt.Rows[i]["FullName"];
                     dgvEmployee.Rows[i].Cells["dgvPhone"].Value = dt.Rows[i]["Phone"];
                     dgvEmployee.Rows[i].Cells["dgvRole"].Value = dt.Rows[i]["Role"];
-                    dgvEmployee.Rows[i].Cells["dgvSalary"].Value = dt.Rows[i]["Salary"];
+                    dgvEmployee.Rows[i].Cells["dgvSalary"].Value = string.Format(new CultureInfo("vi-VN"), "{0:#,0}", dt.Rows[i]["Salary"]);
                 }
                 lblNumberEmployee.Text = $"Employee [{dt.Rows.Count}]";
                 dgvEmployee.AllowUserToAddRows = false;
@@ -86,7 +89,7 @@ namespace Restaurant_Management_System.View
                     dgvEmployee.Rows[i].Cells["dgvFullName"].Value = dt.Rows[i]["FullName"];
                     dgvEmployee.Rows[i].Cells["dgvPhone"].Value = dt.Rows[i]["Phone"];
                     dgvEmployee.Rows[i].Cells["dgvRole"].Value = dt.Rows[i]["Role"];
-                    dgvEmployee.Rows[i].Cells["dgvSalary"].Value = dt.Rows[i]["Salary"];
+                    dgvEmployee.Rows[i].Cells["dgvSalary"].Value = string.Format(new CultureInfo("vi-VN"), "{0:#,0}", dt.Rows[i]["Salary"]);
                 }
                 lblNumberEmployee.Text = $"Employee [{dgvEmployee.RowCount}]";
                 dgvEmployee.AllowUserToAddRows = false;
@@ -150,8 +153,7 @@ namespace Restaurant_Management_System.View
                         frm.txtPassword.Text = row["Password"].ToString();
                         frm.txtPhone.Text = row["Phone"].ToString();
                         frm.cbRole.SelectedItem = row["Role"].ToString();
-                        frm.txtSalary.Text = row["Salary"].ToString();
-
+                        frm.txtSalary.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,0}", row["Salary"]);
                         frm.ShowDialog();
                         LoadEmployeeData(); // Cập nhật lại danh sách nhân viên sau khi chỉnh sửa
                     }
@@ -260,6 +262,56 @@ namespace Restaurant_Management_System.View
             btnReceptionist.FillColor = ButtonDisable;
             btnReceptionist.BorderColor = ButtonDisable;
             LoadEmployeeDataSplitRole(btnWaiter.Text);
+        }
+
+        private void btnSaveExcel_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog save = new SaveFileDialog())
+            {
+                save.Filter = "Excel File |*.xlsx";
+                save.Title = "Chọn nơi lưu file Excel";
+                save.FileName = "employee.xlsx";
+
+                if (save.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        ExcelPackage.License.SetNonCommercialPersonal("Hello");
+                        using (ExcelPackage pack = new ExcelPackage())
+                        {
+                            var ws = pack.Workbook.Worksheets.Add("Sheet1");
+                            int month = DateTime.Now.Month;
+                            ws.Cells[1, 1].Value = $"DANH SÁCH NHÂN VIÊN THÁNG {month}";
+                            ws.Cells[1, 1, 1, dgvEmployee.Columns.Count - 1].Merge = true;
+                            ws.Cells[1, 1].Style.Font.Size = 20;
+                            ws.Cells[1, 1].Style.Font.Bold = true;
+                            ws.Cells[1, 1].Style.HorizontalAlignment = OfficeOpenXml.Style.ExcelHorizontalAlignment.Center;
+                            
+                            for (int i = 0; i< dgvEmployee.Columns.Count - 2; i++)
+                            {
+                                ws.Cells[3, i + 1].Value = dgvEmployee.Columns[i].HeaderText;
+                            }
+
+                            for (int i=0; i< dgvEmployee.Rows.Count;i++)
+                            {
+                                for (int j=0; j < dgvEmployee.Columns.Count - 2; j++)
+                                {
+                                    ws.Cells[i + 3, j + 1].Value = dgvEmployee.Rows[i].Cells[j].Value?.ToString();
+                                }
+                            }
+
+                            FileInfo info = new FileInfo(save.FileName);
+                            pack.SaveAs(info);
+                            MessageBox.Show("Đã xuất Excel thành công!", "Thông báo");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Lỗi xuất file excel: " + ex.Message);
+                    }
+
+                }
+            }
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
@@ -39,7 +40,7 @@ namespace Restaurant_Management_System.View
                     dgvProduct.Rows[i].Cells["dgvSno"].Value = i + 1; // STT
                     dgvProduct.Rows[i].Cells["dgvProductID"].Value = dt.Rows[i]["ProductID"];
                     dgvProduct.Rows[i].Cells["dgvProductName"].Value = dt.Rows[i]["ProductName"];
-                    dgvProduct.Rows[i].Cells["dgvPrice"].Value = dt.Rows[i]["Price"];
+                    dgvProduct.Rows[i].Cells["dgvPrice"].Value = string.Format(new CultureInfo("vi-VN"), "{0:#,0}", dt.Rows[i]["Price"]);
                     dgvProduct.Rows[i].Cells["dgvCategory"].Value = dt.Rows[i]["CategoryName"];
                     if (!Categories.Contains(dt.Rows[i]["CategoryName"]))
                     {

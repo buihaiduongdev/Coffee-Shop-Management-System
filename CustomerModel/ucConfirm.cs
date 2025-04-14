@@ -15,7 +15,6 @@ namespace Restaurant_Management_System.CustomerModel
     public partial class ucConfirm : UserControl
     {
         orderInfo currentOrder;
-        //orderID detailOrder;
         public ucConfirm()
         {
             InitializeComponent();
@@ -45,28 +44,57 @@ namespace Restaurant_Management_System.CustomerModel
             }
         }
             
-        
+        private void feedback ()
+        {
+            string query = @"SELECT COUNT(*) FROM Feedbacks
+                            WHERE OrderID = @OrderID";
+
+            SqlParameter[] sql = { new SqlParameter("@OrderID", currentOrder.OrderID) };
+
+            object ob = DatabaseHelper.ExecuteScalar(query, sql);
+
+            int rows = Convert.ToInt32(ob);
+
+            if (rows == 0)
+            {
+                feedback fb = new feedback(currentOrder.OrderID);
+                DialogResult result = fb.ShowDialog();
+
+                if (result == DialogResult.OK)
+                {
+                    btnAction.Text = "Đã đánh giá";
+                    btnAction.Visible =false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Đơn đã đánh giá");
+                return;
+            }
+        }
         public void SetButtonLabel(string text)
         {
             btnAction.Text = text;
+
         }
         private void btnAction_Click(object sender, EventArgs e)
         {
             switch (currentOrder.Status)
             {
                 case "Pending":
-                    MessageBox.Show($"Bạn đã hủy đơn hàng #{currentOrder.OrderID}");
+                    //MessageBox.Show($"Bạn đã hủy đơn hàng #{currentOrder.OrderID}");
                     CancelOrder();
                     break;
 
                 case "Confirmed":
-                    MessageBox.Show($"Bạn xác nhận đã nhận đơn hàng #{currentOrder.OrderID}");
+                    //MessageBox.Show($"Bạn xác nhận đã nhận đơn hàng #{currentOrder.OrderID}");
                     MarkAsReceived();
                     break;
 
                 case "Received":
-                    MessageBox.Show($"Đi đến đánh giá đơn hàng #{currentOrder.OrderID}");
-                    // TODO: mở form đánh giá
+                    //MessageBox.Show($"Đi đến đánh giá đơn hàng #{currentOrder.OrderID}");
+                    feedback();
+
                     break;
             }
         }

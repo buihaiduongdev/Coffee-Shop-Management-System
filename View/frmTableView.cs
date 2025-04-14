@@ -56,8 +56,8 @@ namespace Restaurant_Management_System.View
                     dgvTables.Rows[i].Cells["dgvTableID"].Value = dt.Rows[i]["TableID"];
                     dgvTables.Rows[i].Cells["dgvCapacity"].Value = dt.Rows[i]["Capacity"];
                     dgvTables.Rows[i].Cells["dgvStatus"].Value = dt.Rows[i]["Status"];
-                    if (dt.Rows[i]["Status"].ToString().Trim() == "Reserved") reserved++;
-                    else if (dt.Rows[i]["Status"].ToString().Trim() == "Free") free++;
+                    if (dt.Rows[i]["Status"].ToString().Trim() == "Occupied") reserved++;
+                    else if (dt.Rows[i]["Status"].ToString().Trim() == "Empty") free++;
                 }
                 lblNumberTableFree.Text = free.ToString();
                 lblNumberTableReserved.Text = reserved.ToString();

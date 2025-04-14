@@ -536,3 +536,25 @@ D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Manage
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.ucConfirm.resources
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.ucDetail.resources
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.ucItemOrder.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.frmDetailInfo.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.frmInfoOrder.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.ucConfirm.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.ucDetail.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.ucItemOrder.resources
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\EPPlus.dll
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\EPPlus.Interfaces.dll
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\System.Buffers.dll
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\System.ComponentModel.Annotations.dll
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\System.Memory.dll
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\System.Numerics.Vectors.dll
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\System.Security.Cryptography.Xml.dll
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\EPPlus.xml
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\System.Buffers.xml
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\System.Memory.xml
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\System.Numerics.Vectors.xml
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\OOP\Coffee-Shop-Management-System\bin\Debug\System.Security.Cryptography.Xml.xml
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.feedback.resources
