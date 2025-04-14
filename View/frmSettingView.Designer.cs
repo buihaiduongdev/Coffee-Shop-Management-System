@@ -331,7 +331,10 @@
             // 
             // txtAbout
             // 
+            this.txtAbout.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtAbout.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAbout.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAbout.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtAbout.Location = new System.Drawing.Point(609, 46);
             this.txtAbout.Name = "txtAbout";
             this.txtAbout.ReadOnly = true;

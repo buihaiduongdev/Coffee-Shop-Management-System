@@ -21,6 +21,12 @@ namespace Restaurant_Management_System.Setting
 
             // Thêm danh sách vai trò cố định vào cbbRole
             cbbRole.Items.AddRange(new string[] { "Manager", "Barista", "Receptionist" });
+            // Cấu hình nền và màu chữ tổng thể
+            txtAbout.BackColor = Color.FromArgb(245, 238, 230);
+            txtAbout.ForeColor = Color.FromArgb(40, 26, 13); 
+            txtAbout.BorderStyle = BorderStyle.None;          
+            txtAbout.ReadOnly = true;
+            txtAbout.Font = new Font("Segoe UI", 10.5f, FontStyle.Regular);
 
             LoadEmployeeData();
         }
