@@ -140,8 +140,8 @@
     </Compile>
     <Compile Include="CustomerModel\Item.cs" />
     <Compile Include="CustomerModel\orderdetailInfo.cs" />
+    <Compile Include="CustomerModel\OrderDetailProduct.cs" />
     <Compile Include="CustomerModel\orderInfo.cs" />
-    <Compile Include="CustomerModel\OrderRepository.cs" />
     <Compile Include="CustomerModel\Product.cs" />
     <Compile Include="CustomerModel\Table.cs" />
     <Compile Include="CustomerModel\ucConfirm.cs">
@@ -155,6 +155,12 @@
     </Compile>
     <Compile Include="CustomerModel\ucDetail.Designer.cs">
       <DependentUpon>ucDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerModel\ucItemOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomerModel\ucItemOrder.Designer.cs">
+      <DependentUpon>ucItemOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomerModel\ucTable.cs">
       <SubType>UserControl</SubType>
@@ -343,6 +349,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerModel\ucDetail.resx">
       <DependentUpon>ucDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerModel\ucItemOrder.resx">
+      <DependentUpon>ucItemOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmTableViews.resx">
       <DependentUpon>frmTableViews.cs</DependentUpon>

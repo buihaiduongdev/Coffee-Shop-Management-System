@@ -15,12 +15,12 @@ namespace Restaurant_Management_System.CustomerModel
         private string ice;
         private string size;
         private string sugar;
-    
+
         private DateTime orderdate;
 
         public orderdetailInfo() { }
 
-        public orderdetailInfo( int productID, decimal unitPrice, int quantity,
+        public orderdetailInfo(int productID, decimal unitPrice, int quantity,
                                int orderDetailID, string ice, string size, string sugar,
                                 DateTime orderdate)
         {

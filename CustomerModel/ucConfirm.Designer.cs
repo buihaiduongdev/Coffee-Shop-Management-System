@@ -34,8 +34,8 @@
             this.lblOrderID = new System.Windows.Forms.Label();
             this.btnAction = new Guna.UI2.WinForms.Guna2Button();
             this.lblStatus = new System.Windows.Forms.Label();
-            this.btnOrderDetail = new FontAwesome.Sharp.IconButton();
             this.pbImage = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btnOrderDetail = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.SuspendLayout();
@@ -45,8 +45,8 @@
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(220)))));
             this.guna2Panel1.BorderColor = System.Drawing.Color.White;
             this.guna2Panel1.BorderRadius = 35;
-            this.guna2Panel1.Controls.Add(this.lblOrderDate);
             this.guna2Panel1.Controls.Add(this.btnOrderDetail);
+            this.guna2Panel1.Controls.Add(this.lblOrderDate);
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.lblOrderID);
             this.guna2Panel1.Controls.Add(this.btnAction);
@@ -129,19 +129,6 @@
             this.lblStatus.Text = "Trạng thái:";
             this.lblStatus.Click += new System.EventHandler(this.lblStatus_Click);
             // 
-            // btnOrderDetail
-            // 
-            this.btnOrderDetail.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnOrderDetail.IconColor = System.Drawing.Color.Black;
-            this.btnOrderDetail.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnOrderDetail.Location = new System.Drawing.Point(155, 188);
-            this.btnOrderDetail.Name = "btnOrderDetail";
-            this.btnOrderDetail.Size = new System.Drawing.Size(35, 24);
-            this.btnOrderDetail.TabIndex = 21;
-            this.btnOrderDetail.Text = "...";
-            this.btnOrderDetail.UseVisualStyleBackColor = true;
-            this.btnOrderDetail.Click += new System.EventHandler(this.btnOrderDetail_Click);
-            // 
             // pbImage
             // 
             this.pbImage.BackColor = System.Drawing.Color.Transparent;
@@ -156,6 +143,21 @@
             this.pbImage.TabStop = false;
             this.pbImage.UseTransparentBackground = true;
             this.pbImage.Click += new System.EventHandler(this.pbImage_Click);
+            // 
+            // btnOrderDetail
+            // 
+            this.btnOrderDetail.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnOrderDetail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnOrderDetail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnOrderDetail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnOrderDetail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnOrderDetail.ForeColor = System.Drawing.Color.White;
+            this.btnOrderDetail.Location = new System.Drawing.Point(218, 178);
+            this.btnOrderDetail.Name = "btnOrderDetail";
+            this.btnOrderDetail.Size = new System.Drawing.Size(46, 29);
+            this.btnOrderDetail.TabIndex = 23;
+            this.btnOrderDetail.Text = "guna2Button1";
+            this.btnOrderDetail.Click += new System.EventHandler(this.btnOrderDetail_Click_1);
             // 
             // ucConfirm
             // 
@@ -179,8 +181,8 @@
         private Guna.UI2.WinForms.Guna2Button btnAction;
         private System.Windows.Forms.Label lblStatus;
         private Guna.UI2.WinForms.Guna2PictureBox pbImage;
-        private FontAwesome.Sharp.IconButton btnOrderDetail;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblOrderDate;
+        private Guna.UI2.WinForms.Guna2Button btnOrderDetail;
     }
 }

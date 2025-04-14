@@ -1,49 +1,70 @@
-﻿using System;
+﻿
+using Restaurant_Management_System.CustomerModel;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Restaurant_Management_System.CustomerModel
 {
     public partial class ucDetail : UserControl
     {
-        orderdetailInfo currentOrderDetail;
-
+        private List<OrderDetailProduct> orderDetail = new List<OrderDetailProduct>();
         public ucDetail()
         {
             InitializeComponent();
+            flpOrderItems.AutoScroll = true;
         }
 
-        public void SetData(orderdetailInfo detail)
-        {
-            currentOrderDetail = detail;
 
-            lblOrderID.Text = "Mã đơn hàng: " + detail.OrderDetailID;
-            lblUnitPrice.Text = "Đơn giá: " + detail.UnitPrice.ToString("N0") + " VNĐ";
-            lblQuantity.Text = "Số lượng: " + detail.Quantity;
-            lblIce.Text = "Đá: " + detail.Ice;
-            lblSugar.Text = "Đường: " + detail.Sugar;
-            lblSize.Text = "Size: " + detail.Size;
+        public void SetData(List<OrderDetailProduct> details, int orderId)
+        {
+            orderDetail = details ?? new List<OrderDetailProduct>();
+
+            flpOrderItems.Controls.Clear();
+
+            lblOrderID.Text = $"Mã đơn hàng: {orderId}";
+
+            if (orderDetail.Any())
+            {
+                flpOrderItems.SuspendLayout();
+
+                // Số sản phẩm trên một hàng (2 hoặc 3)
+                int itemsPerRow = 2; // Có thể đổi thành 2 nếu muốn 2 sản phẩm/hàng
+                int itemWidth = (flpOrderItems.Width - (itemsPerRow + 1) * 10) / itemsPerRow; // 10 là khoảng cách giữa các sản phẩm
+
+                foreach (var detail in orderDetail)
+                {
+                    var item = new ucItemOrder();
+                    item.SetData(detail);
+                    item.Width = itemWidth; // Đặt chiều rộng để hiển thị 3 sản phẩm trên 1 hàng
+                    flpOrderItems.Controls.Add(item);
+                }
+
+                flpOrderItems.ResumeLayout();
+
+                //decimal total = orderDetail.Sum(d => d.TotalPrice);
+            }
+            else
+            {
+                MessageBox.Show("Không có chi tiết đơn hàng để hiển thị.");
+            }
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
-            
+            var parentForm = this.Parent as Form;
+            parentForm?.Close();
         }
 
-        private void guna2PictureBox1_Click_1(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void lblOrderID_Click(object sender, EventArgs e)
+        private void lblTotal_Click(object sender, EventArgs e)
         {
 
         }
     }
 }
+
+

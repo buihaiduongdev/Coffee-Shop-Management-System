@@ -128,11 +128,7 @@ namespace Restaurant_Management_System.CustomerModel
             }
         }
 
-        private void btnOrderDetail_Click(object sender, EventArgs e)
-        {
-            frmDetailInfo detailInfo = new frmDetailInfo(currentOrder.OrderID);
-            detailInfo.ShowDialog();
-        }
+
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -162,6 +158,12 @@ namespace Restaurant_Management_System.CustomerModel
         private void pbImage_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnOrderDetail_Click_1(object sender, EventArgs e)
+        {
+            frmDetailInfo detailInfo = new frmDetailInfo(currentOrder.OrderID);
+            detailInfo.ShowDialog();
         }
     }
 }
