@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Restaurant_Management_System.Backend;
 using Restaurant_Management_System.Model;
+using Restaurant_Management_System.Setting;
 
 namespace Restaurant_Management_System.Barista
 {
@@ -46,6 +47,12 @@ namespace Restaurant_Management_System.Barista
         private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmSettingView(baristaID));
+
         }
     }
 }

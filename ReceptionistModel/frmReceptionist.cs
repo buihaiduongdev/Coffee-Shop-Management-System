@@ -1,5 +1,6 @@
 ﻿using Restaurant_Management_System.Backend;
 using Restaurant_Management_System.Model;
+using Restaurant_Management_System.Setting;
 using Restaurant_Management_System.View;
 using System;
 using System.Collections.Generic;
@@ -58,6 +59,11 @@ namespace Restaurant_Management_System.Receptionist
         private void btnLogout_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmSettingView(receptionistID));
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Restaurant_Management_System.Backend;
 using Restaurant_Management_System.Model;
+using Restaurant_Management_System.Setting;
 using Restaurant_Management_System.View;
 using System;
 using System.Collections.Generic;
@@ -106,6 +107,11 @@ namespace Restaurant_Management_System
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSetting_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmSettingView(id));
         }
     }
 }
