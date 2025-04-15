@@ -338,17 +338,17 @@
             this.txtAbout.Location = new System.Drawing.Point(609, 46);
             this.txtAbout.Name = "txtAbout";
             this.txtAbout.ReadOnly = true;
-            this.txtAbout.Size = new System.Drawing.Size(764, 671);
+            this.txtAbout.Size = new System.Drawing.Size(764, 763);
             this.txtAbout.TabIndex = 28;
             this.txtAbout.Text = "";
             this.txtAbout.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.txtAbout_LinkClicked);
             // 
             // frmSettingView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(228)))));
-            this.ClientSize = new System.Drawing.Size(1651, 893);
+            this.ClientSize = new System.Drawing.Size(1651, 783);
             this.Controls.Add(this.txtAbout);
             this.Controls.Add(this.btnAboutProject);
             this.Controls.Add(this.btnBrowse);

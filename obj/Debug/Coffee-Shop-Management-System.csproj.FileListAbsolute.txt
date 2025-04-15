@@ -629,3 +629,22 @@ C:\Users\DuongLapTop\Documents\AI\Coffee-Shop-Management-System\obj\Debug\Coffee
 C:\Users\DuongLapTop\Documents\AI\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.exe
 C:\Users\DuongLapTop\Documents\AI\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.pdb
 C:\Users\DuongLapTop\Documents\AI\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Setting.frmSettingView.resources
+D:\LEARNING\Winform\Coffee-Shop-Management-System\bin\Debug\EPPlus.dll
+D:\LEARNING\Winform\Coffee-Shop-Management-System\bin\Debug\EPPlus.Interfaces.dll
+D:\LEARNING\Winform\Coffee-Shop-Management-System\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+D:\LEARNING\Winform\Coffee-Shop-Management-System\bin\Debug\System.Buffers.dll
+D:\LEARNING\Winform\Coffee-Shop-Management-System\bin\Debug\System.ComponentModel.Annotations.dll
+D:\LEARNING\Winform\Coffee-Shop-Management-System\bin\Debug\System.Memory.dll
+D:\LEARNING\Winform\Coffee-Shop-Management-System\bin\Debug\System.Numerics.Vectors.dll
+D:\LEARNING\Winform\Coffee-Shop-Management-System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\LEARNING\Winform\Coffee-Shop-Management-System\bin\Debug\System.Security.Cryptography.Xml.dll
+D:\LEARNING\Winform\Coffee-Shop-Management-System\bin\Debug\EPPlus.xml
+D:\LEARNING\Winform\Coffee-Shop-Management-System\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+D:\LEARNING\Winform\Coffee-Shop-Management-System\bin\Debug\System.Buffers.xml
+D:\LEARNING\Winform\Coffee-Shop-Management-System\bin\Debug\System.Memory.xml
+D:\LEARNING\Winform\Coffee-Shop-Management-System\bin\Debug\System.Numerics.Vectors.xml
+D:\LEARNING\Winform\Coffee-Shop-Management-System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\LEARNING\Winform\Coffee-Shop-Management-System\bin\Debug\System.Security.Cryptography.Xml.xml
+D:\LEARNING\Winform\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.feedback.resources
+D:\LEARNING\Winform\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.ucItemOrder.resources
+D:\LEARNING\Winform\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Setting.frmSettingView.resources

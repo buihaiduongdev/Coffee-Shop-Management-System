@@ -35,6 +35,7 @@
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnOrders = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,7 +46,6 @@
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblCart = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pbCart = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnOrders = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -132,6 +132,24 @@
             this.guna2Panel1.Size = new System.Drawing.Size(261, 812);
             this.guna2Panel1.TabIndex = 3;
             // 
+            // btnOrders
+            // 
+            this.btnOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(187)))), ((int)(((byte)(120)))));
+            this.btnOrders.BorderRadius = 10;
+            this.btnOrders.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnOrders.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnOrders.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnOrders.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnOrders.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(57)))), ((int)(((byte)(20)))));
+            this.btnOrders.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrders.ForeColor = System.Drawing.Color.White;
+            this.btnOrders.Location = new System.Drawing.Point(31, 139);
+            this.btnOrders.Name = "btnOrders";
+            this.btnOrders.Size = new System.Drawing.Size(180, 45);
+            this.btnOrders.TabIndex = 25;
+            this.btnOrders.Text = "List Orders";
+            this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -162,7 +180,7 @@
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(180, 45);
             this.btnLogout.TabIndex = 24;
-            this.btnLogout.Text = "Đăng xuất";
+            this.btnLogout.Text = "Log out";
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // label1
@@ -234,7 +252,7 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtSearch.PlaceholderText = "Tìm kiếm tại đây";
+            this.txtSearch.PlaceholderText = "Search Here";
             this.txtSearch.SelectedText = "";
             this.txtSearch.Size = new System.Drawing.Size(524, 62);
             this.txtSearch.TabIndex = 19;
@@ -265,21 +283,6 @@
             this.pbCart.TabIndex = 22;
             this.pbCart.TabStop = false;
             this.pbCart.Click += new System.EventHandler(this.pbCart_Click);
-            // 
-            // btnOrders
-            // 
-            this.btnOrders.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnOrders.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnOrders.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnOrders.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnOrders.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnOrders.ForeColor = System.Drawing.Color.White;
-            this.btnOrders.Location = new System.Drawing.Point(31, 229);
-            this.btnOrders.Name = "btnOrders";
-            this.btnOrders.Size = new System.Drawing.Size(180, 45);
-            this.btnOrders.TabIndex = 25;
-            this.btnOrders.Text = "Đơn mua";
-            this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
             // 
             // frmCustomer
             // 

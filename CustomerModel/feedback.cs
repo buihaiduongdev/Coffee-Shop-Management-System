@@ -1,4 +1,5 @@
-﻿using Restaurant_Management_System.Backend;
+﻿using Guna.UI2.WinForms;
+using Restaurant_Management_System.Backend;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -95,7 +96,7 @@ namespace Restaurant_Management_System.CustomerModel
         {
 
 
-            btnSendFeedback.Enabled = false;
+            btnSend.Enabled = false;
             Star1.Enabled = false;
             Star2.Enabled = false;
             Star3.Enabled = false;
@@ -107,10 +108,21 @@ namespace Restaurant_Management_System.CustomerModel
 
         private void feedback_Load(object sender, EventArgs e)
         {
-
+            
+        }
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+            this.Close();
         }
 
-        private void btnSendFeedback_Click_1(object sender, EventArgs e)
+        private void btnCancel_Click_1(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+            this.Close();
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
         {
             string txt = txtFeedback.Text;
             int rating = currentRating;
@@ -125,7 +137,7 @@ namespace Restaurant_Management_System.CustomerModel
                 INSERT INTO Feedbacks (OrderID, Rating, Comment) 
                 VALUES (@OrderID, @Rating, @Comment)";
 
-                    string queryUpdate = @"
+            string queryUpdate = @"
                 UPDATE Orders 
                 SET Status = 'Feedbacked' 
                 WHERE OrderID = @OrderID";
@@ -159,10 +171,80 @@ namespace Restaurant_Management_System.CustomerModel
             }
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void btnExcellent_Click(object sender, EventArgs e)
+        {
+            AppendFeedback("Sản phẩm rất tuyệt vời!");
+            HandleButtonClick((Guna2Button)sender);
+        }
+
+        private void btnFastDelivery_Click_1(object sender, EventArgs e)
+        {
+            AppendFeedback("Thời gian vận chuyển nhanh!");
+            HandleButtonClick((Guna2Button)sender);
+        }
+
+        private void btnPerfect_Click(object sender, EventArgs e)
+        {
+            AppendFeedback("Hoàn hảo");
+            HandleButtonClick((Guna2Button)sender);
+        }
+
+        private void btnVerySatisfied_Click(object sender, EventArgs e)
+        {
+            AppendFeedback("Tôi rất hài lòng!");
+            HandleButtonClick((Guna2Button)sender);
+        }
+        private void AppendFeedback(string text)
+        {
+            if (!txtFeedback.Text.Contains(text))
+            {
+                if (!string.IsNullOrWhiteSpace(txtFeedback.Text))
+                    txtFeedback.Text += " ";
+                txtFeedback.Text += text;
+            }
+        }
+
+        private void HandleButtonClick(Guna2Button clickedButton)
+        {
+
+            if (clickedButton == btnExcellent)
+            {
+                btnFastDelivery.Enabled = false;
+                btnPerfect.Enabled = false;
+                btnVerySatisfied.Enabled = false;
+            }
+           
+            else if (clickedButton == btnFastDelivery)
+            {
+                btnExcellent.Enabled = false;
+                btnPerfect.Enabled = false;
+                btnVerySatisfied.Enabled = false;
+            }
+           
+            else if (clickedButton == btnPerfect)
+            {
+                btnExcellent.Enabled = false;
+                btnFastDelivery.Enabled = false;
+                btnVerySatisfied.Enabled = false;
+            }
+            
+            else if (clickedButton == btnVerySatisfied)
+            {
+                btnExcellent.Enabled = false;
+                btnFastDelivery.Enabled = false;
+                btnPerfect.Enabled = false;
+            }
+
+           
+            clickedButton.Enabled = true;
+        }
+
+        private void btnCancel_Click_2(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
+
+      
     }
 }
