@@ -369,6 +369,7 @@
       <DependentUpon>frmTableViews.cs</DependentUpon>
     </Compile>
     <Content Include="Resources\BlankPicture.png" />
+    <None Include="Resources\change.png" />
     <Content Include="Resources\CoffeeTableIcon %282%29.png" />
     <Content Include="Resources\coffeetableIcon.png" />
     <Content Include="Resources\excel.png" />

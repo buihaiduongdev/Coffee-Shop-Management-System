@@ -36,17 +36,20 @@
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.btnFeedback = new Guna.UI2.WinForms.Guna2Button();
             this.pbBack = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(220)))));
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(39, 145);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(39, 181);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1368, 656);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1368, 624);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
@@ -76,7 +79,7 @@
             this.flowLayoutPanel2.Controls.Add(this.btnConfirmed);
             this.flowLayoutPanel2.Controls.Add(this.btnCancel);
             this.flowLayoutPanel2.Controls.Add(this.btnFeedback);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(29, 42);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(39, 90);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(15);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(1362, 73);
@@ -158,7 +161,7 @@
             // 
             this.pbBack.Image = global::Restaurant_Management_System.Properties.Resources.back_button;
             this.pbBack.ImageRotate = 0F;
-            this.pbBack.Location = new System.Drawing.Point(39, 809);
+            this.pbBack.Location = new System.Drawing.Point(39, 844);
             this.pbBack.Margin = new System.Windows.Forms.Padding(4);
             this.pbBack.Name = "pbBack";
             this.pbBack.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -168,12 +171,34 @@
             this.pbBack.TabStop = false;
             this.pbBack.Click += new System.EventHandler(this.pbBack_Click);
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1378, 56);
+            this.guna2Panel1.TabIndex = 25;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(540, 12);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(544, 39);
+            this.guna2HtmlLabel1.TabIndex = 0;
+            this.guna2HtmlLabel1.Text = "THÔNG TIN ĐƠN HÀNG";
+            // 
             // frmInfoOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(220)))));
-            this.ClientSize = new System.Drawing.Size(1378, 855);
+            this.ClientSize = new System.Drawing.Size(1378, 901);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.pbBack);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -185,6 +210,7 @@
             this.Load += new System.EventHandler(this.frmInfoOrder_Load);
             this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbBack)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -199,5 +225,7 @@
         private Guna.UI2.WinForms.Guna2Button btnFeedback;
         private Guna.UI2.WinForms.Guna2Button btnCancel;
         private Guna.UI2.WinForms.Guna2CirclePictureBox pbBack;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }

@@ -32,7 +32,8 @@ namespace Restaurant_Management_System.View
             {
                 dt = DatabaseHelper.ExecuteQuery(query);
                 dgvProduct.Rows.Clear();
-
+                dgvProduct.DefaultCellStyle.Font = new Font("Segoe UI", 12);
+                dgvProduct.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 12, FontStyle.Bold);
                 // Duyệt từng dòng dữ liệu từ DataTable và thêm vào DataGridView
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
@@ -175,6 +176,16 @@ namespace Restaurant_Management_System.View
                     MessageBox.Show("Lỗi khi tải dữ liệu sản phẩm: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void dgvProduct_ColumnHeaderCellChanged(object sender, DataGridViewColumnEventArgs e)
+        {
+
+        }
+
+        private void dgvProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

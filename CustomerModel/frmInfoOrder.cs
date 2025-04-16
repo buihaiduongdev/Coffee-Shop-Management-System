@@ -106,7 +106,7 @@ namespace Restaurant_Management_System.CustomerModel
 
         private void btnAll_Click(object sender, EventArgs e)
         {
-            LoadData("Tất cả", "Đơn hàng");
+            LoadData("Tất cả", "Tất cả");
         }
 
 
@@ -137,5 +137,6 @@ namespace Restaurant_Management_System.CustomerModel
             Form parentForm = this.FindForm();
             parentForm?.Close();
         }
+        
     }
 }

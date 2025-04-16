@@ -62,6 +62,8 @@
             // 
             // btnOrderDetail
             // 
+            this.btnOrderDetail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnOrderDetail.BorderRadius = 10;
             this.btnOrderDetail.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnOrderDetail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnOrderDetail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -69,7 +71,7 @@
             this.btnOrderDetail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnOrderDetail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnOrderDetail.ForeColor = System.Drawing.Color.White;
-            this.btnOrderDetail.Location = new System.Drawing.Point(155, 188);
+            this.btnOrderDetail.Location = new System.Drawing.Point(155, 198);
             this.btnOrderDetail.Name = "btnOrderDetail";
             this.btnOrderDetail.Size = new System.Drawing.Size(46, 29);
             this.btnOrderDetail.TabIndex = 23;
@@ -82,7 +84,7 @@
             this.lblOrderDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.lblOrderDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOrderDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(81)))), ((int)(((byte)(0)))));
-            this.lblOrderDate.Location = new System.Drawing.Point(151, 61);
+            this.lblOrderDate.Location = new System.Drawing.Point(151, 67);
             this.lblOrderDate.Name = "lblOrderDate";
             this.lblOrderDate.Size = new System.Drawing.Size(135, 20);
             this.lblOrderDate.TabIndex = 22;
@@ -95,7 +97,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(81)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(64, 188);
+            this.label2.Location = new System.Drawing.Point(64, 207);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 20);
             this.label2.TabIndex = 19;
@@ -108,7 +110,7 @@
             this.lblOrderID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.lblOrderID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOrderID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(81)))), ((int)(((byte)(0)))));
-            this.lblOrderID.Location = new System.Drawing.Point(151, 4);
+            this.lblOrderID.Location = new System.Drawing.Point(151, 17);
             this.lblOrderID.Name = "lblOrderID";
             this.lblOrderID.Size = new System.Drawing.Size(76, 20);
             this.lblOrderID.TabIndex = 18;
@@ -125,7 +127,7 @@
             this.btnAction.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(79)))), ((int)(((byte)(79)))));
             this.btnAction.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAction.ForeColor = System.Drawing.Color.White;
-            this.btnAction.Location = new System.Drawing.Point(54, 231);
+            this.btnAction.Location = new System.Drawing.Point(54, 250);
             this.btnAction.Name = "btnAction";
             this.btnAction.Size = new System.Drawing.Size(197, 42);
             this.btnAction.TabIndex = 17;
@@ -138,7 +140,7 @@
             this.lblStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(81)))), ((int)(((byte)(0)))));
-            this.lblStatus.Location = new System.Drawing.Point(151, 124);
+            this.lblStatus.Location = new System.Drawing.Point(151, 115);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(100, 20);
             this.lblStatus.TabIndex = 15;

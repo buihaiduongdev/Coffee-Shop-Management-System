@@ -28,8 +28,31 @@ namespace Restaurant_Management_System.View
             IconTableReserved.HoverState.BorderColor = IconTableReserved.BorderColor;
             IconTableReserved.PressedColor = IconTableReserved.FillColor;
         }
+        private void ApplyModernTableTheme()
+        {
+            dgvTables.EnableHeadersVisualStyles = false;
+            dgvTables.ColumnHeadersDefaultCellStyle.BackColor = Color.Orange;
+            dgvTables.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvTables.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 12, FontStyle.Bold);
+            dgvTables.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            dgvTables.DefaultCellStyle.BackColor = Color.White;
+            dgvTables.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(250, 218, 171);
+            dgvTables.DefaultCellStyle.ForeColor = Color.Black;
+            dgvTables.DefaultCellStyle.Font = new Font("Segoe UI", 11);
+
+            dgvTables.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvTables.GridColor = Color.LightGray;
+
+            dgvTables.DefaultCellStyle.SelectionBackColor = Color.Orange;
+            dgvTables.DefaultCellStyle.SelectionForeColor = Color.Black;
+
+            dgvTables.RowHeadersVisible = false;
+            dgvTables.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        }
         private void frmTableView_Load(object sender, EventArgs e)
         {
+            
             LoadTableData();
             List<string> status = new List<string>() { "Status", "Occupied" ,"Empty", "Reserved", "Unvailable"};
             cbbStatus.DataSource = status;
@@ -48,7 +71,8 @@ namespace Restaurant_Management_System.View
                 dt = DatabaseHelper.ExecuteQuery(query); 
 
                 dgvTables.Rows.Clear();
-
+                dgvTables.DefaultCellStyle.Font = new Font("Segoe UI", 12);
+                dgvTables.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 12, FontStyle.Bold);
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
                     dgvTables.Rows.Add();
@@ -68,6 +92,7 @@ namespace Restaurant_Management_System.View
             {
                 MessageBox.Show("Lỗi khi tải dữ liệu bàn: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            ApplyModernTableTheme();
         }
 
         public void btnAdd_Click(object sender, EventArgs e)
@@ -226,6 +251,11 @@ namespace Restaurant_Management_System.View
         {
             IconTableReserved.FillColor = Color.Salmon;
             IconTableReserved.BorderColor = Color.Salmon;
+        }
+
+        private void dgvTables_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
         }
     }
 }

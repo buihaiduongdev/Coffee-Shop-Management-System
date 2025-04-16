@@ -72,11 +72,11 @@
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(827, 12);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(805, 6);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(163, 58);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(238, 47);
             this.guna2HtmlLabel1.TabIndex = 3;
-            this.guna2HtmlLabel1.Text = "MENU";
+            this.guna2HtmlLabel1.Text = "THỰC ĐƠN";
             this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
             // 
             // guna2ControlBox3
@@ -143,11 +143,11 @@
             this.btnOrders.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(57)))), ((int)(((byte)(20)))));
             this.btnOrders.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrders.ForeColor = System.Drawing.Color.White;
-            this.btnOrders.Location = new System.Drawing.Point(31, 139);
+            this.btnOrders.Location = new System.Drawing.Point(22, 139);
             this.btnOrders.Name = "btnOrders";
-            this.btnOrders.Size = new System.Drawing.Size(180, 45);
+            this.btnOrders.Size = new System.Drawing.Size(227, 73);
             this.btnOrders.TabIndex = 25;
-            this.btnOrders.Text = "List Orders";
+            this.btnOrders.Text = "Danh sách đã đặt";
             this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
             // 
             // guna2PictureBox1
@@ -180,7 +180,7 @@
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(180, 45);
             this.btnLogout.TabIndex = 24;
-            this.btnLogout.Text = "Log out";
+            this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // label1
@@ -252,7 +252,7 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtSearch.PlaceholderText = "Search Here";
+            this.txtSearch.PlaceholderText = "Tìm kiếm sản phẩm ở đây";
             this.txtSearch.SelectedText = "";
             this.txtSearch.Size = new System.Drawing.Size(524, 62);
             this.txtSearch.TabIndex = 19;

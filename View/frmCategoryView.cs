@@ -44,7 +44,8 @@ namespace Restaurant_Management_System.View
                 DataTable dt = DatabaseHelper.ExecuteQuery(query); 
 
                 dgvCategory.Rows.Clear();
-
+                dgvCategory.DefaultCellStyle.Font = new Font("Segoe UI", 12);
+                dgvCategory.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 12, FontStyle.Bold);
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
                     dgvCategory.Rows.Add();

@@ -153,6 +153,16 @@ namespace Restaurant_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap change {
+            get {
+                object obj = ResourceManager.GetObject("change", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Coffee_Logo_Design_Vector_Hd_Images__Coffee_Logo_Design__Coffee__Logo__Cafe_PNG_Image_For_Free_Download_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("Coffee_Logo_Design_Vector_Hd_Images__Coffee_Logo_Design__Coffee__Logo__Cafe_PNG_I" +

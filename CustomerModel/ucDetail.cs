@@ -26,7 +26,7 @@ namespace Restaurant_Management_System.CustomerModel
 
             flpOrderItems.Controls.Clear();
 
-            lblOrderID.Text = $"Mã đơn hàng: {orderId}";
+            lblOrderID.Text = $"MÃ ĐƠN HÀNG: {orderId}";
 
             if (orderDetail.Any())
             {
@@ -68,7 +68,17 @@ namespace Restaurant_Management_System.CustomerModel
         private void pbBack_Click(object sender, EventArgs e)
         {
             Form parentForm = this.FindForm();
-            parentForm?.Close();
+            if (parentForm != null)
+            {
+                
+                parentForm.Owner?.Show(); 
+                parentForm.Close();
+            }
+        }
+
+        private void lblOrderID_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

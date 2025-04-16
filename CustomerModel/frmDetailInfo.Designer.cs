@@ -36,9 +36,10 @@
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.ucDetail1);
-            this.guna2Panel1.Location = new System.Drawing.Point(1, 0);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1261, 776);
+            this.guna2Panel1.Size = new System.Drawing.Size(1318, 866);
             this.guna2Panel1.TabIndex = 29;
             // 
             // ucDetail1
@@ -46,14 +47,14 @@
             this.ucDetail1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucDetail1.Location = new System.Drawing.Point(0, 0);
             this.ucDetail1.Name = "ucDetail1";
-            this.ucDetail1.Size = new System.Drawing.Size(1261, 776);
+            this.ucDetail1.Size = new System.Drawing.Size(1318, 866);
             this.ucDetail1.TabIndex = 0;
             // 
             // frmDetailInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1239, 778);
+            this.ClientSize = new System.Drawing.Size(1318, 866);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmDetailInfo";

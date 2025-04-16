@@ -46,7 +46,8 @@ namespace Restaurant_Management_System.View
                 DataTable dt = DatabaseHelper.ExecuteQuery(query);
 
                 dgvEmployee.Rows.Clear();
-
+                dgvEmployee.DefaultCellStyle.Font = new Font("Segoe UI", 12);
+                dgvEmployee.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 12, FontStyle.Bold);
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
                     dgvEmployee.Rows.Add();
