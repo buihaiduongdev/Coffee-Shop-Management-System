@@ -280,13 +280,13 @@
             // 
             // picEmployeeImage
             // 
-            this.picEmployeeImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picEmployeeImage.BorderRadius = 10;
             this.picEmployeeImage.Image = ((System.Drawing.Image)(resources.GetObject("picEmployeeImage.Image")));
             this.picEmployeeImage.ImageRotate = 0F;
-            this.picEmployeeImage.Location = new System.Drawing.Point(46, 46);
+            this.picEmployeeImage.Location = new System.Drawing.Point(80, 46);
             this.picEmployeeImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picEmployeeImage.Name = "picEmployeeImage";
-            this.picEmployeeImage.Size = new System.Drawing.Size(200, 217);
+            this.picEmployeeImage.Size = new System.Drawing.Size(161, 230);
             this.picEmployeeImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picEmployeeImage.TabIndex = 25;
             this.picEmployeeImage.TabStop = false;
@@ -342,6 +342,7 @@
             this.txtAbout.TabIndex = 28;
             this.txtAbout.Text = "";
             this.txtAbout.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.txtAbout_LinkClicked);
+            this.txtAbout.TextChanged += new System.EventHandler(this.txtAbout_TextChanged);
             // 
             // frmSettingView
             // 

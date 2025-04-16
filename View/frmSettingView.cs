@@ -27,7 +27,8 @@ namespace Restaurant_Management_System.Setting
             txtAbout.BorderStyle = BorderStyle.None;          
             txtAbout.ReadOnly = true;
             txtAbout.Font = new Font("Segoe UI", 10.5f, FontStyle.Regular);
-
+            cbbRole.Enabled = false;
+           
             LoadEmployeeData();
         }
 
@@ -229,7 +230,7 @@ namespace Restaurant_Management_System.Setting
             txtAbout.DetectUrls = true;
 
             // Hàm chèn văn bản định dạng
-            void AppendText(string text, FontStyle style, float size = 10.5f)
+            void AppendText(string text, FontStyle style, float size = 12.5f)
             {
                 txtAbout.SelectionStart = txtAbout.TextLength;
                 txtAbout.SelectionLength = 0;
@@ -238,43 +239,43 @@ namespace Restaurant_Management_System.Setting
             }
 
             // Tiêu đề
-            AppendText("🔷 THÔNG TIN DỰ ÁN\n", FontStyle.Bold, 13);
-            AppendText("────────────────────────────\n", FontStyle.Regular);
+            AppendText("  🔷 THÔNG TIN DỰ ÁN\n", FontStyle.Bold, 13);
+            AppendText("  ────────────────────────────\n", FontStyle.Regular);
 
             // Nội dung dự án
-            AppendText("📌 Tên dự án: ", FontStyle.Bold);
-            AppendText("Coffee Shop Management System\n", FontStyle.Italic);
+            AppendText("  📌 Tên dự án: ", FontStyle.Bold);
+            AppendText("  Coffee Shop Management System\n", FontStyle.Bold);
 
-            AppendText("📖 Mô tả: ", FontStyle.Bold);
-            AppendText("Hệ thống quản lý quán cà phê, hỗ trợ quản lý nhân viên, sản phẩm, đơn hàng.\n", FontStyle.Regular);
+            AppendText("  📖 Mô tả: ", FontStyle.Bold);
+            AppendText("  Hệ thống quản lý quán cà phê,nhân viên, sản phẩm, đơn hàng.\n", FontStyle.Regular);
 
-            AppendText("📅 Ngày tạo: ", FontStyle.Bold);
-            AppendText("17/01/2025\n", FontStyle.Regular);
+            AppendText("  📅 Ngày tạo: ", FontStyle.Bold);
+            AppendText("  17/01/2025\n", FontStyle.Regular);
 
-            AppendText("✅ Ngày hoàn thành: ", FontStyle.Bold);
-            AppendText("16/04/2025\n", FontStyle.Regular);
+            AppendText("  ✅ Ngày hoàn thành: ", FontStyle.Bold);
+            AppendText("  17/04/2025\n", FontStyle.Regular);
 
-            AppendText("⏱️ Thời gian thực hiện: ", FontStyle.Bold);
-            AppendText("3 tháng\n", FontStyle.Regular);
+            AppendText("  ⏱️ Thời gian thực hiện: ", FontStyle.Bold);
+            AppendText("   3 tháng\n", FontStyle.Regular);
 
-            AppendText("🧑‍💻 Ngôn ngữ: ", FontStyle.Bold);
-            AppendText("C# (Windows Forms)\n\n", FontStyle.Regular);
+            AppendText("  🧑‍💻 Ngôn ngữ: ", FontStyle.Bold);
+            AppendText("  C# (Windows Forms)\n\n", FontStyle.Regular);
 
             // GitHub project
-            AppendText("🌐 Link GitHub Project:\n", FontStyle.Bold);
-            AppendText("https://github.com/buihaiduongdev/Coffee-Shop-Management-System\n\n", FontStyle.Regular);
+            AppendText("  🌐 Link GitHub Project:\n", FontStyle.Bold);
+            AppendText("  https://github.com/buihaiduongdev/Coffee-Shop-Management-System\n\n", FontStyle.Regular);
 
             // GitHub ClockIn
-            AppendText("🕒 Chức năng chấm công:\n", FontStyle.Bold);
-            AppendText("https://github.com/buihaiduongdev/WinFormClockIn\n\n", FontStyle.Regular);
+            AppendText("  🕒 Chức năng chấm công:\n", FontStyle.Bold);
+            AppendText("  https://github.com/buihaiduongdev/WinFormClockIn\n\n", FontStyle.Regular);
 
             // Thành viên
-            AppendText("👥 Thành viên nhóm:\n", FontStyle.Bold);
-            AppendText("- Đinh Văn Sáng: https://github.com/SangDinhVan\n", FontStyle.Regular);
-            AppendText("- Châu Kim Lương: https://github.com/ChauKimLuong\n", FontStyle.Regular);
-            AppendText("- Thái Quang Huy: https://github.com/HuyQuangThai\n", FontStyle.Regular);
-            AppendText("- Võ An Thái: https://github.com/Anthai2\n", FontStyle.Regular);
-            AppendText("- Bùi Hải Dương: https://github.com/buihaiduongdev\n", FontStyle.Regular);
+            AppendText("  👥 Thành viên nhóm:\n", FontStyle.Bold);
+            AppendText("  - Đinh Văn Sáng: https://github.com/SangDinhVan\n", FontStyle.Regular);
+            AppendText("  - Châu Kim Lương: https://github.com/ChauKimLuong\n", FontStyle.Regular);
+            AppendText("  - Thái Quang Huy: https://github.com/HuyQuangThai\n", FontStyle.Regular);
+            AppendText("  - Võ An Thái: https://github.com/Anthai2\n", FontStyle.Regular);
+            AppendText("  - Bùi Hải Dương: https://github.com/buihaiduongdev\n", FontStyle.Regular);
         }
 
 
@@ -290,5 +291,9 @@ namespace Restaurant_Management_System.Setting
             }
         }
 
+        private void txtAbout_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

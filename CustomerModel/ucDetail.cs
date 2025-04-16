@@ -64,7 +64,12 @@ namespace Restaurant_Management_System.CustomerModel
         {
 
         }
-        
+
+        private void pbBack_Click(object sender, EventArgs e)
+        {
+            Form parentForm = this.FindForm();
+            parentForm?.Close();
+        }
     }
 }
 

@@ -35,7 +35,9 @@
             this.btnConfirmed = new Guna.UI2.WinForms.Guna2Button();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.btnFeedback = new Guna.UI2.WinForms.Guna2Button();
+            this.pbBack = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.flowLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -44,7 +46,7 @@
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(220)))));
             this.flowLayoutPanel1.Location = new System.Drawing.Point(39, 145);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1368, 698);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1368, 656);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
@@ -152,12 +154,27 @@
             this.btnFeedback.Text = "Đánh giá";
             this.btnFeedback.Click += new System.EventHandler(this.btnFeedback_Click);
             // 
+            // pbBack
+            // 
+            this.pbBack.Image = global::Restaurant_Management_System.Properties.Resources.back_button;
+            this.pbBack.ImageRotate = 0F;
+            this.pbBack.Location = new System.Drawing.Point(39, 809);
+            this.pbBack.Margin = new System.Windows.Forms.Padding(4);
+            this.pbBack.Name = "pbBack";
+            this.pbBack.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pbBack.Size = new System.Drawing.Size(47, 33);
+            this.pbBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbBack.TabIndex = 24;
+            this.pbBack.TabStop = false;
+            this.pbBack.Click += new System.EventHandler(this.pbBack_Click);
+            // 
             // frmInfoOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(220)))));
             this.ClientSize = new System.Drawing.Size(1378, 855);
+            this.Controls.Add(this.pbBack);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -167,6 +184,7 @@
             this.Text = "frmInfoOrder";
             this.Load += new System.EventHandler(this.frmInfoOrder_Load);
             this.flowLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbBack)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -180,5 +198,6 @@
         private Guna.UI2.WinForms.Guna2Button btnConfirmed;
         private Guna.UI2.WinForms.Guna2Button btnFeedback;
         private Guna.UI2.WinForms.Guna2Button btnCancel;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox pbBack;
     }
 }

@@ -147,7 +147,7 @@
             this.btnSend.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.btnSend.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSend.ForeColor = System.Drawing.Color.DimGray;
-            this.btnSend.Location = new System.Drawing.Point(53, 452);
+            this.btnSend.Location = new System.Drawing.Point(72, 452);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(129, 52);
             this.btnSend.TabIndex = 38;
@@ -198,7 +198,7 @@
             this.btnCancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.DimGray;
-            this.btnCancel.Location = new System.Drawing.Point(323, 452);
+            this.btnCancel.Location = new System.Drawing.Point(340, 452);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(129, 52);
             this.btnCancel.TabIndex = 42;

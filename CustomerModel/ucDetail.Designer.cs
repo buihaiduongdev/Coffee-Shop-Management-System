@@ -30,10 +30,12 @@
         {
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.flpOrderItems = new System.Windows.Forms.FlowLayoutPanel();
-            this.ucItemOrder1 = new Restaurant_Management_System.CustomerModel.ucItemOrder();
             this.lblOrderID = new System.Windows.Forms.Label();
+            this.pbBack = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.ucItemOrder1 = new Restaurant_Management_System.CustomerModel.ucItemOrder();
             this.guna2Panel2.SuspendLayout();
             this.flpOrderItems.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel2
@@ -42,11 +44,12 @@
             this.guna2Panel2.BorderColor = System.Drawing.Color.White;
             this.guna2Panel2.BorderRadius = 35;
             this.guna2Panel2.Controls.Add(this.flpOrderItems);
+            this.guna2Panel2.Controls.Add(this.pbBack);
             this.guna2Panel2.Controls.Add(this.lblOrderID);
             this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(220)))));
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1237, 778);
+            this.guna2Panel2.Size = new System.Drawing.Size(1237, 790);
             this.guna2Panel2.TabIndex = 30;
             // 
             // flpOrderItems
@@ -56,13 +59,6 @@
             this.flpOrderItems.Name = "flpOrderItems";
             this.flpOrderItems.Size = new System.Drawing.Size(1234, 668);
             this.flpOrderItems.TabIndex = 28;
-            // 
-            // ucItemOrder1
-            // 
-            this.ucItemOrder1.Location = new System.Drawing.Point(3, 3);
-            this.ucItemOrder1.Name = "ucItemOrder1";
-            this.ucItemOrder1.Size = new System.Drawing.Size(465, 292);
-            this.ucItemOrder1.TabIndex = 0;
             // 
             // lblOrderID
             // 
@@ -75,15 +71,37 @@
             this.lblOrderID.TabIndex = 19;
             this.lblOrderID.Text = "Chi tiết đơn hàng";
             // 
+            // pbBack
+            // 
+            this.pbBack.Image = global::Restaurant_Management_System.Properties.Resources.back_button;
+            this.pbBack.ImageRotate = 0F;
+            this.pbBack.Location = new System.Drawing.Point(6, 733);
+            this.pbBack.Margin = new System.Windows.Forms.Padding(4);
+            this.pbBack.Name = "pbBack";
+            this.pbBack.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.pbBack.Size = new System.Drawing.Size(47, 33);
+            this.pbBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbBack.TabIndex = 23;
+            this.pbBack.TabStop = false;
+            this.pbBack.Click += new System.EventHandler(this.pbBack_Click);
+            // 
+            // ucItemOrder1
+            // 
+            this.ucItemOrder1.Location = new System.Drawing.Point(3, 3);
+            this.ucItemOrder1.Name = "ucItemOrder1";
+            this.ucItemOrder1.Size = new System.Drawing.Size(465, 292);
+            this.ucItemOrder1.TabIndex = 0;
+            // 
             // ucDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2Panel2);
             this.Name = "ucDetail";
-            this.Size = new System.Drawing.Size(1237, 778);
+            this.Size = new System.Drawing.Size(1237, 790);
             this.guna2Panel2.ResumeLayout(false);
             this.flpOrderItems.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbBack)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -94,5 +112,6 @@
         private System.Windows.Forms.Label lblOrderID;
         private System.Windows.Forms.FlowLayoutPanel flpOrderItems;
         private ucItemOrder ucItemOrder1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox pbBack;
     }
 }
