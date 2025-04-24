@@ -77,7 +77,7 @@ namespace Restaurant_Management_System
 
         private void btnStaff_Click(object sender, EventArgs e)
         {
-            AddControls(new frmStaffView());
+            AddControls(new frmStaffView(manager));
         }
 
 

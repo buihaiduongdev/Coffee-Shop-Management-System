@@ -19,12 +19,14 @@ namespace Restaurant_Management_System.View
 {
     public partial class frmStaffView : Form
     {
-        public frmStaffView()
+        private Employee manager;
+        public frmStaffView(Employee manager)
         {
             InitializeComponent();
+            this.manager = manager;
         }
 
-        Color ButtonEnabled = Color.CornflowerBlue;
+        Color ButtonEnabled = Color.FromArgb(1, 255, 192, 128);
         Color ButtonDisable = Color.Silver;
 
         private void frmStaffView_Load(object sender, EventArgs e)
@@ -313,6 +315,12 @@ namespace Restaurant_Management_System.View
 
                 }
             }
+        }
+
+        private void btnSaveAsReport_Click(object sender, EventArgs e)
+        {
+            frmEmployeeReportView report = new frmEmployeeReportView(manager);
+            report.ShowDialog();
         }
     }
 }

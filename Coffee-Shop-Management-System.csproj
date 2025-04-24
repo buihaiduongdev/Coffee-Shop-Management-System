@@ -36,6 +36,7 @@
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="EPPlus, Version=8.0.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
       <HintPath>packages\EPPlus.8.0.1\lib\net462\EPPlus.dll</HintPath>
     </Reference>
@@ -83,6 +84,7 @@
       <HintPath>packages\System.Security.Cryptography.Xml.8.0.2\lib\net462\System.Security.Cryptography.Xml.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
@@ -130,6 +132,11 @@
     <Compile Include="BaristaModel\ucKitchen.Designer.cs">
       <DependentUpon>ucKitchen.cs</DependentUpon>
     </Compile>
+    <Compile Include="CoffeeShopDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoffeeShopDS.xsd</DependentUpon>
+    </Compile>
     <Compile Include="CustomerModel\feedback.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,8 +147,8 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EmployeeReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
-    <Compile Include="EmployeeReport1.cs" />
     <Compile Include="Model\frmCart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +184,12 @@
     </Compile>
     <Compile Include="CustomerModel\frmProductDetail.Designer.cs">
       <DependentUpon>frmProductDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmEmployeeReportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmEmployeeReportView.Designer.cs">
+      <DependentUpon>frmEmployeeReportView.cs</DependentUpon>
     </Compile>
     <Compile Include="View\frmReserveTable.cs">
       <SubType>Form</SubType>
@@ -378,9 +391,21 @@
       <DependentUpon>frmTableViews.cs</DependentUpon>
     </Compile>
     <Content Include="Resources\BlankPicture.png" />
+    <None Include="CoffeeShopDS.xsc">
+      <DependentUpon>CoffeeShopDS.xsd</DependentUpon>
+    </None>
+    <None Include="CoffeeShopDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CoffeeShopDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CoffeeShopDS.xss">
+      <DependentUpon>CoffeeShopDS.xsd</DependentUpon>
+    </None>
     <None Include="Resources\change.png" />
     <Content Include="Resources\CoffeeTableIcon %282%29.png" />
     <Content Include="Resources\coffeetableIcon.png" />
+    <Content Include="Resources\report.png" />
     <Content Include="Resources\excel.png" />
     <Content Include="Resources\free.png" />
     <Content Include="Resources\reservation.png" />
@@ -415,6 +440,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMainEmployee.resx">
       <DependentUpon>frmMainEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmEmployeeReportView.resx">
+      <DependentUpon>frmEmployeeReportView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmSettingView.resx">
       <DependentUpon>frmSettingView.cs</DependentUpon>
