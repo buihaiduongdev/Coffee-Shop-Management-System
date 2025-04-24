@@ -57,7 +57,6 @@ D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Manage
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmProductAdd.resources
 D:\LEARNING\New folder\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmProductView.resources
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Coffee-Shop-Management-System.csproj.AssemblyReference.cache
-S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmMain.resources
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmBillList.resources
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmCategoryAdd.resources
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmCheckout.resources
@@ -71,7 +70,6 @@ S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.SampleAdd.resources
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.SampleView.resources
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmCategoryView.resources
-S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmKitchenView.resources
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmProductView.resources
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmStaffView.resources
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmTableView.resources
@@ -86,7 +84,6 @@ S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\Guna.UI2.dll
 S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlClient.dll
 S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\System.Data.SqlClient.xml
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Coffee-S.3221D379.Up2Date
-S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmCustomer.resources
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Barista.frmBarista.resources
 S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Receptionist.frmReceptionist.resources
 C:\Users\haidu\Source\Repos\Coffee-Shop-Management-System\bin\Debug\Restaurant Management System.exe.config
@@ -648,3 +645,27 @@ D:\LEARNING\Winform\Coffee-Shop-Management-System\bin\Debug\System.Security.Cryp
 D:\LEARNING\Winform\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.feedback.resources
 D:\LEARNING\Winform\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.ucItemOrder.resources
 D:\LEARNING\Winform\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Setting.frmSettingView.resources
+S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\EPPlus.dll
+S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\EPPlus.Interfaces.dll
+S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\System.Buffers.dll
+S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\System.ComponentModel.Annotations.dll
+S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\System.Memory.dll
+S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\System.Numerics.Vectors.dll
+S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\System.Security.Cryptography.Xml.dll
+S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\EPPlus.xml
+S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\System.Buffers.xml
+S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\System.Memory.xml
+S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\System.Numerics.Vectors.xml
+S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+S:\WINFORM\Coffee-Shop-Management-System\bin\Debug\System.Security.Cryptography.Xml.xml
+S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.feedback.resources
+S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.frmDetailInfo.resources
+S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.ucDetail.resources
+S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.CustomerModel.ucItemOrder.resources
+S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Setting.frmSettingView.resources
+S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmMainEmployee.resources
+S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmMenu.resources
+S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmMainManager.resources

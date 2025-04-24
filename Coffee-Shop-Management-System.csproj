@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="EPPlus, Version=8.0.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
       <HintPath>packages\EPPlus.8.0.1\lib\net462\EPPlus.dll</HintPath>
     </Reference>
@@ -133,17 +136,23 @@
     <Compile Include="CustomerModel\feedback.Designer.cs">
       <DependentUpon>feedback.cs</DependentUpon>
     </Compile>
-    <Compile Include="CustomerModel\frmCart.cs">
+    <Compile Include="EmployeeReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeReport.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeReport1.cs" />
+    <Compile Include="Model\frmCart.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomerModel\frmCart.Designer.cs">
+    <Compile Include="Model\frmCart.Designer.cs">
       <DependentUpon>frmCart.cs</DependentUpon>
     </Compile>
-    <Compile Include="CustomerModel\frmCustomer.cs">
+    <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomerModel\frmCustomer.Designer.cs">
-      <DependentUpon>frmCustomer.cs</DependentUpon>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomerModel\frmDetailInfo.cs">
       <SubType>Form</SubType>
@@ -169,18 +178,18 @@
     <Compile Include="CustomerModel\frmProductDetail.Designer.cs">
       <DependentUpon>frmProductDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="CustomerModel\frmReserveTable.cs">
+    <Compile Include="View\frmReserveTable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomerModel\frmReserveTable.Designer.cs">
+    <Compile Include="View\frmReserveTable.Designer.cs">
       <DependentUpon>frmReserveTable.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomerModel\Item.cs" />
     <Compile Include="CustomerModel\orderdetailInfo.cs" />
     <Compile Include="CustomerModel\OrderDetailProduct.cs" />
     <Compile Include="CustomerModel\orderInfo.cs" />
-    <Compile Include="CustomerModel\Product.cs" />
-    <Compile Include="CustomerModel\Table.cs" />
+    <Compile Include="Backend\Product.cs" />
+    <Compile Include="Backend\Table.cs" />
     <Compile Include="CustomerModel\ucConfirm.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -199,24 +208,30 @@
     <Compile Include="CustomerModel\ucItemOrder.Designer.cs">
       <DependentUpon>ucItemOrder.cs</DependentUpon>
     </Compile>
-    <Compile Include="CustomerModel\ucTable.cs">
+    <Compile Include="Model\ucTable.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CustomerModel\ucTable.Designer.cs">
+    <Compile Include="Model\ucTable.Designer.cs">
       <DependentUpon>ucTable.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseHelper.cs" />
-    <Compile Include="frmLogin2.cs">
+    <Compile Include="View\frmLogin2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin2.Designer.cs">
+    <Compile Include="View\frmLogin2.Designer.cs">
       <DependentUpon>frmLogin2.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMain.cs">
+    <Compile Include="frmMainManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMain.Designer.cs">
-      <DependentUpon>frmMain.cs</DependentUpon>
+    <Compile Include="frmMainManager.Designer.cs">
+      <DependentUpon>frmMainManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainEmployee.Designer.cs">
+      <DependentUpon>frmMainEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\frmCategoryAdd.cs">
       <SubType>Form</SubType>
@@ -326,12 +341,6 @@
     <Compile Include="View\frmCategoryView.Designer.cs">
       <DependentUpon>frmCategoryView.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\frmKitchenView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\frmKitchenView.Designer.cs">
-      <DependentUpon>frmKitchenView.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\frmProductView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -400,6 +409,13 @@
     <EmbeddedResource Include="CustomerModel\ucItemOrder.resx">
       <DependentUpon>ucItemOrder.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EmployeeReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainEmployee.resx">
+      <DependentUpon>frmMainEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\frmSettingView.resx">
       <DependentUpon>frmSettingView.cs</DependentUpon>
     </EmbeddedResource>
@@ -419,10 +435,10 @@
     <Content Include="Resources\ProductIcon.png" />
     <Content Include="Resources\Products.png" />
     <Content Include="Resources\Screenshot 2025-03-25 194756.png" />
-    <EmbeddedResource Include="CustomerModel\frmReserveTable.resx">
+    <EmbeddedResource Include="View\frmReserveTable.resx">
       <DependentUpon>frmReserveTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CustomerModel\ucTable.resx">
+    <EmbeddedResource Include="Model\ucTable.resx">
       <DependentUpon>ucTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmHome.resx">
@@ -444,20 +460,20 @@
     <EmbeddedResource Include="BaristaModel\ucKitchen.resx">
       <DependentUpon>ucKitchen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CustomerModel\frmCart.resx">
+    <EmbeddedResource Include="Model\frmCart.resx">
       <DependentUpon>frmCart.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CustomerModel\frmCustomer.resx">
-      <DependentUpon>frmCustomer.cs</DependentUpon>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerModel\frmProductDetail.resx">
       <DependentUpon>frmProductDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin2.resx">
+    <EmbeddedResource Include="View\frmLogin2.resx">
       <DependentUpon>frmLogin2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMain.resx">
-      <DependentUpon>frmMain.cs</DependentUpon>
+    <EmbeddedResource Include="frmMainManager.resx">
+      <DependentUpon>frmMainManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\frmCategoryAdd.resx">
       <DependentUpon>frmCategoryAdd.cs</DependentUpon>
@@ -511,9 +527,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmCategoryView.resx">
       <DependentUpon>frmCategoryView.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\frmKitchenView.resx">
-      <DependentUpon>frmKitchenView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmProductView.resx">
       <DependentUpon>frmProductView.cs</DependentUpon>
@@ -601,6 +614,9 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

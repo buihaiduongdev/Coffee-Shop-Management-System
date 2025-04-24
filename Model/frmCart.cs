@@ -25,7 +25,7 @@ namespace Restaurant_Management_System.Customer
 {
     public partial class frmCart : Form
     {
-        private int customerID;
+        private int employeeID;
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn(
@@ -55,12 +55,12 @@ namespace Restaurant_Management_System.Customer
         }
 
         BindingList<Item> itemList;
-        public frmCart(BindingList<Item> cart, int CustomerID)
+        public frmCart(BindingList<Item> cart, int employeeID)
         {
             InitializeComponent();
             itemList = cart;
             itemList.ListChanged += (s, e) => loadItem();
-            customerID = CustomerID;
+            this.employeeID = employeeID;
         }
 
 
@@ -184,10 +184,10 @@ namespace Restaurant_Management_System.Customer
                             
                 }
 
-                string query2 = "INSERT INTO Orders (CustomerID, OrderDay, OrderType, PaymentType) VALUES " +
-                    "(@CustomerID, @OrderDay, @OrderType, @PaymentType); SELECT SCOPE_IDENTITY();";
+                string query2 = "INSERT INTO Orders (EmployeeID, OrderDay, OrderType, PaymentType) VALUES " +
+                    "(@EmployeeID, @OrderDay, @OrderType, @PaymentType); SELECT SCOPE_IDENTITY();";
                 SqlParameter[] parameters = {
-                    new SqlParameter("@CustomerID", customerID),
+                    new SqlParameter("@EmployeeID", employeeID),
                     new SqlParameter("@OrderDay", currentDateTime),
                     new SqlParameter("@OrderType", orderType),
                     new SqlParameter("@PaymentType", paymentType)
@@ -199,7 +199,7 @@ namespace Restaurant_Management_System.Customer
                 string query3 = "INSERT INTO [Order Details] (OrderID, ProductID, UnitPrice, Quantity, Ice, Size, Sugar) " +
                     "VALUES (@OrderID, @ProductID, @UnitPrice, @Quantity, @Ice, @Size, @Sugar); SELECT SCOPE_IDENTITY();";
 
-                string query4 = "INSERT INTO Preparations (PreparationID,Status, TableID) VALUES (@PreparationID,@Status, @TableID)";
+            
                 foreach (DataGridViewRow row in dgvCart.Rows)
                 {
                     if (!row.IsNewRow && row.Cells["colProductName"].Value.ToString() != "Tổng")
@@ -222,13 +222,6 @@ namespace Restaurant_Management_System.Customer
                         };
                         object detailResult = DatabaseHelper.ExecuteScalar(query3, parameters2);
                         int orderDetailID = Convert.ToInt32(detailResult);
-                        SqlParameter[] parameters3 = {
-                            new SqlParameter("@PreparationID", orderDetailID),
-                            new SqlParameter("@Status", "Pending"),
-                            new SqlParameter("@TableID", (object)tableID ?? DBNull.Value
-)
-                        };
-                        DatabaseHelper.ExecuteNonQuery(query4, parameters3);
                     }
                 }
                 itemList.Clear();

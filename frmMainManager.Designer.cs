@@ -1,6 +1,6 @@
 ﻿namespace Restaurant_Management_System
 {
-    partial class frmMain
+    partial class frmMainManager
     {
         /// <summary>
         /// Required designer variable.

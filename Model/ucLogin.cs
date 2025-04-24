@@ -54,40 +54,16 @@ namespace Restaurant_Management_System.Model
 
                     if (emp.Role == "Manager")
                     {
-                        frmMain f = new frmMain(emp);
+                        frmMainManager f = new frmMainManager(emp);
                         f.ShowDialog();
                     }
-                    else if (emp.Role == "Barista")
-                    {
-                        frmBarista b = new frmBarista(emp); 
-                        b.ShowDialog();
-                    }
+         
                     else if (emp.Role == "Receptionist")
                     {
-                        frmReceptionist b = new frmReceptionist(emp);
+                        frmMainEmployee b = new frmMainEmployee(emp);
                         b.ShowDialog();
                     }
                     this.Show();
-                    txtUsername.Clear();
-                    txtPassword.Clear();
-                    txtUsername.Focus();
-                }
-                else
-                {
-                    MessageBox.Show("Tài khoản hoặc mật khẩu không đúng.");
-                }
-            }
-            else
-            {
-
-                CustomerInfo cus = AccountDAO.CheckCustomerLogin(username, password);
-                if (cus != null)
-                {
-                    this.Hide();
-                    frmCustomer f = new frmCustomer(cus); // truyền Customer
-                    f.ShowDialog();
-                    this.Show();
-
                     txtUsername.Clear();
                     txtPassword.Clear();
                     txtUsername.Focus();

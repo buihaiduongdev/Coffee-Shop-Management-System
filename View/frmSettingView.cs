@@ -20,7 +20,7 @@ namespace Restaurant_Management_System.Setting
             txtEmployeeID.Enabled = false;
 
             // Thêm danh sách vai trò cố định vào cbbRole
-            cbbRole.Items.AddRange(new string[] { "Manager", "Barista", "Receptionist" });
+            cbbRole.Items.AddRange(new string[] { "Manager", "Receptionist" });
             // Cấu hình nền và màu chữ tổng thể
             txtAbout.BackColor = Color.FromArgb(245, 238, 230);
             txtAbout.ForeColor = Color.FromArgb(40, 26, 13); 
@@ -173,7 +173,6 @@ namespace Restaurant_Management_System.Setting
             txtLastName.Enabled = true;
             txtFirstName.Enabled = true;
             txtPhone.Enabled = true;
-            cbbRole.Enabled = true;
         }
 
         private void btnUploadImage_Click(object sender, EventArgs e)

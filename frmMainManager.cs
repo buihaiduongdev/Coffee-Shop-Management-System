@@ -14,19 +14,19 @@ using System.Windows.Forms;
 //sửa check state cho icon thành cùng loại màu trắng
 namespace Restaurant_Management_System
 {
-    public partial class frmMain : Form
+    public partial class frmMainManager : Form
     {
         private static Panel CenterPanel = new Panel();
         private Employee manager;
         private int id;
         //
-        public frmMain(Employee emp)
+        public frmMainManager(Employee emp)
         {
             InitializeComponent();
             manager = emp;
             id = manager.ID;
         }
-        public frmMain(){
+        public frmMainManager(){
             InitializeComponent();
         }
         
@@ -81,10 +81,7 @@ namespace Restaurant_Management_System
         }
 
 
-        private void btnKitchen_Click(object sender, EventArgs e)
-        {
-            AddControls(new frmKitchenView());
-        }
+
 
 
         private void btnSlide_Click(object sender, EventArgs e)

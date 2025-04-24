@@ -17,18 +17,18 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Header;
 
 namespace Restaurant_Management_System.Customer
 {
-    public partial class frmCustomer : Form
+    public partial class frmMenu : Form
     {
-        private CustomerInfo customr;
-        private int customerID;
-        public frmCustomer(CustomerInfo cus)
+        private Employee emp;
+        private int employeeID;
+        public frmMenu(Employee emp)
         {
             InitializeComponent();
-            customr = cus;
-            customerID = cus.ID;
+            this.emp = emp;
+            employeeID = emp.ID;
         }
 
-        public frmCustomer()
+        public frmMenu()
         {
             InitializeComponent();
         }
@@ -195,7 +195,7 @@ namespace Restaurant_Management_System.Customer
         }
         private void pbCart_Click(object sender, EventArgs e)
         {
-            frmCart fCart = new frmCart(cart, customerID);
+            frmCart fCart = new frmCart(cart, employeeID);
             fCart.ShowDialog();
 
             updateCart();
@@ -234,7 +234,7 @@ namespace Restaurant_Management_System.Customer
 
         private void btnOrders_Click(object sender, EventArgs e)
         {
-            frmInfoOrder frmInfoOrder = new frmInfoOrder(customerID);
+            frmInfoOrder frmInfoOrder = new frmInfoOrder(employeeID);
             frmInfoOrder.Show();
         }
     }

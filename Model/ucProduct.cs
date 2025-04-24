@@ -96,7 +96,7 @@ namespace Restaurant_Management_System.Model
 
             detailForm.ShowDialog();
 
-            if (this.FindForm() is frmCustomer mainFormRestored)
+            if (this.FindForm() is frmMenu mainFormRestored)
             {
                 mainFormRestored.Show();
             }
