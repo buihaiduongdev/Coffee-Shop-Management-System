@@ -185,11 +185,23 @@
     <Compile Include="CustomerModel\frmProductDetail.Designer.cs">
       <DependentUpon>frmProductDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\frmEmployeeReportView.cs">
+    <Compile Include="ProductReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reciept.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reciept.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\frmReportView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\frmEmployeeReportView.Designer.cs">
-      <DependentUpon>frmEmployeeReportView.cs</DependentUpon>
+    <Compile Include="View\frmReportView.Designer.cs">
+      <DependentUpon>frmReportView.cs</DependentUpon>
     </Compile>
     <Compile Include="View\frmReserveTable.cs">
       <SubType>Form</SubType>
@@ -441,8 +453,16 @@
     <EmbeddedResource Include="frmMainEmployee.resx">
       <DependentUpon>frmMainEmployee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\frmEmployeeReportView.resx">
-      <DependentUpon>frmEmployeeReportView.cs</DependentUpon>
+    <EmbeddedResource Include="ProductReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProductReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reciept.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reciept.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmReportView.resx">
+      <DependentUpon>frmReportView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmSettingView.resx">
       <DependentUpon>frmSettingView.cs</DependentUpon>

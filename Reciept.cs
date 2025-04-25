@@ -16,14 +16,14 @@ namespace Restaurant_Management_System {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class EmployeeReport : ReportClass {
+    public class Reciept : ReportClass {
         
-        public EmployeeReport() {
+        public Reciept() {
         }
         
         public override string ResourceName {
             get {
-                return "EmployeeReport.rpt";
+                return "Reciept.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace Restaurant_Management_System {
         
         public override string FullResourceName {
             get {
-                return "Restaurant_Management_System.EmployeeReport.rpt";
+                return "Restaurant_Management_System.Reciept.rpt";
             }
             set {
                 // Do nothing
@@ -90,7 +90,7 @@ namespace Restaurant_Management_System {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_ManagerName {
+        public CrystalDecisions.Shared.IParameterField Parameter_Payment {
             get {
                 return this.DataDefinition.ParameterFields[0];
             }
@@ -98,17 +98,33 @@ namespace Restaurant_Management_System {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Role {
+        public CrystalDecisions.Shared.IParameterField Parameter_OrderID {
             get {
                 return this.DataDefinition.ParameterFields[1];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_Table {
+            get {
+                return this.DataDefinition.ParameterFields[2];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_Receptionist {
+            get {
+                return this.DataDefinition.ParameterFields[3];
             }
         }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedEmployeeReport : Component, ICachedReport {
+    public class CachedReciept : Component, ICachedReport {
         
-        public CachedEmployeeReport() {
+        public CachedReciept() {
         }
         
         [Browsable(false)]
@@ -145,7 +161,7 @@ namespace Restaurant_Management_System {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            EmployeeReport rpt = new EmployeeReport();
+            Reciept rpt = new Reciept();
             rpt.Site = this.Site;
             return rpt;
         }

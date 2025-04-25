@@ -33,6 +33,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductView));
             this.dgvProduct = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dgvSno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dgvdel = new System.Windows.Forms.DataGridViewImageColumn();
             this.label17 = new System.Windows.Forms.Label();
             this.btnAddProduct = new Guna.UI2.WinForms.Guna2Button();
             this.labelNumberResultFound = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -41,13 +48,7 @@
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.btnSaveExcel = new Guna.UI2.WinForms.Guna2Button();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dgvSno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dgvdel = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnSaveReport = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,133 +119,6 @@
             this.dgvProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduct_CellContentClick);
             this.dgvProduct.ColumnHeaderCellChanged += new System.Windows.Forms.DataGridViewColumnEventHandler(this.dgvProduct_ColumnHeaderCellChanged);
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(56, 23);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(185, 59);
-            this.label17.TabIndex = 13;
-            this.label17.Text = "Product";
-            // 
-            // btnAddProduct
-            // 
-            this.btnAddProduct.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnAddProduct.BorderRadius = 10;
-            this.btnAddProduct.BorderThickness = 1;
-            this.btnAddProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAddProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAddProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnAddProduct.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddProduct.ForeColor = System.Drawing.Color.White;
-            this.btnAddProduct.Location = new System.Drawing.Point(1025, 88);
-            this.btnAddProduct.Name = "btnAddProduct";
-            this.btnAddProduct.Size = new System.Drawing.Size(180, 51);
-            this.btnAddProduct.TabIndex = 15;
-            this.btnAddProduct.Text = "+  Add Products";
-            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
-            // 
-            // labelNumberResultFound
-            // 
-            this.labelNumberResultFound.AutoSize = false;
-            this.labelNumberResultFound.BackColor = System.Drawing.Color.Transparent;
-            this.labelNumberResultFound.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNumberResultFound.ForeColor = System.Drawing.Color.Gray;
-            this.labelNumberResultFound.Location = new System.Drawing.Point(30, 167);
-            this.labelNumberResultFound.Name = "labelNumberResultFound";
-            this.labelNumberResultFound.Size = new System.Drawing.Size(211, 33);
-            this.labelNumberResultFound.TabIndex = 16;
-            this.labelNumberResultFound.Text = "1 results found           ";
-            // 
-            // cbbCategories
-            // 
-            this.cbbCategories.BackColor = System.Drawing.Color.Transparent;
-            this.cbbCategories.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.cbbCategories.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbbCategories.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbCategories.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbCategories.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbCategories.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbbCategories.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbbCategories.ItemHeight = 36;
-            this.cbbCategories.Location = new System.Drawing.Point(763, 97);
-            this.cbbCategories.Name = "cbbCategories";
-            this.cbbCategories.Size = new System.Drawing.Size(202, 42);
-            this.cbbCategories.TabIndex = 17;
-            this.cbbCategories.SelectedIndexChanged += new System.EventHandler(this.cbbCategories_SelectedIndexChanged);
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewImageColumn1.FillWeight = 50F;
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::Restaurant_Management_System.Properties.Resources.store;
-            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn1.MinimumWidth = 50;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Width = 50;
-            // 
-            // dataGridViewImageColumn2
-            // 
-            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dataGridViewImageColumn2.FillWeight = 50F;
-            this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = global::Restaurant_Management_System.Properties.Resources.delete;
-            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn2.MinimumWidth = 50;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.Width = 50;
-            // 
-            // btnSaveExcel
-            // 
-            this.btnSaveExcel.BorderRadius = 5;
-            this.btnSaveExcel.BorderThickness = 2;
-            this.btnSaveExcel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSaveExcel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSaveExcel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSaveExcel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSaveExcel.FillColor = System.Drawing.Color.White;
-            this.btnSaveExcel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveExcel.ForeColor = System.Drawing.Color.Black;
-            this.btnSaveExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveExcel.Image")));
-            this.btnSaveExcel.ImageOffset = new System.Drawing.Point(40, 0);
-            this.btnSaveExcel.Location = new System.Drawing.Point(1221, 88);
-            this.btnSaveExcel.Name = "btnSaveExcel";
-            this.btnSaveExcel.Size = new System.Drawing.Size(180, 51);
-            this.btnSaveExcel.TabIndex = 23;
-            this.btnSaveExcel.Text = "Save as ";
-            this.btnSaveExcel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSaveExcel.TextOffset = new System.Drawing.Point(20, 0);
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearch.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.txtSearch.BorderRadius = 5;
-            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.DefaultText = "";
-            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSearch.ForeColor = System.Drawing.Color.Black;
-            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.IconLeft = global::Restaurant_Management_System.Properties.Resources.search_interface_symbol;
-            this.txtSearch.Location = new System.Drawing.Point(13, 88);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.PasswordChar = '\0';
-            this.txtSearch.PlaceholderText = "Search by, id, name, category";
-            this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(608, 51);
-            this.txtSearch.TabIndex = 14;
-            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
-            // 
             // dgvSno
             // 
             this.dgvSno.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
@@ -304,12 +178,159 @@
             this.dgvdel.Name = "dgvdel";
             this.dgvdel.Width = 50;
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(56, 23);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(185, 59);
+            this.label17.TabIndex = 13;
+            this.label17.Text = "Product";
+            // 
+            // btnAddProduct
+            // 
+            this.btnAddProduct.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnAddProduct.BorderRadius = 10;
+            this.btnAddProduct.BorderThickness = 1;
+            this.btnAddProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddProduct.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddProduct.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddProduct.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddProduct.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnAddProduct.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddProduct.ForeColor = System.Drawing.Color.White;
+            this.btnAddProduct.Location = new System.Drawing.Point(1006, 88);
+            this.btnAddProduct.Name = "btnAddProduct";
+            this.btnAddProduct.Size = new System.Drawing.Size(180, 51);
+            this.btnAddProduct.TabIndex = 15;
+            this.btnAddProduct.Text = "+  Add Products";
+            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
+            // 
+            // labelNumberResultFound
+            // 
+            this.labelNumberResultFound.AutoSize = false;
+            this.labelNumberResultFound.BackColor = System.Drawing.Color.Transparent;
+            this.labelNumberResultFound.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNumberResultFound.ForeColor = System.Drawing.Color.Gray;
+            this.labelNumberResultFound.Location = new System.Drawing.Point(30, 167);
+            this.labelNumberResultFound.Name = "labelNumberResultFound";
+            this.labelNumberResultFound.Size = new System.Drawing.Size(211, 33);
+            this.labelNumberResultFound.TabIndex = 16;
+            this.labelNumberResultFound.Text = "1 results found           ";
+            // 
+            // cbbCategories
+            // 
+            this.cbbCategories.BackColor = System.Drawing.Color.Transparent;
+            this.cbbCategories.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.cbbCategories.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbbCategories.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbCategories.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbCategories.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbCategories.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbbCategories.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbbCategories.ItemHeight = 36;
+            this.cbbCategories.Location = new System.Drawing.Point(767, 97);
+            this.cbbCategories.Name = "cbbCategories";
+            this.cbbCategories.Size = new System.Drawing.Size(202, 42);
+            this.cbbCategories.TabIndex = 17;
+            this.cbbCategories.SelectedIndexChanged += new System.EventHandler(this.cbbCategories_SelectedIndexChanged);
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewImageColumn1.FillWeight = 50F;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::Restaurant_Management_System.Properties.Resources.store;
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn1.MinimumWidth = 50;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Width = 50;
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dataGridViewImageColumn2.FillWeight = 50F;
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.Image = global::Restaurant_Management_System.Properties.Resources.delete;
+            this.dataGridViewImageColumn2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn2.MinimumWidth = 50;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.Width = 50;
+            // 
+            // btnSaveExcel
+            // 
+            this.btnSaveExcel.BorderRadius = 5;
+            this.btnSaveExcel.BorderThickness = 2;
+            this.btnSaveExcel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSaveExcel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSaveExcel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSaveExcel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSaveExcel.FillColor = System.Drawing.Color.White;
+            this.btnSaveExcel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveExcel.ForeColor = System.Drawing.Color.Black;
+            this.btnSaveExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveExcel.Image")));
+            this.btnSaveExcel.Location = new System.Drawing.Point(1223, 88);
+            this.btnSaveExcel.Name = "btnSaveExcel";
+            this.btnSaveExcel.Size = new System.Drawing.Size(64, 51);
+            this.btnSaveExcel.TabIndex = 23;
+            this.btnSaveExcel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSaveExcel.TextOffset = new System.Drawing.Point(20, 0);
+            this.btnSaveExcel.Click += new System.EventHandler(this.btnSaveExcel_Click);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.txtSearch.BorderRadius = 5;
+            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearch.DefaultText = "";
+            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSearch.ForeColor = System.Drawing.Color.Black;
+            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.IconLeft = global::Restaurant_Management_System.Properties.Resources.search_interface_symbol;
+            this.txtSearch.Location = new System.Drawing.Point(13, 88);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PasswordChar = '\0';
+            this.txtSearch.PlaceholderText = "Search by, id, name, category";
+            this.txtSearch.SelectedText = "";
+            this.txtSearch.Size = new System.Drawing.Size(608, 51);
+            this.txtSearch.TabIndex = 14;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
+            // btnSaveReport
+            // 
+            this.btnSaveReport.BorderRadius = 5;
+            this.btnSaveReport.BorderThickness = 2;
+            this.btnSaveReport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSaveReport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSaveReport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSaveReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSaveReport.FillColor = System.Drawing.Color.White;
+            this.btnSaveReport.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveReport.ForeColor = System.Drawing.Color.Black;
+            this.btnSaveReport.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveReport.Image")));
+            this.btnSaveReport.Location = new System.Drawing.Point(1309, 88);
+            this.btnSaveReport.Name = "btnSaveReport";
+            this.btnSaveReport.Size = new System.Drawing.Size(64, 51);
+            this.btnSaveReport.TabIndex = 24;
+            this.btnSaveReport.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSaveReport.TextOffset = new System.Drawing.Point(20, 0);
+            this.btnSaveReport.Click += new System.EventHandler(this.btnSaveReport_Click);
+            // 
             // frmProductView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1400, 703);
+            this.Controls.Add(this.btnSaveReport);
             this.Controls.Add(this.btnSaveExcel);
             this.Controls.Add(this.cbbCategories);
             this.Controls.Add(this.labelNumberResultFound);
@@ -346,5 +367,6 @@
         private System.Windows.Forms.DataGridViewImageColumn dgvedit;
         private System.Windows.Forms.DataGridViewImageColumn dgvdel;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
+        private Guna.UI2.WinForms.Guna2Button btnSaveReport;
     }
 }

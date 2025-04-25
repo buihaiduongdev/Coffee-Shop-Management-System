@@ -1,4 +1,5 @@
-﻿using Restaurant_Management_System.Backend;
+﻿using CrystalDecisions.CrystalReports.Engine;
+using Restaurant_Management_System.Backend;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,22 +13,19 @@ using System.Windows.Forms;
 
 namespace Restaurant_Management_System.View
 {
-    public partial class frmEmployeeReportView : Form
+    public partial class frmReportView : Form
     {
         private Employee manager;
-        public frmEmployeeReportView(Employee manager)
+        private ReportDocument report;
+        public frmReportView(Employee manager, ReportDocument report)
         {
             InitializeComponent();
             this.manager = manager;
+            this.report = report;
         }
         private void rpvReport_Load(object sender, EventArgs e)
-        {
-            string query = @"SELECT * FROM Employees";
-            DataTable dt = DatabaseHelper.ExecuteQuery(query);
-            EmployeeReport rpt = new EmployeeReport();
-            rpt.SetDataSource(dt);
-            rpt.SetParameterValue("ManagerName", "HElloo");
-            rpvReport.ReportSource = rpt;
+        { 
+            rpvReport.ReportSource = report;
             rpvReport.Refresh();
         }
 

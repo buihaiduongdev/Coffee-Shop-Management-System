@@ -195,7 +195,7 @@ namespace Restaurant_Management_System.Customer
         }
         private void pbCart_Click(object sender, EventArgs e)
         {
-            frmCart fCart = new frmCart(cart, employeeID);
+            frmCart fCart = new frmCart(cart, emp);
             fCart.ShowDialog();
 
             updateCart();

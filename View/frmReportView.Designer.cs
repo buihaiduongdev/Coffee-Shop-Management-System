@@ -1,6 +1,6 @@
 ﻿namespace Restaurant_Management_System.View
 {
-    partial class frmEmployeeReportView
+    partial class frmReportView
     {
         /// <summary>
         /// Required designer variable.
@@ -39,19 +39,19 @@
             this.rpvReport.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rpvReport.Location = new System.Drawing.Point(0, 0);
             this.rpvReport.Name = "rpvReport";
-            this.rpvReport.Size = new System.Drawing.Size(1102, 854);
+            this.rpvReport.Size = new System.Drawing.Size(1449, 854);
             this.rpvReport.TabIndex = 0;
             this.rpvReport.Load += new System.EventHandler(this.rpvReport_Load);
             // 
-            // frmEmployeeReportView
+            // frmReportView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1102, 854);
+            this.ClientSize = new System.Drawing.Size(1449, 854);
             this.Controls.Add(this.rpvReport);
-            this.Name = "frmEmployeeReportView";
+            this.Name = "frmReportView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmEmployeeReportView";
+            this.Text = "Xem báo cáo";
             this.Load += new System.EventHandler(this.frmEmployeeReportView_Load);
             this.ResumeLayout(false);
 

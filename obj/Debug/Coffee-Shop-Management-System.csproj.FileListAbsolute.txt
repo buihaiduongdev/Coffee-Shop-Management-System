@@ -684,7 +684,7 @@ D:\OOP\Coffee-Shop-Management-System\bin\Debug\CrystalDecisions.ReportAppServer.
 D:\OOP\Coffee-Shop-Management-System\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 D:\OOP\Coffee-Shop-Management-System\bin\Debug\stdole.dll
 D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmMainEmployee.resources
-D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmEmployeeReportView.resources
 D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Setting.frmSettingView.resources
 D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmMenu.resources
 D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmMainManager.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmReportView.resources

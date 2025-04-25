@@ -14,6 +14,7 @@ using System.Windows.Forms;
 using OfficeOpenXml;
 using System.IO;
 using System.Globalization;
+using System.Diagnostics.Tracing;
 
 namespace Restaurant_Management_System.View
 {
@@ -26,7 +27,7 @@ namespace Restaurant_Management_System.View
             this.manager = manager;
         }
 
-        Color ButtonEnabled = Color.FromArgb(1, 255, 192, 128);
+        Color ButtonEnabled = Color.FromArgb(255, 192, 128);
         Color ButtonDisable = Color.Silver;
 
         private void frmStaffView_Load(object sender, EventArgs e)
@@ -279,7 +280,7 @@ namespace Restaurant_Management_System.View
                 {
                     try
                     {
-                        ExcelPackage.License.SetNonCommercialPersonal("Hello");
+                        ExcelPackage.License.SetNonCommercialPersonal("Excel");
                         using (ExcelPackage pack = new ExcelPackage())
                         {
                             var ws = pack.Workbook.Worksheets.Add("Sheet1");
@@ -319,8 +320,31 @@ namespace Restaurant_Management_System.View
 
         private void btnSaveAsReport_Click(object sender, EventArgs e)
         {
-            frmEmployeeReportView report = new frmEmployeeReportView(manager);
-            report.ShowDialog();
+            string query = null;
+            string role = null;
+            {
+                if (btnAllPeople.FillColor == ButtonEnabled)
+                {
+                    query = @"SELECT * FROM Employees WHERE IsDeleted = 0";
+                    role = " ";
+                }
+                else
+                {
+                    if (btnBarista.FillColor == ButtonEnabled) role = btnBarista.Text;
+                    else if (btnManager.FillColor == ButtonEnabled) role = btnManager.Text;
+                    else if (btnReceptionist.FillColor == ButtonEnabled) role = btnReceptionist.Text;
+                    else if (btnWaiter.FillColor == ButtonEnabled) role = btnWaiter.Text;
+                    else role = btnWaiter.Text;
+                    query = $@"SELECT * FROM Employees WHERE Role = N'{role}' and IsDeleted = 0";
+                }
+                DataTable dt = DatabaseHelper.ExecuteQuery(query);
+                EmployeeReport rpt = new EmployeeReport();
+                rpt.SetDataSource(dt);
+                rpt.SetParameterValue("ManagerName", manager.LastName + " " + manager.FirstName);
+                rpt.SetParameterValue("Role", role);
+                frmReportView report = new frmReportView(manager, rpt);
+                report.ShowDialog();
+            }
         }
     }
 }

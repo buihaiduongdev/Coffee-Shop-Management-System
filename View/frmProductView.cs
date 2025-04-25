@@ -1,4 +1,5 @@
-﻿using Restaurant_Management_System.Backend;
+﻿using OfficeOpenXml;
+using Restaurant_Management_System.Backend;
 using Restaurant_Management_System.Model;
 using System;
 using System.Collections.Generic;
@@ -14,9 +15,11 @@ namespace Restaurant_Management_System.View
 {
     public partial class frmProductView : Form
     {
-        public frmProductView()
+        private Employee manager;
+        public frmProductView(Employee manager)
         {
             InitializeComponent();
+            this.manager = manager;
         }
         private DataTable dt;
 
@@ -186,6 +189,75 @@ namespace Restaurant_Management_System.View
         private void dgvProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnSaveExcel_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog save = new SaveFileDialog())
+            {
+                save.Filter = "Excel File |*.xlsx";
+                save.Title = "Chọn nơi lưu file Excel";
+                save.FileName = "SanPham.xlsx";
+
+                if (save.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        ExcelPackage.License.SetNonCommercialPersonal("Excel");
+                        using (ExcelPackage pack = new ExcelPackage())
+                        {
+                            var ws = pack.Workbook.Worksheets.Add("Sheet1");
+                            int month = DateTime.Now.Month;
+                            ws.Cells[1, 1].Value = $"DANH SÁCH SẢN PHẨM THÁNG {month}";
+                            ws.Cells[1, 1, 1, dgvProduct.Columns.Count - 1].Merge = true;
+                            ws.Cells[1, 1].Style.Font.Size = 20;
+                            ws.Cells[1, 1].Style.Font.Bold = true;
+                            ws.Cells[1, 1].Style.HorizontalAlignment = OfficeOpenXml.Style.ExcelHorizontalAlignment.Center;
+
+                            for (int i = 0; i < dgvProduct.Columns.Count - 2; i++)
+                            {
+                                ws.Cells[3, i + 1].Value = dgvProduct.Columns[i].HeaderText;
+                            }
+
+                            for (int i = 0; i < dgvProduct.Rows.Count; i++)
+                            {
+                                for (int j = 0; j < dgvProduct.Columns.Count - 2; j++)
+                                {
+                                    ws.Cells[i + 3, j + 1].Value = dgvProduct.Rows[i].Cells[j].Value?.ToString();
+                                }
+                            }
+
+                            FileInfo info = new FileInfo(save.FileName);
+                            pack.SaveAs(info);
+                            MessageBox.Show("Đã xuất Excel thành công!", "Thông báo");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Lỗi xuất file excel: " + ex.Message);
+                    }
+
+                }
+            }
+        }
+
+        private void btnSaveReport_Click(object sender, EventArgs e)
+        {
+            string query = null;
+            if (cbbCategories.Text == "Category")
+            {
+                query = @"SELECT * FROM Products WHERE IsDeleted = 0";
+            }
+            else
+            {
+                query = $@"SELECT * FROM Employees WHERE CategoryName = N'{cbbCategories.Text}' and IsDeleted = 0";
+            }
+            DataTable dt = DatabaseHelper.ExecuteQuery(query);
+            ProductReport rpt = new ProductReport();
+            rpt.SetDataSource(dt);
+            rpt.SetParameterValue("ManagerName", manager.LastName + " " + manager.FirstName);
+            frmReportView report = new frmReportView(manager, rpt);
+            report.ShowDialog();
         }
     }
 }

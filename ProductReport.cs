@@ -16,14 +16,14 @@ namespace Restaurant_Management_System {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class EmployeeReport : ReportClass {
+    public class ProductReport : ReportClass {
         
-        public EmployeeReport() {
+        public ProductReport() {
         }
         
         public override string ResourceName {
             get {
-                return "EmployeeReport.rpt";
+                return "ProductReport.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace Restaurant_Management_System {
         
         public override string FullResourceName {
             get {
-                return "Restaurant_Management_System.EmployeeReport.rpt";
+                return "Restaurant_Management_System.ProductReport.rpt";
             }
             set {
                 // Do nothing
@@ -95,20 +95,12 @@ namespace Restaurant_Management_System {
                 return this.DataDefinition.ParameterFields[0];
             }
         }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Role {
-            get {
-                return this.DataDefinition.ParameterFields[1];
-            }
-        }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedEmployeeReport : Component, ICachedReport {
+    public class CachedProductReport : Component, ICachedReport {
         
-        public CachedEmployeeReport() {
+        public CachedProductReport() {
         }
         
         [Browsable(false)]
@@ -145,7 +137,7 @@ namespace Restaurant_Management_System {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            EmployeeReport rpt = new EmployeeReport();
+            ProductReport rpt = new ProductReport();
             rpt.Site = this.Site;
             return rpt;
         }

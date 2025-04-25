@@ -20,12 +20,16 @@ using Restaurant_Management_System.Model;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Guna.UI2.WinForms;
 using Restaurant_Management_System.CustomerModel;
+using Restaurant_Management_System.View;
+using System.Collections;
+using System.Web.Security;
 
 namespace Restaurant_Management_System.Customer
 {
     public partial class frmCart : Form
     {
         private int employeeID;
+        private Employee emp;
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn(
@@ -55,12 +59,13 @@ namespace Restaurant_Management_System.Customer
         }
 
         BindingList<Item> itemList;
-        public frmCart(BindingList<Item> cart, int employeeID)
+        public frmCart(BindingList<Item> cart, Employee emp)
         {
             InitializeComponent();
             itemList = cart;
             itemList.ListChanged += (s, e) => loadItem();
-            this.employeeID = employeeID;
+            this.emp = emp;
+            this.employeeID = emp.ID;
         }
 
 
@@ -221,7 +226,7 @@ namespace Restaurant_Management_System.Customer
                             new SqlParameter("@Sugar", sugar)
                         };
                         object detailResult = DatabaseHelper.ExecuteScalar(query3, parameters2);
-                        int orderDetailID = Convert.ToInt32(detailResult);
+                        
                     }
                 }
                 itemList.Clear();
@@ -229,6 +234,21 @@ namespace Restaurant_Management_System.Customer
                 this.Close();
 
 
+                string query4 = @"SELECT p.ProductName, od.Size, od.Quantity, od.UnitPrice FROM Products p JOIN [Order Details] od ON p.ProductID = od.ProductID WHERE OrderID = @OrderID";
+                SqlParameter[] paraOrderID = { new SqlParameter("@OrderID", orderID) };
+                DataTable dt = DatabaseHelper.ExecuteQuery(query4, paraOrderID);
+                string query5 = $@"SELECT (FirstName + ' ' + LastName) FROM Employees WHERE EmployeeID = {employeeID}";
+                object ob = DatabaseHelper.ExecuteScalar(query5);
+                string employeeName = ob.ToString();
+                Reciept rpt = new Reciept();
+                rpt.SetDataSource(dt);
+                rpt.SetParameterValue("Receptionist", employeeName);
+                if (string.IsNullOrEmpty(tableID.ToString())) rpt.SetParameterValue("Table", "- 1");
+                else rpt.SetParameterValue("Table", tableID);
+                rpt.SetParameterValue("OrderID", orderID);
+                rpt.SetParameterValue("Payment", paymentType);
+                frmReportView report = new frmReportView(emp, rpt);
+                report.ShowDialog();
             }
             catch (Exception ex)
             {
