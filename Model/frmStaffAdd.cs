@@ -34,8 +34,8 @@ namespace Restaurant_Management_System.Model
             string role = cbRole.SelectedItem.ToString();
             string Strsalary = txtSalary.Text;
 
-            String query = "INSERT INTO Employees(Username, Password, LastName, FirstName, Phone, Image, Role, Salary) " +
-                    "VALUES(@Username, @Password, @LastName, @FirstName, @Phone, @Image, @Role, @Salary)";
+            String query = "INSERT INTO Employees(Username, Password, LastName, FirstName, Phone, Role, Salary) " +
+                    "VALUES(@Username, @Password, @LastName, @FirstName, @Phone, @Role, @Salary)";
 
 
             if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) ||
@@ -58,7 +58,7 @@ namespace Restaurant_Management_System.Model
             new SqlParameter("@LastName", lastName),
             new SqlParameter("@FirstName", firstName),
             new SqlParameter("@Phone", phone),
-            new SqlParameter("@Image", DBNull.Value),
+           // new SqlParameter("@Image", DBNull.Value),
             new SqlParameter("@Role", role),
             new SqlParameter("@Salary", salary)
             };

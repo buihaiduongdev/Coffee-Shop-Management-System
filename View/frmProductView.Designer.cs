@@ -33,13 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductView));
             this.dgvProduct = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.dgvSno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dgvdel = new System.Windows.Forms.DataGridViewImageColumn();
             this.label17 = new System.Windows.Forms.Label();
             this.btnAddProduct = new Guna.UI2.WinForms.Guna2Button();
             this.labelNumberResultFound = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -49,6 +42,13 @@
             this.btnSaveExcel = new Guna.UI2.WinForms.Guna2Button();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSaveReport = new Guna.UI2.WinForms.Guna2Button();
+            this.dgvSno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dgvdel = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,65 +118,6 @@
             this.dgvProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduct_CellClick);
             this.dgvProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduct_CellContentClick);
             this.dgvProduct.ColumnHeaderCellChanged += new System.Windows.Forms.DataGridViewColumnEventHandler(this.dgvProduct_ColumnHeaderCellChanged);
-            // 
-            // dgvSno
-            // 
-            this.dgvSno.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvSno.FillWeight = 70F;
-            this.dgvSno.HeaderText = "No.";
-            this.dgvSno.MinimumWidth = 70;
-            this.dgvSno.Name = "dgvSno";
-            this.dgvSno.Width = 70;
-            // 
-            // dgvProductID
-            // 
-            this.dgvProductID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvProductID.FillWeight = 74.08759F;
-            this.dgvProductID.HeaderText = "ID";
-            this.dgvProductID.MinimumWidth = 6;
-            this.dgvProductID.Name = "dgvProductID";
-            this.dgvProductID.Width = 179;
-            // 
-            // dgvProductName
-            // 
-            this.dgvProductName.FillWeight = 74.08759F;
-            this.dgvProductName.HeaderText = "Name";
-            this.dgvProductName.MinimumWidth = 6;
-            this.dgvProductName.Name = "dgvProductName";
-            // 
-            // dgvPrice
-            // 
-            this.dgvPrice.HeaderText = "Price";
-            this.dgvPrice.MinimumWidth = 6;
-            this.dgvPrice.Name = "dgvPrice";
-            // 
-            // dgvCategory
-            // 
-            this.dgvCategory.HeaderText = "Category";
-            this.dgvCategory.MinimumWidth = 360;
-            this.dgvCategory.Name = "dgvCategory";
-            // 
-            // dgvedit
-            // 
-            this.dgvedit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvedit.FillWeight = 50F;
-            this.dgvedit.HeaderText = "Action";
-            this.dgvedit.Image = global::Restaurant_Management_System.Properties.Resources.change;
-            this.dgvedit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dgvedit.MinimumWidth = 60;
-            this.dgvedit.Name = "dgvedit";
-            this.dgvedit.Width = 60;
-            // 
-            // dgvdel
-            // 
-            this.dgvdel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvdel.FillWeight = 50F;
-            this.dgvdel.HeaderText = "";
-            this.dgvdel.Image = global::Restaurant_Management_System.Properties.Resources.delete;
-            this.dgvdel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dgvdel.MinimumWidth = 50;
-            this.dgvdel.Name = "dgvdel";
-            this.dgvdel.Width = 50;
             // 
             // label17
             // 
@@ -324,6 +265,65 @@
             this.btnSaveReport.TextOffset = new System.Drawing.Point(20, 0);
             this.btnSaveReport.Click += new System.EventHandler(this.btnSaveReport_Click);
             // 
+            // dgvSno
+            // 
+            this.dgvSno.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvSno.FillWeight = 70F;
+            this.dgvSno.HeaderText = "No.";
+            this.dgvSno.MinimumWidth = 70;
+            this.dgvSno.Name = "dgvSno";
+            this.dgvSno.Width = 70;
+            // 
+            // dgvProductID
+            // 
+            this.dgvProductID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvProductID.FillWeight = 74.08759F;
+            this.dgvProductID.HeaderText = "ID";
+            this.dgvProductID.MinimumWidth = 6;
+            this.dgvProductID.Name = "dgvProductID";
+            this.dgvProductID.Width = 179;
+            // 
+            // dgvProductName
+            // 
+            this.dgvProductName.FillWeight = 74.08759F;
+            this.dgvProductName.HeaderText = "Name";
+            this.dgvProductName.MinimumWidth = 6;
+            this.dgvProductName.Name = "dgvProductName";
+            // 
+            // dgvPrice
+            // 
+            this.dgvPrice.HeaderText = "Price";
+            this.dgvPrice.MinimumWidth = 6;
+            this.dgvPrice.Name = "dgvPrice";
+            // 
+            // dgvCategory
+            // 
+            this.dgvCategory.HeaderText = "Category";
+            this.dgvCategory.MinimumWidth = 360;
+            this.dgvCategory.Name = "dgvCategory";
+            // 
+            // dgvedit
+            // 
+            this.dgvedit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvedit.FillWeight = 50F;
+            this.dgvedit.HeaderText = "Action";
+            this.dgvedit.Image = global::Restaurant_Management_System.Properties.Resources.edit;
+            this.dgvedit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dgvedit.MinimumWidth = 60;
+            this.dgvedit.Name = "dgvedit";
+            this.dgvedit.Width = 60;
+            // 
+            // dgvdel
+            // 
+            this.dgvdel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvdel.FillWeight = 50F;
+            this.dgvdel.HeaderText = "";
+            this.dgvdel.Image = global::Restaurant_Management_System.Properties.Resources.delete;
+            this.dgvdel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dgvdel.MinimumWidth = 50;
+            this.dgvdel.Name = "dgvdel";
+            this.dgvdel.Width = 50;
+            // 
             // frmProductView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -359,6 +359,8 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private Guna.UI2.WinForms.Guna2ComboBox cbbCategories;
         private Guna.UI2.WinForms.Guna2Button btnSaveExcel;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
+        private Guna.UI2.WinForms.Guna2Button btnSaveReport;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvSno;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvProductID;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvProductName;
@@ -366,7 +368,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvCategory;
         private System.Windows.Forms.DataGridViewImageColumn dgvedit;
         private System.Windows.Forms.DataGridViewImageColumn dgvdel;
-        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
-        private Guna.UI2.WinForms.Guna2Button btnSaveReport;
     }
 }

@@ -22,10 +22,56 @@ namespace Restaurant_Management_System.View
             this.manager = manager;
         }
         private DataTable dt;
+        private void ApplyCustomTheme()
+        {
+            try
+            {
+                // Xóa theme mặc định
+                dgvProduct.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+                dgvProduct.EnableHeadersVisualStyles = false;
+
+                // Header
+                dgvProduct.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(102, 99, 76);
+                dgvProduct.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                dgvProduct.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+                dgvProduct.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                dgvProduct.ColumnHeadersHeight = 40;
+
+                // Dòng thường
+                dgvProduct.DefaultCellStyle.BackColor = Color.FromArgb(165, 140, 100); // Be sáng
+                dgvProduct.DefaultCellStyle.ForeColor = Color.Black;
+                dgvProduct.DefaultCellStyle.Font = new Font("Segoe UI", 10);
+                dgvProduct.DefaultCellStyle.SelectionBackColor = Color.FromArgb(224, 224, 224); // Nâu vừa
+                dgvProduct.DefaultCellStyle.SelectionForeColor = Color.Black;
+
+                // Dòng xen kẽ
+                dgvProduct.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(204, 177, 142); // Xám nhạt  
+
+                // Bảng
+                dgvProduct.BackgroundColor = Color.AntiqueWhite;
+                dgvProduct.BorderStyle = BorderStyle.None;
+                dgvProduct.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+                dgvProduct.RowTemplate.Height = 35;
+
+                // Khác
+                dgvProduct.ReadOnly = false;
+                dgvProduct.AllowUserToAddRows = false;
+                dgvProduct.AllowUserToResizeRows = false;
+                dgvProduct.EditMode = DataGridViewEditMode.EditOnKeystrokeOrF2;
+                dgvProduct.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi áp dụng theme: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+           
+        }
 
         private void frmProductView_Load(object sender, EventArgs e)
         {
             LoadProductData();
+            //ApplyCustomTheme();
         }
         private void LoadProductData()
         {
@@ -40,6 +86,7 @@ namespace Restaurant_Management_System.View
                 // Duyệt từng dòng dữ liệu từ DataTable và thêm vào DataGridView
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
+                   
                     dgvProduct.Rows.Add();
                     dgvProduct.Rows[i].Cells["dgvSno"].Value = i + 1; // STT
                     dgvProduct.Rows[i].Cells["dgvProductID"].Value = dt.Rows[i]["ProductID"];
@@ -255,7 +302,17 @@ namespace Restaurant_Management_System.View
             DataTable dt = DatabaseHelper.ExecuteQuery(query);
             ProductReport rpt = new ProductReport();
             rpt.SetDataSource(dt);
-            rpt.SetParameterValue("ManagerName", manager.LastName + " " + manager.FirstName);
+            try
+            {
+                rpt.SetParameterValue("ManagerName", manager.LastName + " " + manager.FirstName);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi gán parameter ManagerName: " + ex.Message);
+            }
+
+
+            //rpt.SetParameterValue("ManagerName", manager.LastName + " " + manager.FirstName);
             frmReportView report = new frmReportView(manager, rpt);
             report.ShowDialog();
         }

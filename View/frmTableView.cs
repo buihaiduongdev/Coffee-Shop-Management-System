@@ -28,26 +28,40 @@ namespace Restaurant_Management_System.View
             IconTableReserved.HoverState.BorderColor = IconTableReserved.BorderColor;
             IconTableReserved.PressedColor = IconTableReserved.FillColor;
         }
-        private void ApplyModernTableTheme()
+        private void ApplyCustomTheme()
         {
+            // Xóa theme mặc định
+            dgvTables.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             dgvTables.EnableHeadersVisualStyles = false;
-            dgvTables.ColumnHeadersDefaultCellStyle.BackColor = Color.Orange;
+
+            // Header
+            dgvTables.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(102, 99, 76);
             dgvTables.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            dgvTables.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 12, FontStyle.Bold);
+            dgvTables.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
             dgvTables.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvTables.ColumnHeadersHeight = 40;
 
-            dgvTables.DefaultCellStyle.BackColor = Color.White;
-            dgvTables.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(250, 218, 171);
+            // Dòng thường
+            dgvTables.DefaultCellStyle.BackColor = Color.FromArgb(165, 140, 100); // Be sáng
             dgvTables.DefaultCellStyle.ForeColor = Color.Black;
-            dgvTables.DefaultCellStyle.Font = new Font("Segoe UI", 11);
-
-            dgvTables.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dgvTables.GridColor = Color.LightGray;
-
-            dgvTables.DefaultCellStyle.SelectionBackColor = Color.Orange;
+            dgvTables.DefaultCellStyle.Font = new Font("Segoe UI", 10);
+            dgvTables.DefaultCellStyle.SelectionBackColor = Color.FromArgb(224, 224, 224); // Nâu vừa
             dgvTables.DefaultCellStyle.SelectionForeColor = Color.Black;
 
-            dgvTables.RowHeadersVisible = false;
+            // Dòng xen kẽ
+            dgvTables.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(204, 177, 142); // Xám nhạt  
+
+            // Bảng
+            dgvTables.BackgroundColor = Color.White;
+            dgvTables.BorderStyle = BorderStyle.None;
+            dgvTables.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvTables.RowTemplate.Height = 35;
+
+            // Khác
+            dgvTables.ReadOnly = false;
+            dgvTables.AllowUserToAddRows = false;
+            dgvTables.AllowUserToResizeRows = false;
+            dgvTables.EditMode = DataGridViewEditMode.EditOnKeystrokeOrF2;
             dgvTables.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
         private void frmTableView_Load(object sender, EventArgs e)
@@ -92,7 +106,7 @@ namespace Restaurant_Management_System.View
             {
                 MessageBox.Show("Lỗi khi tải dữ liệu bàn: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            ApplyModernTableTheme();
+            ApplyCustomTheme();
         }
 
         public void btnAdd_Click(object sender, EventArgs e)
@@ -254,6 +268,11 @@ namespace Restaurant_Management_System.View
         }
 
         private void dgvTables_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
+        }
+
+        private void dgvTables_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

@@ -1,297 +1,301 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\OOP\\Coffee-Shop-Management-System\\",
+  "WorkspaceRootPath": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|d:\\oop\\coffee-shop-management-system\\reciept.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:reciept.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\model\\frmcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\frmcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\model\\frmcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\frmcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\frmmainemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:frmmainemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\frmmainemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:frmmainemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\frmmainmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:frmmainmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\frmmainmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:frmmainmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\view\\frmstaffview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmstaffview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\view\\frmstaffview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmstaffview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\view\\frmproductview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmproductview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\view\\frmreportview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmreportview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|d:\\oop\\coffee-shop-management-system\\productreport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:productreport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\model\\frmcheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\frmcheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\model\\frmcategoryadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\frmcategoryadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|d:\\oop\\coffee-shop-management-system\\model\\frmstaffadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\frmstaffadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\employeereport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:employeereport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\view\\frmsettingview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmsettingview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\view\\frmproductview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\view\\frmproductview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmproductview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\view\\frmreservetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmreservetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\view\\frmproductview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmproductview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\view\\frmtableviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmtableviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\view\\frmtableview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmtableview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\view\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\view\\frmbilllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmbilllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\view\\frmcategoryview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmcategoryview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\sampleadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:sampleadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\view\\frmreportview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmreportview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\restaurantdbdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:restaurantdbdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\sampleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:sampleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\customermodel\\frminfoorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\frminfoorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\customermodel\\frmproductdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\frmproductdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\customermodel\\frmdetailinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\frmdetailinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\customermodel\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\model\\ucregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\ucregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\model\\ucregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\ucregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\model\\ucregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\ucregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\systemdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:systemdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\backend\\accountdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:backend\\accountdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\receptionistmodel\\frmreceptionist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:receptionistmodel\\frmreceptionist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\view\\frmlogin2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmlogin2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\view\\frmbilllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmbilllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\view\\frmsettingview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmsettingview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\customermodel\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\customermodel\\orderdetailinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\orderdetailinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\customermodel\\orderinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\orderinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\customermodel\\ucconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\ucconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\customermodel\\ucdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\ucdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\customermodel\\ucitemorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\ucitemorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\model\\uctable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\uctable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\backend\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:backend\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\customermodel\\frmonlinepayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\frmonlinepayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\view\\frmreservetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmreservetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\model\\frmtableadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\frmtableadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\model\\uclogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\uclogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\model\\uclogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\uclogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\frmmainemployee.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:frmmainemployee.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\backend\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:backend\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\backend\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:backend\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\frmmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:frmmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\view\\frmtableview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmtableview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\view\\frmcategoryview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\view\\frmcategoryview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmcategoryview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\customermodel\\frminfoorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\view\\frmcategoryview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmcategoryview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|d:\\learning\\winform\\coffee-shop-management-system\\view\\frmproductview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmproductview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|d:\\learning\\winform\\coffee-shop-management-system\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\view\\frmstaffview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmstaffview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\view\\frmstaffview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmstaffview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\view\\frmtableview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmtableview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\view\\frmsettingview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmsettingview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\view\\frmreservetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmreservetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\view\\frmreportview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmreportview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\view\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\reciept.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:reciept.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\model\\frmcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\frmcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\model\\frmcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\frmcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmmainemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:frmmainemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmmainemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:frmmainemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmmainmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:frmmainmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmmainmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:frmmainmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\productreport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:productreport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\model\\frmcheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\frmcheckout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\model\\frmcategoryadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\frmcategoryadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\model\\frmstaffadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\frmstaffadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\employeereport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:employeereport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\view\\frmtableviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmtableviews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\view\\frmbilllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmbilllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\sampleadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:sampleadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\view\\frmreportview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmreportview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\restaurantdbdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:restaurantdbdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\sampleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:sampleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\customermodel\\frminfoorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\frminfoorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\customermodel\\frmproductdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\frmproductdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\customermodel\\frmdetailinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\frmdetailinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\customermodel\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\model\\ucregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\ucregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\model\\ucregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\ucregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\model\\ucregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\ucregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\systemdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:systemdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\backend\\accountdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:backend\\accountdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\receptionistmodel\\frmreceptionist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:receptionistmodel\\frmreceptionist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\view\\frmlogin2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmlogin2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\view\\frmbilllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmbilllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\view\\frmsettingview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmsettingview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\customermodel\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\customermodel\\orderdetailinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\orderdetailinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\customermodel\\orderinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\orderinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\customermodel\\ucconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\ucconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\customermodel\\ucdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\ucdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\customermodel\\ucitemorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\ucitemorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\model\\uctable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\uctable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\backend\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:backend\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\customermodel\\frmonlinepayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\frmonlinepayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\view\\frmreservetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmreservetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\model\\frmtableadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\frmtableadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\model\\uclogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\uclogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\model\\uclogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\uclogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmmainemployee.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:frmmainemployee.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\backend\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:backend\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\backend\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:backend\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:frmmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\view\\frmtableview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:view\\frmtableview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\customermodel\\frminfoorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\frminfoorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\customermodel\\frmdetailinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\customermodel\\frmdetailinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\frmdetailinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\customermodel\\ucitemorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\customermodel\\ucitemorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\ucitemorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\customermodel\\ucdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\customermodel\\ucdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\ucdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\customermodel\\ucconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\customermodel\\ucconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\ucconfirm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\customermodel\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\customermodel\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:customermodel\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\model\\frmproductadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\model\\frmproductadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\frmproductadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\OOP\\Coffee-Shop-Management-System\\model\\frmtableselect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\model\\frmtableselect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D9385640-6D6F-49F2-84AF-83E81B07DDF2}|Coffee-Shop-Management-System.csproj|solutionrelative:model\\frmtableselect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -302,7 +306,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 35,
+          "SelectedChildIndex": 30,
           "Children": [
             {
               "$type": "Bookmark",
@@ -346,27 +350,15 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",
@@ -421,62 +413,199 @@
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmMainEmployee.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\frmMainEmployee.cs",
-              "RelativeDocumentMoniker": "frmMainEmployee.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\frmMainEmployee.cs",
-              "RelativeToolTip": "frmMainEmployee.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAwwCkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T11:24:26.002Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "frmMenu.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\frmMenu.cs",
-              "RelativeDocumentMoniker": "frmMenu.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\frmMenu.cs [Design]",
-              "RelativeToolTip": "frmMenu.cs [Design]",
+              "Title": "frmProductView.Designer.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmProductView.Designer.cs",
+              "RelativeDocumentMoniker": "View\\frmProductView.Designer.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmProductView.Designer.cs",
+              "RelativeToolTip": "View\\frmProductView.Designer.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAQwHcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:49:34.83Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmMenu.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\frmMenu.cs",
-              "RelativeDocumentMoniker": "frmMenu.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\frmMenu.cs",
-              "RelativeToolTip": "frmMenu.cs",
-              "ViewState": "AgIAALQAAAAAAAAAAAAkwMUAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T10:12:48.894Z",
+              "WhenOpened": "2025-04-25T09:30:53.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmCart.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmCart.cs",
-              "RelativeDocumentMoniker": "Model\\frmCart.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmCart.cs [Design]",
-              "RelativeToolTip": "Model\\frmCart.cs [Design]",
+              "DocumentIndex": 6,
+              "Title": "frmStaffView.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmStaffView.cs",
+              "RelativeDocumentMoniker": "View\\frmStaffView.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmStaffView.cs",
+              "RelativeToolTip": "View\\frmStaffView.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAqwDgAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:49:35.729Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-16T13:56:49.366Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "frmProductView.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmProductView.cs",
+              "RelativeDocumentMoniker": "View\\frmProductView.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmProductView.cs [Design]",
+              "RelativeToolTip": "View\\frmProductView.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T04:59:53.343Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmProductView.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmProductView.cs",
+              "RelativeDocumentMoniker": "View\\frmProductView.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmProductView.cs",
+              "RelativeToolTip": "View\\frmProductView.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAUwEkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T13:48:07.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmCategoryView.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmCategoryView.cs",
+              "RelativeDocumentMoniker": "View\\frmCategoryView.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmCategoryView.cs [Design]",
+              "RelativeToolTip": "View\\frmCategoryView.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T04:59:47.327Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmCategoryView.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmCategoryView.cs",
+              "RelativeDocumentMoniker": "View\\frmCategoryView.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmCategoryView.cs",
+              "RelativeToolTip": "View\\frmCategoryView.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAgwC8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T13:55:49.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frmTableView.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmTableView.cs",
+              "RelativeDocumentMoniker": "View\\frmTableView.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmTableView.cs [Design]",
+              "RelativeToolTip": "View\\frmTableView.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T04:59:50.267Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "frmStaffView.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmStaffView.cs",
+              "RelativeDocumentMoniker": "View\\frmStaffView.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmStaffView.cs [Design]",
+              "RelativeToolTip": "View\\frmStaffView.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T05:48:22.545Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "DatabaseHelper.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\DatabaseHelper.cs",
+              "RelativeToolTip": "DatabaseHelper.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwB4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T06:31:12.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmSettingView.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmSettingView.cs",
+              "RelativeDocumentMoniker": "View\\frmSettingView.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmSettingView.cs [Design]",
+              "RelativeToolTip": "View\\frmSettingView.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T15:06:29.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frmReserveTable.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmReserveTable.cs",
+              "RelativeDocumentMoniker": "View\\frmReserveTable.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmReserveTable.cs [Design]",
+              "RelativeToolTip": "View\\frmReserveTable.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T05:53:02.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "frmReportView.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmReportView.cs",
+              "RelativeDocumentMoniker": "View\\frmReportView.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmReportView.cs [Design]",
+              "RelativeToolTip": "View\\frmReportView.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T07:43:35.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "frmHome.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmHome.cs",
+              "RelativeDocumentMoniker": "View\\frmHome.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmHome.cs [Design]",
+              "RelativeToolTip": "View\\frmHome.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T04:59:46.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Reciept.rpt",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Reciept.rpt",
+              "RelativeDocumentMoniker": "Reciept.rpt",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Reciept.rpt",
+              "RelativeToolTip": "Reciept.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPESURBVDhPrZRLaFxVHMZ/59w7k8lkJpmZTDJ5m1pJ2iY0JoWA0aKFUK1dtF2I2ampoggiSHAjaHFVRBA3FXSjuJFaqDbFCl1Z00JNMkmahGIe5lHznplM7rxn7sNFHp1JuvQPH/f\u002Bz\u002BX73fP4OPB/lmVZIr9v6XjhzKs9736WP/akWpieHLz63eUP9o8DqPmNq9TjP9r6bGfbYT\u002BKIhEU/A\u002BAfzdijHgrqvVcNn37\u002BvdfxrYia/nflfymrrGp7flTr1w42VaL112Mx1WEz\u002B3Am6dYMkvWspWdfK6zfT0ciW6GNlaSCW1zlyHzgQACkEKQSOXYjKWJ7FMyo\u002BN22jlxrK645\u002BJHl9u7ul9zl/kCu/4DwL0SIJ4kYD2a5MbALFoyy9me9z7tPv9G367tAHB31xQhUOS2sjLN71Y/q2KJ\u002BoCbrpYaOo9W0dVaw6G68uKSkmLHrr8AKIRASoFg\u002BymlJC5jPLDGuBm/zg9b3zIpBgn4SqjakcthQ5GPMfuAIHemKIQgYoSYNv5mSjzkYXKCX\u002BPX\u002BCX\u002BMxO5UeTO7IUoTIJUnJUOxVlZqjgrPcJe5jQtiWFapK0EwXSQgdQAhpKlyCzCMAxua7e4Ev6KSC6EJYwDQLX63NWXwGwD/KLS0Ta9YhGJ5ehP3GQmM4OOQTQVJbapoRs6mBAMD/H\u002BSi9fH7\u002BCoLgQ\u002BM2Hx52ZXM4T1nLVsysZ7\u002Bh8lks/hVA9TYQDc0QDQSyXiTQU0mMZMktpGqob6Xv9YyodFUREvAAo9djClBlf/LPOHbvTeVidaWlwsBzOMjvl59FYK\u002BH5p0mqcaQuMZZ02tUOLh57mxcrTuGyuQ4sWYnqZRvB0cl5IVhorPVWHGkoOe2wq8yuGYRXKxBZP3ZviOTWMk\u002Bl63mzs5e3unsRYvtAVsNxgsPDg2N/3bkFoMxO3GV24p6ZzNkSamnVM7XV5RdOd/hY2zLZ0EySIS/WP0ewe4J8/vInnGs7jyrlXrzWIilGgkODI/e3gXuxGb//G\u002BN3b2C3qZQU22muKaLBb8PpUPAWldN36BJNzlYsQMidiElQ5OOoFQDTCY1UYgshBaYliabAEJIyl4q3xI7fFkA17ZimubfcfB0AAugGbCZgcCbNUsRCURTq/ZLmgE5US7IcirO0EWNxXdtTKqsj84AF96GQiqZb9rnxxXSlXcXRWCFwq3rSXxQLLS5HE\u002BFNLYuRMjIpzcr3hdaXF3bfC4A1PsfI2RO\u002BLzI5/Z14It28Fc\u002BytBYfnZze\u002BHFqbm0opxuPHtzr14b/uJbL9\u002BXXf8LCnE6KaQGDAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-04-25T00:02:44.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "frmMainManager.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmMainManager.cs",
+              "RelativeDocumentMoniker": "frmMainManager.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\frmMainManager.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\frmMainManager.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T04:59:40.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "frmCart.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmCart.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Model\\frmCart.cs",
               "RelativeDocumentMoniker": "Model\\frmCart.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmCart.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Model\\frmCart.cs",
               "RelativeToolTip": "Model\\frmCart.cs",
               "ViewState": "AgIAANcAAAAAAAAAAAAcwPUAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -485,729 +614,572 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmMainManager.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\frmMainManager.cs",
-              "RelativeDocumentMoniker": "frmMainManager.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\frmMainManager.cs [Design]",
-              "RelativeToolTip": "frmMainManager.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:59:40.354Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Reciept.rpt",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\Reciept.rpt",
-              "RelativeDocumentMoniker": "Reciept.rpt",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Reciept.rpt",
-              "RelativeToolTip": "Reciept.rpt",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPdSURBVDhPrZRbaBxVGMf/c9nd2Vuyu9nN5m7aStI2oWtSCBgtWgj10oe2D2Le1FRRBBEk\u002BCJo8amIIL5U0BfFF6mFalOs0CdrWqhJNkmTUEyyzaXuJpvsdXZ2dnauntmdbJvEvvkb/pxvZr7vP\u002Bec\u002BTj4XzEMg7LCCj39z7/y6vC7n1m3T2RtaWHi8ncXP7Bud8FaYwVPnS94pPeZgcihIBiGBkWuvfyzXcC0P9SsKrJ08\u002Br3XxbymaT1qgJjjRXaOrsiz518\u002BdyJSCv8Xid8HgcCXo7Ej1QQZciGrf7EswN9W\u002BlMLpva3hCLfNayAG2NNcw50RSFYklBtiAhs0diWYXXZcfxo23O4fMfXewbHHrNWx8IV6v/w7AGcSa\u002B\u002B0VebeVEXBuPgSezPT383qdDZ98YrRY9YYYmDKlm6KpkWsLvxhg2qTjaw14M9rRg4EgTBntbcKCtwel2OzmrbLchRUxoYmBe5kjTNAS6gHvGLK4LV/FD/lssUBMIB9xosuThbOSjj2z2GJr7txNTyGgpLGl/Y5G6j/viPH4VruAX4WfMKzOVD5qzN/Meh2ZcjRxRHZGPste7dIOGphuQjCKiUhTjpXFojAyH7oCmabjJ38Cl9FfIKCkYlLbPkG0\u002Bc/lFQI\u002BQOEg1cpGlDYP8TQVjxetYLi9DhYZcKYdCloeqqSQViKYn8f7GCL4\u002BdolsjrPqZMF\u002B8\u002BExV1lRfGleaY5tlP0zqzIu/JQC6\u002BtCOryCXDgKw6OD1hhIs2WU4xI6mjsx\u002BvrHaORCyFCCZVWFVgtri7qw/mebt3Br4BC73NPBIZGWEVsM4uFsL9KrByGyAkkkWxFX0cf24/zRt/FC6CQ8Ns\u002B\u002BJTM5tX47OrOwSp6vdbb6Q4c73Kc4O4tYUkN6MwRKDsLuT0HMJ/CU1I43B0bw1tBIxcjUZlpAdGpqYvavWzcqhrH524jN39FFxVZk65qebm1uOHeqP4BkXsc2r0NM\u002BWE8OAy7L4rPX/oEZyJnwZI22WmvZKaE6ejkxPTdqmGtbebu/oa529dgt7FwO\u002B3obnGgI2iDi2PgdzRg9MAFdLl6YZBcilSZKzXbj5whtVYzqRlKRR6lYp4kUzBbJ1cCNFJZ72Hhd9sRtIXB6nboul5b7uPaoWZoompAtghMLEuIZwxyhDFoD9LoDqvI8SISKQFxcnytb/E1lWS1cpjssOs8pGiGVw37yty61Ej\u002BC9cZouBlVTHoKKTWE7liOsvL0EpaucSbK6\u002BR2kqsWeFuw5YAN336eOCLsqK\u002BIxSl7rwgI54UZhaWtn9cXElOKqr28N6dMX7qjyuKVbIH4F/CwpxOdjf1iQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-04-25T00:02:44.646Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmMainEmployee.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\frmMainEmployee.cs",
-              "RelativeDocumentMoniker": "frmMainEmployee.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\frmMainEmployee.cs [Design]",
-              "RelativeToolTip": "frmMainEmployee.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T11:04:54.5Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "frmMainManager.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\frmMainManager.cs",
-              "RelativeDocumentMoniker": "frmMainManager.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\frmMainManager.cs",
-              "RelativeToolTip": "frmMainManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T11:22:59.283Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "frmStaffView.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmStaffView.cs",
-              "RelativeDocumentMoniker": "View\\frmStaffView.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmStaffView.cs",
-              "RelativeToolTip": "View\\frmStaffView.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAiwEwAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T13:56:49.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "frmStaffView.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmStaffView.cs",
-              "RelativeDocumentMoniker": "View\\frmStaffView.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmStaffView.cs [Design]",
-              "RelativeToolTip": "View\\frmStaffView.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T05:48:22.545Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "frmProductView.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmProductView.cs",
-              "RelativeDocumentMoniker": "View\\frmProductView.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmProductView.cs [Design]",
-              "RelativeToolTip": "View\\frmProductView.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:59:53.343Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "frmReportView.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmReportView.cs",
-              "RelativeDocumentMoniker": "View\\frmReportView.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmReportView.cs [Design]",
-              "RelativeToolTip": "View\\frmReportView.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T07:43:35.893Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ProductReport.rpt",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\ProductReport.rpt",
-              "RelativeDocumentMoniker": "ProductReport.rpt",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\ProductReport.rpt",
-              "RelativeToolTip": "ProductReport.rpt",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPdSURBVDhPrZRbaBxVGMf/c9nd2Vuyu9nN5m7aStI2oWtSCBgtWgj10oe2D2Le1FRRBBEk\u002BCJo8amIIL5U0BfFF6mFalOs0CdrWqhJNkmTUEyyzaXuJpvsdXZ2dnauntmdbJvEvvkb/pxvZr7vP\u002Bec\u002BTj4XzEMg7LCCj39z7/y6vC7n1m3T2RtaWHi8ncXP7Bud8FaYwVPnS94pPeZgcihIBiGBkWuvfyzXcC0P9SsKrJ08\u002Br3XxbymaT1qgJjjRXaOrsiz518\u002BdyJSCv8Xid8HgcCXo7Ej1QQZciGrf7EswN9W\u002BlMLpva3hCLfNayAG2NNcw50RSFYklBtiAhs0diWYXXZcfxo23O4fMfXewbHHrNWx8IV6v/w7AGcSa\u002B\u002B0VebeVEXBuPgSezPT383qdDZ98YrRY9YYYmDKlm6KpkWsLvxhg2qTjaw14M9rRg4EgTBntbcKCtwel2OzmrbLchRUxoYmBe5kjTNAS6gHvGLK4LV/FD/lssUBMIB9xosuThbOSjj2z2GJr7txNTyGgpLGl/Y5G6j/viPH4VruAX4WfMKzOVD5qzN/Meh2ZcjRxRHZGPste7dIOGphuQjCKiUhTjpXFojAyH7oCmabjJ38Cl9FfIKCkYlLbPkG0\u002Bc/lFQI\u002BQOEg1cpGlDYP8TQVjxetYLi9DhYZcKYdCloeqqSQViKYn8f7GCL4\u002BdolsjrPqZMF\u002B8\u002BExV1lRfGleaY5tlP0zqzIu/JQC6\u002BtCOryCXDgKw6OD1hhIs2WU4xI6mjsx\u002BvrHaORCyFCCZVWFVgtri7qw/mebt3Br4BC73NPBIZGWEVsM4uFsL9KrByGyAkkkWxFX0cf24/zRt/FC6CQ8Ns\u002B\u002BJTM5tX47OrOwSp6vdbb6Q4c73Kc4O4tYUkN6MwRKDsLuT0HMJ/CU1I43B0bw1tBIxcjUZlpAdGpqYvavWzcqhrH524jN39FFxVZk65qebm1uOHeqP4BkXsc2r0NM\u002BWE8OAy7L4rPX/oEZyJnwZI22WmvZKaE6ejkxPTdqmGtbebu/oa529dgt7FwO\u002B3obnGgI2iDi2PgdzRg9MAFdLl6YZBcilSZKzXbj5whtVYzqRlKRR6lYp4kUzBbJ1cCNFJZ72Hhd9sRtIXB6nboul5b7uPaoWZoompAtghMLEuIZwxyhDFoD9LoDqvI8SISKQFxcnytb/E1lWS1cpjssOs8pGiGVw37yty61Ej\u002BC9cZouBlVTHoKKTWE7liOsvL0EpaucSbK6\u002BR2kqsWeFuw5YAN336eOCLsqK\u002BIxSl7rwgI54UZhaWtn9cXElOKqr28N6dMX7qjyuKVbIH4F/CwpxOdjf1iQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-04-24T16:52:46.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "frmCheckout.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmCheckout.cs",
-              "RelativeDocumentMoniker": "Model\\frmCheckout.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmCheckout.cs [Design]",
-              "RelativeToolTip": "Model\\frmCheckout.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:59:58.733Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "frmCategoryAdd.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmCategoryAdd.cs",
-              "RelativeDocumentMoniker": "Model\\frmCategoryAdd.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmCategoryAdd.cs [Design]",
-              "RelativeToolTip": "Model\\frmCategoryAdd.cs [Design]",
+              "Title": "frmCart.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Model\\frmCart.cs",
+              "RelativeDocumentMoniker": "Model\\frmCart.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Model\\frmCart.cs [Design]",
+              "RelativeToolTip": "Model\\frmCart.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:59:59.366Z",
+              "WhenOpened": "2025-04-15T04:49:35.729Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "frmStaffAdd.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmStaffAdd.cs",
-              "RelativeDocumentMoniker": "Model\\frmStaffAdd.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmStaffAdd.cs [Design]",
-              "RelativeToolTip": "Model\\frmStaffAdd.cs [Design]",
+              "Title": "frmMenu.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmMenu.cs",
+              "RelativeDocumentMoniker": "frmMenu.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmMenu.cs",
+              "RelativeToolTip": "frmMenu.cs",
+              "ViewState": "AgIAALQAAAAAAAAAAAAkwMUAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T01:38:33.466Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-23T10:12:48.894Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "EmployeeReport.rpt",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\EmployeeReport.rpt",
-              "RelativeDocumentMoniker": "EmployeeReport.rpt",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\EmployeeReport.rpt",
-              "RelativeToolTip": "EmployeeReport.rpt",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPdSURBVDhPrZRbaBxVGMf/c9nd2Vuyu9nN5m7aStI2oWtSCBgtWgj10oe2D2Le1FRRBBEk\u002BCJo8amIIL5U0BfFF6mFalOs0CdrWqhJNkmTUEyyzaXuJpvsdXZ2dnauntmdbJvEvvkb/pxvZr7vP\u002Bec\u002BTj4XzEMg7LCCj39z7/y6vC7n1m3T2RtaWHi8ncXP7Bud8FaYwVPnS94pPeZgcihIBiGBkWuvfyzXcC0P9SsKrJ08\u002Br3XxbymaT1qgJjjRXaOrsiz518\u002BdyJSCv8Xid8HgcCXo7Ej1QQZciGrf7EswN9W\u002BlMLpva3hCLfNayAG2NNcw50RSFYklBtiAhs0diWYXXZcfxo23O4fMfXewbHHrNWx8IV6v/w7AGcSa\u002B\u002B0VebeVEXBuPgSezPT383qdDZ98YrRY9YYYmDKlm6KpkWsLvxhg2qTjaw14M9rRg4EgTBntbcKCtwel2OzmrbLchRUxoYmBe5kjTNAS6gHvGLK4LV/FD/lssUBMIB9xosuThbOSjj2z2GJr7txNTyGgpLGl/Y5G6j/viPH4VruAX4WfMKzOVD5qzN/Meh2ZcjRxRHZGPste7dIOGphuQjCKiUhTjpXFojAyH7oCmabjJ38Cl9FfIKCkYlLbPkG0\u002Bc/lFQI\u002BQOEg1cpGlDYP8TQVjxetYLi9DhYZcKYdCloeqqSQViKYn8f7GCL4\u002BdolsjrPqZMF\u002B8\u002BExV1lRfGleaY5tlP0zqzIu/JQC6\u002BtCOryCXDgKw6OD1hhIs2WU4xI6mjsx\u002BvrHaORCyFCCZVWFVgtri7qw/mebt3Br4BC73NPBIZGWEVsM4uFsL9KrByGyAkkkWxFX0cf24/zRt/FC6CQ8Ns\u002B\u002BJTM5tX47OrOwSp6vdbb6Q4c73Kc4O4tYUkN6MwRKDsLuT0HMJ/CU1I43B0bw1tBIxcjUZlpAdGpqYvavWzcqhrH524jN39FFxVZk65qebm1uOHeqP4BkXsc2r0NM\u002BWE8OAy7L4rPX/oEZyJnwZI22WmvZKaE6ejkxPTdqmGtbebu/oa529dgt7FwO\u002B3obnGgI2iDi2PgdzRg9MAFdLl6YZBcilSZKzXbj5whtVYzqRlKRR6lYp4kUzBbJ1cCNFJZ72Hhd9sRtIXB6nboul5b7uPaoWZoompAtghMLEuIZwxyhDFoD9LoDqvI8SISKQFxcnytb/E1lWS1cpjssOs8pGiGVw37yty61Ej\u002BC9cZouBlVTHoKKTWE7liOsvL0EpaucSbK6\u002BR2kqsWeFuw5YAN336eOCLsqK\u002BIxSl7rwgI54UZhaWtn9cXElOKqr28N6dMX7qjyuKVbIH4F/CwpxOdjf1iQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-04-24T17:24:32.92Z",
-              "EditorCaption": ""
+              "Title": "frmMenu.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmMenu.cs",
+              "RelativeDocumentMoniker": "frmMenu.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\frmMenu.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\frmMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T04:49:34.83Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "frmSettingView.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmSettingView.cs",
-              "RelativeDocumentMoniker": "View\\frmSettingView.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmSettingView.cs [Design]",
-              "RelativeToolTip": "View\\frmSettingView.cs [Design]",
+              "Title": "frmMainEmployee.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmMainEmployee.cs",
+              "RelativeDocumentMoniker": "frmMainEmployee.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmMainEmployee.cs",
+              "RelativeToolTip": "frmMainEmployee.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAwwCkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T15:06:29.653Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-23T11:24:26.002Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "frmProductView.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmProductView.cs",
-              "RelativeDocumentMoniker": "View\\frmProductView.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmProductView.cs",
-              "RelativeToolTip": "View\\frmProductView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAjAAAAAAAAAA==",
+              "Title": "frmMainEmployee.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmMainEmployee.cs",
+              "RelativeDocumentMoniker": "frmMainEmployee.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\frmMainEmployee.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\frmMainEmployee.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T13:48:07.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "frmReserveTable.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmReserveTable.cs",
-              "RelativeDocumentMoniker": "View\\frmReserveTable.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmReserveTable.cs [Design]",
-              "RelativeToolTip": "View\\frmReserveTable.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T05:53:02.251Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-23T11:04:54.5Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "frmTableViews.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmTableViews.cs",
-              "RelativeDocumentMoniker": "View\\frmTableViews.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmTableViews.cs [Design]",
-              "RelativeToolTip": "View\\frmTableViews.cs [Design]",
+              "Title": "frmMainManager.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmMainManager.cs",
+              "RelativeDocumentMoniker": "frmMainManager.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmMainManager.cs",
+              "RelativeToolTip": "frmMainManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T14:29:33.136Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-23T11:22:59.283Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T06:24:16.783Z",
-              "EditorCaption": ""
+              "Title": "ProductReport.rpt",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\ProductReport.rpt",
+              "RelativeDocumentMoniker": "ProductReport.rpt",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\ProductReport.rpt",
+              "RelativeToolTip": "ProductReport.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPESURBVDhPrZRLaFxVHMZ/59w7k8lkJpmZTDJ5m1pJ2iY0JoWA0aKFUK1dtF2I2ampoggiSHAjaHFVRBA3FXSjuJFaqDbFCl1Z00JNMkmahGIe5lHznplM7rxn7sNFHp1JuvQPH/f\u002Bz\u002BX73fP4OPB/lmVZIr9v6XjhzKs9736WP/akWpieHLz63eUP9o8DqPmNq9TjP9r6bGfbYT\u002BKIhEU/A\u002BAfzdijHgrqvVcNn37\u002BvdfxrYia/nflfymrrGp7flTr1w42VaL112Mx1WEz\u002B3Am6dYMkvWspWdfK6zfT0ciW6GNlaSCW1zlyHzgQACkEKQSOXYjKWJ7FMyo\u002BN22jlxrK645\u002BJHl9u7ul9zl/kCu/4DwL0SIJ4kYD2a5MbALFoyy9me9z7tPv9G367tAHB31xQhUOS2sjLN71Y/q2KJ\u002BoCbrpYaOo9W0dVaw6G68uKSkmLHrr8AKIRASoFg\u002BymlJC5jPLDGuBm/zg9b3zIpBgn4SqjakcthQ5GPMfuAIHemKIQgYoSYNv5mSjzkYXKCX\u002BPX\u002BCX\u002BMxO5UeTO7IUoTIJUnJUOxVlZqjgrPcJe5jQtiWFapK0EwXSQgdQAhpKlyCzCMAxua7e4Ev6KSC6EJYwDQLX63NWXwGwD/KLS0Ta9YhGJ5ehP3GQmM4OOQTQVJbapoRs6mBAMD/H\u002BSi9fH7\u002BCoLgQ\u002BM2Hx52ZXM4T1nLVsysZ7\u002Bh8lks/hVA9TYQDc0QDQSyXiTQU0mMZMktpGqob6Xv9YyodFUREvAAo9djClBlf/LPOHbvTeVidaWlwsBzOMjvl59FYK\u002BH5p0mqcaQuMZZ02tUOLh57mxcrTuGyuQ4sWYnqZRvB0cl5IVhorPVWHGkoOe2wq8yuGYRXKxBZP3ZviOTWMk\u002Bl63mzs5e3unsRYvtAVsNxgsPDg2N/3bkFoMxO3GV24p6ZzNkSamnVM7XV5RdOd/hY2zLZ0EySIS/WP0ewe4J8/vInnGs7jyrlXrzWIilGgkODI/e3gXuxGb//G\u002BN3b2C3qZQU22muKaLBb8PpUPAWldN36BJNzlYsQMidiElQ5OOoFQDTCY1UYgshBaYliabAEJIyl4q3xI7fFkA17ZimubfcfB0AAugGbCZgcCbNUsRCURTq/ZLmgE5US7IcirO0EWNxXdtTKqsj84AF96GQiqZb9rnxxXSlXcXRWCFwq3rSXxQLLS5HE\u002BFNLYuRMjIpzcr3hdaXF3bfC4A1PsfI2RO\u002BLzI5/Z14It28Fc\u002BytBYfnZze\u002BHFqbm0opxuPHtzr14b/uJbL9\u002BXXf8LCnE6KaQGDAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-04-24T16:52:46.061Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "frmTableView.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmTableView.cs",
-              "RelativeDocumentMoniker": "View\\frmTableView.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmTableView.cs [Design]",
-              "RelativeToolTip": "View\\frmTableView.cs [Design]",
+              "Title": "frmCheckout.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Model\\frmCheckout.cs",
+              "RelativeDocumentMoniker": "Model\\frmCheckout.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmCheckout.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\Model\\frmCheckout.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:59:50.267Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-15T04:59:58.733Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "DatabaseHelper.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\DatabaseHelper.cs",
-              "RelativeDocumentMoniker": "DatabaseHelper.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\DatabaseHelper.cs",
-              "RelativeToolTip": "DatabaseHelper.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAArwB4AAAAIAAAAAAAAAA==",
+              "Title": "frmCategoryAdd.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Model\\frmCategoryAdd.cs",
+              "RelativeDocumentMoniker": "Model\\frmCategoryAdd.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmCategoryAdd.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\Model\\frmCategoryAdd.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T06:31:12.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T04:59:59.366Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "frmHome.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmHome.cs",
-              "RelativeDocumentMoniker": "View\\frmHome.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmHome.cs [Design]",
-              "RelativeToolTip": "View\\frmHome.cs [Design]",
+              "Title": "frmStaffAdd.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Model\\frmStaffAdd.cs",
+              "RelativeDocumentMoniker": "Model\\frmStaffAdd.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmStaffAdd.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\Model\\frmStaffAdd.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:59:46.344Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-25T01:38:33.466Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "frmBillList.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmBillList.cs",
-              "RelativeDocumentMoniker": "View\\frmBillList.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmBillList.cs [Design]",
-              "RelativeToolTip": "View\\frmBillList.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:59:49.115Z",
-              "EditorCaption": " [Design]"
+              "Title": "EmployeeReport.rpt",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\EmployeeReport.rpt",
+              "RelativeDocumentMoniker": "EmployeeReport.rpt",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\EmployeeReport.rpt",
+              "RelativeToolTip": "EmployeeReport.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPESURBVDhPrZRLaFxVHMZ/59w7k8lkJpmZTDJ5m1pJ2iY0JoWA0aKFUK1dtF2I2ampoggiSHAjaHFVRBA3FXSjuJFaqDbFCl1Z00JNMkmahGIe5lHznplM7rxn7sNFHp1JuvQPH/f\u002Bz\u002BX73fP4OPB/lmVZIr9v6XjhzKs9736WP/akWpieHLz63eUP9o8DqPmNq9TjP9r6bGfbYT\u002BKIhEU/A\u002BAfzdijHgrqvVcNn37\u002BvdfxrYia/nflfymrrGp7flTr1w42VaL112Mx1WEz\u002B3Am6dYMkvWspWdfK6zfT0ciW6GNlaSCW1zlyHzgQACkEKQSOXYjKWJ7FMyo\u002BN22jlxrK645\u002BJHl9u7ul9zl/kCu/4DwL0SIJ4kYD2a5MbALFoyy9me9z7tPv9G367tAHB31xQhUOS2sjLN71Y/q2KJ\u002BoCbrpYaOo9W0dVaw6G68uKSkmLHrr8AKIRASoFg\u002BymlJC5jPLDGuBm/zg9b3zIpBgn4SqjakcthQ5GPMfuAIHemKIQgYoSYNv5mSjzkYXKCX\u002BPX\u002BCX\u002BMxO5UeTO7IUoTIJUnJUOxVlZqjgrPcJe5jQtiWFapK0EwXSQgdQAhpKlyCzCMAxua7e4Ev6KSC6EJYwDQLX63NWXwGwD/KLS0Ta9YhGJ5ehP3GQmM4OOQTQVJbapoRs6mBAMD/H\u002BSi9fH7\u002BCoLgQ\u002BM2Hx52ZXM4T1nLVsysZ7\u002Bh8lks/hVA9TYQDc0QDQSyXiTQU0mMZMktpGqob6Xv9YyodFUREvAAo9djClBlf/LPOHbvTeVidaWlwsBzOMjvl59FYK\u002BH5p0mqcaQuMZZ02tUOLh57mxcrTuGyuQ4sWYnqZRvB0cl5IVhorPVWHGkoOe2wq8yuGYRXKxBZP3ZviOTWMk\u002Bl63mzs5e3unsRYvtAVsNxgsPDg2N/3bkFoMxO3GV24p6ZzNkSamnVM7XV5RdOd/hY2zLZ0EySIS/WP0ewe4J8/vInnGs7jyrlXrzWIilGgkODI/e3gXuxGb//G\u002BN3b2C3qZQU22muKaLBb8PpUPAWldN36BJNzlYsQMidiElQ5OOoFQDTCY1UYgshBaYliabAEJIyl4q3xI7fFkA17ZimubfcfB0AAugGbCZgcCbNUsRCURTq/ZLmgE5US7IcirO0EWNxXdtTKqsj84AF96GQiqZb9rnxxXSlXcXRWCFwq3rSXxQLLS5HE\u002BFNLYuRMjIpzcr3hdaXF3bfC4A1PsfI2RO\u002BLzI5/Z14It28Fc\u002BytBYfnZze\u002BHFqbm0opxuPHtzr14b/uJbL9\u002BXXf8LCnE6KaQGDAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-04-24T17:24:32.92Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "frmCategoryView.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmCategoryView.cs",
-              "RelativeDocumentMoniker": "View\\frmCategoryView.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmCategoryView.cs [Design]",
-              "RelativeToolTip": "View\\frmCategoryView.cs [Design]",
+              "Title": "frmTableViews.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmTableViews.cs",
+              "RelativeDocumentMoniker": "View\\frmTableViews.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmTableViews.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\View\\frmTableViews.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:59:47.327Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-23T14:29:33.136Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "SampleAdd.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\SampleAdd.cs",
-              "RelativeDocumentMoniker": "SampleAdd.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\SampleAdd.cs [Design]",
-              "RelativeToolTip": "SampleAdd.cs [Design]",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T13:31:20.951Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-24T06:24:16.783Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
-              "Title": "frmReportView.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmReportView.cs",
-              "RelativeDocumentMoniker": "View\\frmReportView.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmReportView.cs",
-              "RelativeToolTip": "View\\frmReportView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAQwBsAAAAsAAAAAAAAAA==",
+              "Title": "frmBillList.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmBillList.cs",
+              "RelativeDocumentMoniker": "View\\frmBillList.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmBillList.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\View\\frmBillList.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T08:04:01.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T04:59:49.115Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 30,
-              "Title": "packages.config",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\packages.config",
-              "RelativeDocumentMoniker": "packages.config",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\packages.config",
-              "RelativeToolTip": "packages.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-04-24T08:21:09.667Z",
-              "EditorCaption": ""
+              "Title": "SampleAdd.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\SampleAdd.cs",
+              "RelativeDocumentMoniker": "SampleAdd.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\SampleAdd.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\SampleAdd.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T13:31:20.951Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
-              "Title": "restaurantDBDataSet.xsd",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\restaurantDBDataSet.xsd",
-              "RelativeDocumentMoniker": "restaurantDBDataSet.xsd",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\restaurantDBDataSet.xsd",
-              "RelativeToolTip": "restaurantDBDataSet.xsd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2025-04-24T08:21:07.859Z",
-              "EditorCaption": ""
+              "Title": "frmReportView.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmReportView.cs",
+              "RelativeDocumentMoniker": "View\\frmReportView.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmReportView.cs",
+              "RelativeToolTip": "View\\frmReportView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwBsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T08:04:01.504Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 32,
-              "Title": "SampleView.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\SampleView.cs",
-              "RelativeDocumentMoniker": "SampleView.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\SampleView.cs [Design]",
-              "RelativeToolTip": "SampleView.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T13:31:21.483Z",
-              "EditorCaption": " [Design]"
+              "Title": "packages.config",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\packages.config",
+              "RelativeDocumentMoniker": "packages.config",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\packages.config",
+              "RelativeToolTip": "packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-04-24T08:21:09.667Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 33,
-              "Title": "frmInfoOrder.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\frmInfoOrder.cs",
-              "RelativeDocumentMoniker": "CustomerModel\\frmInfoOrder.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\frmInfoOrder.cs [Design]",
-              "RelativeToolTip": "CustomerModel\\frmInfoOrder.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T05:53:05.951Z",
-              "EditorCaption": " [Design]"
+              "Title": "restaurantDBDataSet.xsd",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\restaurantDBDataSet.xsd",
+              "RelativeDocumentMoniker": "restaurantDBDataSet.xsd",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\restaurantDBDataSet.xsd",
+              "RelativeToolTip": "restaurantDBDataSet.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2025-04-24T08:21:07.859Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 34,
-              "Title": "frmProductDetail.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\frmProductDetail.cs",
-              "RelativeDocumentMoniker": "CustomerModel\\frmProductDetail.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\frmProductDetail.cs [Design]",
-              "RelativeToolTip": "CustomerModel\\frmProductDetail.cs [Design]",
+              "Title": "SampleView.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\SampleView.cs",
+              "RelativeDocumentMoniker": "SampleView.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\SampleView.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\SampleView.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T05:53:00.557Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-16T13:31:21.483Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 35,
-              "Title": "frmDetailInfo.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\frmDetailInfo.cs",
-              "RelativeDocumentMoniker": "CustomerModel\\frmDetailInfo.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\frmDetailInfo.cs [Design]",
-              "RelativeToolTip": "CustomerModel\\frmDetailInfo.cs [Design]",
+              "Title": "frmInfoOrder.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\frmInfoOrder.cs",
+              "RelativeDocumentMoniker": "CustomerModel\\frmInfoOrder.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\frmInfoOrder.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\frmInfoOrder.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:49:37.47Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-15T05:53:05.951Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 36,
-              "Title": "feedback.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\feedback.cs",
-              "RelativeDocumentMoniker": "CustomerModel\\feedback.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\feedback.cs [Design]",
-              "RelativeToolTip": "CustomerModel\\feedback.cs [Design]",
+              "Title": "frmProductDetail.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\frmProductDetail.cs",
+              "RelativeDocumentMoniker": "CustomerModel\\frmProductDetail.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\frmProductDetail.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\frmProductDetail.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:48:53.509Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-15T05:53:00.557Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 37,
-              "Title": "ucRegister.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\ucRegister.cs",
-              "RelativeDocumentMoniker": "Model\\ucRegister.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\ucRegister.cs [Design]",
-              "RelativeToolTip": "Model\\ucRegister.cs [Design]",
+              "Title": "frmDetailInfo.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\frmDetailInfo.cs",
+              "RelativeDocumentMoniker": "CustomerModel\\frmDetailInfo.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\frmDetailInfo.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\frmDetailInfo.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T06:50:34.311Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-15T04:49:37.47Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 38,
-              "Title": "ucRegister.Designer.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\ucRegister.Designer.cs",
-              "RelativeDocumentMoniker": "Model\\ucRegister.Designer.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\ucRegister.Designer.cs",
-              "RelativeToolTip": "Model\\ucRegister.Designer.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "feedback.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\feedback.cs",
+              "RelativeDocumentMoniker": "CustomerModel\\feedback.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\feedback.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\feedback.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T06:50:35.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T04:48:53.509Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 39,
-              "Title": "ucRegister.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\ucRegister.cs",
+              "Title": "ucRegister.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Model\\ucRegister.cs",
               "RelativeDocumentMoniker": "Model\\ucRegister.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\ucRegister.cs",
-              "RelativeToolTip": "Model\\ucRegister.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\ucRegister.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\Model\\ucRegister.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T06:50:35.103Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T06:50:34.311Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 40,
-              "Title": "SystemDiagram.cd",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\SystemDiagram.cd",
-              "RelativeDocumentMoniker": "SystemDiagram.cd",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\SystemDiagram.cd",
-              "RelativeToolTip": "SystemDiagram.cd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
-              "WhenOpened": "2025-04-24T06:00:42.823Z",
-              "EditorCaption": ""
+              "Title": "ucRegister.Designer.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Model\\ucRegister.Designer.cs",
+              "RelativeDocumentMoniker": "Model\\ucRegister.Designer.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Model\\ucRegister.Designer.cs",
+              "RelativeToolTip": "Model\\ucRegister.Designer.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T06:50:35.182Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 41,
-              "Title": "AccountDAO.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\Backend\\AccountDAO.cs",
-              "RelativeDocumentMoniker": "Backend\\AccountDAO.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Backend\\AccountDAO.cs",
-              "RelativeToolTip": "Backend\\AccountDAO.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Title": "ucRegister.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Model\\ucRegister.cs",
+              "RelativeDocumentMoniker": "Model\\ucRegister.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Model\\ucRegister.cs",
+              "RelativeToolTip": "Model\\ucRegister.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T11:23:49.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T06:50:35.103Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 42,
-              "Title": "frmReceptionist.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\ReceptionistModel\\frmReceptionist.cs",
-              "RelativeDocumentMoniker": "ReceptionistModel\\frmReceptionist.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\ReceptionistModel\\frmReceptionist.cs [Design]",
-              "RelativeToolTip": "ReceptionistModel\\frmReceptionist.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T15:41:54.227Z",
-              "EditorCaption": " [Design]"
+              "Title": "SystemDiagram.cd",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\SystemDiagram.cd",
+              "RelativeDocumentMoniker": "SystemDiagram.cd",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\SystemDiagram.cd",
+              "RelativeToolTip": "SystemDiagram.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2025-04-24T06:00:42.823Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 43,
-              "Title": "frmLogin2.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmLogin2.cs",
-              "RelativeDocumentMoniker": "View\\frmLogin2.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmLogin2.cs [Design]",
-              "RelativeToolTip": "View\\frmLogin2.cs [Design]",
+              "Title": "AccountDAO.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Backend\\AccountDAO.cs",
+              "RelativeDocumentMoniker": "Backend\\AccountDAO.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Backend\\AccountDAO.cs",
+              "RelativeToolTip": "Backend\\AccountDAO.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T10:13:36.337Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-23T11:23:49.504Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 44,
-              "Title": "frmBillList.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmBillList.cs",
-              "RelativeDocumentMoniker": "View\\frmBillList.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmBillList.cs",
-              "RelativeToolTip": "View\\frmBillList.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAkwB4AAAAuAAAAAAAAAA==",
+              "Title": "frmReceptionist.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\ReceptionistModel\\frmReceptionist.cs",
+              "RelativeDocumentMoniker": "ReceptionistModel\\frmReceptionist.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\ReceptionistModel\\frmReceptionist.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\ReceptionistModel\\frmReceptionist.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T15:18:15.361Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T15:41:54.227Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 45,
-              "Title": "frmSettingView.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmSettingView.cs",
-              "RelativeDocumentMoniker": "View\\frmSettingView.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmSettingView.cs",
-              "RelativeToolTip": "View\\frmSettingView.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAYwAkAAAAuAAAAAAAAAA==",
+              "Title": "frmLogin2.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmLogin2.cs",
+              "RelativeDocumentMoniker": "View\\frmLogin2.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmLogin2.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\View\\frmLogin2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T14:41:48.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T10:13:36.337Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 46,
-              "Title": "Item.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\Item.cs",
-              "RelativeDocumentMoniker": "CustomerModel\\Item.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\Item.cs",
-              "RelativeToolTip": "CustomerModel\\Item.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "frmBillList.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmBillList.cs",
+              "RelativeDocumentMoniker": "View\\frmBillList.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmBillList.cs",
+              "RelativeToolTip": "View\\frmBillList.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAkwB4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T14:52:50.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T15:18:15.361Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 47,
-              "Title": "orderdetailInfo.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\orderdetailInfo.cs",
-              "RelativeDocumentMoniker": "CustomerModel\\orderdetailInfo.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\orderdetailInfo.cs",
-              "RelativeToolTip": "CustomerModel\\orderdetailInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "frmSettingView.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmSettingView.cs",
+              "RelativeDocumentMoniker": "View\\frmSettingView.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmSettingView.cs",
+              "RelativeToolTip": "View\\frmSettingView.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwAkAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T14:52:48.108Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T14:41:48.486Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 48,
-              "Title": "orderInfo.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\orderInfo.cs",
-              "RelativeDocumentMoniker": "CustomerModel\\orderInfo.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\orderInfo.cs",
-              "RelativeToolTip": "CustomerModel\\orderInfo.cs",
+              "Title": "Item.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\Item.cs",
+              "RelativeDocumentMoniker": "CustomerModel\\Item.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\Item.cs",
+              "RelativeToolTip": "CustomerModel\\Item.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T14:52:44.125Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "ucItemOrder.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\ucItemOrder.cs",
-              "RelativeDocumentMoniker": "CustomerModel\\ucItemOrder.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\ucItemOrder.cs [Design]",
-              "RelativeToolTip": "CustomerModel\\ucItemOrder.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:48:37.849Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "ucTable.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\ucTable.cs",
-              "RelativeDocumentMoniker": "Model\\ucTable.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\ucTable.cs [Design]",
-              "RelativeToolTip": "Model\\ucTable.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:48:37Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "Table.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\Backend\\Table.cs",
-              "RelativeDocumentMoniker": "Backend\\Table.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Backend\\Table.cs",
-              "RelativeToolTip": "Backend\\Table.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T14:51:27.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "ucDetail.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\ucDetail.cs",
-              "RelativeDocumentMoniker": "CustomerModel\\ucDetail.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\ucDetail.cs [Design]",
-              "RelativeToolTip": "CustomerModel\\ucDetail.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:48:38.635Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-23T14:52:50.049Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 49,
-              "Title": "ucConfirm.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\ucConfirm.cs",
-              "RelativeDocumentMoniker": "CustomerModel\\ucConfirm.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\ucConfirm.cs [Design]",
-              "RelativeToolTip": "CustomerModel\\ucConfirm.cs [Design]",
+              "Title": "orderdetailInfo.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\orderdetailInfo.cs",
+              "RelativeDocumentMoniker": "CustomerModel\\orderdetailInfo.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\orderdetailInfo.cs",
+              "RelativeToolTip": "CustomerModel\\orderdetailInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:48:39.38Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-23T14:52:48.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "orderInfo.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\orderInfo.cs",
+              "RelativeDocumentMoniker": "CustomerModel\\orderInfo.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\orderInfo.cs",
+              "RelativeToolTip": "CustomerModel\\orderInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T14:52:44.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ucItemOrder.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\ucItemOrder.cs",
+              "RelativeDocumentMoniker": "CustomerModel\\ucItemOrder.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\ucItemOrder.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\ucItemOrder.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T04:48:37.849Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 54,
-              "Title": "frmOnlinePayment.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\frmOnlinePayment.cs",
-              "RelativeDocumentMoniker": "CustomerModel\\frmOnlinePayment.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\frmOnlinePayment.cs [Design]",
-              "RelativeToolTip": "CustomerModel\\frmOnlinePayment.cs [Design]",
+              "Title": "ucTable.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Model\\ucTable.cs",
+              "RelativeDocumentMoniker": "Model\\ucTable.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\ucTable.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\Model\\ucTable.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T05:53:05.405Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-15T04:48:37Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 55,
-              "Title": "frmReserveTable.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmReserveTable.cs",
-              "RelativeDocumentMoniker": "View\\frmReserveTable.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmReserveTable.cs",
-              "RelativeToolTip": "View\\frmReserveTable.cs",
+              "Title": "Table.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Backend\\Table.cs",
+              "RelativeDocumentMoniker": "Backend\\Table.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Backend\\Table.cs",
+              "RelativeToolTip": "Backend\\Table.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T14:30:37.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T14:51:27.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ucDetail.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\ucDetail.cs",
+              "RelativeDocumentMoniker": "CustomerModel\\ucDetail.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\ucDetail.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\ucDetail.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T04:48:38.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ucConfirm.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\ucConfirm.cs",
+              "RelativeDocumentMoniker": "CustomerModel\\ucConfirm.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\ucConfirm.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\ucConfirm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T04:48:39.38Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 56,
-              "Title": "frmTableAdd.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmTableAdd.cs",
-              "RelativeDocumentMoniker": "Model\\frmTableAdd.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmTableAdd.cs [Design]",
-              "RelativeToolTip": "Model\\frmTableAdd.cs [Design]",
+              "Title": "frmOnlinePayment.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\frmOnlinePayment.cs",
+              "RelativeDocumentMoniker": "CustomerModel\\frmOnlinePayment.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\frmOnlinePayment.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\frmOnlinePayment.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:59:56.434Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-15T05:53:05.405Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 57,
-              "Title": "ucLogin.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\ucLogin.cs",
-              "RelativeDocumentMoniker": "Model\\ucLogin.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\ucLogin.cs",
-              "RelativeToolTip": "Model\\ucLogin.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAwwDsAAAAJAAAAAAAAAA==",
+              "Title": "frmReserveTable.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmReserveTable.cs",
+              "RelativeDocumentMoniker": "View\\frmReserveTable.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmReserveTable.cs",
+              "RelativeToolTip": "View\\frmReserveTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T14:02:37.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T14:30:37.548Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 58,
-              "Title": "ucLogin.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\ucLogin.cs",
-              "RelativeDocumentMoniker": "Model\\ucLogin.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\ucLogin.cs [Design]",
-              "RelativeToolTip": "Model\\ucLogin.cs [Design]",
+              "Title": "frmTableAdd.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Model\\frmTableAdd.cs",
+              "RelativeDocumentMoniker": "Model\\frmTableAdd.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmTableAdd.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\Model\\frmTableAdd.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T14:02:29.649Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-15T04:59:56.434Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 59,
-              "Title": "frmMainEmployee.Designer.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\frmMainEmployee.Designer.cs",
-              "RelativeDocumentMoniker": "frmMainEmployee.Designer.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\frmMainEmployee.Designer.cs",
-              "RelativeToolTip": "frmMainEmployee.Designer.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAAAEIAAAArAAAAAAAAAA==",
+              "Title": "ucLogin.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Model\\ucLogin.cs",
+              "RelativeDocumentMoniker": "Model\\ucLogin.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Model\\ucLogin.cs",
+              "RelativeToolTip": "Model\\ucLogin.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAwwDsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T14:01:47.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T14:02:37.325Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 60,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\Backend\\Customer.cs",
-              "RelativeDocumentMoniker": "Backend\\Customer.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Backend\\Customer.cs",
-              "RelativeToolTip": "Backend\\Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Title": "ucLogin.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Model\\ucLogin.cs",
+              "RelativeDocumentMoniker": "Model\\ucLogin.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\ucLogin.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\Model\\ucLogin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T13:51:20.939Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T14:02:29.649Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 61,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\Backend\\Employee.cs",
-              "RelativeDocumentMoniker": "Backend\\Employee.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Backend\\Employee.cs",
-              "RelativeToolTip": "Backend\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "frmMainEmployee.Designer.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmMainEmployee.Designer.cs",
+              "RelativeDocumentMoniker": "frmMainEmployee.Designer.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmMainEmployee.Designer.cs",
+              "RelativeToolTip": "frmMainEmployee.Designer.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAEIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T13:51:28.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T14:01:47.469Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 62,
-              "Title": "frmMenu.Designer.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\frmMenu.Designer.cs",
-              "RelativeDocumentMoniker": "frmMenu.Designer.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\frmMenu.Designer.cs",
-              "RelativeToolTip": "frmMenu.Designer.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Backend\\Customer.cs",
+              "RelativeDocumentMoniker": "Backend\\Customer.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Backend\\Customer.cs",
+              "RelativeToolTip": "Backend\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T10:12:49.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-23T13:51:20.939Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 63,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Backend\\Employee.cs",
+              "RelativeDocumentMoniker": "Backend\\Employee.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Backend\\Employee.cs",
+              "RelativeToolTip": "Backend\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T13:51:28.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "frmMenu.Designer.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmMenu.Designer.cs",
+              "RelativeDocumentMoniker": "frmMenu.Designer.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\frmMenu.Designer.cs",
+              "RelativeToolTip": "frmMenu.Designer.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T10:12:49.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
               "Title": "frmTableView.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmTableView.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmTableView.cs",
               "RelativeDocumentMoniker": "View\\frmTableView.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmTableView.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\View\\frmTableView.cs",
               "RelativeToolTip": "View\\frmTableView.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1216,118 +1188,97 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "frmCategoryView.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmCategoryView.cs",
-              "RelativeDocumentMoniker": "View\\frmCategoryView.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\View\\frmCategoryView.cs",
-              "RelativeToolTip": "View\\frmCategoryView.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwC8AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T13:55:49.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 66,
               "Title": "frmInfoOrder.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\frmInfoOrder.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\frmInfoOrder.cs",
               "RelativeDocumentMoniker": "CustomerModel\\frmInfoOrder.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\frmInfoOrder.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\frmInfoOrder.cs",
               "RelativeToolTip": "CustomerModel\\frmInfoOrder.cs",
               "ViewState": "AgIAAFUAAAAAAAAAAAAlwHEAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T01:56:50.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 66,
-              "Title": "frmDetailInfo.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\frmDetailInfo.cs",
-              "RelativeDocumentMoniker": "CustomerModel\\frmDetailInfo.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\frmDetailInfo.cs",
-              "RelativeToolTip": "CustomerModel\\frmDetailInfo.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAgwEwAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T01:47:58.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T01:56:50.393Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 67,
-              "Title": "ucItemOrder.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\ucItemOrder.cs",
-              "RelativeDocumentMoniker": "CustomerModel\\ucItemOrder.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\ucItemOrder.cs",
-              "RelativeToolTip": "CustomerModel\\ucItemOrder.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Title": "frmDetailInfo.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\frmDetailInfo.cs",
+              "RelativeDocumentMoniker": "CustomerModel\\frmDetailInfo.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\frmDetailInfo.cs",
+              "RelativeToolTip": "CustomerModel\\frmDetailInfo.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAgwEwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T13:05:23.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T01:47:58.036Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 68,
-              "Title": "ucDetail.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\ucDetail.cs",
-              "RelativeDocumentMoniker": "CustomerModel\\ucDetail.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\ucDetail.cs",
-              "RelativeToolTip": "CustomerModel\\ucDetail.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAowEcAAAANAAAAAAAAAA==",
+              "Title": "ucItemOrder.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\ucItemOrder.cs",
+              "RelativeDocumentMoniker": "CustomerModel\\ucItemOrder.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\ucItemOrder.cs",
+              "RelativeToolTip": "CustomerModel\\ucItemOrder.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T01:48:20.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T13:05:23.752Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 69,
-              "Title": "ucConfirm.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\ucConfirm.cs",
-              "RelativeDocumentMoniker": "CustomerModel\\ucConfirm.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\ucConfirm.cs",
-              "RelativeToolTip": "CustomerModel\\ucConfirm.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAvwMAAAAAMAAAAAAAAAA==",
+              "Title": "ucDetail.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\ucDetail.cs",
+              "RelativeDocumentMoniker": "CustomerModel\\ucDetail.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\ucDetail.cs",
+              "RelativeToolTip": "CustomerModel\\ucDetail.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAowEcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T13:24:58.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T01:48:20.838Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 70,
-              "Title": "feedback.cs",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\feedback.cs",
-              "RelativeDocumentMoniker": "CustomerModel\\feedback.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\CustomerModel\\feedback.cs",
-              "RelativeToolTip": "CustomerModel\\feedback.cs",
-              "ViewState": "AgIAAOQAAAAAAAAAAAArwPcAAAAGAAAAAAAAAA==",
+              "Title": "ucConfirm.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\ucConfirm.cs",
+              "RelativeDocumentMoniker": "CustomerModel\\ucConfirm.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\ucConfirm.cs",
+              "RelativeToolTip": "CustomerModel\\ucConfirm.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAvwMAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:54:37.214Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T13:24:58.783Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 71,
-              "Title": "frmProductAdd.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmProductAdd.cs",
-              "RelativeDocumentMoniker": "Model\\frmProductAdd.cs",
-              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmProductAdd.cs [Design]",
-              "RelativeToolTip": "Model\\frmProductAdd.cs [Design]",
+              "Title": "feedback.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\feedback.cs",
+              "RelativeDocumentMoniker": "CustomerModel\\feedback.cs",
+              "ToolTip": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\CustomerModel\\feedback.cs",
+              "RelativeToolTip": "CustomerModel\\feedback.cs",
+              "ViewState": "AgIAAOQAAAAAAAAAAAArwPcAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:59:58.008Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-15T04:54:37.214Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 72,
+              "Title": "frmProductAdd.cs [Design]",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Model\\frmProductAdd.cs",
+              "RelativeDocumentMoniker": "Model\\frmProductAdd.cs",
+              "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmProductAdd.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\Model\\frmProductAdd.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T04:59:58.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
               "Title": "frmTableSelect.cs [Design]",
-              "DocumentMoniker": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmTableSelect.cs",
+              "DocumentMoniker": "D:\\LEARNING\\Winform\\Coffee-Shop-Management-System\\Model\\frmTableSelect.cs",
               "RelativeDocumentMoniker": "Model\\frmTableSelect.cs",
               "ToolTip": "D:\\OOP\\Coffee-Shop-Management-System\\Model\\frmTableSelect.cs [Design]",
-              "RelativeToolTip": "Model\\frmTableSelect.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\OOP\\Coffee-Shop-Management-System\\Model\\frmTableSelect.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T04:59:57.377Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-15T04:59:57.377Z"
             }
           ]
         }

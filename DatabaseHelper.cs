@@ -6,7 +6,7 @@ namespace Restaurant_Management_System.Backend
 {
     public class DatabaseHelper
     {
-        private static readonly string connectionString = "Server=.\\HELLO;Database=CoffeeShopDB;Integrated Security=True;";
+        private static readonly string connectionString = "Server=.;Database=CoffeeShopDB;Integrated Security=True;";
 
         public static SqlConnection GetConnection()
         {

@@ -417,6 +417,7 @@
     <None Include="Resources\change.png" />
     <Content Include="Resources\CoffeeTableIcon %282%29.png" />
     <Content Include="Resources\coffeetableIcon.png" />
+    <None Include="Resources\edit.png" />
     <Content Include="Resources\report.png" />
     <Content Include="Resources\excel.png" />
     <Content Include="Resources\free.png" />

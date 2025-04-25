@@ -38,18 +38,18 @@
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.cbbStatus = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.IconTableFree = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.lblNumberTableFree = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.IconTableReserved = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblNumberTableReserved = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.IconTableReserved = new Guna.UI2.WinForms.Guna2Button();
-            this.IconTableFree = new Guna.UI2.WinForms.Guna2Button();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgvSno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvTableID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,14 +64,14 @@
             // 
             // dgvTables
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(225)))), ((int)(((byte)(184)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.dgvTables.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTables.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvTables.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(156)))), ((int)(((byte)(18)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -88,14 +88,14 @@
             this.dgvedit,
             this.dgvdel});
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(235)))), ((int)(((byte)(207)))));
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(189)))), ((int)(((byte)(97)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvTables.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvTables.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(171)))));
+            this.dgvTables.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvTables.Location = new System.Drawing.Point(46, 205);
             this.dgvTables.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvTables.Name = "dgvTables";
@@ -104,29 +104,29 @@
             this.dgvTables.RowTemplate.Height = 35;
             this.dgvTables.Size = new System.Drawing.Size(1353, 481);
             this.dgvTables.TabIndex = 9;
-            this.dgvTables.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Orange;
-            this.dgvTables.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(225)))), ((int)(((byte)(184)))));
+            this.dgvTables.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvTables.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.dgvTables.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dgvTables.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgvTables.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.dgvTables.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgvTables.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(171)))));
-            this.dgvTables.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(156)))), ((int)(((byte)(18)))));
+            this.dgvTables.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvTables.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dgvTables.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvTables.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvTables.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvTables.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvTables.ThemeStyle.HeaderStyle.Height = 40;
             this.dgvTables.ThemeStyle.ReadOnly = false;
-            this.dgvTables.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(235)))), ((int)(((byte)(207)))));
+            this.dgvTables.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvTables.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvTables.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvTables.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvTables.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvTables.ThemeStyle.RowsStyle.Height = 35;
-            this.dgvTables.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(189)))), ((int)(((byte)(97)))));
-            this.dgvTables.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvTables.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvTables.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvTables.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTables_CellClick);
+            this.dgvTables.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTables_CellContentClick);
             this.dgvTables.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvTables_CellFormatting);
             this.dgvTables.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvTables_CellMouseClick);
             // 
@@ -197,6 +197,24 @@
             this.guna2Panel1.Size = new System.Drawing.Size(292, 134);
             this.guna2Panel1.TabIndex = 19;
             // 
+            // IconTableFree
+            // 
+            this.IconTableFree.BackColor = System.Drawing.Color.SpringGreen;
+            this.IconTableFree.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.IconTableFree.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.IconTableFree.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.IconTableFree.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.IconTableFree.FillColor = System.Drawing.Color.SpringGreen;
+            this.IconTableFree.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.IconTableFree.ForeColor = System.Drawing.Color.White;
+            this.IconTableFree.Image = global::Restaurant_Management_System.Properties.Resources.free;
+            this.IconTableFree.ImageSize = new System.Drawing.Size(50, 50);
+            this.IconTableFree.Location = new System.Drawing.Point(180, 43);
+            this.IconTableFree.Name = "IconTableFree";
+            this.IconTableFree.Size = new System.Drawing.Size(83, 67);
+            this.IconTableFree.TabIndex = 21;
+            this.IconTableFree.Click += new System.EventHandler(this.IconTableFree_Click);
+            // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -254,6 +272,25 @@
             this.guna2Panel2.Size = new System.Drawing.Size(292, 134);
             this.guna2Panel2.TabIndex = 20;
             // 
+            // IconTableReserved
+            // 
+            this.IconTableReserved.BackColor = System.Drawing.Color.White;
+            this.IconTableReserved.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.IconTableReserved.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.IconTableReserved.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.IconTableReserved.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.IconTableReserved.FillColor = System.Drawing.Color.Salmon;
+            this.IconTableReserved.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.IconTableReserved.ForeColor = System.Drawing.Color.White;
+            this.IconTableReserved.Image = ((System.Drawing.Image)(resources.GetObject("IconTableReserved.Image")));
+            this.IconTableReserved.ImageSize = new System.Drawing.Size(50, 50);
+            this.IconTableReserved.Location = new System.Drawing.Point(175, 43);
+            this.IconTableReserved.Name = "IconTableReserved";
+            this.IconTableReserved.Size = new System.Drawing.Size(96, 67);
+            this.IconTableReserved.TabIndex = 21;
+            this.IconTableReserved.Click += new System.EventHandler(this.IconTableReserved_Click);
+            this.IconTableReserved.MouseLeave += new System.EventHandler(this.IconTableReserved_MouseLeave);
+            // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -304,43 +341,6 @@
             this.dataGridViewImageColumn1.MinimumWidth = 50;
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.Width = 50;
-            // 
-            // IconTableReserved
-            // 
-            this.IconTableReserved.BackColor = System.Drawing.Color.White;
-            this.IconTableReserved.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.IconTableReserved.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.IconTableReserved.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.IconTableReserved.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.IconTableReserved.FillColor = System.Drawing.Color.Salmon;
-            this.IconTableReserved.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.IconTableReserved.ForeColor = System.Drawing.Color.White;
-            this.IconTableReserved.Image = ((System.Drawing.Image)(resources.GetObject("IconTableReserved.Image")));
-            this.IconTableReserved.ImageSize = new System.Drawing.Size(50, 50);
-            this.IconTableReserved.Location = new System.Drawing.Point(175, 43);
-            this.IconTableReserved.Name = "IconTableReserved";
-            this.IconTableReserved.Size = new System.Drawing.Size(96, 67);
-            this.IconTableReserved.TabIndex = 21;
-            this.IconTableReserved.Click += new System.EventHandler(this.IconTableReserved_Click);
-            this.IconTableReserved.MouseLeave += new System.EventHandler(this.IconTableReserved_MouseLeave);
-            // 
-            // IconTableFree
-            // 
-            this.IconTableFree.BackColor = System.Drawing.Color.SpringGreen;
-            this.IconTableFree.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.IconTableFree.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.IconTableFree.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.IconTableFree.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.IconTableFree.FillColor = System.Drawing.Color.SpringGreen;
-            this.IconTableFree.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.IconTableFree.ForeColor = System.Drawing.Color.White;
-            this.IconTableFree.Image = global::Restaurant_Management_System.Properties.Resources.free;
-            this.IconTableFree.ImageSize = new System.Drawing.Size(50, 50);
-            this.IconTableFree.Location = new System.Drawing.Point(180, 43);
-            this.IconTableFree.Name = "IconTableFree";
-            this.IconTableFree.Size = new System.Drawing.Size(83, 67);
-            this.IconTableFree.TabIndex = 21;
-            this.IconTableFree.Click += new System.EventHandler(this.IconTableFree_Click);
             // 
             // txtSearch
             // 
@@ -405,7 +405,7 @@
             this.dgvedit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dgvedit.FillWeight = 50F;
             this.dgvedit.HeaderText = "Action";
-            this.dgvedit.Image = global::Restaurant_Management_System.Properties.Resources.change;
+            this.dgvedit.Image = global::Restaurant_Management_System.Properties.Resources.edit;
             this.dgvedit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dgvedit.MinimumWidth = 60;
             this.dgvedit.Name = "dgvedit";

@@ -29,11 +29,49 @@ namespace Restaurant_Management_System.View
             //imageColumn.ImageLayout = DataGridViewImageCellLayout.Stretch;
 
             //dgvCategory.Rows[0].Cells[3].Value = Properties.Resources.store;
+            ApplyCustomTheme();
             LoadCategoryData();
             if (dgvCategory.RowCount <= 1) labelNumberResultFound.Text = $"{dgvCategory.RowCount.ToString()} result found";
             else labelNumberResultFound.Text = $"{dgvCategory.RowCount.ToString()} results found";
             dgvCategory.AllowUserToAddRows = false;
         }
+        private void ApplyCustomTheme()
+        {
+            // Xóa theme mặc định
+            dgvCategory.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            dgvCategory.EnableHeadersVisualStyles = false;
+
+            // Header
+            dgvCategory.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(102, 99, 76);
+            dgvCategory.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvCategory.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            dgvCategory.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvCategory.ColumnHeadersHeight = 40;
+
+            // Dòng thường
+            dgvCategory.DefaultCellStyle.BackColor = Color.FromArgb(165, 140, 100); // Be sáng
+            dgvCategory.DefaultCellStyle.ForeColor = Color.Black;
+            dgvCategory.DefaultCellStyle.Font = new Font("Segoe UI", 10);
+            dgvCategory.DefaultCellStyle.SelectionBackColor = Color.FromArgb(224, 224, 224); // Nâu vừa
+            dgvCategory.DefaultCellStyle.SelectionForeColor = Color.Black;
+
+            // Dòng xen kẽ
+            dgvCategory.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(204, 177, 142); // Xám nhạt  
+
+            // Bảng
+            dgvCategory.BackgroundColor = Color.AntiqueWhite;
+            dgvCategory.BorderStyle = BorderStyle.None;
+            dgvCategory.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvCategory.RowTemplate.Height = 35;
+
+            // Khác
+            dgvCategory.ReadOnly = false;
+            dgvCategory.AllowUserToAddRows = false;
+            dgvCategory.AllowUserToResizeRows = false;
+            dgvCategory.EditMode = DataGridViewEditMode.EditOnKeystrokeOrF2;
+            dgvCategory.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        }
+
         private void LoadCategoryData()
 
         {

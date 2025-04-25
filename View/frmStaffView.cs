@@ -29,9 +29,49 @@ namespace Restaurant_Management_System.View
 
         Color ButtonEnabled = Color.FromArgb(255, 192, 128);
         Color ButtonDisable = Color.Silver;
+       
+        private void ApplyCustomTheme()
+        {
+            // Xóa theme mặc định
+            dgvEmployee.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            dgvEmployee.EnableHeadersVisualStyles = false;
+
+            // Header
+            dgvEmployee.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(102, 99, 76);
+            dgvEmployee.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvEmployee.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            dgvEmployee.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvEmployee.ColumnHeadersHeight = 40;
+
+            // Dòng thường
+            dgvEmployee.DefaultCellStyle.BackColor = Color.FromArgb(165, 140, 100); // Be sáng
+            dgvEmployee.DefaultCellStyle.ForeColor = Color.Black;
+            dgvEmployee.DefaultCellStyle.Font = new Font("Segoe UI", 10);
+            dgvEmployee.DefaultCellStyle.SelectionBackColor = Color.FromArgb(224, 224, 224); // Nâu vừa
+            dgvEmployee.DefaultCellStyle.SelectionForeColor = Color.Black;
+
+            // Dòng xen kẽ
+            dgvEmployee.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(204, 177, 142); // Xám nhạt  
+
+            // Bảng
+            dgvEmployee.BackgroundColor = Color.AntiqueWhite;
+            dgvEmployee.BorderStyle = BorderStyle.None;
+            dgvEmployee.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvEmployee.RowTemplate.Height = 35;
+
+            // Khác
+            dgvEmployee.ReadOnly = false;
+            dgvEmployee.AllowUserToAddRows = false;
+            dgvEmployee.AllowUserToResizeRows = false;
+            dgvEmployee.EditMode = DataGridViewEditMode.EditOnKeystrokeOrF2;
+            dgvEmployee.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        }
+
 
         private void frmStaffView_Load(object sender, EventArgs e)
         {
+            //FixEditDataGridView();
+            ApplyCustomTheme();
             LoadEmployeeData();
         }
         private void LoadEmployeeData()
@@ -345,6 +385,11 @@ namespace Restaurant_Management_System.View
                 frmReportView report = new frmReportView(manager, rpt);
                 report.ShowDialog();
             }
+        }
+
+        private void dgvEmployee_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
