@@ -25,6 +25,7 @@ namespace Restaurant_Management_System.Model
         public bool PasswordChar { get; internal set; }
 
         public event Action OnSwitchToRegister;
+        public event Action OnLoginSuccess;
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -42,31 +43,28 @@ namespace Restaurant_Management_System.Model
             string username = txtUsername.Text;
             string password = txtPassword.Text;
 
-
-            // Kiểm tra nếu 2 ký tự đầu của username là 'NV'
-            if (username.Length >= 2 && username.Substring(0, 2)== "NV")
+            if (username.Length >= 2 && username.Substring(0, 2) == "NV")
             {
-                 Employee emp = AccountDAO.CheckEmployeeLogin(username, password);
+                Employee emp = AccountDAO.CheckEmployeeLogin(username, password);
 
                 if (emp != null)
                 {
-                    this.Hide();
-
+                    Form mainForm = null;
                     if (emp.Role == "Manager")
                     {
-                        frmMainManager f = new frmMainManager(emp);
-                        f.ShowDialog();
+                        mainForm = new frmMainManager(emp);
                     }
-         
                     else if (emp.Role == "Receptionist")
                     {
-                        frmMainEmployee b = new frmMainEmployee(emp);
-                        b.ShowDialog();
+                        mainForm = new frmMainEmployee(emp);
                     }
-                    this.Show();
-                    txtUsername.Clear();
-                    txtPassword.Clear();
-                    txtUsername.Focus();
+
+                    if (mainForm != null)
+                    {
+                        mainForm.ShowDialog();
+                    }
+
+                    OnLoginSuccess?.Invoke();
                 }
                 else
                 {
@@ -74,6 +72,5 @@ namespace Restaurant_Management_System.Model
                 }
             }
         }
-
     }
 }

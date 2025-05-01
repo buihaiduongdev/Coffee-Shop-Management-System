@@ -22,6 +22,11 @@ namespace Restaurant_Management_System
             DisplayLogin();
             this.FormBorderStyle = FormBorderStyle.None;
         }
+        private void CloseForm()
+        {
+            this.Close();
+        }
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn(
            int nLeftRect,
@@ -33,35 +38,32 @@ namespace Restaurant_Management_System
         );
         private void DisplayLogin()
         {
-            // Tạo và hiển thị UserControl đăng nhập
             ucLogin loginControl = new ucLogin();
             loginControl.Dock = DockStyle.Fill;
-            loginControl.OnSwitchToRegister += SwitchToRegister; // Đăng ký sự kiện chuyển qua đăng ký
-            this.Controls.Clear(); // Xóa các điều khiển cũ
-            this.Controls.Add(loginControl); // Thêm UserControl đăng nhập
+            loginControl.OnSwitchToRegister += SwitchToRegister;
+            loginControl.OnLoginSuccess += CloseForm;
+            this.Controls.Clear();
+            this.Controls.Add(loginControl);
     
         }
 
         private void DisplayRegister()
         {
-            // Tạo và hiển thị UserControl đăng ký
             ucRegister registerControl = new ucRegister();
             registerControl.Dock = DockStyle.Fill;
-            registerControl.OnSwitchToLogin += SwitchToLogin; // Đăng ký sự kiện chuyển qua đăng nhập
-            this.Controls.Clear(); // Xóa các điều khiển cũ
-            this.Controls.Add(registerControl); // Thêm UserControl đăng ký
+            registerControl.OnSwitchToLogin += SwitchToLogin;
+            this.Controls.Clear();
+            this.Controls.Add(registerControl); 
         
         }
 
         private void SwitchToRegister()
         {
-            // Khi người dùng nhấn nút chuyển sang đăng ký
             DisplayRegister();
         }
 
         private void SwitchToLogin()
         {
-            // Khi người dùng nhấn nút chuyển sang đăng nhập
             DisplayLogin();
         }
 

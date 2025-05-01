@@ -42,10 +42,9 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(83)))), ((int)(((byte)(51)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(607, 14);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(455, 11);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(303, 94);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(227, 76);
             this.guna2HtmlLabel1.TabIndex = 1;
             this.guna2HtmlLabel1.Text = "ĐẶT BÀN";
             // 
@@ -59,9 +58,8 @@
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel1.Location = new System.Drawing.Point(0, -1);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1372, 613);
+            this.guna2Panel1.Size = new System.Drawing.Size(1191, 582);
             this.guna2Panel1.TabIndex = 3;
             // 
             // flpTable
@@ -71,21 +69,19 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flpTable.AutoScroll = true;
             this.flpTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.flpTable.Location = new System.Drawing.Point(40, 92);
-            this.flpTable.Margin = new System.Windows.Forms.Padding(4);
+            this.flpTable.Location = new System.Drawing.Point(30, 75);
             this.flpTable.Name = "flpTable";
-            this.flpTable.Size = new System.Drawing.Size(1489, 491);
+            this.flpTable.Size = new System.Drawing.Size(1279, 483);
             this.flpTable.TabIndex = 0;
-            this.flpTable.Paint += new System.Windows.Forms.PaintEventHandler(this.flpTable_Paint);
+            //this.flpTable.Paint += new System.Windows.Forms.PaintEventHandler(this.flpTable_Paint);
             // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = global::Restaurant_Management_System.Properties.Resources.back_button;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(22, 30);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(16, 24);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(37, 37);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(28, 30);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 2;
             this.guna2PictureBox1.TabStop = false;
@@ -93,16 +89,15 @@
             // 
             // frmReserveTable
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 612);
+            this.ClientSize = new System.Drawing.Size(1028, 497);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmReserveTable";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmReserveTable";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmReserveTable_FormClosed);
+            //this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmReserveTable_FormClosed);
             this.Load += new System.EventHandler(this.frmReserveTable_Load);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

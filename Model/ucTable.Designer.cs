@@ -56,7 +56,7 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(321, 314);
             this.guna2Panel1.TabIndex = 0;
-            this.guna2Panel1.Click += new System.EventHandler(this.guna2Panel1_Click);
+            //this.guna2Panel1.Click += new System.EventHandler(this.guna2Panel1_Click);
             // 
             // lblCapicity
             // 
@@ -133,7 +133,7 @@
             this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "ucTable";
             this.Size = new System.Drawing.Size(321, 314);
-            this.Load += new System.EventHandler(this.ucTable_Load);
+            //this.Load += new System.EventHandler(this.ucTable_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

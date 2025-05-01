@@ -14,6 +14,7 @@ namespace Restaurant_Management_System.CustomerModel
         string status;
        
         public event Action<string> OnTableSelected;
+        public event Action<string> OnTableUnselected;
         int tableID;
         public ucTable(Table Table)
         {
@@ -44,12 +45,22 @@ namespace Restaurant_Management_System.CustomerModel
                 {
  
                     OnTableSelected?.Invoke(lblNameTable.Text);
-
                 }
             }
             else
             {
-                MessageBox.Show("Bàn này đã được đặt trước!");
+                var result = MessageBox.Show(
+                    "Bạn có chắc hủy chọn bàn này không?",
+                    "Xác nhận hủy",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question
+                );
+
+                if (result == DialogResult.Yes)
+                {
+
+                    OnTableUnselected?.Invoke(lblNameTable.Text);
+                }
             }
         }
 
@@ -61,28 +72,12 @@ namespace Restaurant_Management_System.CustomerModel
             {
                 btnReserve.Text = "Chọn bàn";
                 btnReserve.FillColor = ColorTranslator.FromHtml("#3B9E62");
-
-
             }
             else
             {
                 btnReserve.Text = "Đã chọn";
                 btnReserve.FillColor = ColorTranslator.FromHtml("#F87168");
-
-
             }
-        }
-
-        private void ucTable_Load(object sender, EventArgs e)
-        {
-
-
-
-        }
-
-        private void guna2Panel1_Click(object sender, EventArgs e)
-        {
-     
         }
     }
 }

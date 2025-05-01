@@ -21,7 +21,7 @@ namespace Restaurant_Management_System.Model
         public event Action OnSwitchToLogin;
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            register();
+            updatePassword();
         }
 
         private void btnSwitchToLogin2_Click(object sender, EventArgs e)
@@ -29,62 +29,78 @@ namespace Restaurant_Management_System.Model
             OnSwitchToLogin?.Invoke();
         }
 
-        private void register()
+        private void updatePassword()
         {
             string username = txtUsername.Text;
             string firstName = txtFirstname.Text;
             string lastName = txtLastname.Text;
-            string password = txtPassword.Text;
+            string newPassword = txtPassword.Text;
             string phone = txtPhone.Text;
 
-
-            if (username.Contains("NV"))
+            if (string.IsNullOrEmpty(username) ||
+                string.IsNullOrEmpty(lastName) ||
+                string.IsNullOrEmpty(phone) ||
+                string.IsNullOrEmpty(newPassword))
             {
-                MessageBox.Show("Tài khoản này đã tồn tại.");
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin!");
                 return;
             }
 
-            string checkQuery = "SELECT COUNT(*) FROM Customers WHERE Username = @username";
-            SqlParameter[] checkParams = new SqlParameter[]
-            {
-                new SqlParameter("@username", username)
+            string checkQuery = @"SELECT COUNT(*) 
+                                FROM Employees 
+                                WHERE Username = @username 
+                                AND LastName = @lastName 
+                                AND Phone = @phone
+                                AND FirstName = @firstName";
+
+            SqlParameter[] checkParams = {
+                new SqlParameter("@username", username),
+                new SqlParameter("@lastName", lastName),
+                new SqlParameter("@phone", phone),
+                new SqlParameter("@firstName", firstName)
             };
-             
+
+
             int userExists = Convert.ToInt32(DatabaseHelper.ExecuteScalar(checkQuery, checkParams));
 
-            if (userExists > 0)
+            if (userExists == 0)
             {
-                MessageBox.Show("Tài khoản đã tồn tại.");
+                MessageBox.Show("Thông tin xác thực không chính xác!");
                 return;
             }
 
-            // Nếu tài khoản chưa tồn tại, thực hiện thêm vào bảng Customers
-            string insertQuery = "INSERT INTO Customers (Username, FirstName, LastName, Password, Phone) " +
-                            "VALUES (@username, @firstName, @lastName, @password, @phone)";
-            SqlParameter[] insertParams = new SqlParameter[]
-            {
+
+            string updateQuery = @"UPDATE Employees 
+                                SET Password = @password 
+                                WHERE Username = @username 
+                                AND LastName = @lastName 
+                                AND Phone = @phone
+                                AND FirstName = @firstName";
+
+            SqlParameter[] updateParams = {
+                new SqlParameter("@password", newPassword),
                 new SqlParameter("@username", username),
-                new SqlParameter("@firstName", firstName),
                 new SqlParameter("@lastName", lastName),
-                new SqlParameter("@password", password),
-                new SqlParameter("@phone", phone)
+                new SqlParameter("@phone", phone),
+                new SqlParameter("@firstName", firstName)
             };
 
-            int rowsAffected = DatabaseHelper.ExecuteNonQuery(insertQuery, insertParams);
+            int rowsAffected = DatabaseHelper.ExecuteNonQuery(updateQuery, updateParams);
 
             if (rowsAffected > 0)
             {
-                MessageBox.Show("Đăng ký thành công!");
+                MessageBox.Show("Đổi mật khẩu thành công!");
+                OnSwitchToLogin?.Invoke();
             }
             else
             {
-                MessageBox.Show("Có lỗi xảy ra, vui lòng thử lại.");
+                MessageBox.Show("Lỗi hệ thống, vui lòng thử lại!");
             }
         }
 
-        private void btn_Click(object sender, EventArgs e)
+        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

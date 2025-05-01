@@ -46,17 +46,12 @@ namespace Restaurant_Management_System.Receptionist
             AddControls(frm);
         }
 
-        private void btnLogout_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void btnLogout_Click_1(object sender, EventArgs e)
+        private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Close();
         }

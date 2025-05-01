@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
@@ -50,40 +51,61 @@ namespace Restaurant_Management_System.CustomerModel
         {
             borderRadius();
             loadtable();
-            
         }
         DataTable dt = new DataTable();
         private void loadtable()
         {
-
             string query = @"SELECT * FROM Tables WHERE IsDeleted = 0";
-            
-            
             dt = DatabaseHelper.ExecuteQuery(query);
             flpTable.Controls.Clear();
-            string s = "";
+
             foreach (DataRow row in dt.Rows)
             {
                 Table tableData = new Table(
                     Convert.ToInt32(row["TableID"]),
                     Convert.ToInt32(row["Capacity"]),
                     (row["Status"]).ToString()
-
-                    
-
                 );
-                s += (row["Status"]).ToString();
-                s += "\n";
+
                 var tableUC = new ucTable(tableData);
+
                 tableUC.OnTableSelected += (tableName) =>
                 {
-                    this.SelectedTableName = tableName;
-                    this.DialogResult = DialogResult.OK;
-                    this.Close();
+                    updateStatus(tableName, "Occupy");
+                    loadtable();
                 };
+
+                tableUC.OnTableUnselected += (tableName) =>
+                {
+                    updateStatus(tableName, "Empty");
+                    loadtable();
+                };
+
+
                 flpTable.Controls.Add(tableUC);
             }
-            //MessageBox.Show(s);
+        }
+
+        private void updateStatus(string tableName, string newStatus)
+        {
+            int tableID = int.Parse(tableName.Replace("Bàn ", ""));
+
+            string query = @"UPDATE Tables 
+                            SET Status = @Status 
+                            WHERE TableID = @TableID";
+
+            SqlParameter[] parameters =
+            {
+                new SqlParameter("@Status", newStatus),
+                new SqlParameter("@TableID", tableID)
+            };
+
+            int rowsAffected = DatabaseHelper.ExecuteNonQuery(query, parameters);
+
+            if (rowsAffected == 0)
+            {
+                MessageBox.Show("Cập nhật thất bại!");
+            }
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
@@ -91,16 +113,12 @@ namespace Restaurant_Management_System.CustomerModel
             this.Close();
         }
 
-        private void flpTable_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
 
 
-        private void frmReserveTable_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            dt.Clear();
-        }
+        //private void frmReserveTable_FormClosed(object sender, FormClosedEventArgs e)
+        //{
+        //    dt.Clear();
+        //}
     }
 }
