@@ -94,6 +94,9 @@ namespace Restaurant_Management_System
             bogocmainfrm();
         }
 
-        
+        private void guna2Panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

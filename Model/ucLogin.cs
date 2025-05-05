@@ -49,6 +49,7 @@ namespace Restaurant_Management_System.Model
 
                 if (emp != null)
                 {
+                    this.Hide();
                     Form mainForm = null;
                     if (emp.Role == "Manager")
                     {
@@ -63,7 +64,7 @@ namespace Restaurant_Management_System.Model
                     {
                         mainForm.ShowDialog();
                     }
-
+                    this.Show();
                     OnLoginSuccess?.Invoke();
                 }
                 else

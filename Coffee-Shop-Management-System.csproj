@@ -149,6 +149,7 @@
       <DependentUpon>EmployeeReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="LocalizationHelper.cs" />
     <Compile Include="Model\frmCart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +197,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reciept.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Strings.vi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.vi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
     </Compile>
     <Compile Include="View\frmReportView.cs">
       <SubType>Form</SubType>
@@ -461,6 +472,14 @@
     <EmbeddedResource Include="Reciept.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Reciept.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.vi.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.vi.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmReportView.resx">
       <DependentUpon>frmReportView.cs</DependentUpon>

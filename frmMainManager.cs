@@ -25,6 +25,7 @@ namespace Restaurant_Management_System
             InitializeComponent();
             manager = emp;
             id = manager.ID;
+            load_language("vi");
         }
         public frmMainManager(){
             InitializeComponent();
@@ -99,6 +100,9 @@ namespace Restaurant_Management_System
         private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Close();
+            frmLoginRegister login = new frmLoginRegister();
+            login.ShowDialog();
+            this.Close();
         }
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
@@ -109,6 +113,26 @@ namespace Restaurant_Management_System
         private void btnSetting_Click(object sender, EventArgs e)
         {
             AddControls(new frmSettingView(id));
+        }
+
+        private void load_language(string languages)
+        {
+            LocalizationHelper.SetLanguage(languages);
+            btnHome.Text = LocalizationHelper.GetString("btnHome");
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            if (guna2Button1.Checked == false)
+            {
+                guna2Button1.Checked = true;
+                load_language("en");
+            }
+            else
+            {
+                guna2Button1.Checked = false;
+                load_language("vi");
+            }
         }
     }
 }

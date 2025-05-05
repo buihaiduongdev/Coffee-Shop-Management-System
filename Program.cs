@@ -20,11 +20,7 @@ namespace Restaurant_Management_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            using (frmLoginRegister loginForm = new frmLoginRegister())
-            {
-                Application.Run(loginForm);
-            }
+            Application.Run(new frmLoginRegister());
         }
     }
 }
