@@ -61,7 +61,7 @@ namespace Restaurant_Management_System.Model
 
                     if (mainForm != null)
                     {
-                        mainForm.ShowDialog();
+                        mainForm.Show();
                     }
 
                     OnLoginSuccess?.Invoke();

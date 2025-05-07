@@ -700,10 +700,6 @@ D:\LEARNING\Winform\Coffee-Shop-Management-System\obj\Debug\Restaurant_Managemen
 D:\LEARNING\Winform\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.View.frmReportView.resources
 D:\LEARNING\Winform\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Customer.frmMenu.resources
 D:\LEARNING\Winform\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmMainManager.resources
-E:\HK2_2\WINFORM\Coffee-Shop-Management-System\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
-E:\HK2_2\WINFORM\Coffee-Shop-Management-System\bin\Debug\CrystalDecisions.ReportSource.dll
-E:\HK2_2\WINFORM\Coffee-Shop-Management-System\bin\Debug\CrystalDecisions.Shared.dll
-E:\HK2_2\WINFORM\Coffee-Shop-Management-System\bin\Debug\CrystalDecisions.Windows.Forms.dll
 E:\HK2_2\WINFORM\Coffee-Shop-Management-System\bin\Debug\EPPlus.dll
 E:\HK2_2\WINFORM\Coffee-Shop-Management-System\bin\Debug\EPPlus.Interfaces.dll
 E:\HK2_2\WINFORM\Coffee-Shop-Management-System\bin\Debug\FontAwesome.Sharp.dll

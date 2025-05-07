@@ -93,6 +93,16 @@ namespace Restaurant_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AAA {
+            get {
+                object obj = ResourceManager.GetObject("AAA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap back_button {
             get {
                 object obj = ResourceManager.GetObject("back-button", resourceCulture);
@@ -297,6 +307,16 @@ namespace Restaurant_Management_System.Properties {
         internal static System.Drawing.Bitmap profile {
             get {
                 object obj = ResourceManager.GetObject("profile", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap qrCode {
+            get {
+                object obj = ResourceManager.GetObject("qrCode", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

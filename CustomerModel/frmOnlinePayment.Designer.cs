@@ -28,38 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSuccess = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2Button1
+            // btnSuccess
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(49, 380);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 0;
-            this.guna2Button1.Text = "guna2Button1";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.btnSuccess.BorderRadius = 20;
+            this.btnSuccess.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSuccess.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSuccess.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSuccess.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSuccess.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(228)))), ((int)(((byte)(119)))));
+            this.btnSuccess.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuccess.ForeColor = System.Drawing.Color.White;
+            this.btnSuccess.Location = new System.Drawing.Point(235, 843);
+            this.btnSuccess.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSuccess.Name = "btnSuccess";
+            this.btnSuccess.PressedDepth = 20;
+            this.btnSuccess.Size = new System.Drawing.Size(317, 48);
+            this.btnSuccess.TabIndex = 0;
+            this.btnSuccess.Text = "Thanh toán thành công";
+            this.btnSuccess.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::Restaurant_Management_System.Properties.Resources.qrCode;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(-4, 1);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(812, 828);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 1;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // frmOnlinePayment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.guna2Button1);
+            this.ClientSize = new System.Drawing.Size(808, 920);
+            this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.btnSuccess);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmOnlinePayment";
-            this.Text = "frmOnlinePayment";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnSuccess;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }

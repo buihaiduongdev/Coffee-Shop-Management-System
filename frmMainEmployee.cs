@@ -56,5 +56,15 @@ namespace Restaurant_Management_System
         {
             AddControls(new frmReserveTable());
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            frmLoginRegister loginForm = new frmLoginRegister();
+            loginForm.Show();
+
+            this.Close();
+        }
     }
 }

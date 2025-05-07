@@ -402,6 +402,7 @@
     <Compile Include="View\frmTableViews.Designer.cs">
       <DependentUpon>frmTableViews.cs</DependentUpon>
     </Compile>
+    <None Include="Resources\AAA.jpg" />
     <Content Include="Resources\BlankPicture.png" />
     <None Include="CoffeeShopDS.xsc">
       <DependentUpon>CoffeeShopDS.xsd</DependentUpon>
@@ -418,6 +419,7 @@
     <Content Include="Resources\CoffeeTableIcon %282%29.png" />
     <Content Include="Resources\coffeetableIcon.png" />
     <None Include="Resources\edit.png" />
+    <None Include="Resources\qrCode.jpg" />
     <Content Include="Resources\report.png" />
     <Content Include="Resources\excel.png" />
     <Content Include="Resources\free.png" />

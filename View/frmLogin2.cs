@@ -24,7 +24,7 @@ namespace Restaurant_Management_System
         }
         private void CloseForm()
         {
-            this.Close();
+            this.Hide();
         }
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]

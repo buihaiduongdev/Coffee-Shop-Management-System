@@ -52,18 +52,20 @@
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(805, 6);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(604, 5);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(238, 47);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(178, 38);
             this.guna2HtmlLabel1.TabIndex = 3;
             this.guna2HtmlLabel1.Text = "THỰC ĐƠN";
             // 
             // centerPanel
             // 
             this.centerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.centerPanel.Location = new System.Drawing.Point(261, 53);
+            this.centerPanel.Location = new System.Drawing.Point(196, 43);
+            this.centerPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.centerPanel.Name = "centerPanel";
-            this.centerPanel.Size = new System.Drawing.Size(1491, 712);
+            this.centerPanel.Size = new System.Drawing.Size(1019, 579);
             this.centerPanel.TabIndex = 28;
             // 
             // guna2Panel2
@@ -74,10 +76,9 @@
             this.guna2Panel2.Controls.Add(this.guna2ControlBox2);
             this.guna2Panel2.Controls.Add(this.btnExit);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel2.Location = new System.Drawing.Point(261, 0);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Panel2.Location = new System.Drawing.Point(196, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1491, 53);
+            this.guna2Panel2.Size = new System.Drawing.Size(1019, 43);
             this.guna2Panel2.TabIndex = 27;
             // 
             // guna2ControlBox3
@@ -86,10 +87,9 @@
             this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(1316, 0);
-            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(888, 0);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
-            this.guna2ControlBox3.Size = new System.Drawing.Size(58, 53);
+            this.guna2ControlBox3.Size = new System.Drawing.Size(44, 43);
             this.guna2ControlBox3.TabIndex = 2;
             // 
             // guna2ControlBox2
@@ -98,10 +98,9 @@
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1382, 0);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(937, 0);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(52, 53);
+            this.guna2ControlBox2.Size = new System.Drawing.Size(39, 43);
             this.guna2ControlBox2.TabIndex = 1;
             // 
             // btnExit
@@ -109,10 +108,9 @@
             this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.btnExit.IconColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(1442, 0);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExit.Location = new System.Drawing.Point(983, 0);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(49, 53);
+            this.btnExit.Size = new System.Drawing.Size(37, 43);
             this.btnExit.TabIndex = 0;
             // 
             // guna2Panel1
@@ -129,16 +127,15 @@
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(187)))), ((int)(((byte)(120)))));
             this.guna2Panel1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(261, 765);
+            this.guna2Panel1.Size = new System.Drawing.Size(196, 622);
             this.guna2Panel1.TabIndex = 26;
             // 
             // btnSetting
             // 
             this.btnSetting.AutoRoundedCorners = true;
             this.btnSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(187)))), ((int)(((byte)(120)))));
-            this.btnSetting.BorderRadius = 27;
+            this.btnSetting.BorderRadius = 22;
             this.btnSetting.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnSetting.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
             this.btnSetting.CheckedState.Image = global::Restaurant_Management_System.Properties.Resources.store;
@@ -154,10 +151,9 @@
             this.btnSetting.Image = global::Restaurant_Management_System.Properties.Resources.user;
             this.btnSetting.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSetting.ImageOffset = new System.Drawing.Point(10, 0);
-            this.btnSetting.Location = new System.Drawing.Point(41, 319);
-            this.btnSetting.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSetting.Location = new System.Drawing.Point(31, 259);
             this.btnSetting.Name = "btnSetting";
-            this.btnSetting.Size = new System.Drawing.Size(282, 56);
+            this.btnSetting.Size = new System.Drawing.Size(212, 46);
             this.btnSetting.TabIndex = 30;
             this.btnSetting.Text = "    Settings";
             this.btnSetting.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -168,7 +164,7 @@
             // 
             this.btnBillList.AutoRoundedCorners = true;
             this.btnBillList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(187)))), ((int)(((byte)(120)))));
-            this.btnBillList.BorderRadius = 27;
+            this.btnBillList.BorderRadius = 22;
             this.btnBillList.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnBillList.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
             this.btnBillList.CheckedState.Image = global::Restaurant_Management_System.Properties.Resources.store;
@@ -184,10 +180,9 @@
             this.btnBillList.Image = global::Restaurant_Management_System.Properties.Resources.user;
             this.btnBillList.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnBillList.ImageOffset = new System.Drawing.Point(10, 0);
-            this.btnBillList.Location = new System.Drawing.Point(41, 255);
-            this.btnBillList.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBillList.Location = new System.Drawing.Point(31, 207);
             this.btnBillList.Name = "btnBillList";
-            this.btnBillList.Size = new System.Drawing.Size(282, 56);
+            this.btnBillList.Size = new System.Drawing.Size(212, 46);
             this.btnBillList.TabIndex = 27;
             this.btnBillList.Text = "    Bill list";
             this.btnBillList.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -198,7 +193,7 @@
             // 
             this.btnTable.AutoRoundedCorners = true;
             this.btnTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(187)))), ((int)(((byte)(120)))));
-            this.btnTable.BorderRadius = 27;
+            this.btnTable.BorderRadius = 22;
             this.btnTable.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnTable.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
             this.btnTable.CheckedState.Image = global::Restaurant_Management_System.Properties.Resources.store;
@@ -214,10 +209,9 @@
             this.btnTable.Image = global::Restaurant_Management_System.Properties.Resources.user;
             this.btnTable.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTable.ImageOffset = new System.Drawing.Point(10, 0);
-            this.btnTable.Location = new System.Drawing.Point(41, 191);
-            this.btnTable.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTable.Location = new System.Drawing.Point(31, 155);
             this.btnTable.Name = "btnTable";
-            this.btnTable.Size = new System.Drawing.Size(280, 56);
+            this.btnTable.Size = new System.Drawing.Size(210, 46);
             this.btnTable.TabIndex = 26;
             this.btnTable.Text = "    Table";
             this.btnTable.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -229,7 +223,7 @@
             this.btnMenu.AutoRoundedCorners = true;
             this.btnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(187)))), ((int)(((byte)(120)))));
             this.btnMenu.BorderColor = System.Drawing.Color.BlanchedAlmond;
-            this.btnMenu.BorderRadius = 27;
+            this.btnMenu.BorderRadius = 22;
             this.btnMenu.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnMenu.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
             this.btnMenu.CheckedState.Image = global::Restaurant_Management_System.Properties.Resources.store;
@@ -245,10 +239,9 @@
             this.btnMenu.Image = global::Restaurant_Management_System.Properties.Resources.user;
             this.btnMenu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnMenu.ImageOffset = new System.Drawing.Point(10, 0);
-            this.btnMenu.Location = new System.Drawing.Point(41, 128);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMenu.Location = new System.Drawing.Point(31, 104);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(282, 56);
+            this.btnMenu.Size = new System.Drawing.Size(212, 46);
             this.btnMenu.TabIndex = 25;
             this.btnMenu.Text = "    Menu";
             this.btnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -261,8 +254,9 @@
             this.guna2PictureBox1.Image = global::Restaurant_Management_System.Properties.Resources.Coffee_Logo_Design_Vector_Hd_Images__Coffee_Logo_Design__Coffee__Logo__Cafe_PNG_Image_For_Free_Download_removebg_preview;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(104, 93);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(78, 76);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 24;
             this.guna2PictureBox1.TabStop = false;
@@ -273,7 +267,7 @@
             this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnLogout.AutoRoundedCorners = true;
             this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(187)))), ((int)(((byte)(120)))));
-            this.btnLogout.BorderRadius = 21;
+            this.btnLogout.BorderRadius = 17;
             this.btnLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnLogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -281,34 +275,36 @@
             this.btnLogout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(57)))), ((int)(((byte)(20)))));
             this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(31, 708);
+            this.btnLogout.Location = new System.Drawing.Point(23, 575);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(180, 45);
+            this.btnLogout.Size = new System.Drawing.Size(135, 37);
             this.btnLogout.TabIndex = 24;
             this.btnLogout.Text = "Đăng xuất";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(57)))), ((int)(((byte)(20)))));
-            this.label1.Location = new System.Drawing.Point(61, 13);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(46, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 80);
+            this.label1.Size = new System.Drawing.Size(170, 65);
             this.label1.TabIndex = 1;
             this.label1.Text = "Coffee Shop Management System";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmMainEmployee
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1752, 765);
+            this.ClientSize = new System.Drawing.Size(1215, 622);
             this.Controls.Add(this.centerPanel);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmMainEmployee";
             this.Text = "frmMainEmployee";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
