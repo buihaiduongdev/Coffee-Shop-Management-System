@@ -66,13 +66,15 @@ namespace Restaurant_Management_System
 
         private void SwitchToLogin()
         {
-            language = ucLogin.languages;
-            ucLogin loginControl = new ucLogin(language);
-            loginControl.Dock = DockStyle.Fill;
-            loginControl.OnSwitchToRegister += SwitchToRegister;
-            loginControl.OnLoginSuccess += CloseForm;
-            this.Controls.Clear();
-            this.Controls.Add(loginControl);
+            DisplayLogin();
+            //language = ucLogin.languages;
+            //ucLogin loginControl = new ucLogin(language);
+            //loginControl.Dock = DockStyle.Fill;
+            //loginControl.OnSwitchToRegister += SwitchToRegister;
+            //loginControl.OnLoginSuccess += CloseForm;
+            //this.Controls.Clear();
+            //this.Controls.Add(loginControl);
+
         }
 
         private void bogocmainfrm()

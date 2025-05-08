@@ -234,14 +234,21 @@ namespace Restaurant_Management_System.Customer
                 this.Close();
 
 
-                string query4 = @"SELECT p.ProductName, od.Size, od.Quantity, od.UnitPrice FROM Products p JOIN [Order Details] od ON p.ProductID = od.ProductID WHERE OrderID = @OrderID";
+                string query4_1 = @"SELECT * FROM [Order Details] WHERE OrderID = @OrderID";
+                string query4_2 = @"SELECT * FROM Products";
                 SqlParameter[] paraOrderID = { new SqlParameter("@OrderID", orderID) };
-                DataTable dt = DatabaseHelper.ExecuteQuery(query4, paraOrderID);
+                DataTable order = DatabaseHelper.ExecuteQuery(query4_1, paraOrderID);
+                order.TableName = "Order Details";
+                DataTable products = DatabaseHelper.ExecuteQuery(query4_2);
+                products.TableName = "Products";
+                DataSet ds = new DataSet();
+                ds.Tables.Add(order);
+                ds.Tables.Add(products);
                 string query5 = $@"SELECT (FirstName + ' ' + LastName) FROM Employees WHERE EmployeeID = {employeeID}";
                 object ob = DatabaseHelper.ExecuteScalar(query5);
                 string employeeName = ob.ToString();
                 Reciept rpt = new Reciept();
-                rpt.SetDataSource(dt);
+                rpt.SetDataSource(ds);
                 rpt.SetParameterValue("Receptionist", employeeName);
                 if (string.IsNullOrEmpty(tableID.ToString())) rpt.SetParameterValue("Table", "- 1");
                 else rpt.SetParameterValue("Table", tableID);

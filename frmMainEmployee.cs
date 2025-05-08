@@ -26,6 +26,8 @@ namespace Restaurant_Management_System
             InitializeComponent();
             EmployeeID = emp.ID;
             this.emp = emp;
+            btnMenu.Enabled = true;
+
         }
         
         public void AddControls(Form form)
@@ -59,10 +61,10 @@ namespace Restaurant_Management_System
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            //this.Hide();
+            this.Hide();
 
-            //frmLoginRegister loginForm = new frmLoginRegister();
-            //loginForm.Show();
+            frmLoginRegister loginForm = new frmLoginRegister();
+            loginForm.Show();
 
             this.Close();
         }
@@ -82,7 +84,8 @@ namespace Restaurant_Management_System
         {
             
             load_language(language);
-            AddControls(new frmMenu());
+            AddControls(new frmMenu(emp));
+            btnMenu.Checked = true;
         }
     }
 }

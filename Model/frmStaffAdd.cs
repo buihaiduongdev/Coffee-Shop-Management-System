@@ -34,6 +34,7 @@ namespace Restaurant_Management_System.Model
             string password = txtPassword.Text;
             string phone = txtPhone.Text;
             string role = cbRole.SelectedItem.ToString();
+            if (language == "vi") role = role == "Quản lý" ? "Manager" : role == "Pha chế" ? "Barista" : role == "Tiếp tân" ? "Receptionist" : role == "Phục vụ" ? "Waiter " : "";
             string Strsalary = txtSalary.Text;
 
             String query = "INSERT INTO Employees(Username, Password, LastName, FirstName, Phone, Role, Salary) " +
@@ -227,8 +228,6 @@ namespace Restaurant_Management_System.Model
             txtPassword.PlaceholderText = LocalizationHelper.GetString("txtPassword2");
             txtPhone.PlaceholderText = LocalizationHelper.GetString("txtPhone2");
             txtUsername.PlaceholderText = LocalizationHelper.GetString("txtUsername2");
-
-
         }
     }
 }
