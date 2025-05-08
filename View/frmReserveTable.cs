@@ -129,6 +129,11 @@ namespace Restaurant_Management_System.CustomerModel
 
         }
 
+        private void lblBookTable_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
 
         //private void frmReserveTable_FormClosed(object sender, FormClosedEventArgs e)

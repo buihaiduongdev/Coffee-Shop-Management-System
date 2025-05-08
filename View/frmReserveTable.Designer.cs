@@ -42,12 +42,13 @@
             this.lblBookTable.BackColor = System.Drawing.Color.Transparent;
             this.lblBookTable.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBookTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(83)))), ((int)(((byte)(51)))));
-            this.lblBookTable.Location = new System.Drawing.Point(538, 14);
+            this.lblBookTable.Location = new System.Drawing.Point(627, 4);
             this.lblBookTable.Margin = new System.Windows.Forms.Padding(4);
             this.lblBookTable.Name = "lblBookTable";
             this.lblBookTable.Size = new System.Drawing.Size(662, 94);
             this.lblBookTable.TabIndex = 1;
             this.lblBookTable.Text = "BOOKING TABLES";
+            this.lblBookTable.Click += new System.EventHandler(this.lblBookTable_Click);
             // 
             // guna2Panel1
             // 
@@ -61,7 +62,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, -1);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1588, 716);
+            this.guna2Panel1.Size = new System.Drawing.Size(1770, 793);
             this.guna2Panel1.TabIndex = 3;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
@@ -72,17 +73,17 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flpTable.AutoScroll = true;
             this.flpTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.flpTable.Location = new System.Drawing.Point(40, 92);
+            this.flpTable.Location = new System.Drawing.Point(99, 92);
             this.flpTable.Margin = new System.Windows.Forms.Padding(4);
             this.flpTable.Name = "flpTable";
-            this.flpTable.Size = new System.Drawing.Size(1705, 594);
+            this.flpTable.Size = new System.Drawing.Size(1596, 655);
             this.flpTable.TabIndex = 0;
             // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = global::Restaurant_Management_System.Properties.Resources.back_button;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(21, 30);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(43, 42);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(37, 37);
@@ -95,7 +96,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1367, 612);
+            this.ClientSize = new System.Drawing.Size(1625, 791);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
