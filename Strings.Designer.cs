@@ -115,6 +115,15 @@ namespace Restaurant_Management_System {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All Type.
+        /// </summary>
+        internal static string btnAllType {
+            get {
+                return ResourceManager.GetString("btnAllType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Barista.
         /// </summary>
         internal static string btnBarista {
@@ -156,6 +165,15 @@ namespace Restaurant_Management_System {
         internal static string btnClose {
             get {
                 return ResourceManager.GetString("btnClose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dine-in.
+        /// </summary>
+        internal static string btnDinein {
+            get {
+                return ResourceManager.GetString("btnDinein", resourceCulture);
             }
         }
         
@@ -219,6 +237,15 @@ namespace Restaurant_Management_System {
         internal static string btnMenu {
             get {
                 return ResourceManager.GetString("btnMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Order.
+        /// </summary>
+        internal static string btnOrder {
+            get {
+                return ResourceManager.GetString("btnOrder", resourceCulture);
             }
         }
         
@@ -358,6 +385,15 @@ namespace Restaurant_Management_System {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Take Away.
+        /// </summary>
+        internal static string btnTakeAway {
+            get {
+                return ResourceManager.GetString("btnTakeAway", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Waiter.
         /// </summary>
         internal static string btnWaiter {
@@ -417,6 +453,15 @@ namespace Restaurant_Management_System {
         internal static string dgvFullName {
             get {
                 return ResourceManager.GetString("dgvFullName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Day.
+        /// </summary>
+        internal static string dgvOrderDay {
+            get {
+                return ResourceManager.GetString("dgvOrderDay", resourceCulture);
             }
         }
         
@@ -529,6 +574,33 @@ namespace Restaurant_Management_System {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to View.
+        /// </summary>
+        internal static string dgvview {
+            get {
+                return ResourceManager.GetString("dgvview", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TOTAL REVENUE.
+        /// </summary>
+        internal static string guna20HtmlLabel1 {
+            get {
+                return ResourceManager.GetString("guna20HtmlLabel1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to QUANTITY.
+        /// </summary>
+        internal static string guna20HtmlLabel2 {
+            get {
+                return ResourceManager.GetString("guna20HtmlLabel2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Searching.
         /// </summary>
         internal static string guna2HtmlLabel1 {
@@ -547,11 +619,119 @@ namespace Restaurant_Management_System {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Monthly Bestsellers.
+        /// </summary>
+        internal static string label1 {
+            get {
+                return ResourceManager.GetString("label1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Potential.
+        /// </summary>
+        internal static string label10 {
+            get {
+                return ResourceManager.GetString("label10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Order Served.
+        /// </summary>
+        internal static string label11 {
+            get {
+                return ResourceManager.GetString("label11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        internal static string label17 {
+            get {
+                return ResourceManager.GetString("label17", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sales This Week.
+        /// </summary>
+        internal static string label18 {
+            get {
+                return ResourceManager.GetString("label18", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Revenue.
+        /// </summary>
+        internal static string label20 {
+            get {
+                return ResourceManager.GetString("label20", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Potential.
+        /// </summary>
+        internal static string label3 {
+            get {
+                return ResourceManager.GetString("label3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Table Empty.
+        /// </summary>
+        internal static string label4 {
+            get {
+                return ResourceManager.GetString("label4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Average.
+        /// </summary>
+        internal static string label7 {
+            get {
+                return ResourceManager.GetString("label7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Difference from Last Month.
+        /// </summary>
+        internal static string label8 {
+            get {
+                return ResourceManager.GetString("label8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Employees.
+        /// </summary>
+        internal static string Lbl {
+            get {
+                return ResourceManager.GetString("Lbl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Account.
         /// </summary>
         internal static string lblAccount {
             get {
                 return ResourceManager.GetString("lblAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BILL LIST.
+        /// </summary>
+        internal static string lblBillList {
+            get {
+                return ResourceManager.GetString("lblBillList", resourceCulture);
             }
         }
         
@@ -714,6 +894,15 @@ namespace Restaurant_Management_System {
         internal static string lblNameTable {
             get {
                 return ResourceManager.GetString("lblNameTable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0}.
+        /// </summary>
+        internal static string lblNumberOder {
+            get {
+                return ResourceManager.GetString("lblNumberOder", resourceCulture);
             }
         }
         
@@ -988,7 +1177,7 @@ namespace Restaurant_Management_System {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Search here.
+        ///   Looks up a localized string similar to Search by, id, type,....
         /// </summary>
         internal static string txtSearch_Placehodertext {
             get {

@@ -385,7 +385,7 @@
     <value>Tổng quan</value>
   </data>
   <data name="lblInventory" xml:space="preserve">
-    <value>Quản lý đơn</value>
+    <value>Quản lý mặt hàng</value>
   </data>
   <data name="lblManager" xml:space="preserve">
     <value>Quản lý</value>
@@ -443,5 +443,71 @@
   </data>
   <data name="lblMenu1" xml:space="preserve">
     <value>THỰC ĐƠN</value>
+  </data>
+  <data name="btnOrder" xml:space="preserve">
+    <value>Đơn hàng</value>
+  </data>
+  <data name="label4" xml:space="preserve">
+    <value>Số bàn còn trống</value>
+  </data>
+  <data name="label8" xml:space="preserve">
+    <value>Biến động doanh thu</value>
+  </data>
+  <data name="label11" xml:space="preserve">
+    <value>Số đơn đã phục vụ</value>
+  </data>
+  <data name="Lbl" xml:space="preserve">
+    <value>Số lượng nhân viên</value>
+  </data>
+  <data name="label18" xml:space="preserve">
+    <value>Doanh số tuần này</value>
+  </data>
+  <data name="label1" xml:space="preserve">
+    <value>Top sản phẩm của tháng</value>
+  </data>
+  <data name="label17" xml:space="preserve">
+    <value>Trang chủ</value>
+  </data>
+  <data name="label20" xml:space="preserve">
+    <value>Doanh thu</value>
+  </data>
+  <data name="label7" xml:space="preserve">
+    <value>Lợi nhuận</value>
+  </data>
+  <data name="label10" xml:space="preserve">
+    <value>Tiềm năng</value>
+  </data>
+  <data name="label3" xml:space="preserve">
+    <value>Tiềm năng</value>
+  </data>
+  <data name="guna20HtmlLabel1" xml:space="preserve">
+    <value>Tổng Doanh thu</value>
+  </data>
+  <data name="guna20HtmlLabel2" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="lblBillList" xml:space="preserve">
+    <value>Danh sách đơn hàng</value>
+  </data>
+  <data name="btnAllType" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+  <data name="btnTakeAway" xml:space="preserve">
+    <value>Mang đi</value>
+  </data>
+  <data name="btnDinein" xml:space="preserve">
+    <value>Tại chỗ</value>
+  </data>
+  <data name="dgvOrderDay" xml:space="preserve">
+    <value>Thời gian</value>
+  </data>
+  <data name="txtSearch.Placehodertext" xml:space="preserve">
+    <value>Tìm kiếm bằng id, loại,...</value>
+  </data>
+  <data name="dgvview" xml:space="preserve">
+    <value>Xem</value>
+  </data>
+  <data name="lblNumberOder" xml:space="preserve">
+    <value>{0}</value>
   </data>
 </root>

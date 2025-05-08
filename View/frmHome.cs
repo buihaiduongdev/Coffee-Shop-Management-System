@@ -1,4 +1,5 @@
 ﻿using Restaurant_Management_System.Backend;
+using Restaurant_Management_System.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +9,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
@@ -15,11 +17,30 @@ namespace Restaurant_Management_System.View
 {
     public partial class frmHome : Form
     {
+        private string language = ucLogin.languages;
         public frmHome()
         {
             InitializeComponent();
             setUpCirclePicture();
             setUpChart();
+
+        }
+        private void load_language(string languages)
+        {
+            LocalizationHelper.SetLanguage(languages);
+
+            label4.Text = LocalizationHelper.GetString("label4");
+            label8.Text = LocalizationHelper.GetString("label8");
+            label11.Text = LocalizationHelper.GetString("label11");
+            Lbl.Text = LocalizationHelper.GetString("Lbl");
+            label18.Text = LocalizationHelper.GetString("label18");
+            label7.Text = LocalizationHelper.GetString("label7");
+            label1.Text = LocalizationHelper.GetString("label1");
+            label10.Text = LocalizationHelper.GetString("label10");
+            label3.Text = LocalizationHelper.GetString("label3");
+            label17.Text = LocalizationHelper.GetString("label17");
+            label20.Text = LocalizationHelper.GetString("label20");
+
 
         }
 
@@ -84,6 +105,7 @@ namespace Restaurant_Management_System.View
             lblDay.Text = DateTime.Now.ToString("dd");
             lblMonth.Text = DateTime.Now.ToString("MM");
             LoadData();
+            load_language(language);
         }
 
         private void LoadData()
@@ -198,7 +220,7 @@ namespace Restaurant_Management_System.View
             string queryTotalEmployee = @"SELECT COUNT(*) FROM Employees WHERE IsDeleted = 0";
             object ob5 = DatabaseHelper.ExecuteScalar(queryTotalEmployee);
             lblTotalEmployee.Text = (ob5 == DBNull.Value || ob5 == null) ? "0" : ob5.ToString();
-            lblTotalEmployee2.Text = (ob5 == DBNull.Value || ob5 == null) ? "0" : ob5.ToString();
+          //  lblTotalEmployee2.Text = (ob5 == DBNull.Value || ob5 == null) ? "0" : ob5.ToString();
 
             string queryMonth = @"
 

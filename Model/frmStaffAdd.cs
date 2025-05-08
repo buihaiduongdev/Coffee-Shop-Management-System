@@ -30,7 +30,7 @@ namespace Restaurant_Management_System.Model
         {
             string firstName = txtFirstName.Text;
             string lastName = txtLastName.Text;
-            string username = "NV" + txtUsername.Text;
+            string username = txtUsername.Text;
             string password = txtPassword.Text;
             string phone = txtPhone.Text;
             string role = cbRole.SelectedItem.ToString();

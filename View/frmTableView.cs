@@ -288,5 +288,15 @@ namespace Restaurant_Management_System.View
             dgvTables.Columns["dgvedit"].HeaderText = LocalizationHelper.GetString("dgvedit");
             dgvTables.Columns["dgvdel"].HeaderText = LocalizationHelper.GetString("dgvdel");
         }
+
+        private void lblTable_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTable_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

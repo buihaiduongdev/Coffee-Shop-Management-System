@@ -144,6 +144,7 @@
             this.txtFirstname.Size = new System.Drawing.Size(196, 57);
             this.txtFirstname.TabIndex = 40;
             this.txtFirstname.TextOffset = new System.Drawing.Point(10, -5);
+            this.txtFirstname.TextChanged += new System.EventHandler(this.txtFirstname_TextChanged);
             // 
             // txtLastname
             // 

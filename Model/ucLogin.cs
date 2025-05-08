@@ -51,42 +51,42 @@ namespace Restaurant_Management_System.Model
         {
             string username = txtUsername.Text;
             string password = txtPassword.Text;
+            Employee emp = AccountDAO.CheckEmployeeLogin(username, password);
 
-            if (username.Length >= 2 && username.Substring(0, 2) == "NV")
+            if (emp != null)
             {
-                Employee emp = AccountDAO.CheckEmployeeLogin(username, password);
-
-                if (emp != null)
+                this.Hide();
+                Form mainForm = null;
+                if (emp.Role == "Manager")
                 {
-                    this.Hide();
-                    Form mainForm = null;
-                    if (emp.Role == "Manager")
-                    {
-                        mainForm = new frmMainManager(emp);
-                    }
-                    else if (emp.Role == "Receptionist")
-                    {
-                        mainForm = new frmMainEmployee(emp);
-                    }
-
-                    if (mainForm != null)
-                    {
-                        mainForm.Show();
-                    }
-                    //this.Show();
-                    OnLoginSuccess?.Invoke();
+                    mainForm = new frmMainManager(emp);
                 }
-                else
+                else if (emp.Role == "Receptionist")
                 {
-                    if (languages == "en") MessageBox.Show("Username or password is not correct", "Notification");
-                    else MessageBox.Show("Tài khoản hoặc mật khẩu không đúng.", "Thông báo");
+                    mainForm = new frmMainEmployee(emp);
                 }
+
+                if (mainForm != null)
+                {
+                    mainForm.ShowDialog();
+                }
+                this.Show();
+                OnLoginSuccess?.Invoke();
             }
             else
             {
                 if (languages == "en") MessageBox.Show("Username or password is not correct", "Notification");
                 else MessageBox.Show("Tài khoản hoặc mật khẩu không đúng.", "Thông báo");
             }
+            //if (username.Length >= 2 && username.Substring(0, 2) == "NV")
+            //{
+               
+            //}
+            //else
+            //{
+            //    if (languages == "en") MessageBox.Show("Username or password is not correct", "Notification");
+            //    else MessageBox.Show("Tài khoản hoặc mật khẩu không đúng.", "Thông báo");
+            //}
         }
         private void load_language()
         {

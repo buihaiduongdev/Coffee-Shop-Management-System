@@ -444,4 +444,70 @@
   <data name="lblMenu1" xml:space="preserve">
     <value>MENU</value>
   </data>
+  <data name="btnOrder" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="label4" xml:space="preserve">
+    <value>Table Empty</value>
+  </data>
+  <data name="label8" xml:space="preserve">
+    <value>Difference from Last Month</value>
+  </data>
+  <data name="label11" xml:space="preserve">
+    <value>Order Served</value>
+  </data>
+  <data name="Lbl" xml:space="preserve">
+    <value>Total Employees</value>
+  </data>
+  <data name="label18" xml:space="preserve">
+    <value>Sales This Week</value>
+  </data>
+  <data name="label1" xml:space="preserve">
+    <value>Monthly Bestsellers</value>
+  </data>
+  <data name="label17" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="label20" xml:space="preserve">
+    <value>Revenue</value>
+  </data>
+  <data name="label7" xml:space="preserve">
+    <value>Average</value>
+  </data>
+  <data name="label10" xml:space="preserve">
+    <value>Potential</value>
+  </data>
+  <data name="label3" xml:space="preserve">
+    <value>Potential</value>
+  </data>
+  <data name="guna20HtmlLabel1" xml:space="preserve">
+    <value>TOTAL REVENUE</value>
+  </data>
+  <data name="guna20HtmlLabel2" xml:space="preserve">
+    <value>QUANTITY</value>
+  </data>
+  <data name="lblBillList" xml:space="preserve">
+    <value>BILL LIST</value>
+  </data>
+  <data name="btnAllType" xml:space="preserve">
+    <value>All Type</value>
+  </data>
+  <data name="btnTakeAway" xml:space="preserve">
+    <value>Take Away</value>
+  </data>
+  <data name="btnDinein" xml:space="preserve">
+    <value>Dine-in</value>
+  </data>
+  <data name="dgvOrderDay" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="txtSearch.Placehodertext" xml:space="preserve">
+    <value>Search by, id, type,...</value>
+  </data>
+  <data name="dgvview" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="lblNumberOder" xml:space="preserve">
+    <value>{0}</value>
+  </data>
 </root>

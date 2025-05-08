@@ -113,5 +113,10 @@ namespace Restaurant_Management_System.Model
             txtPassword.PlaceholderText = LocalizationHelper.GetString("txtNewPassword");
             btnSwitchToLogin2.Text = LocalizationHelper.GetString("btnSwitchToLogin2");
         }
+
+        private void txtFirstname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

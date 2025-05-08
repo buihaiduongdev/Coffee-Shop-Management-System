@@ -208,6 +208,7 @@ namespace Restaurant_Management_System.View
                         frm.cbRole.DataSource = language == "en" ? new List<string>() { "", "Manager", "Barista", "Receptionist", "Waiter" } : new List<string>() { "", "Quản lý", "Pha chế", "Tiếp tân", "Phục vụ" };
                         string role = row["Role"].ToString();
                         frm.cbRole.SelectedItem = language == "en" ? role : role == "Manager" ? "Quản lý" : role == "Barista" ? "Pha chế" : role == "Receptionist" ? "Tiếp tân" : role == "Waiter" ? "Phục vụ" : "";
+                        frm.cbRole.SelectedItem = language == "vi" ? role : role == "Quản lý" ? "Manager" : role == "Pha chế" ? "Barista" : role == "Tiếp tân" ? "Receptionist" : role == "Phục vụ" ? "Waiter" : "";
                         frm.ShowDialog();
                         LoadEmployeeData(); // Cập nhật lại danh sách nhân viên sau khi chỉnh sửa
                     }
@@ -228,6 +229,7 @@ namespace Restaurant_Management_System.View
                     if (result == DialogResult.Yes)
                     {
                         string deleteQuery = "UPDATE Employees SET IsDeleted = 1 WHERE EmployeeID = @EmployeeID";
+
                         SqlParameter[] param = { new SqlParameter("@EmployeeID", employeeID) };
 
                         int rowsAffected = DatabaseHelper.ExecuteNonQuery(deleteQuery, param);

@@ -213,6 +213,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Strings.vi.resx</DependentUpon>
     </Compile>
+    <Compile Include="View\frmOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmOrder.Designer.cs">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmReportView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -395,6 +401,12 @@
     <Compile Include="View\frmStaffView.Designer.cs">
       <DependentUpon>frmStaffView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\frmTableManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmTableManagement.Designer.cs">
+      <DependentUpon>frmTableManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmTableView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -432,6 +444,7 @@
     <None Include="Resources\edit.png" />
     <None Include="Resources\products_icon.png" />
     <None Include="Resources\menu.png" />
+    <None Include="Resources\qrCode1.png" />
     <Content Include="Resources\report.png" />
     <Content Include="Resources\excel.png" />
     <Content Include="Resources\free.png" />
@@ -485,6 +498,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\frmOrder.resx">
+      <DependentUpon>frmOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\frmReportView.resx">
       <DependentUpon>frmReportView.cs</DependentUpon>
     </EmbeddedResource>
@@ -493,6 +509,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmSettingView.vi.resx">
       <DependentUpon>frmSettingView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmTableManagement.resx">
+      <DependentUpon>frmTableManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmTableViews.resx">
       <DependentUpon>frmTableViews.cs</DependentUpon>

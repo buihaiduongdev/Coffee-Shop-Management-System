@@ -105,10 +105,7 @@ namespace Restaurant_Management_System
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            this.Hide();
-
-            frmLoginRegister loginForm = new frmLoginRegister();
-            loginForm.Show();
+       
 
             this.Close();
         }
@@ -132,11 +129,17 @@ namespace Restaurant_Management_System
             btnSetting.Text = LocalizationHelper.GetString("btnSetting");
             btnStaff.Text = LocalizationHelper.GetString("btnStaff");
             btnTable.Text = LocalizationHelper.GetString("btnTable");
+            btnOrder.Text = LocalizationHelper.GetString("btnOrder");
             btnLogout.Text = LocalizationHelper.GetString("btnLogout");
             lblInventory.Text = LocalizationHelper.GetString("lblInventory");
             lblManager.Text = LocalizationHelper.GetString("lblManager");
             lblOverview.Text = LocalizationHelper.GetString("lblOverview");
             lblTitle.Text = LocalizationHelper.GetString("lblTitle");
+        }
+
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+            AddControls(new frmOrder(id));
         }
     }
 }

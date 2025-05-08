@@ -51,21 +51,16 @@ namespace Restaurant_Management_System
 
         private void btnBillList_Click(object sender, EventArgs e)
         {
-            AddControls(new frmBillList(EmployeeID));
+            AddControls(new frmOrder(EmployeeID));
         }
 
         private void btnTable_Click(object sender, EventArgs e)
         {
-            AddControls(new frmReserveTable());
+            AddControls(new frmTableManagement());
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            this.Hide();
-
-            frmLoginRegister loginForm = new frmLoginRegister();
-            loginForm.Show();
-
             this.Close();
         }
         private void load_language(string languages)

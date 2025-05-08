@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainManager));
             this.label1 = new System.Windows.Forms.Label();
             this.MenuSlide = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnOrder = new Guna.UI2.WinForms.Guna2Button();
             this.btnCategory = new Guna.UI2.WinForms.Guna2Button();
             this.btnSetting = new Guna.UI2.WinForms.Guna2Button();
             this.lblOverview = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -63,11 +64,12 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(183, 86);
             this.label1.TabIndex = 1;
-            this.label1.Text = "THE COFFEE SHOP";
+            this.label1.Text = "THE COFFEE HOUSE";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MenuSlide
             // 
+            this.MenuSlide.Controls.Add(this.btnOrder);
             this.MenuSlide.Controls.Add(this.btnCategory);
             this.MenuSlide.Controls.Add(this.btnSetting);
             this.MenuSlide.Controls.Add(this.lblOverview);
@@ -88,6 +90,36 @@
             this.MenuSlide.Name = "MenuSlide";
             this.MenuSlide.Size = new System.Drawing.Size(250, 912);
             this.MenuSlide.TabIndex = 0;
+            // 
+            // btnOrder
+            // 
+            this.btnOrder.AutoRoundedCorners = true;
+            this.btnOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(187)))), ((int)(((byte)(120)))));
+            this.btnOrder.BorderRadius = 27;
+            this.btnOrder.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnOrder.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
+            this.btnOrder.CheckedState.Image = global::Restaurant_Management_System.Properties.Resources.staff;
+            this.btnOrder.CustomizableEdges.BottomRight = false;
+            this.btnOrder.CustomizableEdges.TopRight = false;
+            this.btnOrder.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnOrder.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnOrder.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnOrder.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnOrder.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(60)))), ((int)(((byte)(20)))));
+            this.btnOrder.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrder.ForeColor = System.Drawing.Color.White;
+            this.btnOrder.Image = global::Restaurant_Management_System.Properties.Resources.staff;
+            this.btnOrder.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnOrder.ImageOffset = new System.Drawing.Point(10, 0);
+            this.btnOrder.Location = new System.Drawing.Point(44, 794);
+            this.btnOrder.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.Size = new System.Drawing.Size(282, 56);
+            this.btnOrder.TabIndex = 11;
+            this.btnOrder.Text = "    Order";
+            this.btnOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnOrder.TextOffset = new System.Drawing.Point(20, 0);
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // btnCategory
             // 
@@ -154,7 +186,7 @@
             this.lblOverview.AutoSize = false;
             this.lblOverview.BackColor = System.Drawing.Color.Transparent;
             this.lblOverview.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOverview.Location = new System.Drawing.Point(9, 143);
+            this.lblOverview.Location = new System.Drawing.Point(9, 154);
             this.lblOverview.Name = "lblOverview";
             this.lblOverview.Size = new System.Drawing.Size(163, 53);
             this.lblOverview.TabIndex = 29;
@@ -165,7 +197,7 @@
             this.lblManager.AutoSize = false;
             this.lblManager.BackColor = System.Drawing.Color.Transparent;
             this.lblManager.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblManager.Location = new System.Drawing.Point(9, 581);
+            this.lblManager.Location = new System.Drawing.Point(9, 592);
             this.lblManager.Name = "lblManager";
             this.lblManager.Size = new System.Drawing.Size(163, 53);
             this.lblManager.TabIndex = 28;
@@ -257,7 +289,7 @@
             this.lblInventory.AutoSize = false;
             this.lblInventory.BackColor = System.Drawing.Color.Transparent;
             this.lblInventory.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInventory.Location = new System.Drawing.Point(12, 370);
+            this.lblInventory.Location = new System.Drawing.Point(9, 375);
             this.lblInventory.Name = "lblInventory";
             this.lblInventory.Size = new System.Drawing.Size(321, 45);
             this.lblInventory.TabIndex = 0;
@@ -455,5 +487,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblInventory;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblManager;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblOverview;
+        private Guna.UI2.WinForms.Guna2Button btnOrder;
     }
 }
