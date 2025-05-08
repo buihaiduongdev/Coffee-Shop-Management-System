@@ -397,7 +397,7 @@
     <value>Searching</value>
   </data>
   <data name="txtSearch.Placehodertext" xml:space="preserve">
-    <value>Search here</value>
+    <value>Search by, id, type,...</value>
   </data>
   <data name="dgvSrNo" xml:space="preserve">
     <value>ID</value>
@@ -501,13 +501,13 @@
   <data name="dgvOrderDay" xml:space="preserve">
     <value>Day</value>
   </data>
-  <data name="txtSearch.Placehodertext" xml:space="preserve">
-    <value>Search by, id, type,...</value>
-  </data>
   <data name="dgvview" xml:space="preserve">
     <value>View</value>
   </data>
   <data name="lblNumberOder" xml:space="preserve">
     <value>{0}</value>
+  </data>
+  <data name="txtSearch5" xml:space="preserve">
+    <value>Search by, id, type</value>
   </data>
 </root>

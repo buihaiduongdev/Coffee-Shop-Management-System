@@ -78,6 +78,7 @@ namespace Restaurant_Management_System.CustomerModel
                 {
                     updateStatus(tableName, "Occupy");
                     loadtable();
+                    SelectedTableName = tableName;
                 };
 
                 tableUC.OnTableUnselected += (tableName) =>
@@ -109,7 +110,8 @@ namespace Restaurant_Management_System.CustomerModel
 
             if (rowsAffected == 0)
             {
-                MessageBox.Show("Cập nhật thất bại!");
+                if (language == "en") MessageBox.Show("Update failed");
+                else MessageBox.Show("Cập nhật thất bại!");
             }
         }
 

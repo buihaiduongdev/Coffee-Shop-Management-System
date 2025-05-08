@@ -26,7 +26,7 @@ namespace Restaurant_Management_System.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=restaurantDB;Integrated Security=True;TrustServerCe" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=CoffeeShopDB;Integrated Security=True;TrustServerCe" +
             "rtificate=True")]
         public string restaurantDBConnectionString {
             get {
@@ -37,11 +37,22 @@ namespace Restaurant_Management_System.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\HELLO;Initial Catalog=CoffeeShopDB;Integrated Security=True;Encrypt" +
-            "=True;TrustServerCertificate=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=CoffeeShopDB;UserId =sa; Password =123456;Encrypt=T" +
+            "rue;TrustServerCertificate=True")]
         public string CoffeeShopDBConnectionString {
             get {
                 return ((string)(this["CoffeeShopDBConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\HELLO;Initial Catalog=CoffeeShopDB;Integrated Security=True;Encrypt" +
+            "=True;TrustServerCertificate=True")]
+        public string CoffeeShopDBConnectionString1 {
+            get {
+                return ((string)(this["CoffeeShopDBConnectionString1"]));
             }
         }
     }

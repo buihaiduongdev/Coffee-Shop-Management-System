@@ -203,6 +203,12 @@
       <DependentUpon>Reciept.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="RevenueReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RevenueReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Strings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -489,6 +495,10 @@
     <EmbeddedResource Include="Reciept.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Reciept.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RevenueReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RevenueReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Strings.vi.resx">
       <Generator>ResXFileCodeGenerator</Generator>

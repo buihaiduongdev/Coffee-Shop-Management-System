@@ -1204,6 +1204,15 @@ namespace Restaurant_Management_System {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Search by, id, type.
+        /// </summary>
+        internal static string txtSearch5 {
+            get {
+                return ResourceManager.GetString("txtSearch5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Search by, table, status.
         /// </summary>
         internal static string txtSearchTable {

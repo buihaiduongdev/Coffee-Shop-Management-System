@@ -1070,3 +1070,5 @@ D:\LEARNING\Winform\Coffee-Shop-Management-System\obj\Debug\Restaurant_Managemen
 D:\LEARNING\Winform\Coffee-Shop-Management-System\obj\Debug\vi\Restaurant Management System.resources.dll
 D:\LEARNING\Winform\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmTableManagement.resources
 D:\LEARNING\Winform\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmOrder.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Model.frmOrder.resources
+D:\OOP\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.frmTableManagement.resources

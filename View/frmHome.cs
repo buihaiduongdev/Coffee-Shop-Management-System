@@ -18,8 +18,21 @@ namespace Restaurant_Management_System.View
     public partial class frmHome : Form
     {
         private string language = ucLogin.languages;
+        private Employee emp;
+        private int employeeID = 0;
+        public frmHome(Employee emp)
+        {
+            //this.emp = emp;
+            this.employeeID = emp.ID;
+            InitializeComponent();
+            setUpCirclePicture();
+            setUpChart();
+
+        }
+
         public frmHome()
         {
+            //this.emp = emp;
             InitializeComponent();
             setUpCirclePicture();
             setUpChart();
@@ -276,5 +289,30 @@ namespace Restaurant_Management_System.View
 
         }
 
+        private void btnSaveReport_Click(object sender, EventArgs e)
+        {
+            DateTime firstDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+            string FristDateString = firstDate.ToString("dd/MM/yyyy");
+            string LastDateString = DateTime.Now.ToString("dd/MM/yyyy");
+            string query = $@"SELECT * FROM Orders WHERE OrderDay >= '{firstDate}' AND OrderDay <= '{DateTime.Now}'";
+            string query2 = @"SELECT * FROM [Order Details]";
+            string query3 = $@"SELECT (FirstName + ' ' + LastName) FROM Employees WHERE EmployeeID = '{employeeID}'";
+            DataTable order = DatabaseHelper.ExecuteQuery(query);
+            order.TableName = "Orders";
+            DataTable orderDetail = DatabaseHelper.ExecuteQuery(query2);
+            orderDetail.TableName = "Order Details";
+            DataSet ds = new DataSet();
+            ds.Tables.Add(order);
+            ds.Tables.Add(orderDetail);
+            object ob = DatabaseHelper.ExecuteScalar(query3);
+            string employeeName = ob.ToString();
+            RevenueReport rpt = new RevenueReport();
+            rpt.SetDataSource(ds);
+            rpt.SetParameterValue("ManagerName", employeeName);
+            rpt.SetParameterValue("FirstDate", FristDateString);
+            rpt.SetParameterValue("FinalDate", LastDateString);
+            frmReportView report = new frmReportView(emp, rpt);
+            report.ShowDialog();
+        }
     }
 }

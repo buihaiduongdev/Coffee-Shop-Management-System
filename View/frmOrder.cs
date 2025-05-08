@@ -227,12 +227,13 @@ namespace Restaurant_Management_System.Model
             dgvBill.Columns["dgvOrderDay"].HeaderText = LocalizationHelper.GetString("dgvOrderDay");
             dgvBill.Columns["dgvTotal"].HeaderText = LocalizationHelper.GetString("dgvTotal");
             dgvBill.Columns["dgvview"].HeaderText = LocalizationHelper.GetString("dgvview");
-            txtSearch.Text = LocalizationHelper.GetString("txtSearch");
+            txtSearch.Text = LocalizationHelper.GetString("txtSearch5");
             btnAllType.Text = LocalizationHelper.GetString("btnAllType");
             btnTakeAway.Text = LocalizationHelper.GetString("btnTakeAway");
             btnDinein.Text = LocalizationHelper.GetString("btnDinein");
             guna20HtmlLabel2.Text = LocalizationHelper.GetString("guna20HtmlLabel2");
             guna20HtmlLabel1.Text = LocalizationHelper.GetString("guna20HtmlLabel1");
+
             //lblNumberOder.Text = LocalizationHelper.GetString("lblNumberOder");
 
 

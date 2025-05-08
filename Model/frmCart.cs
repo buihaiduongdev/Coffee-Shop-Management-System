@@ -330,21 +330,13 @@ namespace Restaurant_Management_System.Customer
         {
             btnTackaway.Enabled = false;
             frmReserveTable tableForm = new frmReserveTable();
+            tableForm.ShowDialog();
+            string selectedTable = tableForm.SelectedTableName;
+            btnDiveIn.Text = selectedTable;
+            orderType = "DineIn";
 
-
-
-
-            if (tableForm.ShowDialog() == DialogResult.OK)
-            {
-                string selectedTable = tableForm.SelectedTableName;
-                btnDiveIn.Text = selectedTable;
-                orderType = "DineIn";
-
-                string tableIDStr = selectedTable.Replace("Bàn ", "").Trim();
-                tableID = Convert.ToInt32(tableIDStr);
-
-                
-            }
+            string tableIDStr = selectedTable.Replace("Bàn ", "").Trim();
+            tableID = Convert.ToInt32(tableIDStr);
         }
 
         private void btnDiveIn_DoubleClick(object sender, EventArgs e)

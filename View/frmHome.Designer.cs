@@ -73,6 +73,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.lblWeeklyRevenue = new System.Windows.Forms.Label();
             this.chartSales = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.btnSaveReport = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2Panel4.SuspendLayout();
@@ -542,7 +543,7 @@
             // 
             this.lblWeeklyRevenue.AutoSize = true;
             this.lblWeeklyRevenue.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWeeklyRevenue.Location = new System.Drawing.Point(832, 452);
+            this.lblWeeklyRevenue.Location = new System.Drawing.Point(820, 444);
             this.lblWeeklyRevenue.Name = "lblWeeklyRevenue";
             this.lblWeeklyRevenue.Size = new System.Drawing.Size(231, 50);
             this.lblWeeklyRevenue.TabIndex = 14;
@@ -565,12 +566,33 @@
             this.chartSales.TabIndex = 18;
             this.chartSales.Text = "chart1";
             // 
+            // btnSaveReport
+            // 
+            this.btnSaveReport.BorderRadius = 5;
+            this.btnSaveReport.BorderThickness = 2;
+            this.btnSaveReport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSaveReport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSaveReport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSaveReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSaveReport.FillColor = System.Drawing.Color.White;
+            this.btnSaveReport.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveReport.ForeColor = System.Drawing.Color.Black;
+            this.btnSaveReport.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveReport.Image")));
+            this.btnSaveReport.Location = new System.Drawing.Point(1308, 441);
+            this.btnSaveReport.Name = "btnSaveReport";
+            this.btnSaveReport.Size = new System.Drawing.Size(64, 51);
+            this.btnSaveReport.TabIndex = 27;
+            this.btnSaveReport.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSaveReport.TextOffset = new System.Drawing.Point(20, 0);
+            this.btnSaveReport.Click += new System.EventHandler(this.btnSaveReport_Click);
+            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(220)))));
             this.ClientSize = new System.Drawing.Size(1400, 800);
+            this.Controls.Add(this.btnSaveReport);
             this.Controls.Add(this.lblWeeklyRevenue);
             this.Controls.Add(this.chartSales);
             this.Controls.Add(this.label18);
@@ -645,5 +667,6 @@
         private Guna.UI2.WinForms.Guna2DataGridView dgvBestSalers;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvProductName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvQuantity;
+        private Guna.UI2.WinForms.Guna2Button btnSaveReport;
     }
 }

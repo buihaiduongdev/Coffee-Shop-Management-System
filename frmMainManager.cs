@@ -21,14 +21,14 @@ namespace Restaurant_Management_System
         private Employee manager;
         private int id;
         private string language = ucLogin.languages;
-        //
+
         public frmMainManager(Employee emp)
         {
             InitializeComponent();
             manager = emp;
             id = manager.ID;
         }
-        public frmMainManager(){
+        public frmMainManager() {
             InitializeComponent();
         }
         
@@ -57,7 +57,7 @@ namespace Restaurant_Management_System
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            AddControls(new frmHome());
+            AddControls(new frmHome(manager));
         }
 
         private void btnCategory_Click(object sender, EventArgs e)

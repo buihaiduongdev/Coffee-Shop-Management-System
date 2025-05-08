@@ -397,7 +397,7 @@
     <value>Tìm kiếm đơn hàng</value>
   </data>
   <data name="txtSearch.Placehodertext" xml:space="preserve">
-    <value>Tìm kiếm đơn hàng tại đây</value>
+    <value>Tìm kiếm bằng id, loại,...</value>
   </data>
   <data name="dgvSrNo" xml:space="preserve">
     <value>ID</value>
@@ -501,13 +501,13 @@
   <data name="dgvOrderDay" xml:space="preserve">
     <value>Thời gian</value>
   </data>
-  <data name="txtSearch.Placehodertext" xml:space="preserve">
-    <value>Tìm kiếm bằng id, loại,...</value>
-  </data>
   <data name="dgvview" xml:space="preserve">
     <value>Xem</value>
   </data>
   <data name="lblNumberOder" xml:space="preserve">
     <value>{0}</value>
+  </data>
+  <data name="txtSearch5" xml:space="preserve">
+    <value>Tìm kiếm bằng id, hình thức phục vụ,...</value>
   </data>
 </root>
