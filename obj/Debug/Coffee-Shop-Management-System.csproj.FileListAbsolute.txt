@@ -1062,3 +1062,4 @@ D:\LEARNING\Winform\Coffee-Shop-Management-System\Coffee-Shop-Management-System\
 D:\LEARNING\Winform\Coffee-Shop-Management-System\Coffee-Shop-Management-System\obj\Debug\Coffee-S.3221D379.Up2Date
 D:\LEARNING\Winform\Coffee-Shop-Management-System\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.exe
 D:\LEARNING\Winform\Coffee-Shop-Management-System\Coffee-Shop-Management-System\obj\Debug\Restaurant Management System.pdb
+S:\WINFORM\Coffee-Shop-Management-System\obj\Debug\Restaurant_Management_System.Setting.frmSettingView.vi.resources
