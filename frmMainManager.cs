@@ -51,6 +51,7 @@ namespace Restaurant_Management_System
             //lbUser.Text = MainClass.USER;
             MenuSlide.Width = 250;
             load_language(language);
+            //lblTitle.Text = 
             AddControls(new frmHome());
         }
 
@@ -104,6 +105,11 @@ namespace Restaurant_Management_System
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
+            //this.Hide();
+
+            //frmLoginRegister loginForm = new frmLoginRegister();
+            //loginForm.Show();
+
             this.Close();
         }
 
@@ -130,6 +136,7 @@ namespace Restaurant_Management_System
             lblInventory.Text = LocalizationHelper.GetString("lblInventory");
             lblManager.Text = LocalizationHelper.GetString("lblManager");
             lblOverview.Text = LocalizationHelper.GetString("lblOverview");
+            lblTitle.Text = LocalizationHelper.GetString("lblTitle");
         }
     }
 }

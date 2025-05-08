@@ -56,31 +56,31 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(321, 314);
             this.guna2Panel1.TabIndex = 0;
-            //this.guna2Panel1.Click += new System.EventHandler(this.guna2Panel1_Click);
             // 
             // lblCapicity
             // 
             this.lblCapicity.BackColor = System.Drawing.Color.Transparent;
-            this.lblCapicity.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCapicity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCapicity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(83)))), ((int)(((byte)(51)))));
-            this.lblCapicity.Location = new System.Drawing.Point(197, 20);
+            this.lblCapicity.Location = new System.Drawing.Point(211, 20);
             this.lblCapicity.Margin = new System.Windows.Forms.Padding(4);
             this.lblCapicity.Name = "lblCapicity";
-            this.lblCapicity.Size = new System.Drawing.Size(64, 31);
+            this.lblCapicity.Size = new System.Drawing.Size(81, 24);
             this.lblCapicity.TabIndex = 3;
-            this.lblCapicity.Text = "x chỗ";
+            this.lblCapicity.Text = "Capacity";
+            this.lblCapicity.Click += new System.EventHandler(this.lblCapicity_Click);
             // 
             // lblNameTable
             // 
             this.lblNameTable.BackColor = System.Drawing.Color.Transparent;
-            this.lblNameTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameTable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(83)))), ((int)(((byte)(51)))));
-            this.lblNameTable.Location = new System.Drawing.Point(49, 20);
+            this.lblNameTable.Location = new System.Drawing.Point(30, 17);
             this.lblNameTable.Margin = new System.Windows.Forms.Padding(4);
             this.lblNameTable.Name = "lblNameTable";
-            this.lblNameTable.Size = new System.Drawing.Size(67, 31);
+            this.lblNameTable.Size = new System.Drawing.Size(54, 24);
             this.lblNameTable.TabIndex = 2;
-            this.lblNameTable.Text = "Bàn x";
+            this.lblNameTable.Text = "Table";
             // 
             // btnReserve
             // 
@@ -98,7 +98,7 @@
             this.btnReserve.Name = "btnReserve";
             this.btnReserve.Size = new System.Drawing.Size(167, 37);
             this.btnReserve.TabIndex = 1;
-            this.btnReserve.Text = "Chọn bàn";
+            this.btnReserve.Text = "Choose";
             this.btnReserve.Click += new System.EventHandler(this.btnReserve_Click);
             // 
             // guna2PictureBox1
@@ -133,7 +133,6 @@
             this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "ucTable";
             this.Size = new System.Drawing.Size(321, 314);
-            //this.Load += new System.EventHandler(this.ucTable_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

@@ -59,6 +59,11 @@ namespace Restaurant_Management_System
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
+            //this.Hide();
+
+            //frmLoginRegister loginForm = new frmLoginRegister();
+            //loginForm.Show();
+
             this.Close();
         }
         private void load_language(string languages)
@@ -70,6 +75,7 @@ namespace Restaurant_Management_System
             btnLogout.Text = LocalizationHelper.GetString("btnLogout");
             btnMenu.Text = LocalizationHelper.GetString("btnMenu");
             btnBillList.Text = LocalizationHelper.GetString("btnBillList");
+            lblMenu1.Text = LocalizationHelper.GetString("lblMenu1");
         }
 
         private void frmMainEmployee_Load(object sender, EventArgs e)

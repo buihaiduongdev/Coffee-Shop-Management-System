@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblMenu1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.centerPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -47,16 +47,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2HtmlLabel1
+            // lblMenu1
             // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(805, 6);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(238, 47);
-            this.guna2HtmlLabel1.TabIndex = 3;
-            this.guna2HtmlLabel1.Text = "THỰC ĐƠN";
+            this.lblMenu1.AutoSize = false;
+            this.lblMenu1.BackColor = System.Drawing.Color.Transparent;
+            this.lblMenu1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenu1.Location = new System.Drawing.Point(805, 6);
+            this.lblMenu1.Name = "lblMenu1";
+            this.lblMenu1.Size = new System.Drawing.Size(238, 47);
+            this.lblMenu1.TabIndex = 3;
+            this.lblMenu1.Text = "MENU";
             // 
             // centerPanel
             // 
@@ -69,7 +69,7 @@
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Silver;
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2Panel2.Controls.Add(this.lblMenu1);
             this.guna2Panel2.Controls.Add(this.guna2ControlBox3);
             this.guna2Panel2.Controls.Add(this.guna2ControlBox2);
             this.guna2Panel2.Controls.Add(this.btnExit);
@@ -141,7 +141,7 @@
             this.btnSetting.BorderRadius = 27;
             this.btnSetting.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnSetting.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
-            this.btnSetting.CheckedState.Image = global::Restaurant_Management_System.Properties.Resources.store;
+            this.btnSetting.CheckedState.Image = global::Restaurant_Management_System.Properties.Resources.setting1;
             this.btnSetting.CustomizableEdges.BottomRight = false;
             this.btnSetting.CustomizableEdges.TopRight = false;
             this.btnSetting.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -171,7 +171,7 @@
             this.btnBillList.BorderRadius = 27;
             this.btnBillList.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnBillList.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
-            this.btnBillList.CheckedState.Image = global::Restaurant_Management_System.Properties.Resources.store;
+            this.btnBillList.CheckedState.Image = global::Restaurant_Management_System.Properties.Resources.bill3;
             this.btnBillList.CustomizableEdges.BottomRight = false;
             this.btnBillList.CustomizableEdges.TopRight = false;
             this.btnBillList.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -201,7 +201,7 @@
             this.btnTable.BorderRadius = 27;
             this.btnTable.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnTable.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
-            this.btnTable.CheckedState.Image = global::Restaurant_Management_System.Properties.Resources.store;
+            this.btnTable.CheckedState.Image = global::Restaurant_Management_System.Properties.Resources.coffee_table3;
             this.btnTable.CustomizableEdges.BottomRight = false;
             this.btnTable.CustomizableEdges.TopRight = false;
             this.btnTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -232,7 +232,7 @@
             this.btnMenu.BorderRadius = 27;
             this.btnMenu.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnMenu.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
-            this.btnMenu.CheckedState.Image = global::Restaurant_Management_System.Properties.Resources.store;
+            this.btnMenu.CheckedState.Image = global::Restaurant_Management_System.Properties.Resources.menu;
             this.btnMenu.CustomizableEdges.BottomRight = false;
             this.btnMenu.CustomizableEdges.TopRight = false;
             this.btnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -323,7 +323,7 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblMenu1;
         private Guna.UI2.WinForms.Guna2Panel centerPanel;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;

@@ -1,5 +1,6 @@
 ﻿using Restaurant_Management_System.Backend;
 using Restaurant_Management_System.Customer;
+using Restaurant_Management_System.Model;
 using System;
 using System.Data;
 using System.Data.SqlClient;
@@ -12,7 +13,7 @@ namespace Restaurant_Management_System.CustomerModel
     {
         private Table table;
         string status;
-       
+        private string language = ucLogin.languages;
         public event Action<string> OnTableSelected;
         public event Action<string> OnTableUnselected;
         int tableID;
@@ -22,9 +23,11 @@ namespace Restaurant_Management_System.CustomerModel
             
             table = Table;
             tableID = table.TableID;    
-            lblNameTable.Text = $"Bàn {table.TableID}";
-            lblCapicity.Text = $"{table.Capacity} chỗ";
+            lblNameTable.Text = $"Table {table.TableID}";
+            lblCapicity.Text = $"{table.Capacity} Capacity";
             status = table.Status?.Trim();
+            
+            load_language(language);
             UpdateUI();
 
         }
@@ -63,21 +66,43 @@ namespace Restaurant_Management_System.CustomerModel
                 }
             }
         }
+        private void load_language(string languages)
+        {
+            LocalizationHelper.SetLanguage(languages);
+
+            lblNameTable.Text = string.Format(LocalizationHelper.GetString("lblNameTable"), table.TableID);
+            lblCapicity.Text = string.Format(LocalizationHelper.GetString("lblCapicity"), table.Capacity);
+            //UpdateUI();
+        }
 
 
         private void UpdateUI()
         {
-
-            if (status == "Empty")
+            if (status.Trim() == "Empty")
             {
-                btnReserve.Text = "Chọn bàn";
+                btnReserve.Text = LocalizationHelper.GetString("btnReserveEmpty");
                 btnReserve.FillColor = ColorTranslator.FromHtml("#3B9E62");
             }
             else
             {
-                btnReserve.Text = "Đã chọn";
+                btnReserve.Text = LocalizationHelper.GetString("btnReserveChosen");
                 btnReserve.FillColor = ColorTranslator.FromHtml("#F87168");
             }
+            //if (status == "Empty")
+            //{
+            //    btnReserve.Text = "Chọn bàn";
+            //    btnReserve.FillColor = ColorTranslator.FromHtml("#3B9E62");
+            //}
+            //else
+            //{
+            //    btnReserve.Text = "Đã chọn";
+            //    btnReserve.FillColor = ColorTranslator.FromHtml("#F87168");
+            //}
+        }
+
+        private void lblCapicity_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

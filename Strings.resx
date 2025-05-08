@@ -385,7 +385,7 @@
     <value>Overview</value>
   </data>
   <data name="lblInventory" xml:space="preserve">
-    <value>Inventory</value>
+    <value>Menu</value>
   </data>
   <data name="lblManager" xml:space="preserve">
     <value>Manager</value>
@@ -419,5 +419,29 @@
   </data>
   <data name="btnMenu" xml:space="preserve">
     <value>Menu</value>
+  </data>
+  <data name="lblBookTable" xml:space="preserve">
+    <value>BOOKING TABLES</value>
+  </data>
+  <data name="lblCapicity" xml:space="preserve">
+    <value>{0} Capacity </value>
+  </data>
+  <data name="lblNameTable" xml:space="preserve">
+    <value> Table {0}</value>
+  </data>
+  <data name="btnReserve" xml:space="preserve">
+    <value>Choose Table</value>
+  </data>
+  <data name="btnReserveChosen" xml:space="preserve">
+    <value>Chosen</value>
+  </data>
+  <data name="btnReserveEmpty" xml:space="preserve">
+    <value>Choose</value>
+  </data>
+  <data name="lblTitle" xml:space="preserve">
+    <value>WELCOME  TO THE COFFEE HOUSE</value>
+  </data>
+  <data name="lblMenu1" xml:space="preserve">
+    <value>MENU</value>
   </data>
 </root>

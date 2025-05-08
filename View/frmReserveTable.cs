@@ -1,4 +1,5 @@
 ﻿using Restaurant_Management_System.Backend;
+using Restaurant_Management_System.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,12 +11,15 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace Restaurant_Management_System.CustomerModel
 {
     public partial class frmReserveTable : Form
     {
+        private string language = ucLogin.languages;
         public frmReserveTable()
         {
             InitializeComponent();
@@ -51,6 +55,7 @@ namespace Restaurant_Management_System.CustomerModel
         {
             borderRadius();
             loadtable();
+            load_language(language);
         }
         DataTable dt = new DataTable();
         private void loadtable()
@@ -112,7 +117,17 @@ namespace Restaurant_Management_System.CustomerModel
         {
             this.Close();
         }
+        private void load_language(string languages)
+        {
+            LocalizationHelper.SetLanguage(languages);
+            
+            lblBookTable.Text = LocalizationHelper.GetString("lblBookTable");
+        }
 
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
 
 
 

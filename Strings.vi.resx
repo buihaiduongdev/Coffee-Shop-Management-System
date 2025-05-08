@@ -385,7 +385,7 @@
     <value>Tổng quan</value>
   </data>
   <data name="lblInventory" xml:space="preserve">
-    <value>Theo dõi</value>
+    <value>Quản lý đơn</value>
   </data>
   <data name="lblManager" xml:space="preserve">
     <value>Quản lý</value>
@@ -406,7 +406,7 @@
     <value>ID Đơn hàng</value>
   </data>
   <data name="dgvOrderType" xml:space="preserve">
-    <value>Danh mục</value>
+    <value>Phương thức mua</value>
   </data>
   <data name="dgvStatus1" xml:space="preserve">
     <value>Trạng thái đơn hàng</value>
@@ -419,5 +419,29 @@
   </data>
   <data name="btnMenu" xml:space="preserve">
     <value>Thực đơn</value>
+  </data>
+  <data name="lblBookTable" xml:space="preserve">
+    <value>ĐẶT BÀN</value>
+  </data>
+  <data name="lblCapicity" xml:space="preserve">
+    <value>{0} Chỗ</value>
+  </data>
+  <data name="lblNameTable" xml:space="preserve">
+    <value>Bàn {0}</value>
+  </data>
+  <data name="btnReserve" xml:space="preserve">
+    <value>Chọn bàn</value>
+  </data>
+  <data name="btnReserveChosen" xml:space="preserve">
+    <value>Đã chọn</value>
+  </data>
+  <data name="btnReserveEmpty" xml:space="preserve">
+    <value>Chọn bàn</value>
+  </data>
+  <data name="lblTitle" xml:space="preserve">
+    <value>CHÀO MỪNG ĐẾN VỚI THE COFFEE HOUSE</value>
+  </data>
+  <data name="lblMenu1" xml:space="preserve">
+    <value>THỰC ĐƠN</value>
   </data>
 </root>

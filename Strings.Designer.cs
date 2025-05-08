@@ -259,6 +259,33 @@ namespace Restaurant_Management_System {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Choose Table.
+        /// </summary>
+        internal static string btnReserve {
+            get {
+                return ResourceManager.GetString("btnReserve", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chosen.
+        /// </summary>
+        internal static string btnReserveChosen {
+            get {
+                return ResourceManager.GetString("btnReserveChosen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose.
+        /// </summary>
+        internal static string btnReserveEmpty {
+            get {
+                return ResourceManager.GetString("btnReserveEmpty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SAVE.
         /// </summary>
         internal static string btnSave {
@@ -529,11 +556,29 @@ namespace Restaurant_Management_System {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to BOOKING TABLES.
+        /// </summary>
+        internal static string lblBookTable {
+            get {
+                return ResourceManager.GetString("lblBookTable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Capacity.
         /// </summary>
         internal static string lblCapacity {
             get {
                 return ResourceManager.GetString("lblCapacity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} Capacity .
+        /// </summary>
+        internal static string lblCapicity {
+            get {
+                return ResourceManager.GetString("lblCapicity", resourceCulture);
             }
         }
         
@@ -628,7 +673,7 @@ namespace Restaurant_Management_System {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Inventory.
+        ///   Looks up a localized string similar to Menu.
         /// </summary>
         internal static string lblInventory {
             get {
@@ -651,6 +696,24 @@ namespace Restaurant_Management_System {
         internal static string lblManager {
             get {
                 return ResourceManager.GetString("lblManager", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MENU.
+        /// </summary>
+        internal static string lblMenu1 {
+            get {
+                return ResourceManager.GetString("lblMenu1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  Table {0}.
+        /// </summary>
+        internal static string lblNameTable {
+            get {
+                return ResourceManager.GetString("lblNameTable", resourceCulture);
             }
         }
         
@@ -759,6 +822,15 @@ namespace Restaurant_Management_System {
         internal static string lblTableAdd {
             get {
                 return ResourceManager.GetString("lblTableAdd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WELCOME  TO THE COFFEE HOUSE.
+        /// </summary>
+        internal static string lblTitle {
+            get {
+                return ResourceManager.GetString("lblTitle", resourceCulture);
             }
         }
         
