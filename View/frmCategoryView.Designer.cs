@@ -28,99 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCategoryView));
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dgvCategory = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.label17 = new System.Windows.Forms.Label();
-            this.btnAddCatagory = new Guna.UI2.WinForms.Guna2Button();
+            this.dgvSno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCategoryID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dgvdel = new System.Windows.Forms.DataGridViewImageColumn();
+            this.lblCategory = new System.Windows.Forms.Label();
+            this.btnAddCategory = new Guna.UI2.WinForms.Guna2Button();
             this.labelNumberResultFound = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblTotalCategories = new System.Windows.Forms.Label();
             this.lbl_TotalNumberCategories = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dgvSno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvCategoryID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvCategoryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dgvdel = new System.Windows.Forms.DataGridViewImageColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategory)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2DataGridView1
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 4;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(567, 281);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.RowHeadersWidth = 51;
-            this.guna2DataGridView1.RowTemplate.Height = 24;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.guna2DataGridView1.TabIndex = 7;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
             // dgvCategory
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(225)))), ((int)(((byte)(184)))));
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
             this.dgvCategory.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvCategory.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvCategory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(156)))), ((int)(((byte)(18)))));
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -136,14 +79,14 @@
             this.dgvedit,
             this.dgvdel});
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(235)))), ((int)(((byte)(207)))));
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(189)))), ((int)(((byte)(97)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvCategory.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvCategory.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(171)))));
+            this.dgvCategory.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvCategory.Location = new System.Drawing.Point(66, 182);
             this.dgvCategory.Name = "dgvCategory";
             this.dgvCategory.RowHeadersVisible = false;
@@ -151,58 +94,101 @@
             this.dgvCategory.RowTemplate.Height = 35;
             this.dgvCategory.Size = new System.Drawing.Size(1305, 497);
             this.dgvCategory.TabIndex = 8;
-            this.dgvCategory.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Orange;
-            this.dgvCategory.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(225)))), ((int)(((byte)(184)))));
+            this.dgvCategory.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvCategory.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.dgvCategory.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dgvCategory.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgvCategory.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.dgvCategory.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgvCategory.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(218)))), ((int)(((byte)(171)))));
-            this.dgvCategory.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(156)))), ((int)(((byte)(18)))));
+            this.dgvCategory.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvCategory.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.dgvCategory.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvCategory.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvCategory.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvCategory.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvCategory.ThemeStyle.HeaderStyle.Height = 40;
             this.dgvCategory.ThemeStyle.ReadOnly = false;
-            this.dgvCategory.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(235)))), ((int)(((byte)(207)))));
+            this.dgvCategory.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvCategory.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvCategory.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvCategory.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgvCategory.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvCategory.ThemeStyle.RowsStyle.Height = 35;
-            this.dgvCategory.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(189)))), ((int)(((byte)(97)))));
-            this.dgvCategory.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvCategory.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategory_CellClick);
+            this.dgvCategory.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvCategory.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // label17
+            // dgvSno
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(56, 23);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(210, 59);
-            this.label17.TabIndex = 12;
-            this.label17.Text = "Category";
+            this.dgvSno.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgvSno.FillWeight = 30F;
+            this.dgvSno.HeaderText = "No.";
+            this.dgvSno.MinimumWidth = 50;
+            this.dgvSno.Name = "dgvSno";
             // 
-            // btnAddCatagory
+            // dgvCategoryID
             // 
-            this.btnAddCatagory.BorderColor = System.Drawing.Color.CornflowerBlue;
-            this.btnAddCatagory.BorderRadius = 5;
-            this.btnAddCatagory.BorderThickness = 1;
-            this.btnAddCatagory.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddCatagory.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddCatagory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAddCatagory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAddCatagory.FillColor = System.Drawing.Color.White;
-            this.btnAddCatagory.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCatagory.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.btnAddCatagory.Location = new System.Drawing.Point(686, 84);
-            this.btnAddCatagory.Name = "btnAddCatagory";
-            this.btnAddCatagory.Size = new System.Drawing.Size(209, 48);
-            this.btnAddCatagory.TabIndex = 14;
-            this.btnAddCatagory.Text = "+  NEW CATEGORY";
-            this.btnAddCatagory.Click += new System.EventHandler(this.btnAddCatagory_Click);
+            this.dgvCategoryID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgvCategoryID.FillWeight = 30F;
+            this.dgvCategoryID.HeaderText = "ID";
+            this.dgvCategoryID.MinimumWidth = 6;
+            this.dgvCategoryID.Name = "dgvCategoryID";
+            // 
+            // dgvCategoryName
+            // 
+            this.dgvCategoryName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dgvCategoryName.FillWeight = 80F;
+            this.dgvCategoryName.HeaderText = "Name";
+            this.dgvCategoryName.MinimumWidth = 6;
+            this.dgvCategoryName.Name = "dgvCategoryName";
+            // 
+            // dgvedit
+            // 
+            this.dgvedit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvedit.FillWeight = 50F;
+            this.dgvedit.HeaderText = "Edit";
+            this.dgvedit.Image = global::Restaurant_Management_System.Properties.Resources.edit;
+            this.dgvedit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dgvedit.MinimumWidth = 60;
+            this.dgvedit.Name = "dgvedit";
+            this.dgvedit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvedit.Width = 60;
+            // 
+            // dgvdel
+            // 
+            this.dgvdel.FillWeight = 30F;
+            this.dgvdel.HeaderText = "Delete";
+            this.dgvdel.Image = global::Restaurant_Management_System.Properties.Resources.delete;
+            this.dgvdel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dgvdel.MinimumWidth = 50;
+            this.dgvdel.Name = "dgvdel";
+            // 
+            // lblCategory
+            // 
+            this.lblCategory.AutoSize = true;
+            this.lblCategory.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategory.Location = new System.Drawing.Point(56, 23);
+            this.lblCategory.Name = "lblCategory";
+            this.lblCategory.Size = new System.Drawing.Size(210, 59);
+            this.lblCategory.TabIndex = 12;
+            this.lblCategory.Text = "Category";
+            // 
+            // btnAddCategory
+            // 
+            this.btnAddCategory.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btnAddCategory.BorderRadius = 5;
+            this.btnAddCategory.BorderThickness = 1;
+            this.btnAddCategory.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddCategory.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddCategory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddCategory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddCategory.FillColor = System.Drawing.Color.White;
+            this.btnAddCategory.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCategory.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.btnAddCategory.Location = new System.Drawing.Point(709, 84);
+            this.btnAddCategory.Name = "btnAddCategory";
+            this.btnAddCategory.Size = new System.Drawing.Size(209, 48);
+            this.btnAddCategory.TabIndex = 14;
+            this.btnAddCategory.Text = "+  NEW CATEGORY";
+            this.btnAddCategory.Click += new System.EventHandler(this.btnAddCatagory_Click);
             // 
             // labelNumberResultFound
             // 
@@ -219,26 +205,26 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(122)))), ((int)(((byte)(92)))));
             this.guna2Panel1.BorderColor = System.Drawing.Color.Black;
-            this.guna2Panel1.Controls.Add(this.label4);
+            this.guna2Panel1.Controls.Add(this.lblTotalCategories);
             this.guna2Panel1.Controls.Add(this.lbl_TotalNumberCategories);
             this.guna2Panel1.Controls.Add(this.label5);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.pictureBox1);
             this.guna2Panel1.Location = new System.Drawing.Point(945, 23);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(258, 133);
+            this.guna2Panel1.Size = new System.Drawing.Size(284, 133);
             this.guna2Panel1.TabIndex = 16;
             // 
-            // label4
+            // lblTotalCategories
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(3, 7);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(270, 45);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Total Categories";
+            this.lblTotalCategories.AutoSize = true;
+            this.lblTotalCategories.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalCategories.ForeColor = System.Drawing.Color.White;
+            this.lblTotalCategories.Location = new System.Drawing.Point(3, 7);
+            this.lblTotalCategories.Name = "lblTotalCategories";
+            this.lblTotalCategories.Size = new System.Drawing.Size(270, 45);
+            this.lblTotalCategories.TabIndex = 5;
+            this.lblTotalCategories.Text = "Total Categories";
             // 
             // lbl_TotalNumberCategories
             // 
@@ -318,51 +304,6 @@
             this.txtSearch.TabIndex = 13;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
-            // dgvSno
-            // 
-            this.dgvSno.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgvSno.FillWeight = 30F;
-            this.dgvSno.HeaderText = "No.";
-            this.dgvSno.MinimumWidth = 50;
-            this.dgvSno.Name = "dgvSno";
-            // 
-            // dgvCategoryID
-            // 
-            this.dgvCategoryID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgvCategoryID.FillWeight = 30F;
-            this.dgvCategoryID.HeaderText = "ID";
-            this.dgvCategoryID.MinimumWidth = 6;
-            this.dgvCategoryID.Name = "dgvCategoryID";
-            // 
-            // dgvCategoryName
-            // 
-            this.dgvCategoryName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dgvCategoryName.FillWeight = 80F;
-            this.dgvCategoryName.HeaderText = "Name";
-            this.dgvCategoryName.MinimumWidth = 6;
-            this.dgvCategoryName.Name = "dgvCategoryName";
-            // 
-            // dgvedit
-            // 
-            this.dgvedit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvedit.FillWeight = 50F;
-            this.dgvedit.HeaderText = "Action";
-            this.dgvedit.Image = global::Restaurant_Management_System.Properties.Resources.edit;
-            this.dgvedit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dgvedit.MinimumWidth = 60;
-            this.dgvedit.Name = "dgvedit";
-            this.dgvedit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvedit.Width = 60;
-            // 
-            // dgvdel
-            // 
-            this.dgvdel.FillWeight = 30F;
-            this.dgvdel.HeaderText = "";
-            this.dgvdel.Image = global::Restaurant_Management_System.Properties.Resources.delete;
-            this.dgvdel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dgvdel.MinimumWidth = 50;
-            this.dgvdel.Name = "dgvdel";
-            // 
             // frmCategoryView
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -370,16 +311,14 @@
             this.ClientSize = new System.Drawing.Size(1400, 702);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.labelNumberResultFound);
-            this.Controls.Add(this.btnAddCatagory);
+            this.Controls.Add(this.btnAddCategory);
             this.Controls.Add(this.txtSearch);
-            this.Controls.Add(this.label17);
+            this.Controls.Add(this.lblCategory);
             this.Controls.Add(this.dgvCategory);
-            this.Controls.Add(this.guna2DataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCategoryView";
             this.Text = "frmCategoryView";
             this.Load += new System.EventHandler(this.frmCategoryView_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategory)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
@@ -393,15 +332,15 @@
 
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2DataGridView dgvCategory;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lblCategory;
         public Guna.UI2.WinForms.Guna2TextBox txtSearch;
-        private Guna.UI2.WinForms.Guna2Button btnAddCatagory;
+        private Guna.UI2.WinForms.Guna2Button btnAddCategory;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private Guna.UI2.WinForms.Guna2HtmlLabel labelNumberResultFound;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblTotalCategories;
         private System.Windows.Forms.Label lbl_TotalNumberCategories;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvSno;

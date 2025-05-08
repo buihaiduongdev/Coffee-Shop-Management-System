@@ -120,4 +120,304 @@
   <data name="btnHome" xml:space="preserve">
     <value>Home</value>
   </data>
+  <data name="txtUsername" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="btnLanguage" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="lblInfo1" xml:space="preserve">
+    <value>Verify Your Infomation</value>
+  </data>
+  <data name="btnSwitchToRegister" xml:space="preserve">
+    <value>Forget Password</value>
+  </data>
+  <data name="txtPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="lblInfo2" xml:space="preserve">
+    <value>To Change Password</value>
+  </data>
+  <data name="txtFirstname" xml:space="preserve">
+    <value>Firstname</value>
+  </data>
+  <data name="btnRegister" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="txtNewPassword" xml:space="preserve">
+    <value>New Password</value>
+  </data>
+  <data name="txtPhone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="txtLastname" xml:space="preserve">
+    <value>Lastname</value>
+  </data>
+  <data name="btnSwitchToLogin2" xml:space="preserve">
+    <value>Back to Login</value>
+  </data>
+  <data name="btnLogin" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="btnCategory" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="btnProduct" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="btnSetting" xml:space="preserve">
+    <value>Setting</value>
+  </data>
+  <data name="btnTable" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="btnStaff" xml:space="preserve">
+    <value>Staff</value>
+  </data>
+  <data name="btnLogout" xml:space="preserve">
+    <value>Log out</value>
+  </data>
+  <data name="btnAddCategory" xml:space="preserve">
+    <value>+  NEW CATEGORY</value>
+  </data>
+  <data name="txtSearch" xml:space="preserve">
+    <value>Search by, id, name</value>
+  </data>
+  <data name="lblTotalCategories" xml:space="preserve">
+    <value>Total Categories</value>
+  </data>
+  <data name="dgvCategoryName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lblCategory" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="dgvedit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="dgvdel" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="lblCategoryAdd" xml:space="preserve">
+    <value>ADD CATEGORY</value>
+  </data>
+  <data name="lblCategoryName" xml:space="preserve">
+    <value>Category Name</value>
+  </data>
+  <data name="txtCategoryName" xml:space="preserve">
+    <value>Enter name here</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>SAVE</value>
+  </data>
+  <data name="btnClose" xml:space="preserve">
+    <value>CLOSE</value>
+  </data>
+  <data name="lblProduct" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="btnAddProduct" xml:space="preserve">
+    <value>+ NEW PRODUCTS</value>
+  </data>
+  <data name="dgvCategory" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="dgvPrice" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="dgvProductName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="txtName.Placehodertext" xml:space="preserve">
+    <value>Enter name product here</value>
+  </data>
+  <data name="btnProductAdd" xml:space="preserve">
+    <value>ADD PRODUCTS</value>
+  </data>
+  <data name="lblProductName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lblPrice" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="txtPrice.Placehodertext" xml:space="preserve">
+    <value>Enter price here</value>
+  </data>
+  <data name="btnBrowser" xml:space="preserve">
+    <value>Add Image</value>
+  </data>
+  <data name="lblTable" xml:space="preserve">
+    <value>Table View</value>
+  </data>
+  <data name="btnAddTable" xml:space="preserve">
+    <value>+ NEW TABLE</value>
+  </data>
+  <data name="lblEmptyTable" xml:space="preserve">
+    <value>Empty Table</value>
+  </data>
+  <data name="dgvCapacity" xml:space="preserve">
+    <value>Capacity </value>
+  </data>
+  <data name="dgvStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="lblReservedTable" xml:space="preserve">
+    <value>Occupied Table</value>
+  </data>
+  <data name="dgvTableID" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="txtSearchTable" xml:space="preserve">
+    <value>Search by, table, status</value>
+  </data>
+  <data name="txtSearch3" xml:space="preserve">
+    <value>Search by, id, name, category</value>
+  </data>
+  <data name="lblTableAdd" xml:space="preserve">
+    <value>Add Table</value>
+  </data>
+  <data name="lblCapacity" xml:space="preserve">
+    <value>Capacity</value>
+  </data>
+  <data name="lblStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="txtCapacity" xml:space="preserve">
+    <value>Enter capacity here</value>
+  </data>
+  <data name="btnAddStaff" xml:space="preserve">
+    <value>+ NEW EMPLOYEE</value>
+  </data>
+  <data name="btnAllPeople" xml:space="preserve">
+    <value>All peole</value>
+  </data>
+  <data name="btnBarista" xml:space="preserve">
+    <value>Barista</value>
+  </data>
+  <data name="btnManager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="btnReceptionist" xml:space="preserve">
+    <value>Receptionist</value>
+  </data>
+  <data name="btnSaveAsReport" xml:space="preserve">
+    <value>Save as</value>
+  </data>
+  <data name="btnSaveExcel" xml:space="preserve">
+    <value>Save as</value>
+  </data>
+  <data name="dgvFullName" xml:space="preserve">
+    <value>FullName</value>
+  </data>
+  <data name="dgvPhone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="dgvRole" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="dgvSalary" xml:space="preserve">
+    <value>Salary</value>
+  </data>
+  <data name="txtSearch4" xml:space="preserve">
+    <value>Search by, id, name, role,...</value>
+  </data>
+  <data name="btnWaiter" xml:space="preserve">
+    <value>Waiter</value>
+  </data>
+  <data name="lblEmployeeAdd" xml:space="preserve">
+    <value>ADD EMPLOYEES</value>
+  </data>
+  <data name="lblInfo" xml:space="preserve">
+    <value>Personal Information</value>
+  </data>
+  <data name="lblAccount" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="lblFirstName" xml:space="preserve">
+    <value>Firstname</value>
+  </data>
+  <data name="lblLastName" xml:space="preserve">
+    <value>Lastname</value>
+  </data>
+  <data name="txtFirstname2" xml:space="preserve">
+    <value>Enter firstname here</value>
+  </data>
+  <data name="lblUsername" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="txtLastname2" xml:space="preserve">
+    <value>Enter lastname here</value>
+  </data>
+  <data name="txtUsername2" xml:space="preserve">
+    <value>Enter username here</value>
+  </data>
+  <data name="txtPassword2" xml:space="preserve">
+    <value>Enter password here</value>
+  </data>
+  <data name="lblPhone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="lblSalary" xml:space="preserve">
+    <value>Salary</value>
+  </data>
+  <data name="txtPhone2" xml:space="preserve">
+    <value>Enter phone here</value>
+  </data>
+  <data name="txtSalary2" xml:space="preserve">
+    <value>Enter salary here</value>
+  </data>
+  <data name="lblRole" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="btnAboutProject" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="btnEdit" xml:space="preserve">
+    <value>EDIT</value>
+  </data>
+  <data name="lblEmployeeID" xml:space="preserve">
+    <value>EmployeeID</value>
+  </data>
+  <data name="lblOverview" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <data name="lblInventory" xml:space="preserve">
+    <value>Inventory</value>
+  </data>
+  <data name="lblManager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="guna2HtmlLabel2" xml:space="preserve">
+    <value>Bill List</value>
+  </data>
+  <data name="guna2HtmlLabel1" xml:space="preserve">
+    <value>Searching</value>
+  </data>
+  <data name="txtSearch.Placehodertext" xml:space="preserve">
+    <value>Search here</value>
+  </data>
+  <data name="dgvSrNo" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="dgvOrderID" xml:space="preserve">
+    <value>Order ID</value>
+  </data>
+  <data name="dgvOrderType" xml:space="preserve">
+    <value>Order Type</value>
+  </data>
+  <data name="dgvStatus1" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="dgvTotal" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="btnBillList" xml:space="preserve">
+    <value>Bill list</value>
+  </data>
+  <data name="btnMenu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
 </root>

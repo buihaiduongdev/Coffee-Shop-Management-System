@@ -34,7 +34,7 @@
             this.lblStatus = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cmbStatus = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTableAdd = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pbHeaderIcon = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
@@ -62,7 +62,7 @@
             this.txtCapacity.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtCapacity.Name = "txtCapacity";
             this.txtCapacity.PasswordChar = '\0';
-            this.txtCapacity.PlaceholderText = "";
+            this.txtCapacity.PlaceholderText = "Enter capcity here";
             this.txtCapacity.SelectedText = "";
             this.txtCapacity.Size = new System.Drawing.Size(483, 40);
             this.txtCapacity.TabIndex = 5;
@@ -103,12 +103,6 @@
             this.cmbStatus.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmbStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbStatus.ItemHeight = 34;
-            this.cmbStatus.Items.AddRange(new object[] {
-            "",
-            "Empty ",
-            "Occupied ",
-            "Reserved ",
-            "Unavailable "});
             this.cmbStatus.Location = new System.Drawing.Point(24, 298);
             this.cmbStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbStatus.Name = "cmbStatus";
@@ -118,7 +112,7 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
+            this.guna2Panel1.Controls.Add(this.lblTableAdd);
             this.guna2Panel1.Controls.Add(this.pbHeaderIcon);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(58)))), ((int)(((byte)(20)))));
@@ -127,16 +121,16 @@
             this.guna2Panel1.Size = new System.Drawing.Size(519, 100);
             this.guna2Panel1.TabIndex = 8;
             // 
-            // guna2HtmlLabel2
+            // lblTableAdd
             // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(160, 22);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(200, 47);
-            this.guna2HtmlLabel2.TabIndex = 10;
-            this.guna2HtmlLabel2.Text = "ADD TABLES";
+            this.lblTableAdd.BackColor = System.Drawing.Color.Transparent;
+            this.lblTableAdd.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTableAdd.ForeColor = System.Drawing.Color.White;
+            this.lblTableAdd.Location = new System.Drawing.Point(160, 22);
+            this.lblTableAdd.Name = "lblTableAdd";
+            this.lblTableAdd.Size = new System.Drawing.Size(159, 47);
+            this.lblTableAdd.TabIndex = 10;
+            this.lblTableAdd.Text = "Add Table";
             // 
             // pbHeaderIcon
             // 
@@ -235,7 +229,7 @@
         public Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         public Guna.UI2.WinForms.Guna2Button btnSave;
         public Guna.UI2.WinForms.Guna2Button btnClose;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTableAdd;
         public Guna.UI2.WinForms.Guna2ComboBox cmbStatus;
     }
 }

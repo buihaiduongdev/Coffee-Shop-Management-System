@@ -16,6 +16,7 @@ namespace Restaurant_Management_System.View
     public partial class frmProductView : Form
     {
         private Employee manager;
+        private string language = ucLogin.languages;
         public frmProductView(Employee manager)
         {
             InitializeComponent();
@@ -26,11 +27,8 @@ namespace Restaurant_Management_System.View
         {
             try
             {
-                // Xóa theme mặc định
-                dgvProduct.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-                dgvProduct.EnableHeadersVisualStyles = false;
 
-                // Header
+                //// Header
                 dgvProduct.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(102, 99, 76);
                 dgvProduct.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
                 dgvProduct.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
@@ -65,18 +63,20 @@ namespace Restaurant_Management_System.View
                 MessageBox.Show("Lỗi khi áp dụng theme: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-           
+
         }
 
         private void frmProductView_Load(object sender, EventArgs e)
         {
             LoadProductData();
-            //ApplyCustomTheme();
+            load_language(language);
         }
         private void LoadProductData()
         {
             string query = "SELECT ProductID, ProductName, Price, CategoryName, Image FROM Products WHERE IsDeleted = 0";
-            List<string> Categories = new List<string> { "Category" };
+            List<string> Categories = new List<string> { };
+            if (language == "en") Categories.Add("Category");
+            else Categories.Add("Danh mục");    
             try
             {
                 dt = DatabaseHelper.ExecuteQuery(query);
@@ -99,15 +99,17 @@ namespace Restaurant_Management_System.View
                     }
                 }
                 int count = dgvProduct.RowCount;
-                if (count == 0) labelNumberResultFound.Text = $"Result not found";
-                if (count == 1) labelNumberResultFound.Text = $"{count} result found";
-                else labelNumberResultFound.Text = $"{count} results found";
+                if (count == 0) labelNumberResultFound.Text =  language == "en" ?  $"Result not found" : "Không tìm thấy kết quả";
+                if (count == 1) labelNumberResultFound.Text = language == "en" ? $"{count} result found": $"{count} kết quả tìm thấy";
+                else labelNumberResultFound.Text = language == "en" ? $"{count} results found": $"{count} kết quả tìm thấy";
                 dgvProduct.AllowUserToAddRows = false;
                 cbbCategories.DataSource = Categories;
+                ApplyCustomTheme();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi tải dữ liệu sản phẩm: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (language == "en") MessageBox.Show("There are some error when load products: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else MessageBox.Show("Lỗi khi tải dữ liệu sản phẩm: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -132,7 +134,7 @@ namespace Restaurant_Management_System.View
                 if (e.ColumnIndex == dgvProduct.Columns["dgvdel"].Index)
                 {
                     string productID = dgvProduct.Rows[e.RowIndex].Cells["dgvProductID"].Value.ToString();
-                    DialogResult result = MessageBox.Show($"Bạn có chắc muốn xóa sản phẩm {productID}?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    DialogResult result = language == "en" ? MessageBox.Show($"Are you wish to delete {productID}?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) : MessageBox.Show($"Bạn có chắc muốn xóa sản phẩm {productID}?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
                     if (result == DialogResult.Yes)
                     {
@@ -142,12 +144,15 @@ namespace Restaurant_Management_System.View
                         int rowsAffected = DatabaseHelper.ExecuteNonQuery(deleteQuery, param);
                         if (rowsAffected > 0)
                         {
-                            MessageBox.Show($"Đã xóa sản phẩm {productID} thành công!");
+                            if (language == "en") MessageBox.Show($"Delete Product {productID} success!");
+                            else MessageBox.Show($"Đã xóa sản phẩm {productID} thành công!");
+
                             LoadProductData(); // Cập nhật lại danh sách sản phẩm
                         }
                         else
                         {
-                            MessageBox.Show("Lỗi khi xóa sản phẩm!");
+                            if (language == "en") MessageBox.Show("There is error when delete product!");
+                            else MessageBox.Show("Lỗi khi xóa sản phẩm!");
                         }
                     }
                 }
@@ -184,17 +189,17 @@ namespace Restaurant_Management_System.View
                     if (isContain) count++;
                 }
             }
-            if (count == 0) labelNumberResultFound.Text = $"Result not found";
-            if (count == 1) labelNumberResultFound.Text = $"{count} result found";
-            else labelNumberResultFound.Text = $"{count} results found";
+            if (count == 0) labelNumberResultFound.Text = language == "en" ? $"Result not found" : "Không tìm thấy kết quả";
+            if (count == 1) labelNumberResultFound.Text = language == "en" ? $"{count} result found" : $"{count} kết quả tìm thấy";
+            else labelNumberResultFound.Text = language == "en" ? $"{count} results found" : $"{count} kết quả tìm thấy";
         }
 
         private void cbbCategories_SelectedIndexChanged(object sender, EventArgs e)
         {
             string filterValue = cbbCategories.Text;
-            if (filterValue == "Category")
+            if (filterValue == "Category" || filterValue == "Danh mục")
             {
-                cbbCategories.SelectedText = "Category";
+                cbbCategories.SelectedText = filterValue == "Category" ? "Category" : "Danh mục";
                 cbbCategories.ForeColor = Color.Gray;
                 LoadProductData();
             }
@@ -212,18 +217,19 @@ namespace Restaurant_Management_System.View
                         dgvProduct.Rows[i].Cells["dgvSno"].Value = i + 1;
                         dgvProduct.Rows[i].Cells["dgvProductID"].Value = dt.Rows[i]["ProductID"];
                         dgvProduct.Rows[i].Cells["dgvProductName"].Value = dt.Rows[i]["ProductName"];
-                        dgvProduct.Rows[i].Cells["dgvPrice"].Value = dt.Rows[i]["Price"];
                         dgvProduct.Rows[i].Cells["dgvCategory"].Value = dt.Rows[i]["CategoryName"];
+                        dgvProduct.Rows[i].Cells["dgvPrice"].Value = string.Format(new CultureInfo("vi-VN"), "{0:#,0}", dt.Rows[i]["Price"]);
                     }
                     int count = dgvProduct.RowCount;
-                    if (count == 0) labelNumberResultFound.Text = $"Result not found";
-                    if (count == 1) labelNumberResultFound.Text = $"{count} result found";
-                    else labelNumberResultFound.Text = $"{count} results found";
+                    if (count == 0) labelNumberResultFound.Text = language == "en" ? $"Result not found" : "Không tìm thấy kết quả";
+                    if (count == 1) labelNumberResultFound.Text = language == "en" ? $"{count} result found" : $"{count} kết quả tìm thấy";
+                    else labelNumberResultFound.Text = language == "en" ? $"{count} results found" : $"{count} kết quả tìm thấy";
                     dgvProduct.AllowUserToAddRows = false;
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Lỗi khi tải dữ liệu sản phẩm: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (language == "en") MessageBox.Show("There are some error when load products: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else MessageBox.Show("Lỗi khi tải dữ liệu sản phẩm: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -243,8 +249,8 @@ namespace Restaurant_Management_System.View
             using (SaveFileDialog save = new SaveFileDialog())
             {
                 save.Filter = "Excel File |*.xlsx";
-                save.Title = "Chọn nơi lưu file Excel";
-                save.FileName = "SanPham.xlsx";
+                save.Title = language == "en" ? "Save as" : "Lưu file";
+                save.FileName = language == "en" ? "Product.xlsx" : "SanPham.xlsx";
 
                 if (save.ShowDialog() == DialogResult.OK)
                 {
@@ -255,7 +261,7 @@ namespace Restaurant_Management_System.View
                         {
                             var ws = pack.Workbook.Worksheets.Add("Sheet1");
                             int month = DateTime.Now.Month;
-                            ws.Cells[1, 1].Value = $"DANH SÁCH SẢN PHẨM THÁNG {month}";
+                            ws.Cells[1, 1].Value = language == "en" ? $"Product List - Month {month}" : $"DANH SÁCH SẢN PHẨM THÁNG {month}";
                             ws.Cells[1, 1, 1, dgvProduct.Columns.Count - 1].Merge = true;
                             ws.Cells[1, 1].Style.Font.Size = 20;
                             ws.Cells[1, 1].Style.Font.Bold = true;
@@ -276,12 +282,14 @@ namespace Restaurant_Management_System.View
 
                             FileInfo info = new FileInfo(save.FileName);
                             pack.SaveAs(info);
-                            MessageBox.Show("Đã xuất Excel thành công!", "Thông báo");
+                            if (language == "en") MessageBox.Show("Save as Excel File Success!", "Notification");
+                            else MessageBox.Show("Đã xuất Excel thành công!", "Thông báo");
                         }
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Lỗi xuất file excel: " + ex.Message);
+                        if (language == "en") MessageBox.Show("There are some error when save file: " + ex.Message);
+                        else MessageBox.Show("Lỗi xuất file excel: " + ex.Message);
                     }
 
                 }
@@ -308,13 +316,27 @@ namespace Restaurant_Management_System.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi gán parameter ManagerName: " + ex.Message);
+                if (language == "en") MessageBox.Show("Error when set parameter ManagerName: " + ex.Message);
+                else MessageBox.Show("Lỗi khi gán parameter ManagerName: " + ex.Message);
             }
 
 
             //rpt.SetParameterValue("ManagerName", manager.LastName + " " + manager.FirstName);
             frmReportView report = new frmReportView(manager, rpt);
             report.ShowDialog();
+        }
+        private void load_language(string languages)
+        {
+            LocalizationHelper.SetLanguage(languages);
+            lblProduct.Text = LocalizationHelper.GetString("lblProduct");
+            txtSearch.PlaceholderText = LocalizationHelper.GetString("txtSearch3");
+            btnAddProduct.Text = LocalizationHelper.GetString("btnAddProduct");
+            dgvProduct.Columns["dgvCategory"].HeaderText = LocalizationHelper.GetString("dgvCategory");
+            dgvProduct.Columns["dgvProductName"].HeaderText = LocalizationHelper.GetString("dgvProductName");
+            dgvProduct.Columns["dgvPrice"].HeaderText = LocalizationHelper.GetString("dgvPrice");
+            dgvProduct.Columns["dgvedit"].HeaderText = LocalizationHelper.GetString("dgvedit");
+            dgvProduct.Columns["dgvdel"].HeaderText = LocalizationHelper.GetString("dgvdel");
+
         }
     }
 }

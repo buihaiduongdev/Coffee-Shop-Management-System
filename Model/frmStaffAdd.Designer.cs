@@ -30,27 +30,27 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStaffAdd));
             this.txtFirstName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblFirstname = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtPhone = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblPhone = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblRole = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cbRole = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtLastName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblLastName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblPassword = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblUsername = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtSalary = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblSalary = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblEmployeeAdd = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pbHeaderIcon = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
-            this.lbl_Info = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblInfo = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblAccount = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Separator3 = new Guna.UI2.WinForms.Guna2Separator();
@@ -82,17 +82,17 @@
             this.txtFirstName.Size = new System.Drawing.Size(334, 40);
             this.txtFirstName.TabIndex = 3;
             // 
-            // guna2HtmlLabel1
+            // lblFirstname
             // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Sitka Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(10, 158);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(196, 35);
-            this.guna2HtmlLabel1.TabIndex = 2;
-            this.guna2HtmlLabel1.Text = "First Name";
+            this.lblFirstname.AutoSize = false;
+            this.lblFirstname.BackColor = System.Drawing.Color.Transparent;
+            this.lblFirstname.Font = new System.Drawing.Font("Sitka Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFirstname.Location = new System.Drawing.Point(10, 158);
+            this.lblFirstname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblFirstname.Name = "lblFirstname";
+            this.lblFirstname.Size = new System.Drawing.Size(196, 35);
+            this.lblFirstname.TabIndex = 2;
+            this.lblFirstname.Text = "First Name";
             // 
             // txtPhone
             // 
@@ -117,30 +117,30 @@
             this.txtPhone.Size = new System.Drawing.Size(334, 40);
             this.txtPhone.TabIndex = 5;
             // 
-            // guna2HtmlLabel2
+            // lblPhone
             // 
-            this.guna2HtmlLabel2.AutoSize = false;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Sitka Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(14, 356);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(149, 35);
-            this.guna2HtmlLabel2.TabIndex = 4;
-            this.guna2HtmlLabel2.Text = "Phone";
+            this.lblPhone.AutoSize = false;
+            this.lblPhone.BackColor = System.Drawing.Color.Transparent;
+            this.lblPhone.Font = new System.Drawing.Font("Sitka Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhone.Location = new System.Drawing.Point(14, 356);
+            this.lblPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(149, 35);
+            this.lblPhone.TabIndex = 4;
+            this.lblPhone.Text = "Phone";
             // 
-            // guna2HtmlLabel3
+            // lblRole
             // 
-            this.guna2HtmlLabel3.AutoSize = false;
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Sitka Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Gray;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(14, 455);
-            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(103, 35);
-            this.guna2HtmlLabel3.TabIndex = 6;
-            this.guna2HtmlLabel3.Text = "Role";
+            this.lblRole.AutoSize = false;
+            this.lblRole.BackColor = System.Drawing.Color.Transparent;
+            this.lblRole.Font = new System.Drawing.Font("Sitka Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRole.ForeColor = System.Drawing.Color.Gray;
+            this.lblRole.Location = new System.Drawing.Point(14, 455);
+            this.lblRole.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblRole.Name = "lblRole";
+            this.lblRole.Size = new System.Drawing.Size(103, 35);
+            this.lblRole.TabIndex = 6;
+            this.lblRole.Text = "Role";
             // 
             // cbRole
             // 
@@ -154,11 +154,6 @@
             this.cbRole.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbRole.ForeColor = System.Drawing.Color.Black;
             this.cbRole.ItemHeight = 34;
-            this.cbRole.Items.AddRange(new object[] {
-            "",
-            "Manager",
-            "Barista",
-            "Receptionist"});
             this.cbRole.Location = new System.Drawing.Point(14, 510);
             this.cbRole.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbRole.Name = "cbRole";
@@ -189,17 +184,17 @@
             this.txtLastName.Size = new System.Drawing.Size(334, 40);
             this.txtLastName.TabIndex = 9;
             // 
-            // guna2HtmlLabel4
+            // lblLastName
             // 
-            this.guna2HtmlLabel4.AutoSize = false;
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Sitka Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(10, 255);
-            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(190, 35);
-            this.guna2HtmlLabel4.TabIndex = 8;
-            this.guna2HtmlLabel4.Text = "Last Name";
+            this.lblLastName.AutoSize = false;
+            this.lblLastName.BackColor = System.Drawing.Color.Transparent;
+            this.lblLastName.Font = new System.Drawing.Font("Sitka Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLastName.Location = new System.Drawing.Point(10, 255);
+            this.lblLastName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblLastName.Name = "lblLastName";
+            this.lblLastName.Size = new System.Drawing.Size(190, 35);
+            this.lblLastName.TabIndex = 8;
+            this.lblLastName.Text = "Last Name";
             // 
             // txtPassword
             // 
@@ -224,52 +219,52 @@
             this.txtPassword.Size = new System.Drawing.Size(332, 40);
             this.txtPassword.TabIndex = 15;
             // 
-            // guna2HtmlLabel6
+            // lblPassword
             // 
-            this.guna2HtmlLabel6.AutoSize = false;
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Sitka Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(391, 255);
-            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(182, 35);
-            this.guna2HtmlLabel6.TabIndex = 14;
-            this.guna2HtmlLabel6.Text = "Password";
+            this.lblPassword.AutoSize = false;
+            this.lblPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblPassword.Font = new System.Drawing.Font("Sitka Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(391, 255);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(182, 35);
+            this.lblPassword.TabIndex = 14;
+            this.lblPassword.Text = "Password";
             // 
-            // txtUserName
+            // txtUsername
             // 
-            this.txtUserName.AutoRoundedCorners = true;
-            this.txtUserName.BorderRadius = 19;
-            this.txtUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUserName.DefaultText = "";
-            this.txtUserName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtUserName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtUserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUserName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUserName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUserName.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUserName.Location = new System.Drawing.Point(391, 198);
-            this.txtUserName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.PasswordChar = '\0';
-            this.txtUserName.PlaceholderText = "Enter username here";
-            this.txtUserName.SelectedText = "";
-            this.txtUserName.Size = new System.Drawing.Size(332, 40);
-            this.txtUserName.TabIndex = 13;
+            this.txtUsername.AutoRoundedCorners = true;
+            this.txtUsername.BorderRadius = 19;
+            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUsername.DefaultText = "";
+            this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsername.Location = new System.Drawing.Point(391, 198);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.PasswordChar = '\0';
+            this.txtUsername.PlaceholderText = "Enter username here";
+            this.txtUsername.SelectedText = "";
+            this.txtUsername.Size = new System.Drawing.Size(332, 40);
+            this.txtUsername.TabIndex = 13;
             // 
-            // guna2HtmlLabel7
+            // lblUsername
             // 
-            this.guna2HtmlLabel7.AutoSize = false;
-            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Sitka Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(391, 158);
-            this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(187, 35);
-            this.guna2HtmlLabel7.TabIndex = 12;
-            this.guna2HtmlLabel7.Text = "Username";
+            this.lblUsername.AutoSize = false;
+            this.lblUsername.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsername.Font = new System.Drawing.Font("Sitka Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(391, 158);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(187, 35);
+            this.lblUsername.TabIndex = 12;
+            this.lblUsername.Text = "Username";
             // 
             // txtSalary
             // 
@@ -294,21 +289,21 @@
             this.txtSalary.Size = new System.Drawing.Size(332, 40);
             this.txtSalary.TabIndex = 17;
             // 
-            // guna2HtmlLabel8
+            // lblSalary
             // 
-            this.guna2HtmlLabel8.AutoSize = false;
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Sitka Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(391, 356);
-            this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(148, 35);
-            this.guna2HtmlLabel8.TabIndex = 16;
-            this.guna2HtmlLabel8.Text = "Salary";
+            this.lblSalary.AutoSize = false;
+            this.lblSalary.BackColor = System.Drawing.Color.Transparent;
+            this.lblSalary.Font = new System.Drawing.Font("Sitka Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalary.Location = new System.Drawing.Point(391, 356);
+            this.lblSalary.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblSalary.Name = "lblSalary";
+            this.lblSalary.Size = new System.Drawing.Size(148, 35);
+            this.lblSalary.TabIndex = 16;
+            this.lblSalary.Text = "Salary";
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel5);
+            this.guna2Panel1.Controls.Add(this.lblEmployeeAdd);
             this.guna2Panel1.Controls.Add(this.pbHeaderIcon);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(58)))), ((int)(((byte)(20)))));
@@ -317,17 +312,17 @@
             this.guna2Panel1.Size = new System.Drawing.Size(752, 100);
             this.guna2Panel1.TabIndex = 18;
             // 
-            // guna2HtmlLabel5
+            // lblEmployeeAdd
             // 
-            this.guna2HtmlLabel5.AutoSize = false;
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(261, 23);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(479, 47);
-            this.guna2HtmlLabel5.TabIndex = 3;
-            this.guna2HtmlLabel5.Text = "ADD EMPLOYEES";
+            this.lblEmployeeAdd.AutoSize = false;
+            this.lblEmployeeAdd.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmployeeAdd.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeAdd.ForeColor = System.Drawing.Color.White;
+            this.lblEmployeeAdd.Location = new System.Drawing.Point(261, 23);
+            this.lblEmployeeAdd.Name = "lblEmployeeAdd";
+            this.lblEmployeeAdd.Size = new System.Drawing.Size(479, 47);
+            this.lblEmployeeAdd.TabIndex = 3;
+            this.lblEmployeeAdd.Text = "ADD EMPLOYEES";
             // 
             // pbHeaderIcon
             // 
@@ -391,29 +386,30 @@
             this.btnClose.Text = "CLOSE";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // lbl_Info
+            // lblInfo
             // 
-            this.lbl_Info.AutoSize = false;
-            this.lbl_Info.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Info.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Info.ForeColor = System.Drawing.Color.Gray;
-            this.lbl_Info.Location = new System.Drawing.Point(10, 122);
-            this.lbl_Info.Name = "lbl_Info";
-            this.lbl_Info.Size = new System.Drawing.Size(124, 31);
-            this.lbl_Info.TabIndex = 20;
-            this.lbl_Info.Text = "Info";
+            this.lblInfo.AutoSize = false;
+            this.lblInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfo.ForeColor = System.Drawing.Color.Gray;
+            this.lblInfo.Location = new System.Drawing.Point(10, 122);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(330, 31);
+            this.lblInfo.TabIndex = 20;
+            this.lblInfo.Text = "Personal Infomation";
+            this.lblInfo.Click += new System.EventHandler(this.lblInfo_Click);
             // 
-            // guna2HtmlLabel9
+            // lblAccount
             // 
-            this.guna2HtmlLabel9.AutoSize = false;
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.Gray;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(391, 122);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(173, 31);
-            this.guna2HtmlLabel9.TabIndex = 21;
-            this.guna2HtmlLabel9.Text = "Account";
+            this.lblAccount.AutoSize = false;
+            this.lblAccount.BackColor = System.Drawing.Color.Transparent;
+            this.lblAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccount.ForeColor = System.Drawing.Color.Gray;
+            this.lblAccount.Location = new System.Drawing.Point(391, 122);
+            this.lblAccount.Name = "lblAccount";
+            this.lblAccount.Size = new System.Drawing.Size(173, 31);
+            this.lblAccount.TabIndex = 21;
+            this.lblAccount.Text = "Account";
             // 
             // guna2Separator1
             // 
@@ -457,24 +453,24 @@
             this.Controls.Add(this.guna2Separator3);
             this.Controls.Add(this.guna2Separator2);
             this.Controls.Add(this.guna2Separator1);
-            this.Controls.Add(this.guna2HtmlLabel9);
-            this.Controls.Add(this.lbl_Info);
+            this.Controls.Add(this.lblAccount);
+            this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.txtSalary);
-            this.Controls.Add(this.guna2HtmlLabel8);
+            this.Controls.Add(this.lblSalary);
             this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.guna2HtmlLabel6);
-            this.Controls.Add(this.txtUserName);
-            this.Controls.Add(this.guna2HtmlLabel7);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.txtLastName);
-            this.Controls.Add(this.guna2HtmlLabel4);
+            this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.cbRole);
-            this.Controls.Add(this.guna2HtmlLabel3);
+            this.Controls.Add(this.lblRole);
             this.Controls.Add(this.txtPhone);
-            this.Controls.Add(this.guna2HtmlLabel2);
+            this.Controls.Add(this.lblPhone);
             this.Controls.Add(this.txtFirstName);
-            this.Controls.Add(this.guna2HtmlLabel1);
+            this.Controls.Add(this.lblFirstname);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmStaffAdd";
@@ -491,27 +487,27 @@
         #endregion
 
         public Guna.UI2.WinForms.Guna2TextBox txtFirstName;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblFirstname;
         public Guna.UI2.WinForms.Guna2TextBox txtPhone;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblPhone;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblRole;
         public Guna.UI2.WinForms.Guna2ComboBox cbRole;
         public Guna.UI2.WinForms.Guna2TextBox txtLastName;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblLastName;
         public Guna.UI2.WinForms.Guna2TextBox txtPassword;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        public Guna.UI2.WinForms.Guna2TextBox txtUserName;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblPassword;
+        public Guna.UI2.WinForms.Guna2TextBox txtUsername;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblUsername;
         public Guna.UI2.WinForms.Guna2TextBox txtSalary;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblSalary;
         public Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblEmployeeAdd;
         public Guna.UI2.WinForms.Guna2PictureBox pbHeaderIcon;
         public Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         public Guna.UI2.WinForms.Guna2Button btnSave;
         public Guna.UI2.WinForms.Guna2Button btnClose;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_Info;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblInfo;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblAccount;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator3;

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -6,12 +7,14 @@ using System.IO;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using Restaurant_Management_System.Backend;
+using Restaurant_Management_System.Model;
 
 namespace Restaurant_Management_System.Setting
 {
     public partial class frmSettingView : Form
     {
         private int id;
+        private string language = ucLogin.languages;
 
         public frmSettingView(int id)
         {
@@ -20,7 +23,8 @@ namespace Restaurant_Management_System.Setting
             txtEmployeeID.Enabled = false;
 
             // Thêm danh sách vai trò cố định vào cbbRole
-            cbbRole.Items.AddRange(new string[] { "Manager", "Receptionist" });
+            cbbRole.DataSource = language == "en" ? new List<string> () {"Manager", "Receptionist" }: new List<string>() { "Quản lý", "Tiếp tân" };
+
             // Cấu hình nền và màu chữ tổng thể
             txtAbout.BackColor = Color.FromArgb(245, 238, 230);
             txtAbout.ForeColor = Color.FromArgb(40, 26, 13); 
@@ -51,7 +55,9 @@ namespace Restaurant_Management_System.Setting
                     txtLastName.Text = dt.Rows[0]["LastName"].ToString();
                     txtFirstName.Text = dt.Rows[0]["FirstName"].ToString();
                     txtPhone.Text = dt.Rows[0]["Phone"].ToString();
-                    cbbRole.SelectedItem = dt.Rows[0]["Role"].ToString();
+                    string role = dt.Rows[0]["Role"].ToString();
+                    if (language == "vi") role = role == "Mangaer" ? "Quản lý" : role == "Receptionist" ? "Tiếp tân" : role;
+                    cbbRole.SelectedItem = role;
 
                     if (dt.Rows[0]["Image"] != DBNull.Value && dt.Rows[0]["Image"] != null)
                     {
@@ -179,7 +185,8 @@ namespace Restaurant_Management_System.Setting
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
-            openFileDialog.Title = "Chọn ảnh nhân viên";
+            if (language == "en") openFileDialog.Title = "Choose your image";
+            else openFileDialog.Title = "Chọn ảnh của bạn";
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -204,19 +211,22 @@ namespace Restaurant_Management_System.Setting
                     int rowsAffected = DatabaseHelper.ExecuteNonQuery(query, parameters);
                     if (rowsAffected > 0)
                     {
-                        MessageBox.Show("Ảnh đã được cập nhật thành công!",
+                        if (language == "en") MessageBox.Show("Image has been updated successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        else MessageBox.Show("Ảnh đã được cập nhật thành công!",
                             "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Không có thay đổi nào được thực hiện.",
-                            "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        if (language == "en") MessageBox.Show("No chang were made", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        else MessageBox.Show("Không có thay đổi nào được thực hiện.",
+                            "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 catch (Exception ex)
                 {
+                    if (language == "en") MessageBox.Show($"Error when update images: {ex.Message}\nStack Trace: {ex.StackTrace}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     MessageBox.Show($"Lỗi khi tải ảnh lên: {ex.Message}\nStack Trace: {ex.StackTrace}",
-                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     picEmployeeImage.Image = null;
                 }
             }
@@ -293,6 +303,78 @@ namespace Restaurant_Management_System.Setting
         private void txtAbout_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void picEmployeeImage_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
+            openFileDialog.Title = "Chọn ảnh nhân viên";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    picEmployeeImage.Image = Image.FromFile(openFileDialog.FileName);
+                    picEmployeeImage.SizeMode = PictureBoxSizeMode.StretchImage;
+
+                    byte[] imageBytes;
+                    using (MemoryStream ms = new MemoryStream())
+                    {
+                        picEmployeeImage.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                        imageBytes = ms.ToArray();
+                    }
+
+                    string query = "UPDATE Employees SET Image = @Image WHERE EmployeeID = @EmployeeID";
+                    SqlParameter[] parameters = {
+                        new SqlParameter("@Image", imageBytes),
+                        new SqlParameter("@EmployeeID", id)
+                    };
+
+                    int rowsAffected = DatabaseHelper.ExecuteNonQuery(query, parameters);
+                    if (rowsAffected > 0)
+                    {
+                        if (language == "en")
+                            MessageBox.Show("Image has been updated successfully!",
+                            "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        else
+                            MessageBox.Show("Ảnh đã được cập nhật thành công!",
+                            "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        if (language == "en")
+                            MessageBox.Show("No changes were made.",
+                            "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        else
+                            MessageBox.Show("Không có thay đổi nào được thực hiện.",
+                            "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    if (language == "en")
+                        MessageBox.Show($"Error uploading image: {ex.Message}\nStack Trace: {ex.StackTrace}",
+                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else
+                        MessageBox.Show($"Lỗi khi tải ảnh lên: {ex.Message}\nStack Trace: {ex.StackTrace}",
+                        "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    picEmployeeImage.Image = null;
+                }
+            }
+        }
+        private void load_language(string languages)
+        {
+            LocalizationHelper.SetLanguage(languages);
+            lblFirstname.Text = LocalizationHelper.GetString("lblFirstName");
+            lblLastname.Text = LocalizationHelper.GetString("lblLastName");
+            lblPhone.Text = LocalizationHelper.GetString("lblPhone");
+            lblRole.Text = LocalizationHelper.GetString("lblRole");
+        }
+
+        private void frmSettingView_Load(object sender, EventArgs e)
+        {
+            load_language(language);
         }
     }
 }

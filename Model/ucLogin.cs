@@ -17,9 +17,18 @@ namespace Restaurant_Management_System.Model
 {
     public partial class ucLogin : UserControl
     {
+        public static string languages = "vi";
         public ucLogin()
         {
             InitializeComponent();
+           
+        }
+
+        public ucLogin(string language)
+        {
+            InitializeComponent();
+            languages = language;
+            load_language();
         }
 
         public bool PasswordChar { get; internal set; }
@@ -69,8 +78,39 @@ namespace Restaurant_Management_System.Model
                 }
                 else
                 {
-                    MessageBox.Show("Tài khoản hoặc mật khẩu không đúng.");
+                    if (languages == "en") MessageBox.Show("Username or password is not correct", "Notification");
+                    else MessageBox.Show("Tài khoản hoặc mật khẩu không đúng.", "Thông báo");
                 }
+            }
+            else
+            {
+                if (languages == "en") MessageBox.Show("Username or password is not correct", "Notification");
+                else MessageBox.Show("Tài khoản hoặc mật khẩu không đúng.", "Thông báo");
+            }
+        }
+        private void load_language()
+        {
+            LocalizationHelper.SetLanguage(languages);
+            btnLogin.Text = LocalizationHelper.GetString("btnLogin");
+            btnLanguage.Text = LocalizationHelper.GetString("btnLanguage");
+            txtUsername.PlaceholderText = LocalizationHelper.GetString("txtUsername");
+            txtPassword.PlaceholderText = LocalizationHelper.GetString("txtPassword");
+            btnSwitchToRegister.Text = LocalizationHelper.GetString("btnSwitchToRegister");
+        }
+
+        private void btnLanguage_Click(object sender, EventArgs e)
+        {
+            if (!btnLanguage.Checked)
+            {
+                languages = "en";
+                btnLanguage.Checked = true;
+                load_language();
+            }
+            else
+            {
+                languages = "vi";
+                btnLanguage.Checked = false;
+                load_language();
             }
         }
     }

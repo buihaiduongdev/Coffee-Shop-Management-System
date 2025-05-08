@@ -34,6 +34,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStaffView));
             this.dgvEmployee = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dgvSno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvEmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvSalary = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dgvdel = new System.Windows.Forms.DataGridViewImageColumn();
             this.employeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.restaurantDBDataSet = new Restaurant_Management_System.restaurantDBDataSet();
             this.employeesTableAdapter = new Restaurant_Management_System.restaurantDBDataSetTableAdapters.EmployeesTableAdapter();
@@ -47,14 +55,6 @@
             this.btnSaveExcel = new Guna.UI2.WinForms.Guna2Button();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSaveAsReport = new Guna.UI2.WinForms.Guna2Button();
-            this.dgvSno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvEmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvFullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvRole = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvSalary = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvedit = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dgvdel = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.restaurantDBDataSet)).BeginInit();
@@ -130,6 +130,72 @@
             this.dgvEmployee.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployee_CellClick);
             this.dgvEmployee.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployee_CellContentClick);
             // 
+            // dgvSno
+            // 
+            this.dgvSno.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvSno.FillWeight = 70F;
+            this.dgvSno.HeaderText = "No.";
+            this.dgvSno.MinimumWidth = 70;
+            this.dgvSno.Name = "dgvSno";
+            this.dgvSno.Width = 70;
+            // 
+            // dgvEmployeeID
+            // 
+            this.dgvEmployeeID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvEmployeeID.FillWeight = 74.08759F;
+            this.dgvEmployeeID.HeaderText = "ID";
+            this.dgvEmployeeID.MinimumWidth = 6;
+            this.dgvEmployeeID.Name = "dgvEmployeeID";
+            this.dgvEmployeeID.Width = 179;
+            // 
+            // dgvFullName
+            // 
+            this.dgvFullName.FillWeight = 74.08759F;
+            this.dgvFullName.HeaderText = "FullName";
+            this.dgvFullName.MinimumWidth = 6;
+            this.dgvFullName.Name = "dgvFullName";
+            // 
+            // dgvPhone
+            // 
+            this.dgvPhone.HeaderText = "Phone";
+            this.dgvPhone.MinimumWidth = 6;
+            this.dgvPhone.Name = "dgvPhone";
+            // 
+            // dgvRole
+            // 
+            this.dgvRole.HeaderText = "Role";
+            this.dgvRole.MinimumWidth = 6;
+            this.dgvRole.Name = "dgvRole";
+            // 
+            // dgvSalary
+            // 
+            this.dgvSalary.HeaderText = "Salary";
+            this.dgvSalary.MinimumWidth = 6;
+            this.dgvSalary.Name = "dgvSalary";
+            this.dgvSalary.ReadOnly = true;
+            // 
+            // dgvedit
+            // 
+            this.dgvedit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvedit.FillWeight = 50F;
+            this.dgvedit.HeaderText = "Edit";
+            this.dgvedit.Image = global::Restaurant_Management_System.Properties.Resources.edit;
+            this.dgvedit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dgvedit.MinimumWidth = 60;
+            this.dgvedit.Name = "dgvedit";
+            this.dgvedit.Width = 60;
+            // 
+            // dgvdel
+            // 
+            this.dgvdel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.dgvdel.FillWeight = 50F;
+            this.dgvdel.HeaderText = "Delete";
+            this.dgvdel.Image = global::Restaurant_Management_System.Properties.Resources.delete;
+            this.dgvdel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dgvdel.MinimumWidth = 50;
+            this.dgvdel.Name = "dgvdel";
+            this.dgvdel.Width = 56;
+            // 
             // employeesBindingSource
             // 
             this.employeesBindingSource.DataMember = "Employees";
@@ -170,7 +236,7 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(180, 42);
             this.btnAdd.TabIndex = 16;
-            this.btnAdd.Text = "+ Add Employee";
+            this.btnAdd.Text = "+ NEW EMPLOYEE";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnBarista
@@ -335,72 +401,6 @@
             this.btnSaveAsReport.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSaveAsReport.TextOffset = new System.Drawing.Point(30, 0);
             this.btnSaveAsReport.Click += new System.EventHandler(this.btnSaveAsReport_Click);
-            // 
-            // dgvSno
-            // 
-            this.dgvSno.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvSno.FillWeight = 70F;
-            this.dgvSno.HeaderText = "No.";
-            this.dgvSno.MinimumWidth = 70;
-            this.dgvSno.Name = "dgvSno";
-            this.dgvSno.Width = 70;
-            // 
-            // dgvEmployeeID
-            // 
-            this.dgvEmployeeID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvEmployeeID.FillWeight = 74.08759F;
-            this.dgvEmployeeID.HeaderText = "EmployeeID";
-            this.dgvEmployeeID.MinimumWidth = 6;
-            this.dgvEmployeeID.Name = "dgvEmployeeID";
-            this.dgvEmployeeID.Width = 179;
-            // 
-            // dgvFullName
-            // 
-            this.dgvFullName.FillWeight = 74.08759F;
-            this.dgvFullName.HeaderText = "FullName";
-            this.dgvFullName.MinimumWidth = 6;
-            this.dgvFullName.Name = "dgvFullName";
-            // 
-            // dgvPhone
-            // 
-            this.dgvPhone.HeaderText = "Phone";
-            this.dgvPhone.MinimumWidth = 6;
-            this.dgvPhone.Name = "dgvPhone";
-            // 
-            // dgvRole
-            // 
-            this.dgvRole.HeaderText = "Role";
-            this.dgvRole.MinimumWidth = 6;
-            this.dgvRole.Name = "dgvRole";
-            // 
-            // dgvSalary
-            // 
-            this.dgvSalary.HeaderText = "Salary";
-            this.dgvSalary.MinimumWidth = 6;
-            this.dgvSalary.Name = "dgvSalary";
-            this.dgvSalary.ReadOnly = true;
-            // 
-            // dgvedit
-            // 
-            this.dgvedit.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvedit.FillWeight = 50F;
-            this.dgvedit.HeaderText = "Action";
-            this.dgvedit.Image = global::Restaurant_Management_System.Properties.Resources.edit;
-            this.dgvedit.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dgvedit.MinimumWidth = 60;
-            this.dgvedit.Name = "dgvedit";
-            this.dgvedit.Width = 60;
-            // 
-            // dgvdel
-            // 
-            this.dgvdel.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.dgvdel.FillWeight = 50F;
-            this.dgvdel.HeaderText = "";
-            this.dgvdel.Image = global::Restaurant_Management_System.Properties.Resources.delete;
-            this.dgvdel.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dgvdel.MinimumWidth = 50;
-            this.dgvdel.Name = "dgvdel";
-            this.dgvdel.Width = 56;
             // 
             // frmStaffView
             // 

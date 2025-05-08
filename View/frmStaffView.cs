@@ -20,6 +20,7 @@ namespace Restaurant_Management_System.View
 {
     public partial class frmStaffView : Form
     {
+        private string language = ucLogin.languages;
         private Employee manager;
         public frmStaffView(Employee manager)
         {
@@ -49,6 +50,7 @@ namespace Restaurant_Management_System.View
             dgvEmployee.DefaultCellStyle.Font = new Font("Segoe UI", 10);
             dgvEmployee.DefaultCellStyle.SelectionBackColor = Color.FromArgb(224, 224, 224); // Nâu vừa
             dgvEmployee.DefaultCellStyle.SelectionForeColor = Color.Black;
+            dgvEmployee.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; // Căn giữa
 
             // Dòng xen kẽ
             dgvEmployee.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(204, 177, 142); // Xám nhạt  
@@ -73,6 +75,7 @@ namespace Restaurant_Management_System.View
             //FixEditDataGridView();
             ApplyCustomTheme();
             LoadEmployeeData();
+            load_language(language);
         }
         private void LoadEmployeeData()
         {
@@ -101,19 +104,21 @@ namespace Restaurant_Management_System.View
                     dgvEmployee.Rows[i].Cells["dgvRole"].Value = dt.Rows[i]["Role"];
                     dgvEmployee.Rows[i].Cells["dgvSalary"].Value = string.Format(new CultureInfo("vi-VN"), "{0:#,0}", dt.Rows[i]["Salary"]);
                 }
-                lblNumberEmployee.Text = $"Employee [{dt.Rows.Count}]";
+                if (language == "en") lblNumberEmployee.Text = $"Employee [{dt.Rows.Count}]";
+                else lblNumberEmployee.Text = $"Nhân viên [{dt.Rows.Count}]";
                 dgvEmployee.AllowUserToAddRows = false;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi tải dữ liệu nhân viên: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (language == "en") MessageBox.Show("Error loading employee data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else MessageBox.Show("Lỗi khi tải dữ liệu nhân viên: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         
         private void LoadEmployeeDataSplitRole(string role)
         {
-            string query = $@"
-                SELECT EmployeeID, 
+            role =  role == "Pha chế" ? "Barista" : role == "Quản lý" ? "Manager" : role == "Tiếp tân" ? "Receptionist" : role == "Phục vụ" ? "Waiter" : role;
+            string query = $@"SELECT EmployeeID, 
                        (FirstName + ' ' + LastName) AS FullName, 
                        Phone, 
                        Role, 
@@ -135,18 +140,21 @@ namespace Restaurant_Management_System.View
                     dgvEmployee.Rows[i].Cells["dgvRole"].Value = dt.Rows[i]["Role"];
                     dgvEmployee.Rows[i].Cells["dgvSalary"].Value = string.Format(new CultureInfo("vi-VN"), "{0:#,0}", dt.Rows[i]["Salary"]);
                 }
-                lblNumberEmployee.Text = $"Employee [{dgvEmployee.RowCount}]";
+                if (language == "en") lblNumberEmployee.Text = $"Employee [{dt.Rows.Count}]";
+                else lblNumberEmployee.Text = $"Nhân viên [{dgvEmployee.RowCount}]";
                 dgvEmployee.AllowUserToAddRows = false;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi tải dữ liệu nhân viên: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (language == "en") MessageBox.Show("Error loading employee data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else MessageBox.Show("Lỗi khi tải dữ liệu nhân viên: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         } 
 
         public void btnAdd_Click(object sender, EventArgs e)
         {
             frmStaffAdd frm = new frmStaffAdd("");
+            frm.cbRole.DataSource = language == "en" ? new List<string>() { "", "Manager", "Barista", "Receptionist", "Waiter" } : new List<string>() { "", "Quản lý", "Pha chế", "Tiếp tân", "Phục vụ" };
             frm.ShowDialog();
         }
 
@@ -192,18 +200,21 @@ namespace Restaurant_Management_System.View
 
                         frm.txtFirstName.Text = row["FirstName"].ToString();
                         frm.txtLastName.Text = row["LastName"].ToString();
-                        frm.txtUserName.Text = row["Username"].ToString();
-                        frm.txtUserName.Enabled = false;
+                        frm.txtUsername.Text = row["Username"].ToString();
+                        frm.txtUsername.Enabled = false;
                         frm.txtPassword.Text = row["Password"].ToString();
                         frm.txtPhone.Text = row["Phone"].ToString();
-                        frm.cbRole.SelectedItem = row["Role"].ToString();
                         frm.txtSalary.Text = string.Format(new CultureInfo("vi-VN"), "{0:#,0}", row["Salary"]);
+                        frm.cbRole.DataSource = language == "en" ? new List<string>() { "", "Manager", "Barista", "Receptionist", "Waiter" } : new List<string>() { "", "Quản lý", "Pha chế", "Tiếp tân", "Phục vụ" };
+                        string role = row["Role"].ToString();
+                        frm.cbRole.SelectedItem = language == "en" ? role : role == "Manager" ? "Quản lý" : role == "Barista" ? "Pha chế" : role == "Receptionist" ? "Tiếp tân" : role == "Waiter" ? "Phục vụ" : "";
                         frm.ShowDialog();
                         LoadEmployeeData(); // Cập nhật lại danh sách nhân viên sau khi chỉnh sửa
                     }
                     else
                     {
-                        MessageBox.Show("Không tìm thấy nhân viên trong hệ thống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        if (language == "en") MessageBox.Show("Employee not found in the system!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        else MessageBox.Show("Không tìm thấy nhân viên trong hệ thống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
 
@@ -227,7 +238,8 @@ namespace Restaurant_Management_System.View
                         }
                         else
                         {
-                            MessageBox.Show("Lỗi khi xóa nhân viên!");
+                            if (language == "en") MessageBox.Show("Error deleting employee!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            else MessageBox.Show("Lỗi khi xóa nhân viên!");
                         }
                     }
                 }
@@ -313,7 +325,8 @@ namespace Restaurant_Management_System.View
             using (SaveFileDialog save = new SaveFileDialog())
             {
                 save.Filter = "Excel File |*.xlsx";
-                save.Title = "Chọn nơi lưu file Excel";
+                if (language == "en") save.Title = "Select where to save the Excel file";
+                else save.Title = "Chọn nơi lưu file Excel";
                 save.FileName = "employee.xlsx";
 
                 if (save.ShowDialog() == DialogResult.OK)
@@ -325,7 +338,8 @@ namespace Restaurant_Management_System.View
                         {
                             var ws = pack.Workbook.Worksheets.Add("Sheet1");
                             int month = DateTime.Now.Month;
-                            ws.Cells[1, 1].Value = $"DANH SÁCH NHÂN VIÊN THÁNG {month}";
+                            if (language == "en") ws.Cells[1, 1].Value = $"EMPLOYEE LIST - MONTH {month}";
+                            else ws.Cells[1, 1].Value = $"DANH SÁCH NHÂN VIÊN THÁNG {month}";
                             ws.Cells[1, 1, 1, dgvEmployee.Columns.Count - 1].Merge = true;
                             ws.Cells[1, 1].Style.Font.Size = 20;
                             ws.Cells[1, 1].Style.Font.Bold = true;
@@ -346,12 +360,14 @@ namespace Restaurant_Management_System.View
 
                             FileInfo info = new FileInfo(save.FileName);
                             pack.SaveAs(info);
-                            MessageBox.Show("Đã xuất Excel thành công!", "Thông báo");
+                            if (language == "en") MessageBox.Show("Exported Excel successfully!", "Notification");
+                            else MessageBox.Show("Đã xuất Excel thành công!", "Thông báo");
                         }
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Lỗi xuất file excel: " + ex.Message);
+                        if (language == "en") MessageBox.Show("Error exporting Excel: " + ex.Message);
+                        else MessageBox.Show("Lỗi xuất file excel: " + ex.Message);
                     }
 
                 }
@@ -389,6 +405,24 @@ namespace Restaurant_Management_System.View
 
         private void dgvEmployee_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+        private void load_language(string languages)
+        {
+            LocalizationHelper.SetLanguage(languages);
+            btnAdd.Text = LocalizationHelper.GetString("btnAddStaff");
+            btnAllPeople.Text = LocalizationHelper.GetString("btnAllPeople");
+            btnBarista.Text = LocalizationHelper.GetString("btnBarista");
+            btnManager.Text = LocalizationHelper.GetString("btnManager");
+            btnReceptionist.Text = LocalizationHelper.GetString("btnReceptionist");
+            btnSaveAsReport.Text = LocalizationHelper.GetString("btnSaveAsReport");
+            btnSaveExcel.Text = LocalizationHelper.GetString("btnSaveExcel");
+            btnWaiter.Text = LocalizationHelper.GetString("btnWaiter");
+            txtSearch.PlaceholderText = LocalizationHelper.GetString("txtSearch4");
+            dgvEmployee.Columns["dgvFullName"].HeaderText = LocalizationHelper.GetString("dgvFullName");
+            dgvEmployee.Columns["dgvPhone"].HeaderText = LocalizationHelper.GetString("dgvPhone");
+            dgvEmployee.Columns["dgvRole"].HeaderText = LocalizationHelper.GetString("dgvRole");
+            dgvEmployee.Columns["dgvPhone"].HeaderText = LocalizationHelper.GetString("dgvPhone");
 
         }
     }

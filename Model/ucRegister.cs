@@ -12,11 +12,14 @@ using System.Windows.Forms;
 
 namespace Restaurant_Management_System.Model
 {
+ 
     public partial class ucRegister : UserControl
     {
+        private string language = ucLogin.languages;
         public ucRegister()
         {
             InitializeComponent();
+            load_language();
         }
         public event Action OnSwitchToLogin;
         private void btnRegister_Click(object sender, EventArgs e)
@@ -97,10 +100,18 @@ namespace Restaurant_Management_System.Model
                 MessageBox.Show("Lỗi hệ thống, vui lòng thử lại!");
             }
         }
-
-        private void guna2HtmlLabel2_Click(object sender, EventArgs e)
+        private void load_language()
         {
-
+            LocalizationHelper.SetLanguage(language);
+            lblInfo1.Text = LocalizationHelper.GetString("lblInfo1");
+            lblInfo2.Text = LocalizationHelper.GetString("lblInfo2");
+            txtFirstname.PlaceholderText = LocalizationHelper.GetString("txtFirstname");
+            txtLastname.PlaceholderText = LocalizationHelper.GetString("txtLastname");
+            txtPhone.PlaceholderText = LocalizationHelper.GetString("txtPhone");
+            btnRegister.Text = LocalizationHelper.GetString("btnRegister");
+            txtUsername.PlaceholderText = LocalizationHelper.GetString("txtUsername");
+            txtPassword.PlaceholderText = LocalizationHelper.GetString("txtNewPassword");
+            btnSwitchToLogin2.Text = LocalizationHelper.GetString("btnSwitchToLogin2");
         }
     }
 }

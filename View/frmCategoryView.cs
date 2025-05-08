@@ -17,6 +17,7 @@ namespace Restaurant_Management_System.View
 {
     public partial class frmCategoryView : Form
     {
+        private string language = ucLogin.languages;
         public frmCategoryView()
         {
             InitializeComponent();
@@ -24,15 +25,19 @@ namespace Restaurant_Management_System.View
 
         private void frmCategoryView_Load(object sender, EventArgs e)
         {
-
-            //DataGridViewImageColumn imageColumn = (DataGridViewImageColumn)dgvCategory.Columns[3];
-            //imageColumn.ImageLayout = DataGridViewImageCellLayout.Stretch;
-
-            //dgvCategory.Rows[0].Cells[3].Value = Properties.Resources.store;
             ApplyCustomTheme();
             LoadCategoryData();
-            if (dgvCategory.RowCount <= 1) labelNumberResultFound.Text = $"{dgvCategory.RowCount.ToString()} result found";
-            else labelNumberResultFound.Text = $"{dgvCategory.RowCount.ToString()} results found";
+            load_language(language);
+            if (dgvCategory.RowCount <= 1)
+            {
+                if (language == "en") labelNumberResultFound.Text = $"{dgvCategory.RowCount.ToString()} result found";
+                else labelNumberResultFound.Text = $"{dgvCategory.RowCount.ToString()} tìm thấy kết quả";
+            }
+            else
+            {
+                if (language == "en") labelNumberResultFound.Text = $"{dgvCategory.RowCount.ToString()} results found";
+                else labelNumberResultFound.Text = $"{dgvCategory.RowCount.ToString()} kết quả tìm thấy";
+            }
             dgvCategory.AllowUserToAddRows = false;
         }
         private void ApplyCustomTheme()
@@ -46,6 +51,8 @@ namespace Restaurant_Management_System.View
             dgvCategory.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dgvCategory.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
             dgvCategory.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvCategory.Columns["dgvCategoryID"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dgvCategory.Columns["dgvSno"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dgvCategory.ColumnHeadersHeight = 40;
 
             // Dòng thường
@@ -54,12 +61,13 @@ namespace Restaurant_Management_System.View
             dgvCategory.DefaultCellStyle.Font = new Font("Segoe UI", 10);
             dgvCategory.DefaultCellStyle.SelectionBackColor = Color.FromArgb(224, 224, 224); // Nâu vừa
             dgvCategory.DefaultCellStyle.SelectionForeColor = Color.Black;
+            dgvCategory.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
             // Dòng xen kẽ
             dgvCategory.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(204, 177, 142); // Xám nhạt  
 
             // Bảng
-            dgvCategory.BackgroundColor = Color.AntiqueWhite;
+            //dgvCategory.BackgroundColor = Color.AntiqueWhite;
             dgvCategory.BorderStyle = BorderStyle.None;
             dgvCategory.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dgvCategory.RowTemplate.Height = 35;
@@ -95,7 +103,8 @@ namespace Restaurant_Management_System.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi tải dữ liệu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (language == "en") MessageBox.Show("Error loading data: " + ex.Message, "Erorr", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else MessageBox.Show("Lỗi khi tải dữ liệu: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -118,9 +127,7 @@ namespace Restaurant_Management_System.View
                 if (e.ColumnIndex == dgvCategory.Columns["dgvdel"].Index)
                 {
                     string categoryID = dgvCategory.Rows[e.RowIndex].Cells["dgvCategoryID"].Value.ToString();
-                    DialogResult result = MessageBox.Show($"Bạn có chắc muốn xóa danh mục {categoryID}?",
-                                                          "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
+                    DialogResult result = language == "en" ? MessageBox.Show($"Are you wish to delete the category {categoryID}?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) : MessageBox.Show($"Bạn có chắc muốn xóa danh mục {categoryID}?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (result == DialogResult.Yes)
                     {
                         string deleteQuery = "UPDATE Categories SET IsDeleted = 1 WHERE CategoryID = @CategoryID";
@@ -129,12 +136,14 @@ namespace Restaurant_Management_System.View
                         int rowsAffected = DatabaseHelper.ExecuteNonQuery(deleteQuery, param);
                         if (rowsAffected > 0)
                         {
-                            MessageBox.Show($"Đã xóa danh mục {categoryID} thành công!");
+                            if (language == "en") MessageBox.Show($"Category {categoryID} has been deleted successfully!");
+                            else MessageBox.Show($"Đã xóa danh mục {categoryID} thành công!");
                             LoadCategoryData();
                         }
                         else
                         {
-                            MessageBox.Show("Lỗi khi xóa danh mục!");
+                            if (language == "en") MessageBox.Show("Error deleting category!");
+                            else MessageBox.Show("Lỗi khi xóa danh mục!");
                         }
                     }
                 }
@@ -157,15 +166,27 @@ namespace Restaurant_Management_System.View
                     if (IsContain) count++;
                 }
             }
-            if (count == 0) labelNumberResultFound.Text = $"Result not found";
-            if (count == 1) labelNumberResultFound.Text = $"{count} result found";
-            else labelNumberResultFound.Text = $"{count} results found";
+            if (count == 0) labelNumberResultFound.Text = language == "en" ? $"Result not found" : "Không tìm thấy kết quả";
+            if (count == 1) labelNumberResultFound.Text = language == "en" ? $"{count} result found" : $"{count} kết quả tìm thấy";
+            else labelNumberResultFound.Text = language == "en" ? $"{count} results found" : $"{count} kết quả tìm thấy";
+            dgvCategory.AllowUserToAddRows = false;
         }
 
         private void btnAddCatagory_Click(object sender, EventArgs e)
         {
             frmCategoryAdd frm = new frmCategoryAdd(-1);
             frm.ShowDialog();
+        }
+        private void load_language(string languages)
+        {
+            LocalizationHelper.SetLanguage(languages);
+            btnAddCategory.Text = LocalizationHelper.GetString("btnAddCategory");
+            lblCategory.Text = LocalizationHelper.GetString("lblCategory"); 
+            lblTotalCategories.Text = LocalizationHelper.GetString("lblTotalCategories");
+            txtSearch.PlaceholderText = LocalizationHelper.GetString("txtSearch");
+            dgvCategory.Columns["dgvCategoryName"].HeaderText = LocalizationHelper.GetString("dgvCategoryName");
+            dgvCategory.Columns["dgvedit"].HeaderText = LocalizationHelper.GetString("dgvedit");
+            dgvCategory.Columns["dgvdel"].HeaderText = LocalizationHelper.GetString("dgvdel");
         }
     }
 }

@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,13 +20,13 @@ namespace Restaurant_Management_System
         private static Panel CenterPanel = new Panel();
         private Employee manager;
         private int id;
+        private string language = ucLogin.languages;
         //
         public frmMainManager(Employee emp)
         {
             InitializeComponent();
             manager = emp;
             id = manager.ID;
-            load_language("vi");
         }
         public frmMainManager(){
             InitializeComponent();
@@ -49,6 +50,8 @@ namespace Restaurant_Management_System
         {
             //lbUser.Text = MainClass.USER;
             MenuSlide.Width = 250;
+            load_language(language);
+            AddControls(new frmHome());
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -69,6 +72,8 @@ namespace Restaurant_Management_System
         private void btnTable_Click(object sender, EventArgs e)
         {
             AddControls(new frmTableView());
+            btnTable.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(85)))), ((int)(((byte)(126)))));
+            btnTable.CheckedState.Image = global::Restaurant_Management_System.Properties.Resources.store;
         }
 
         private void btnProduct_Click(object sender, EventArgs e)
@@ -100,9 +105,6 @@ namespace Restaurant_Management_System
         private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Close();
-            frmLoginRegister login = new frmLoginRegister();
-            login.ShowDialog();
-            this.Close();
         }
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
@@ -119,20 +121,15 @@ namespace Restaurant_Management_System
         {
             LocalizationHelper.SetLanguage(languages);
             btnHome.Text = LocalizationHelper.GetString("btnHome");
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            if (guna2Button1.Checked == false)
-            {
-                guna2Button1.Checked = true;
-                load_language("en");
-            }
-            else
-            {
-                guna2Button1.Checked = false;
-                load_language("vi");
-            }
+            btnCategory.Text = LocalizationHelper.GetString("btnCategory");
+            btnProduct.Text = LocalizationHelper.GetString("btnProduct");
+            btnSetting.Text = LocalizationHelper.GetString("btnSetting");
+            btnStaff.Text = LocalizationHelper.GetString("btnStaff");
+            btnTable.Text = LocalizationHelper.GetString("btnTable");
+            btnLogout.Text = LocalizationHelper.GetString("btnLogout");
+            lblInventory.Text = LocalizationHelper.GetString("lblInventory");
+            lblManager.Text = LocalizationHelper.GetString("lblManager");
+            lblOverview.Text = LocalizationHelper.GetString("lblOverview");
         }
     }
 }

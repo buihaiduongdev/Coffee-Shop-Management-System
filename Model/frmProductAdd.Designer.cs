@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProductAdd));
             this.txtPrice = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblPrice = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblProductName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnBrowse = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cmbCategory = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -42,8 +42,8 @@
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.Header = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pbHeaderIcon = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lblProductAdd = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.picImage)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -72,19 +72,18 @@
             this.txtPrice.SelectedText = "";
             this.txtPrice.Size = new System.Drawing.Size(338, 40);
             this.txtPrice.TabIndex = 17;
-            this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
             // 
-            // guna2HtmlLabel4
+            // lblPrice
             // 
-            this.guna2HtmlLabel4.AutoSize = false;
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Sitka Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(24, 310);
-            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(93, 45);
-            this.guna2HtmlLabel4.TabIndex = 16;
-            this.guna2HtmlLabel4.Text = "Price";
+            this.lblPrice.AutoSize = false;
+            this.lblPrice.BackColor = System.Drawing.Color.Transparent;
+            this.lblPrice.Font = new System.Drawing.Font("Sitka Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrice.Location = new System.Drawing.Point(24, 310);
+            this.lblPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(93, 45);
+            this.lblPrice.TabIndex = 16;
+            this.lblPrice.Text = "Price";
             // 
             // guna2HtmlLabel2
             // 
@@ -120,19 +119,18 @@
             this.txtName.SelectedText = "";
             this.txtName.Size = new System.Drawing.Size(338, 40);
             this.txtName.TabIndex = 13;
-            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
-            // guna2HtmlLabel1
+            // lblProductName
             // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Sitka Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(24, 105);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(134, 46);
-            this.guna2HtmlLabel1.TabIndex = 12;
-            this.guna2HtmlLabel1.Text = "Name";
+            this.lblProductName.AutoSize = false;
+            this.lblProductName.BackColor = System.Drawing.Color.Transparent;
+            this.lblProductName.Font = new System.Drawing.Font("Sitka Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProductName.Location = new System.Drawing.Point(24, 105);
+            this.lblProductName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblProductName.Name = "lblProductName";
+            this.lblProductName.Size = new System.Drawing.Size(134, 46);
+            this.lblProductName.TabIndex = 12;
+            this.lblProductName.Text = "Name";
             // 
             // btnBrowse
             // 
@@ -193,6 +191,7 @@
             this.picImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picImage.TabIndex = 24;
             this.picImage.TabStop = false;
+            this.picImage.Click += new System.EventHandler(this.picImage_Click);
             // 
             // guna2Panel2
             // 
@@ -247,7 +246,7 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.Header);
+            this.guna2Panel1.Controls.Add(this.lblProductAdd);
             this.guna2Panel1.Controls.Add(this.pbHeaderIcon);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(58)))), ((int)(((byte)(20)))));
@@ -255,20 +254,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(673, 100);
             this.guna2Panel1.TabIndex = 26;
-            // 
-            // Header
-            // 
-            this.Header.AutoSize = false;
-            this.Header.AutoSizeHeightOnly = true;
-            this.Header.BackColor = System.Drawing.Color.Transparent;
-            this.Header.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Header.ForeColor = System.Drawing.Color.White;
-            this.Header.Location = new System.Drawing.Point(231, 31);
-            this.Header.Name = "Header";
-            this.Header.Size = new System.Drawing.Size(319, 32);
-            this.Header.TabIndex = 3;
-            this.Header.Text = "ADD PRODUCTS";
-            this.Header.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pbHeaderIcon
             // 
@@ -282,6 +267,18 @@
             this.pbHeaderIcon.TabIndex = 2;
             this.pbHeaderIcon.TabStop = false;
             this.pbHeaderIcon.UseTransparentBackground = true;
+            // 
+            // lblProductAdd
+            // 
+            this.lblProductAdd.AutoSize = false;
+            this.lblProductAdd.BackColor = System.Drawing.Color.Transparent;
+            this.lblProductAdd.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProductAdd.ForeColor = System.Drawing.Color.White;
+            this.lblProductAdd.Location = new System.Drawing.Point(223, 24);
+            this.lblProductAdd.Name = "lblProductAdd";
+            this.lblProductAdd.Size = new System.Drawing.Size(406, 47);
+            this.lblProductAdd.TabIndex = 4;
+            this.lblProductAdd.Text = "ADD PRODUCTS";
             // 
             // frmProductAdd
             // 
@@ -297,10 +294,10 @@
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.txtPrice);
-            this.Controls.Add(this.guna2HtmlLabel4);
+            this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.txtName);
-            this.Controls.Add(this.guna2HtmlLabel1);
+            this.Controls.Add(this.lblProductName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmProductAdd";
@@ -319,10 +316,10 @@
         #endregion
 
         public Guna.UI2.WinForms.Guna2TextBox txtPrice;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblPrice;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         public Guna.UI2.WinForms.Guna2TextBox txtName;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblProductName;
         public Guna.UI2.WinForms.Guna2Button btnBrowse;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2ComboBox cmbCategory;
@@ -331,7 +328,7 @@
         public Guna.UI2.WinForms.Guna2Button btnSave;
         public Guna.UI2.WinForms.Guna2Button btnClose;
         public Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        public Guna.UI2.WinForms.Guna2HtmlLabel Header;
         public Guna.UI2.WinForms.Guna2PictureBox pbHeaderIcon;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblProductAdd;
     }
 }

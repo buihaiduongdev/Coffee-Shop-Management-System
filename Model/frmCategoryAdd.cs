@@ -15,11 +15,13 @@ namespace Restaurant_Management_System.Model
 {
     public partial class frmCategoryAdd :Form
     {
+        private string language = ucLogin.languages;
         public frmCategoryAdd(int categoryID)
         {
             InitializeComponent();
             CategoryID = categoryID;
             pbHeaderIcon.Image = Properties.Resources.Categories;
+            load_language(language);
         }
         int CategoryID;
         private void InsertCategory()
@@ -33,7 +35,8 @@ namespace Restaurant_Management_System.Model
 
             if (string.IsNullOrEmpty(categoryName))
             {
-                throw new ArgumentNullException("Lỗi nhập liệu! Vui lòng điền đầy đủ thông tin");
+                if (language == "en") throw new ArgumentNullException("Input error! Please enter full information");
+                else throw new ArgumentNullException("Lỗi nhập liệu! Vui lòng điền đầy đủ thông tin");
             }
 
             SqlParameter[] parameters = {
@@ -46,12 +49,14 @@ namespace Restaurant_Management_System.Model
 
             if (rowsAffected > 0)
             {
-                MessageBox.Show("Thêm danh mục thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (language == "en") MessageBox.Show("Category added successfully!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else if (language == "vi") MessageBox.Show("Thêm danh mục thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtCategoryName.Clear();
             }
             else
             {
-                MessageBox.Show("Thêm danh mục thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (language == "en") MessageBox.Show("Failed to add category!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else if (language == "vi") MessageBox.Show("Thêm danh mục thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -61,8 +66,8 @@ namespace Restaurant_Management_System.Model
 
                 if (string.IsNullOrEmpty(categoryName))
                 {
-                    throw new ArgumentNullException("Lỗi nhập liệu! Vui lòng điền đầy đủ thông tin");
-
+                    if (language == "en") throw new ArgumentNullException("Input error! Please enter full information");
+                    else throw new ArgumentNullException("Lỗi nhập liệu! Vui lòng điền đầy đủ thông tin");
                 }
 
             string queryUpdate = "UPDATE Categories SET CategoryName = @CategoryName WHERE CategoryID = @CategoryID";
@@ -76,12 +81,14 @@ namespace Restaurant_Management_System.Model
 
                 if (rowsAffected > 0)
                 {
-                    MessageBox.Show("Danh mục đã được cập nhật thành công!", "Notification");
-                    this.Close();
+                    if (language == "en")  MessageBox.Show("Category has been updated successfully!", "Notification");
+                    else MessageBox.Show("Danh mục đã được cập nhật thành công!", "Thông báo");
+                this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Không có thay đổi nào được thực hiện.", "Notification");
+                    if (language == "en") MessageBox.Show("No changes were made.", "Notification");
+                    else MessageBox.Show("Không có thay đổi nào được thực hiện.", "Thông báo");
                 }
         }
 
@@ -104,14 +111,31 @@ namespace Restaurant_Management_System.Model
             }
             catch (Exception ex)
             {
-                if (AddCategory) MessageBox.Show("Lỗi thêm danh mục: " + ex.Message, "Notification");
-                else MessageBox.Show("Lỗi cập nhật danh mục: " + ex.Message, "Notification");
+                if (AddCategory)
+                {
+                    if (language == "en") MessageBox.Show("Error adding category: " + ex.Message, "Notification");
+                    else MessageBox.Show("Lỗi thêm danh mục: " + ex.Message, "Thông báo");
+                }
+                else
+                {
+                    if (language == "en") MessageBox.Show("Error updating category: " + ex.Message, "Notification");
+                    else if (language == "vi") MessageBox.Show("Lỗi cập nhật danh mục: " + ex.Message, "Thông báo");
+                }
             }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        private void load_language(string languages)
+        {
+            LocalizationHelper.SetLanguage(languages);
+            btnClose.Text = LocalizationHelper.GetString("btnClose");
+            btnSave.Text = LocalizationHelper.GetString("btnSave");
+            lblCategoryAdd.Text = LocalizationHelper.GetString("lblCategoryAdd");
+            lblCategoryName.Text = LocalizationHelper.GetString("lblCategoryName");
+            txtCategoryName.PlaceholderText = LocalizationHelper.GetString("txtCategoryName");
         }
     }
 }

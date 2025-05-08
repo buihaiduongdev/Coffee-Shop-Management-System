@@ -20,7 +20,7 @@ namespace Restaurant_Management_System
     {
         int EmployeeID;
         Employee emp;
-
+        private string language = ucLogin.languages;
         public frmMainEmployee(Employee emp)
         {
             InitializeComponent();
@@ -55,6 +55,28 @@ namespace Restaurant_Management_System
         private void btnTable_Click(object sender, EventArgs e)
         {
             AddControls(new frmReserveTable());
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void load_language(string languages)
+        {
+            LocalizationHelper.SetLanguage(languages);
+            
+            btnSetting.Text = LocalizationHelper.GetString("btnSetting");
+            btnTable.Text = LocalizationHelper.GetString("btnTable");
+            btnLogout.Text = LocalizationHelper.GetString("btnLogout");
+            btnMenu.Text = LocalizationHelper.GetString("btnMenu");
+            btnBillList.Text = LocalizationHelper.GetString("btnBillList");
+        }
+
+        private void frmMainEmployee_Load(object sender, EventArgs e)
+        {
+            
+            load_language(language);
+            AddControls(new frmMenu());
         }
     }
 }

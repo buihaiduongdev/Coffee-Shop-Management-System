@@ -555,7 +555,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(220)))));
             this.ClientSize = new System.Drawing.Size(1400, 800);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.chartSalesWeek);

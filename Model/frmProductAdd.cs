@@ -18,6 +18,7 @@ namespace Restaurant_Management_System.Model
 {
     public partial class frmProductAdd : Form
     {
+        private string language = ucLogin.languages;
         public frmProductAdd(int productID)
         {
             InitializeComponent();
@@ -31,7 +32,7 @@ namespace Restaurant_Management_System.Model
             // Tạo hộp thoại chọn file
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
-            openFileDialog.Title = "Chọn ảnh sản phẩm";
+            openFileDialog.Title = language == "en" ? "Choose product image":"Chọn ảnh sản phẩm";
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -60,12 +61,14 @@ namespace Restaurant_Management_System.Model
 
             if (string.IsNullOrEmpty(productName) || string.IsNullOrEmpty(strPrice) || string.IsNullOrEmpty(category))
             {
-                throw new Exception("Lỗi nhập liệu! Vui lòng nhập đầy đủ thông tin sản phẩm!");
+                if (language == "en") throw new Exception("Input error! Please enter full product information!");
+                else throw new Exception("Lỗi nhập liệu! Vui lòng nhập đầy đủ thông tin sản phẩm!");
             }
 
             if (!decimal.TryParse(strPrice, out decimal price) || price <= 0)
             {
-                throw new Exception("Lỗi nhập liệu! Giá sản phẩm không hợp lệ!");
+                if (language == "en") throw new Exception("Input error! Please enter full product information!");
+                else throw new Exception("Input error! Product price is invalid!");
             }
 
             SqlParameter[] parameters = new SqlParameter[]
@@ -82,11 +85,13 @@ namespace Restaurant_Management_System.Model
 
             if (rowsAffected > 0)
             {
-                MessageBox.Show("Sản phẩm đã được thêm thành công!");
+                if (language == "en") MessageBox.Show("Product has been added successfully!", "Notification");
+                else MessageBox.Show("Sản phẩm đã được thêm thành công!", "Thông báo");
             }
             else
             {
-                MessageBox.Show("Không có thay đổi nào được thực hiện.");
+                if (language == "en") MessageBox.Show("No changes were made.", "Notification");
+                else MessageBox.Show("Không có thay đổi nào được thực hiện.", "Thông báo");
             }
         }
 
@@ -98,12 +103,14 @@ namespace Restaurant_Management_System.Model
 
                 if (string.IsNullOrEmpty(productName) || string.IsNullOrEmpty(strPrice) || string.IsNullOrEmpty(category))
                 {
-                   throw new Exception("Lỗi nhập liệu! Vui lòng nhập đầy đủ thông tin sản phẩm!");
+                    if (language == "en") throw new Exception("Input error! Please enter full product information!");
+                    else throw new Exception("Lỗi nhập liệu! Vui lòng nhập đầy đủ thông tin sản phẩm!");
                 }
 
                 if (!decimal.TryParse(strPrice, out decimal price) || price <= 0)
                 {
-                    throw new Exception("Lỗi nhập liệu! Giá sản phẩm không hợp lệ!");
+                    if (language == "en") throw new Exception("Input error! Product price is invalid!");
+                    else throw new Exception("Lỗi nhập liệu! Giá sản phẩm không hợp lệ!");
                 }
 
                 byte[] imageBytes = ConvertImageToByteArray(picImage);
@@ -129,11 +136,13 @@ namespace Restaurant_Management_System.Model
 
                 if (rowsAffected > 0)
                 {
-                    MessageBox.Show("Sản phẩm đã được cập nhật thành công!", "Notification");
+                    if (language == "en") MessageBox.Show("Product has been updated successfully!", "Notification");
+                    else MessageBox.Show("Sản phẩm đã được cập nhật thành công!", "Notification");
                 }
                 else
                 {
-                    MessageBox.Show("Không có thay đổi nào được thực hiện.", "Notification");
+                    if (language == "en") MessageBox.Show("No changes were made.", "Notification");
+                    else MessageBox.Show("Không có thay đổi nào được thực hiện.", "Notification");
                 }
         }
 
@@ -156,14 +165,23 @@ namespace Restaurant_Management_System.Model
             }
             catch (Exception ex)
             {
-                if (AddProduct)  MessageBox.Show("Lỗi khi thêm sản phẩm: " + ex.Message, "Notification");
-                else MessageBox.Show("Lỗi khi cập nhật sản phẩm: " + ex.Message, "Notification");
+                if (AddProduct)
+                {
+                    if (language == "en") MessageBox.Show("Error adding product: " + ex.Message, "Notification");
+                    else if (language == "vi") MessageBox.Show("Lỗi khi thêm sản phẩm: " + ex.Message, "Notification");
+                }
+                else
+                {
+                    if (language == "en") MessageBox.Show("Error updating product: " + ex.Message, "Notification");
+                    else MessageBox.Show("Lỗi khi cập nhật sản phẩm: " + ex.Message, "Notification");
+                }
             }
         }
 
         private void frmProductAdd_Load(object sender, EventArgs e)
         {
             LoadCategories(); // Gọi hàm tải danh mục khi Form load
+            load_language(language);
         }
 
         private void LoadCategories()
@@ -189,15 +207,33 @@ namespace Restaurant_Management_System.Model
         {
             this.Close();
         }
-
-        private void txtName_TextChanged(object sender, EventArgs e)
+        private void picImage_Click(object sender, EventArgs e)
         {
+            // Tạo hộp thoại chọn file
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
+            if (language == "en") openFileDialog.Title = "Choose product image";
+            else if (language == "vi") openFileDialog.Title = "Chọn ảnh sản phẩm";
 
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Hiển thị ảnh trong PictureBox
+                picImage.Image = Image.FromFile(openFileDialog.FileName);
+                picImage.SizeMode = PictureBoxSizeMode.StretchImage; // Hiển thị ảnh vừa khung
+            }
+        }
+        private void load_language(string languages)
+        {
+            LocalizationHelper.SetLanguage(languages);
+            btnClose.Text = LocalizationHelper.GetString("btnClose");
+            btnSave.Text = LocalizationHelper.GetString("btnSave");
+            lblProductAdd.Text = LocalizationHelper.GetString("btnProductAdd");
+            lblProductName.Text = LocalizationHelper.GetString("lblProductName");
+            lblPrice.Text = LocalizationHelper.GetString("lblPrice");
+            txtName.Text = LocalizationHelper.GetString("txtName");
+            txtPrice.Text = LocalizationHelper.GetString("txtPrice");
+            btnBrowse.Text = LocalizationHelper.GetString("btnBrowser");
         }
 
-        private void txtPrice_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

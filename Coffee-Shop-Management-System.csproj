@@ -192,21 +192,26 @@
       <DependentUpon>ProductReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Reciept.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reciept.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Strings.vi.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Strings.vi.resx</DependentUpon>
-    </Compile>
     <Compile Include="Strings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Strings.vi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.vi.resx</DependentUpon>
     </Compile>
     <Compile Include="View\frmReportView.cs">
       <SubType>Form</SubType>
@@ -337,11 +342,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="ReceptionistModel\frmReceptionist.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -426,13 +426,17 @@
       <DependentUpon>CoffeeShopDS.xsd</DependentUpon>
     </None>
     <None Include="Resources\change.png" />
+    <None Include="Resources\bottle.png" />
     <Content Include="Resources\CoffeeTableIcon %282%29.png" />
     <Content Include="Resources\coffeetableIcon.png" />
     <None Include="Resources\edit.png" />
+    <None Include="Resources\products_icon.png" />
+    <None Include="Resources\menu.png" />
     <Content Include="Resources\report.png" />
     <Content Include="Resources\excel.png" />
     <Content Include="Resources\free.png" />
     <Content Include="Resources\reservation.png" />
+    <None Include="Resources\setting.png" />
     <Content Include="Resources\team.png" />
     <EmbeddedResource Include="BaristaModel\frmOrderDetail.resx">
       <DependentUpon>frmOrderDetail.cs</DependentUpon>
@@ -487,6 +491,9 @@
     <EmbeddedResource Include="View\frmSettingView.resx">
       <DependentUpon>frmSettingView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\frmSettingView.vi.resx">
+      <DependentUpon>frmSettingView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\frmTableViews.resx">
       <DependentUpon>frmTableViews.cs</DependentUpon>
     </EmbeddedResource>
@@ -501,7 +508,6 @@
     <Content Include="Resources\Processed.png" />
     <Content Include="Resources\ProductIcon%282%29.png" />
     <Content Include="Resources\ProductIcon.png" />
-    <Content Include="Resources\Products.png" />
     <Content Include="Resources\Screenshot 2025-03-25 194756.png" />
     <EmbeddedResource Include="View\frmReserveTable.resx">
       <DependentUpon>frmReserveTable.cs</DependentUpon>
@@ -517,7 +523,6 @@
     <None Include="Resources\bill.png" />
     <None Include="Resources\coffee-table.png" />
     <None Include="Resources\staff.png" />
-    <None Include="Resources\product.png" />
     <None Include="Resources\web.png" />
     <EmbeddedResource Include="BaristaModel\frmBarista.resx">
       <DependentUpon>frmBarista.cs</DependentUpon>

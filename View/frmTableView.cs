@@ -17,6 +17,7 @@ namespace Restaurant_Management_System.View
 {
     public partial class frmTableView :Form
     {
+        private string language = ucLogin.languages;
         public frmTableView()
         {
             InitializeComponent();
@@ -47,12 +48,14 @@ namespace Restaurant_Management_System.View
             dgvTables.DefaultCellStyle.Font = new Font("Segoe UI", 10);
             dgvTables.DefaultCellStyle.SelectionBackColor = Color.FromArgb(224, 224, 224); // Nâu vừa
             dgvTables.DefaultCellStyle.SelectionForeColor = Color.Black;
+            dgvTables.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter; 
 
             // Dòng xen kẽ
             dgvTables.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(204, 177, 142); // Xám nhạt  
+            dgvTables.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(204, 177, 142);
 
             // Bảng
-            dgvTables.BackgroundColor = Color.White;
+            dgvTables.BackgroundColor = Color.FromArgb(165, 140, 100);
             dgvTables.BorderStyle = BorderStyle.None;
             dgvTables.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dgvTables.RowTemplate.Height = 35;
@@ -68,8 +71,10 @@ namespace Restaurant_Management_System.View
         {
             
             LoadTableData();
-            List<string> status = new List<string>() { "Status", "Occupied" ,"Empty", "Reserved", "Unvailable"};
+            List<string> status = language == "vi" ? new List<string>() { "Trạng thái", "Đã có người", "Trống", "Không khả thi" }  : new List<string>() { "Status", "Occupied" ,"Empty", "Unvailable"};
             cbbStatus.DataSource = status;
+            load_language(language);
+            //ApplyCustomTheme();
         }
         DataTable dt;
         private void LoadTableData()
@@ -100,18 +105,20 @@ namespace Restaurant_Management_System.View
                 lblNumberTableFree.Text = free.ToString();
                 lblNumberTableReserved.Text = reserved.ToString();
                 dgvTables.AllowUserToAddRows = false;
-                dgvTables.DefaultCellStyle = new DataGridViewCellStyle();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi tải dữ liệu bàn: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (language == "en") MessageBox.Show("Error loading table data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else MessageBox.Show("Lỗi khi tải dữ liệu bàn: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             ApplyCustomTheme();
         }
 
         public void btnAdd_Click(object sender, EventArgs e)
         {
+            List<string> status = language == "vi" ? new List<string>() { "", "Đã có người", "Trống", "Không khả thi" } : new List<string>() {"", "Occupied", "Empty", "Unvailable" };
             frmTableAdd frm = new frmTableAdd(-1);
+            frm.cmbStatus.DataSource = status;
             frm.ShowDialog();
             LoadTableData();
         }
@@ -143,7 +150,11 @@ namespace Restaurant_Management_System.View
                     string tableID = dgvTables.Rows[e.RowIndex].Cells["dgvTableID"].Value.ToString();
                     int id = Convert.ToInt32(tableID);
                     frmTableAdd frm = new frmTableAdd(id);
+
                     frm.txtCapacity.Text = Convert.ToString(dgvTables.CurrentRow.Cells["dgvCapacity"].Value);
+                    string status = Convert.ToString(dgvTables.CurrentRow.Cells["dgvStatus"].Value);
+                    frm.cmbStatus.DataSource = language == "vi" ? new List<string>() { "Trạng thái", "Đã có người", "Trống", "Không khả thi" } : new List<string>() { "Status", "Occupied", "Empty", "Unvailable" };
+                    frm.cmbStatus.SelectedItem = status;
                     frm.ShowDialog();
                     LoadTableData();
                 }
@@ -151,7 +162,7 @@ namespace Restaurant_Management_System.View
                 if (e.ColumnIndex == dgvTables.Columns["dgvdel"].Index) 
                 {
                     string tableID = dgvTables.Rows[e.RowIndex].Cells["dgvTableID"].Value.ToString();
-                    DialogResult result = MessageBox.Show($"Bạn có chắc muốn xóa bàn {tableID}?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    DialogResult result = language == "en" ? MessageBox.Show($"Are you wish to delete table {tableID}?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) : MessageBox.Show($"Bạn có chắc muốn xóa bàn {tableID}?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
                     if (result == DialogResult.Yes)
                     {
@@ -161,12 +172,14 @@ namespace Restaurant_Management_System.View
                         int rowsAffected = DatabaseHelper.ExecuteNonQuery(deleteQuery, param);
                         if (rowsAffected > 0)
                         {
-                            MessageBox.Show($"Đã xóa bàn {tableID} thành công!");
+                            if (language == "en") MessageBox.Show($"Table {tableID} has been deleted successfully!");
+                            else MessageBox.Show($"Đã xóa bàn {tableID} thành công!");
                             LoadTableData(); 
                         }
                         else
                         {
-                            MessageBox.Show("Lỗi khi xóa bàn!");
+                            if (language == "en") MessageBox.Show("Lỗi khi xóa bàn!");
+                            else MessageBox.Show("Error when deleting table!");
                         }
                     }
                 }
@@ -188,7 +201,7 @@ namespace Restaurant_Management_System.View
         private void cbbStatus_SelectedIndexChanged(object sender, EventArgs e)
         {
             string filterValue = cbbStatus.Text;
-            if (filterValue == "Status")
+            if (filterValue == "Status" || filterValue == "Trạng thái")
             {
                 cbbStatus.SelectedText = "Category";
                 cbbStatus.ForeColor = Color.Gray;
@@ -196,6 +209,7 @@ namespace Restaurant_Management_System.View
             }
             else
             {
+                filterValue = filterValue == "Trống" ? "Empty" : filterValue == "Đã có người" ? "Occupied" : "Unvailable";
                 cbbStatus.ForeColor = Color.Black;
                 string query = $"SELECT * FROM Tables WHERE Status = '{filterValue}'";
                 try
@@ -213,7 +227,9 @@ namespace Restaurant_Management_System.View
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Lỗi khi tải dữ liệu sản phẩm: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    
+                    if (language == "en") MessageBox.Show("Error loading product data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else MessageBox.Show("Lỗi khi tải dữ liệu sản phẩm: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -227,37 +243,18 @@ namespace Restaurant_Management_System.View
                 if (status == "empty")
                 {
                     e.CellStyle.ForeColor = Color.Green;
-                    e.CellStyle.BackColor = Color.White;
                     e.CellStyle.SelectionForeColor = Color.Green;
-                    e.CellStyle.SelectionBackColor = Color.FromArgb(239, 241, 243);
-                    //e.CellStyle.BackColor = Color.Green;
-                    //e.CellStyle.ForeColor = Color.White;
                 }
                 else if (status == "reserved" || status == "occupied")
                 {
                     e.CellStyle.ForeColor = Color.Red;
-                    e.CellStyle.BackColor = Color.White;
                     e.CellStyle.SelectionForeColor = Color.Red;
-                    e.CellStyle.SelectionBackColor = Color.FromArgb(239, 241, 243);
-                    //e.CellStyle.BackColor = Color.Red;
-                    //e.CellStyle.ForeColor = Color.White;
                 }
                 else
                 {
                     e.CellStyle.ForeColor = Color.Gray;
                     e.CellStyle.SelectionForeColor = Color.Gray;
-                    e.CellStyle.BackColor = Color.White;
-                    e.CellStyle.SelectionBackColor = Color.FromArgb(239, 241, 243);
-                    //e.CellStyle.BackColor = Color.Gray;
-                    //e.CellStyle.ForeColor = Color.White;
                 }
-            }
-            else
-            {
-                e.CellStyle.ForeColor = Color.FromArgb(1, 71, 69, 94);
-                e.CellStyle.BackColor = Color.White;
-                e.CellStyle.SelectionBackColor = Color.FromArgb(239, 241, 243);
-                e.CellStyle.SelectionForeColor = Color.FromArgb(1, 71, 69, 94);
             }
         }
 
@@ -275,6 +272,21 @@ namespace Restaurant_Management_System.View
         private void dgvTables_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void load_language(string languages)
+        {
+            LocalizationHelper.SetLanguage(languages);
+            lblTable.Text = LocalizationHelper.GetString("lblTable");
+            btnAddTable.Text = LocalizationHelper.GetString("btnAddTable");
+            lblEmptyTable.Text = LocalizationHelper.GetString("lblEmptyTable");
+            lblReservedTable.Text = LocalizationHelper.GetString("lblReservedTable");
+            txtSearch.PlaceholderText = LocalizationHelper.GetString("txtSearchTable");
+            dgvTables.Columns["dgvTableID"].HeaderText = LocalizationHelper.GetString("dgvTableID");
+            dgvTables.Columns["dgvCapacity"].HeaderText = LocalizationHelper.GetString("dgvCapacity");
+            dgvTables.Columns["dgvStatus"].HeaderText = LocalizationHelper.GetString("dgvStatus");
+            dgvTables.Columns["dgvedit"].HeaderText = LocalizationHelper.GetString("dgvedit");
+            dgvTables.Columns["dgvdel"].HeaderText = LocalizationHelper.GetString("dgvdel");
         }
     }
 }

@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCategoryAdd));
             this.txtCategoryName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblCategoryName = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblCategoryAdd = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
@@ -67,30 +67,30 @@
             this.txtCategoryName.Size = new System.Drawing.Size(449, 51);
             this.txtCategoryName.TabIndex = 1;
             // 
-            // guna2HtmlLabel2
+            // lblCategoryName
             // 
-            this.guna2HtmlLabel2.AutoSize = false;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(24, 134);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(381, 41);
-            this.guna2HtmlLabel2.TabIndex = 2;
-            this.guna2HtmlLabel2.Text = "Category Name";
+            this.lblCategoryName.AutoSize = false;
+            this.lblCategoryName.BackColor = System.Drawing.Color.Transparent;
+            this.lblCategoryName.Font = new System.Drawing.Font("Sitka Banner", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoryName.Location = new System.Drawing.Point(24, 134);
+            this.lblCategoryName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblCategoryName.Name = "lblCategoryName";
+            this.lblCategoryName.Size = new System.Drawing.Size(381, 41);
+            this.lblCategoryName.TabIndex = 2;
+            this.lblCategoryName.Text = "Category Name";
             // 
-            // guna2HtmlLabel1
+            // lblCategoryAdd
             // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(158, 35);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(303, 35);
-            this.guna2HtmlLabel1.TabIndex = 3;
-            this.guna2HtmlLabel1.Text = "ADD CATEGORY";
+            this.lblCategoryAdd.AutoSize = false;
+            this.lblCategoryAdd.BackColor = System.Drawing.Color.Transparent;
+            this.lblCategoryAdd.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoryAdd.ForeColor = System.Drawing.Color.White;
+            this.lblCategoryAdd.Location = new System.Drawing.Point(158, 35);
+            this.lblCategoryAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblCategoryAdd.Name = "lblCategoryAdd";
+            this.lblCategoryAdd.Size = new System.Drawing.Size(303, 35);
+            this.lblCategoryAdd.TabIndex = 3;
+            this.lblCategoryAdd.Text = "ADD CATEGORY";
             // 
             // guna2HtmlLabel3
             // 
@@ -156,7 +156,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.pbHeaderIcon);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2Panel1.Controls.Add(this.lblCategoryAdd);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(58)))), ((int)(((byte)(20)))));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
@@ -186,7 +186,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2HtmlLabel3);
-            this.Controls.Add(this.guna2HtmlLabel2);
+            this.Controls.Add(this.lblCategoryName);
             this.Controls.Add(this.txtCategoryName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -203,8 +203,8 @@
 
         #endregion
         public Guna.UI2.WinForms.Guna2TextBox txtCategoryName;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblCategoryName;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblCategoryAdd;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         public Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         public Guna.UI2.WinForms.Guna2Button btnSave;

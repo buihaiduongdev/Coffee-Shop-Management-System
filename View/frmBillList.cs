@@ -3,6 +3,7 @@ using Restaurant_Management_System.Backend;
 using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Restaurant_Management_System.Model
@@ -10,6 +11,7 @@ namespace Restaurant_Management_System.Model
     public partial class frmBillList : SampleView
     {
         int receptionistID;
+        private string language = ucLogin.languages;
         public frmBillList(int ReceptionistID)
         {
             InitializeComponent();
@@ -19,8 +21,51 @@ namespace Restaurant_Management_System.Model
         private void frmBillList_Load(object sender, EventArgs e)
         {
             LoadData();
+            load_language(language);
         }
+        private void ApplyCustomTheme()
+        {
+            try
+            {
 
+                //// Header
+                dgvBill.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(102, 99, 76);
+                dgvBill.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+                dgvBill.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+                dgvBill.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                dgvBill.ColumnHeadersHeight = 40;
+
+                // Dòng thường
+                dgvBill.DefaultCellStyle.BackColor = Color.FromArgb(165, 140, 100); // Be sáng
+                dgvBill.DefaultCellStyle.ForeColor = Color.Black;
+                dgvBill.DefaultCellStyle.Font = new Font("Segoe UI", 10);
+                dgvBill.DefaultCellStyle.SelectionBackColor = Color.FromArgb(224, 224, 224); // Nâu vừa
+                dgvBill.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                dgvBill.DefaultCellStyle.SelectionForeColor = Color.Black;
+
+                // Dòng xen kẽ
+                dgvBill.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(204, 177, 142); // Xám nhạt  
+
+                // Bảng
+                dgvBill.BackgroundColor = Color.AntiqueWhite;
+                dgvBill.BorderStyle = BorderStyle.None;
+                dgvBill.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+                dgvBill.RowTemplate.Height = 35;
+
+                // Khác
+                dgvBill.ReadOnly = false;
+                dgvBill.AllowUserToAddRows = false;
+                dgvBill.AllowUserToResizeRows = false;
+                dgvBill.EditMode = DataGridViewEditMode.EditOnKeystrokeOrF2;
+                dgvBill.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi áp dụng theme: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+        }
         private void LoadData()
         {
             string query = @"
@@ -52,6 +97,7 @@ namespace Restaurant_Management_System.Model
             {
                 MessageBox.Show("Lỗi khi tải dữ liệu hóa đơn: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            ApplyCustomTheme();
         }
 
         private void dgvBill_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -145,6 +191,23 @@ namespace Restaurant_Management_System.Model
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnAdd_Click_1(object sender, EventArgs e)
+        {
+
+        }
+        private void load_language(string languages)
+        {
+            LocalizationHelper.SetLanguage(languages);
+            guna2HtmlLabel1.Text = LocalizationHelper.GetString("guna2HtmlLabel1");
+            guna2HtmlLabel2.Text = LocalizationHelper.GetString("guna2HtmlLabel2");
+
+            dgvBill.Columns["dgvOrderID"].HeaderText = LocalizationHelper.GetString("dgvOrderID");
+            dgvBill.Columns["dgvOrderType"].HeaderText = LocalizationHelper.GetString("dgvOrderType");
+            dgvBill.Columns["dgvStatus"].HeaderText = LocalizationHelper.GetString("dgvStatus");
+            dgvBill.Columns["dgvTotal"].HeaderText = LocalizationHelper.GetString("dgvTotal");
 
         }
     }

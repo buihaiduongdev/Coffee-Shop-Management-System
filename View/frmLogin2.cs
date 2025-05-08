@@ -13,8 +13,10 @@ using Restaurant_Management_System.Model;
 
 namespace Restaurant_Management_System
 {
+
     public partial class frmLoginRegister : Form
     {
+        private string language;
         public frmLoginRegister()
         {
             InitializeComponent();
@@ -24,7 +26,7 @@ namespace Restaurant_Management_System
         }
         private void CloseForm()
         {
-            this.Close();
+            //this.Close();
         }
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -64,7 +66,13 @@ namespace Restaurant_Management_System
 
         private void SwitchToLogin()
         {
-            DisplayLogin();
+            language = ucLogin.languages;
+            ucLogin loginControl = new ucLogin(language);
+            loginControl.Dock = DockStyle.Fill;
+            loginControl.OnSwitchToRegister += SwitchToRegister;
+            loginControl.OnLoginSuccess += CloseForm;
+            this.Controls.Clear();
+            this.Controls.Add(loginControl);
         }
 
         private void bogocmainfrm()
