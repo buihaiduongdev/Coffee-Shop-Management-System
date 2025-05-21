@@ -1,20 +1,6 @@
-# GHI CHÚ
-sys 5 chưa làm product
-
-
 # Coffee Shop Management System
 
 Phần mền quản lí hệ thống bán coffee do nhóm sinh viên trường Đại học Sư phạm Kỹ thuật TP. HCM phát triển
-
-## 📌 Mục lục
-- [🚀 Tính năng](#-tính-năng)
-- [🖼️ Ảnh minh họa](#-ảnh-minh-họa)
-- [👤 Tác giả](#-tác-giả)
-
-## 🚀 Tính năng
-- ✅ Đăng nhập
-- ✅ Gọi món
-- ✅ Đặt bàn
 
 ## 🖼️ Ảnh minh hoạ
 ![Demo](https://github.com/buihaiduongdev/project-images/blob/main/frmLogin.png)
