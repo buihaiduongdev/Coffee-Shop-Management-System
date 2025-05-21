@@ -2,8 +2,7 @@
 
 Phần mền quản lí hệ thống bán coffee do nhóm sinh viên trường Đại học Sư phạm Kỹ thuật TP. HCM phát triển
 
-## 👤 Tác giả
-- **Nhóm phát triển:**  
+## Nhóm phát triển
   - [Bùi Hải Dương](https://github.com/buihaiduongdev)  
   - [Võ An Thái](https://github.com/Anthai2)  
   - [Đinh Văn Sáng](https://github.com/Sangchaos)
