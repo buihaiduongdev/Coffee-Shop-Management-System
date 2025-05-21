@@ -2,9 +2,6 @@
 
 Phần mền quản lí hệ thống bán coffee do nhóm sinh viên trường Đại học Sư phạm Kỹ thuật TP. HCM phát triển
 
-## 🖼️ Ảnh minh hoạ
-![Demo](https://github.com/buihaiduongdev/project-images/blob/main/frmLogin.png)
-
 ```md
 ![GitHub stars](https://img.shields.io/github/stars/duong197/Windows-Programming?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/duong197/Windows-Programming?style=social)
